@@ -1115,8 +1115,8 @@ public final class PacketOpcodes {
     public static final int GetPlayerMpModeAvailabilityRsp = 28762;     //4.0.0
     public static final int GetPlayerSocialDetailReq = 928;     //4.0.0
     public static final int GetPlayerSocialDetailRsp = 7452;     //4.0.0
-    public static final int GetPlayerTokenReq = 28960;     //4.0.0
-    public static final int GetPlayerTokenRsp = 4867;     //4.0.0
+    public static final int GetPlayerTokenReq = 28960;//4.6.0
+    public static final int GetPlayerTokenRsp = 4867;//4.6.0
     public static final int GetPushTipsRewardReq = 9818;     //4.0.0
     public static final int GetPushTipsRewardRsp = 1440;     //4.0.0
     public static final int GetQuestLackingResourceReq = 24145;     //4.0.0
