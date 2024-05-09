@@ -24,17 +24,17 @@ public final class PacketOpcodes {
     public static final int ServerTimeNotify = 3566;//4.6.0
     public static final int WorldDataNotify = 4776;//4.6.0
     public static final int SceneForceUnlockNotify = 1077;//4.6.0
-    public static final int WorldPlayerInfoNotify = 3610;     //4.0.0
-    public static final int ScenePlayerInfoNotify = 4358;     //4.0.0
-    public static final int SceneAreaWeatherNotify = 6238;     //4.0.0
-    public static final int SyncTeamEntityNotify = 569;     //4.0.0
-    public static final int SyncScenePlayTeamEntityNotify = 4768;     //4.0.0
-    public static final int PlayerEnterSceneInfoNotify = 1006;     //4.0.0
-    public static final int PlayerGameTimeNotify = 26499;     //4.0.0
-    public static final int SceneTimeNotify = 25965;     //4.0.0
-    public static final int SceneDataNotify = 25430;     //4.0.0
-    public static final int HostPlayerNotify = 29741;     //4.0.0
-    public static final int SceneTeamUpdateNotify = 28422;     //4.0.0
+    public static final int WorldPlayerInfoNotify = 3610;//4.6.0
+    public static final int ScenePlayerInfoNotify = 4358;//4.6.0
+    public static final int SceneAreaWeatherNotify = 6238;//4.6.0
+    public static final int SyncTeamEntityNotify = 569;//4.6.0
+    public static final int SyncScenePlayTeamEntityNotify = 4768;//4.6.0
+    public static final int PlayerEnterSceneInfoNotify = 1006;//4.6.0
+    public static final int PlayerGameTimeNotify = 26499;//4.6.0
+    public static final int SceneTimeNotify = 25965;//4.6.0
+    public static final int SceneDataNotify = 25430;//4.6.0
+    public static final int HostPlayerNotify = 29741;//4.6.0
+    public static final int SceneTeamUpdateNotify = 28422;//4.6.0
 
     // Opcodes     //4.0.0
     public static final int ACCKLIOPBHN = 205;     //4.0.0
