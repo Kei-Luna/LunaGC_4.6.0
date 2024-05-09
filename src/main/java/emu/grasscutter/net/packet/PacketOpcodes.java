@@ -4,6 +4,38 @@ public final class PacketOpcodes {
     // Empty
     public static final int NONE = 0;
 
+    // Opcodes     //4.6.0
+    public static final int GetPlayerTokenReq = 28960;//4.6.0
+    public static final int GetPlayerTokenRsp = 4867;//4.6.0
+    public static final int PlayerLoginReq = 27601;//4.6.0
+    public static final int PlayerLoginRsp = 25507;//4.6.0
+    public static final int PlayerDataNotify = 2408;//4.6.0
+    public static final int StoreWeightLimitNotify = 28238;//4.6.0
+    public static final int PlayerStoreNotify = 24402;//4.6.0
+    public static final int AvatarDataNotify = 24452;//4.6.0
+    public static final int PlayerEnterSceneNotify = 21317;//4.6.0
+    public static final int GetPlayerSocialDetailReq = 7440;//4.6.0
+    public static final int GetPlayerSocialDetailRsp = 323;//4.6.0
+    public static final int GetShopReq = 21735;//4.6.0
+    public static final int GetShopRsp = 1428;//4.6.0
+    public static final int EnterSceneReadyReq = 9184;//4.6.0
+    public static final int EnterSceneReadyRsp = 1104;//4.6.0
+    public static final int EnterScenePeerNotify = 20243;//4.6.0
+    public static final int ServerTimeNotify = 3566;//4.6.0
+    public static final int WorldDataNotify = 4776;//4.6.0
+    public static final int SceneForceUnlockNotify = 1077;//4.6.0
+    public static final int WorldPlayerInfoNotify = 3610;     //4.0.0
+    public static final int ScenePlayerInfoNotify = 4358;     //4.0.0
+    public static final int SceneAreaWeatherNotify = 6238;     //4.0.0
+    public static final int SyncTeamEntityNotify = 569;     //4.0.0
+    public static final int SyncScenePlayTeamEntityNotify = 4768;     //4.0.0
+    public static final int PlayerEnterSceneInfoNotify = 1006;     //4.0.0
+    public static final int PlayerGameTimeNotify = 26499;     //4.0.0
+    public static final int SceneTimeNotify = 25965;     //4.0.0
+    public static final int SceneDataNotify = 25430;     //4.0.0
+    public static final int HostPlayerNotify = 29741;     //4.0.0
+    public static final int SceneTeamUpdateNotify = 28422;     //4.0.0
+
     // Opcodes     //4.0.0
     public static final int ACCKLIOPBHN = 205;     //4.0.0
     public static final int PlayerEnterMapLayerNotify = 26672;     //4.0.0
@@ -122,7 +154,6 @@ public final class PacketOpcodes {
     public static final int AvatarChangeCostumeRsp = 9148;     //4.0.0
     public static final int AvatarChangeElementTypeReq = 3696;     //4.0.0
     public static final int AvatarChangeElementTypeRsp = 26227;     //4.0.0
-    public static final int AvatarDataNotify = 29811;     //4.0.0
     public static final int AvatarDelNotify = 8219;     //4.0.0
     public static final int AvatarDieAnimationEndReq = 4506;     //4.0.0
     public static final int AvatarDieAnimationEndRsp = 24745;     //4.0.0
@@ -669,9 +700,6 @@ public final class PacketOpcodes {
     public static final int EnterRoguelikeDungeonNotify = 8336;     //4.0.0
     public static final int EnterSceneDoneReq = 28690;     //4.0.0
     public static final int EnterSceneDoneRsp = 24814;     //4.0.0
-    public static final int EnterScenePeerNotify = 21053;     //4.0.0
-    public static final int EnterSceneReadyReq = 5011;     //4.0.0
-    public static final int EnterSceneReadyRsp = 4744;     //4.0.0
     public static final int EnterSceneWeatherAreaNotify = 7317;     //4.0.0
     public static final int EnterTransPointRegionNotify = 22064;     //4.0.0
     public static final int EnterTrialAvatarActivityDungeonReq = 7738;     //4.0.0
@@ -1113,10 +1141,6 @@ public final class PacketOpcodes {
     public static final int GetPlayerHomeCompInfoReq = 3709;     //4.0.0
     public static final int GetPlayerMpModeAvailabilityReq = 26251;     //4.0.0
     public static final int GetPlayerMpModeAvailabilityRsp = 28762;     //4.0.0
-    public static final int GetPlayerSocialDetailReq = 928;     //4.0.0
-    public static final int GetPlayerSocialDetailRsp = 7452;     //4.0.0
-    public static final int GetPlayerTokenReq = 28960;//4.6.0
-    public static final int GetPlayerTokenRsp = 4867;//4.6.0
     public static final int GetPushTipsRewardReq = 9818;     //4.0.0
     public static final int GetPushTipsRewardRsp = 1440;     //4.0.0
     public static final int GetQuestLackingResourceReq = 24145;     //4.0.0
@@ -1142,8 +1166,6 @@ public final class PacketOpcodes {
     public static final int GetScenePerformanceRsp = 25307;     //4.0.0
     public static final int GetScenePointReq = 23197;     //4.0.0
     public static final int GetScenePointRsp = 7133;     //4.0.0
-    public static final int GetShopReq = 9681;     //4.0.0
-    public static final int GetShopRsp = 22793;     //4.0.0
     public static final int GetShopmallDataReq = 2616;     //4.0.0
     public static final int GetShopmallDataRsp = 1087;     //4.0.0
     public static final int GetSignInRewardReq = 25930;     //4.0.0
@@ -1340,7 +1362,6 @@ public final class PacketOpcodes {
     public static final int HomeUpdatePictureFrameInfoRsp = 5740;     //4.0.0
     public static final int HomeUpdateScenePointFishFarmingInfoReq = 201;     //4.0.0
     public static final int HomeUpdateScenePointFishFarmingInfoRsp = 7736;     //4.0.0
-    public static final int HostPlayerNotify = 9459;     //4.0.0
     public static final int HuntingFailNotify = 22800;     //4.0.0
     public static final int HuntingGiveUpReq = 2156;     //4.0.0
     public static final int HuntingGiveUpRsp = 5719;     //4.0.0
@@ -1829,12 +1850,9 @@ public final class PacketOpcodes {
     public static final int PlayerCookArgsRsp = 9840;     //4.0.0
     public static final int PlayerCookReq = 27404;     //4.0.0
     public static final int PlayerCookRsp = 1250;     //4.0.0
-    public static final int PlayerDataNotify = 2051;     //4.0.0
     public static final int PlayerDeathZoneNotify = 4058;     //4.0.0
     public static final int PlayerEnterDungeonReq = 28791;     //4.0.0
     public static final int PlayerEnterDungeonRsp = 24874;     //4.0.0
-    public static final int PlayerEnterSceneInfoNotify = 27063;     //4.0.0
-    public static final int PlayerEnterSceneNotify = 2783;     //4.0.0
     public static final int PlayerEyePointStateNotify = 27367;     //4.0.0
     public static final int PlayerFishingDataNotify = 6317;     //4.0.0
     public static final int PlayerForceExitReq = 1819;     //4.0.0
@@ -1842,7 +1860,6 @@ public final class PacketOpcodes {
     public static final int PlayerGCGMatchConfirmNotify = 5393;     //4.0.0
     public static final int PlayerGCGMatchDismissNotify = 28090;     //4.0.0
     public static final int PlayerGameTimeByLuaNotify = 3419;     //4.0.0
-    public static final int PlayerGameTimeNotify = 22433;     //4.0.0
     public static final int PlayerGeneralMatchConfirmNotify = 1380;     //4.0.0
     public static final int PlayerGeneralMatchDismissNotify = 2964;     //4.0.0
     public static final int PlayerGetForceQuitBanInfoReq = 24478;     //4.0.0
@@ -1854,8 +1871,6 @@ public final class PacketOpcodes {
     public static final int PlayerInvestigationTargetNotify = 1218;     //4.0.0
     public static final int PlayerIpRegionNotify = 1074;     //4.0.0
     public static final int PlayerLevelRewardUpdateNotify = 3756;     //4.0.0
-    public static final int PlayerLoginReq = 25842;     //4.0.0
-    public static final int PlayerLoginRsp = 29665;     //4.0.0
     public static final int PlayerLogoutNotify = 9133;     //4.0.0
     public static final int PlayerLogoutReq = 5347;     //4.0.0
     public static final int PlayerLogoutRsp = 24757;     //4.0.0
@@ -1893,7 +1908,6 @@ public final class PacketOpcodes {
     public static final int PlayerSignatureNotify = 22738;     //4.0.0
     public static final int PlayerStartMatchReq = 27823;     //4.0.0
     public static final int PlayerStartMatchRsp = 21172;     //4.0.0
-    public static final int PlayerStoreNotify = 4667;     //4.0.0
     public static final int PlayerTimeNotify = 9057;     //4.0.0
     public static final int PlayerWorldSceneInfoListNotify = 7017;     //4.0.0
     public static final int PostEnterSceneReq = 5606;     //4.0.0
@@ -2074,13 +2088,11 @@ public final class PacketOpcodes {
     public static final int SaveUgcReq = 4331;     //4.0.0
     public static final int SaveUgcRsp = 27821;     //4.0.0
     public static final int SceneAreaUnlockNotify = 9869;     //4.0.0
-    public static final int SceneAreaWeatherNotify = 25752;     //4.0.0
     public static final int SceneAudioNotify = 4490;     //4.0.0
     public static final int SceneAvatarStaminaStepReq = 543;     //4.0.0
     public static final int SceneAvatarStaminaStepRsp = 28639;     //4.0.0
     public static final int SceneCreateEntityReq = 28428;     //4.0.0
     public static final int SceneCreateEntityRsp = 3079;     //4.0.0
-    public static final int SceneDataNotify = 29478;     //4.0.0
     public static final int SceneDestroyEntityReq = 23998;     //4.0.0
     public static final int SceneDestroyEntityRsp = 2500;     //4.0.0
     public static final int SceneEntitiesMoveCombineNotify = 26073;     //4.0.0
@@ -2095,7 +2107,6 @@ public final class PacketOpcodes {
     public static final int SceneEntityMoveRsp = 20380;     //4.0.0
     public static final int SceneEntityUpdateNotify = 27983;     //4.0.0
     public static final int SceneForceLockNotify = 7079;     //4.0.0
-    public static final int SceneForceUnlockNotify = 3275;     //4.0.0
     public static final int SceneGalleryInfoNotify = 5587;     //4.0.0
     public static final int SceneGalleryVintageHuntingSettleNotify = 5258;     //4.0.0
     public static final int SceneInitFinishReq = 6923;     //4.0.0
@@ -2120,13 +2131,10 @@ public final class PacketOpcodes {
     public static final int ScenePlayOwnerStartInviteReq = 5530;     //4.0.0
     public static final int ScenePlayOwnerStartInviteRsp = 22034;     //4.0.0
     public static final int ScenePlayerBackgroundAvatarRefreshNotify = 23971;     //4.0.0
-    public static final int ScenePlayerInfoNotify = 23510;     //4.0.0
     public static final int ScenePlayerLocationNotify = 29652;     //4.0.0
     public static final int ScenePlayerSoundNotify = 20293;     //4.0.0
     public static final int ScenePointUnlockNotify = 5431;     //4.0.0
     public static final int SceneRouteChangeNotify = 9691;     //4.0.0
-    public static final int SceneTeamUpdateNotify = 4509;     //4.0.0
-    public static final int SceneTimeNotify = 21694;     //4.0.0
     public static final int SceneTransToPointReq = 26498;     //4.0.0
     public static final int SceneTransToPointRsp = 28443;     //4.0.0
     public static final int SceneWeatherForcastReq = 27174;     //4.0.0
@@ -2166,7 +2174,6 @@ public final class PacketOpcodes {
     public static final int ServerGlobalValueChangeNotify = 28698;     //4.0.0
     public static final int ServerLogNotify = 7350;     //4.0.0
     public static final int ServerMessageNotify = 20880;     //4.0.0
-    public static final int ServerTimeNotify = 21404;     //4.0.0
     public static final int ServerTryCancelGeneralMatchNotify = 7158;     //4.0.0
     public static final int ServerUpdateGlobalValueNotify = 1181;     //4.0.0
     public static final int SetBattlePassViewedReq = 7320;     //4.0.0
@@ -2261,7 +2268,6 @@ public final class PacketOpcodes {
     public static final int StoreCustomDungeonRsp = 28706;     //4.0.0
     public static final int StoreItemChangeNotify = 370;     //4.0.0
     public static final int StoreItemDelNotify = 28814;     //4.0.0
-    public static final int StoreWeightLimitNotify = 22706;     //4.0.0
     public static final int SubmitInferenceWordReq = 22181;     //4.0.0
     public static final int SubmitInferenceWordRsp = 3679;     //4.0.0
     public static final int SummerTimeFloatSignalPositionNotify = 9015;     //4.0.0
@@ -2286,8 +2292,6 @@ public final class PacketOpcodes {
     public static final int SumoSetNoSwitchPunishTimeNotify = 5911;     //4.0.0
     public static final int SumoSwitchTeamReq = 21102;     //4.0.0
     public static final int SumoSwitchTeamRsp = 28038;     //4.0.0
-    public static final int SyncScenePlayTeamEntityNotify = 4915;     //4.0.0
-    public static final int SyncTeamEntityNotify = 25071;     //4.0.0
     public static final int TakeAchievementGoalRewardReq = 249;     //4.0.0
     public static final int TakeAchievementGoalRewardRsp = 20302;     //4.0.0
     public static final int TakeAchievementRewardReq = 20624;     //4.0.0
@@ -2550,12 +2554,10 @@ public final class PacketOpcodes {
     public static final int WorktopOptionNotify = 925;     //4.0.0
     public static final int WorldAllRoutineTypeNotify = 1912;     //4.0.0
     public static final int WorldChestOpenNotify = 9116;     //4.0.0
-    public static final int WorldDataNotify = 813;     //4.0.0
     public static final int WorldOwnerBlossomBriefInfoNotify = 2494;     //4.0.0
     public static final int WorldOwnerBlossomScheduleInfoNotify = 7500;     //4.0.0
     public static final int WorldOwnerDailyTaskNotify = 9896;     //4.0.0
     public static final int WorldPlayerDieNotify = 26320;     //4.0.0
-    public static final int WorldPlayerInfoNotify = 2239;     //4.0.0
     public static final int WorldPlayerLocationNotify = 7085;     //4.0.0
     public static final int WorldPlayerRTTNotify = 421;     //4.0.0
     public static final int WorldPlayerReviveReq = 2639;     //4.0.0
