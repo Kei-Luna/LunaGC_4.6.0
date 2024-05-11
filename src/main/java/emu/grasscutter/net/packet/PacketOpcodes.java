@@ -35,6 +35,13 @@ public final class PacketOpcodes {
     public static final int SceneDataNotify = 25430;//4.6.0
     public static final int HostPlayerNotify = 29741;//4.6.0
     public static final int SceneTeamUpdateNotify = 28422;//4.6.0
+    public static final int PostEnterSceneReq = 1328;//4.6.0
+    public static final int PostEnterSceneRsp = 7716;//4.6.0
+    public static final int SceneInitFinishReq = 2089;//4.6.0
+    public static final int SceneInitFinishRsp = 6717;//4.6.0
+    public static final int EnterSceneDoneReq = 21776;//4.6.0
+    public static final int EnterSceneDoneRsp = 9331;//4.6.0
+
 
     // Opcodes     //4.0.0
     public static final int ACCKLIOPBHN = 205;     //4.0.0
@@ -698,8 +705,6 @@ public final class PacketOpcodes {
     public static final int EnterRogueDiaryDungeonReq = 6423;     //4.0.0
     public static final int EnterRogueDiaryDungeonRsp = 26399;     //4.0.0
     public static final int EnterRoguelikeDungeonNotify = 8336;     //4.0.0
-    public static final int EnterSceneDoneReq = 28690;     //4.0.0
-    public static final int EnterSceneDoneRsp = 24814;     //4.0.0
     public static final int EnterSceneWeatherAreaNotify = 7317;     //4.0.0
     public static final int EnterTransPointRegionNotify = 22064;     //4.0.0
     public static final int EnterTrialAvatarActivityDungeonReq = 7738;     //4.0.0
@@ -1910,8 +1915,6 @@ public final class PacketOpcodes {
     public static final int PlayerStartMatchRsp = 21172;     //4.0.0
     public static final int PlayerTimeNotify = 9057;     //4.0.0
     public static final int PlayerWorldSceneInfoListNotify = 7017;     //4.0.0
-    public static final int PostEnterSceneReq = 5606;     //4.0.0
-    public static final int PostEnterSceneRsp = 7880;     //4.0.0
     public static final int PotionEnterDungeonNotify = 21097;     //4.0.0
     public static final int PotionEnterDungeonReq = 4073;     //4.0.0
     public static final int PotionEnterDungeonRsp = 7418;     //4.0.0
@@ -2109,8 +2112,6 @@ public final class PacketOpcodes {
     public static final int SceneForceLockNotify = 7079;     //4.0.0
     public static final int SceneGalleryInfoNotify = 5587;     //4.0.0
     public static final int SceneGalleryVintageHuntingSettleNotify = 5258;     //4.0.0
-    public static final int SceneInitFinishReq = 6923;     //4.0.0
-    public static final int SceneInitFinishRsp = 3805;     //4.0.0
     public static final int SceneKickPlayerNotify = 28326;     //4.0.0
     public static final int SceneKickPlayerReq = 29095;     //4.0.0
     public static final int SceneKickPlayerRsp = 27200;     //4.0.0
