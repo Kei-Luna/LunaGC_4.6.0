@@ -42,6 +42,10 @@ public final class PacketOpcodes {
     public static final int EnterSceneDoneReq = 21776;//4.6.0
     public static final int EnterSceneDoneRsp = 9331;//4.6.0
     public static final int SceneEntityAppearNotify = 5471;//4.6.0
+    public static final int PingReq = 26105;//4.6.0
+    public static final int PingRsp = 28294;//4.6.0
+    public static final int OpenStateUpdateNotify = 26330;//4.6.0
+
 
 
     // Opcodes     //4.0.0
@@ -1749,7 +1753,6 @@ public final class PacketOpcodes {
     public static final int OpActivityUpdateNotify = 39924399;     //4.0.0
     public static final int OpenBlossomCircleCampGuideNotify = 3994362;     //4.0.0
     public static final int OpenStateChangeNotify = 3995778;     //4.0.0
-    public static final int OpenStateUpdateNotify = 3999279;     //4.0.0
     public static final int OrderDisplayNotify = 399595;     //4.0.0
     public static final int OrderFinishNotify = 39926680;     //4.0.0
     public static final int OtherPlayerEnterHomeNotify = 39925817;     //4.0.0
@@ -1802,8 +1805,6 @@ public final class PacketOpcodes {
     public static final int PhotoActivityClientViewRsp = 39920737;     //4.0.0
     public static final int PhotoActivityFinishReq = 39926014;     //4.0.0
     public static final int PhotoActivityFinishRsp = 39925296;     //4.0.0
-    public static final int PingReq = 3995285;     //4.0.0
-    public static final int PingRsp = 3998231;     //4.0.0
     public static final int PlantFlowerAcceptAllGiveFlowerReq = 39927784;     //4.0.0
     public static final int PlantFlowerAcceptAllGiveFlowerRsp = 3995535;     //4.0.0
     public static final int PlantFlowerAcceptGiveFlowerReq = 39927522;     //4.0.0
