@@ -26,11 +26,11 @@ public class PacketGetPlayerFriendListRsp extends BasePacket {
                         .setProfilePicture(ProfilePicture.newBuilder().setAvatarId(serverAccount.avatarId))
                         .setWorldLevel(serverAccount.worldLevel)
                         .setSignature(serverAccount.signature)
-                        .setLastActiveTime((int) (System.currentTimeMillis() / 1000f))
+                        //.setLastActiveTime((int) (System.currentTimeMillis() / 1000f))
                         .setNameCardId(serverAccount.nameCardId)
                         .setOnlineState(FriendOnlineState.FRIEND_ONLINE_STATE_ONLINE)
                         .setParam(1)
-                        .setIsGameSource(true)
+                        //.setIsGameSource(true)
                         .setPlatformType(PlatformTypeOuterClass.PlatformType.PLATFORM_TYPE_PC)
                         .setFriendEnterHomeOptionValue(
                                 FriendEnterHomeOptionOuterClass.FriendEnterHomeOption

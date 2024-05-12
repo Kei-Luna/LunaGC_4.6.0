@@ -420,21 +420,10 @@ public final class AvatarInfoOuterClass {
     int getAnimHash();
 
     /**
-     * <code>.JCDPOCOOGCI PDGKJIIEPIO = 28;</code>
-     * @return Whether the pDGKJIIEPIO field is set.
-     */
-    boolean hasPDGKJIIEPIO();
-    /**
-     * <code>.JCDPOCOOGCI PDGKJIIEPIO = 28;</code>
-     * @return The pDGKJIIEPIO.
-     */
-    emu.grasscutter.net.proto.JCDPOCOOGCIOuterClass.JCDPOCOOGCI getPDGKJIIEPIO();
-    /**
-     * <code>.JCDPOCOOGCI PDGKJIIEPIO = 28;</code>
-     */
-    emu.grasscutter.net.proto.JCDPOCOOGCIOuterClass.JCDPOCOOGCIOrBuilder getPDGKJIIEPIOOrBuilder();
-
-    /**
+     * <pre>
+     *JCDPOCOOGCI PDGKJIIEPIO = 28;
+     * </pre>
+     *
      * <code>uint32 GJFKDCJENJE = 29;</code>
      * @return The gJFKDCJENJE.
      */
@@ -442,7 +431,7 @@ public final class AvatarInfoOuterClass {
   }
   /**
    * <pre>
-   * Obf: FHPLJBCPFFF
+   *import "JCDPOCOOGCI.proto";
    * </pre>
    *
    * Protobuf type {@code AvatarInfo}
@@ -774,19 +763,6 @@ public final class AvatarInfoOuterClass {
             case 216: {
 
               animHash_ = input.readUInt32();
-              break;
-            }
-            case 226: {
-              emu.grasscutter.net.proto.JCDPOCOOGCIOuterClass.JCDPOCOOGCI.Builder subBuilder = null;
-              if (pDGKJIIEPIO_ != null) {
-                subBuilder = pDGKJIIEPIO_.toBuilder();
-              }
-              pDGKJIIEPIO_ = input.readMessage(emu.grasscutter.net.proto.JCDPOCOOGCIOuterClass.JCDPOCOOGCI.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(pDGKJIIEPIO_);
-                pDGKJIIEPIO_ = subBuilder.buildPartial();
-              }
-
               break;
             }
             case 232: {
@@ -1667,35 +1643,13 @@ public final class AvatarInfoOuterClass {
       return animHash_;
     }
 
-    public static final int PDGKJIIEPIO_FIELD_NUMBER = 28;
-    private emu.grasscutter.net.proto.JCDPOCOOGCIOuterClass.JCDPOCOOGCI pDGKJIIEPIO_;
-    /**
-     * <code>.JCDPOCOOGCI PDGKJIIEPIO = 28;</code>
-     * @return Whether the pDGKJIIEPIO field is set.
-     */
-    @java.lang.Override
-    public boolean hasPDGKJIIEPIO() {
-      return pDGKJIIEPIO_ != null;
-    }
-    /**
-     * <code>.JCDPOCOOGCI PDGKJIIEPIO = 28;</code>
-     * @return The pDGKJIIEPIO.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.JCDPOCOOGCIOuterClass.JCDPOCOOGCI getPDGKJIIEPIO() {
-      return pDGKJIIEPIO_ == null ? emu.grasscutter.net.proto.JCDPOCOOGCIOuterClass.JCDPOCOOGCI.getDefaultInstance() : pDGKJIIEPIO_;
-    }
-    /**
-     * <code>.JCDPOCOOGCI PDGKJIIEPIO = 28;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.JCDPOCOOGCIOuterClass.JCDPOCOOGCIOrBuilder getPDGKJIIEPIOOrBuilder() {
-      return getPDGKJIIEPIO();
-    }
-
     public static final int GJFKDCJENJE_FIELD_NUMBER = 29;
     private int gJFKDCJENJE_;
     /**
+     * <pre>
+     *JCDPOCOOGCI PDGKJIIEPIO = 28;
+     * </pre>
+     *
      * <code>uint32 GJFKDCJENJE = 29;</code>
      * @return The gJFKDCJENJE.
      */
@@ -1831,9 +1785,6 @@ public final class AvatarInfoOuterClass {
       }
       if (animHash_ != 0) {
         output.writeUInt32(27, animHash_);
-      }
-      if (pDGKJIIEPIO_ != null) {
-        output.writeMessage(28, getPDGKJIIEPIO());
       }
       if (gJFKDCJENJE_ != 0) {
         output.writeUInt32(29, gJFKDCJENJE_);
@@ -2031,10 +1982,6 @@ public final class AvatarInfoOuterClass {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(27, animHash_);
       }
-      if (pDGKJIIEPIO_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(28, getPDGKJIIEPIO());
-      }
       if (gJFKDCJENJE_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(29, gJFKDCJENJE_);
@@ -2114,11 +2061,6 @@ public final class AvatarInfoOuterClass {
       }
       if (getAnimHash()
           != other.getAnimHash()) return false;
-      if (hasPDGKJIIEPIO() != other.hasPDGKJIIEPIO()) return false;
-      if (hasPDGKJIIEPIO()) {
-        if (!getPDGKJIIEPIO()
-            .equals(other.getPDGKJIIEPIO())) return false;
-      }
       if (getGJFKDCJENJE()
           != other.getGJFKDCJENJE()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
@@ -2214,10 +2156,6 @@ public final class AvatarInfoOuterClass {
       }
       hash = (37 * hash) + ANIM_HASH_FIELD_NUMBER;
       hash = (53 * hash) + getAnimHash();
-      if (hasPDGKJIIEPIO()) {
-        hash = (37 * hash) + PDGKJIIEPIO_FIELD_NUMBER;
-        hash = (53 * hash) + getPDGKJIIEPIO().hashCode();
-      }
       hash = (37 * hash) + GJFKDCJENJE_FIELD_NUMBER;
       hash = (53 * hash) + getGJFKDCJENJE();
       hash = (29 * hash) + unknownFields.hashCode();
@@ -2317,7 +2255,7 @@ public final class AvatarInfoOuterClass {
     }
     /**
      * <pre>
-     * Obf: FHPLJBCPFFF
+     *import "JCDPOCOOGCI.proto";
      * </pre>
      *
      * Protobuf type {@code AvatarInfo}
@@ -2459,12 +2397,6 @@ public final class AvatarInfoOuterClass {
         }
         animHash_ = 0;
 
-        if (pDGKJIIEPIOBuilder_ == null) {
-          pDGKJIIEPIO_ = null;
-        } else {
-          pDGKJIIEPIO_ = null;
-          pDGKJIIEPIOBuilder_ = null;
-        }
         gJFKDCJENJE_ = 0;
 
         return this;
@@ -2565,11 +2497,6 @@ public final class AvatarInfoOuterClass {
           result.excelInfo_ = excelInfoBuilder_.build();
         }
         result.animHash_ = animHash_;
-        if (pDGKJIIEPIOBuilder_ == null) {
-          result.pDGKJIIEPIO_ = pDGKJIIEPIO_;
-        } else {
-          result.pDGKJIIEPIO_ = pDGKJIIEPIOBuilder_.build();
-        }
         result.gJFKDCJENJE_ = gJFKDCJENJE_;
         onBuilt();
         return result;
@@ -2749,9 +2676,6 @@ public final class AvatarInfoOuterClass {
         }
         if (other.getAnimHash() != 0) {
           setAnimHash(other.getAnimHash());
-        }
-        if (other.hasPDGKJIIEPIO()) {
-          mergePDGKJIIEPIO(other.getPDGKJIIEPIO());
         }
         if (other.getGJFKDCJENJE() != 0) {
           setGJFKDCJENJE(other.getGJFKDCJENJE());
@@ -4813,127 +4737,12 @@ public final class AvatarInfoOuterClass {
         return this;
       }
 
-      private emu.grasscutter.net.proto.JCDPOCOOGCIOuterClass.JCDPOCOOGCI pDGKJIIEPIO_;
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.JCDPOCOOGCIOuterClass.JCDPOCOOGCI, emu.grasscutter.net.proto.JCDPOCOOGCIOuterClass.JCDPOCOOGCI.Builder, emu.grasscutter.net.proto.JCDPOCOOGCIOuterClass.JCDPOCOOGCIOrBuilder> pDGKJIIEPIOBuilder_;
-      /**
-       * <code>.JCDPOCOOGCI PDGKJIIEPIO = 28;</code>
-       * @return Whether the pDGKJIIEPIO field is set.
-       */
-      public boolean hasPDGKJIIEPIO() {
-        return pDGKJIIEPIOBuilder_ != null || pDGKJIIEPIO_ != null;
-      }
-      /**
-       * <code>.JCDPOCOOGCI PDGKJIIEPIO = 28;</code>
-       * @return The pDGKJIIEPIO.
-       */
-      public emu.grasscutter.net.proto.JCDPOCOOGCIOuterClass.JCDPOCOOGCI getPDGKJIIEPIO() {
-        if (pDGKJIIEPIOBuilder_ == null) {
-          return pDGKJIIEPIO_ == null ? emu.grasscutter.net.proto.JCDPOCOOGCIOuterClass.JCDPOCOOGCI.getDefaultInstance() : pDGKJIIEPIO_;
-        } else {
-          return pDGKJIIEPIOBuilder_.getMessage();
-        }
-      }
-      /**
-       * <code>.JCDPOCOOGCI PDGKJIIEPIO = 28;</code>
-       */
-      public Builder setPDGKJIIEPIO(emu.grasscutter.net.proto.JCDPOCOOGCIOuterClass.JCDPOCOOGCI value) {
-        if (pDGKJIIEPIOBuilder_ == null) {
-          if (value == null) {
-            throw new NullPointerException();
-          }
-          pDGKJIIEPIO_ = value;
-          onChanged();
-        } else {
-          pDGKJIIEPIOBuilder_.setMessage(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.JCDPOCOOGCI PDGKJIIEPIO = 28;</code>
-       */
-      public Builder setPDGKJIIEPIO(
-          emu.grasscutter.net.proto.JCDPOCOOGCIOuterClass.JCDPOCOOGCI.Builder builderForValue) {
-        if (pDGKJIIEPIOBuilder_ == null) {
-          pDGKJIIEPIO_ = builderForValue.build();
-          onChanged();
-        } else {
-          pDGKJIIEPIOBuilder_.setMessage(builderForValue.build());
-        }
-
-        return this;
-      }
-      /**
-       * <code>.JCDPOCOOGCI PDGKJIIEPIO = 28;</code>
-       */
-      public Builder mergePDGKJIIEPIO(emu.grasscutter.net.proto.JCDPOCOOGCIOuterClass.JCDPOCOOGCI value) {
-        if (pDGKJIIEPIOBuilder_ == null) {
-          if (pDGKJIIEPIO_ != null) {
-            pDGKJIIEPIO_ =
-              emu.grasscutter.net.proto.JCDPOCOOGCIOuterClass.JCDPOCOOGCI.newBuilder(pDGKJIIEPIO_).mergeFrom(value).buildPartial();
-          } else {
-            pDGKJIIEPIO_ = value;
-          }
-          onChanged();
-        } else {
-          pDGKJIIEPIOBuilder_.mergeFrom(value);
-        }
-
-        return this;
-      }
-      /**
-       * <code>.JCDPOCOOGCI PDGKJIIEPIO = 28;</code>
-       */
-      public Builder clearPDGKJIIEPIO() {
-        if (pDGKJIIEPIOBuilder_ == null) {
-          pDGKJIIEPIO_ = null;
-          onChanged();
-        } else {
-          pDGKJIIEPIO_ = null;
-          pDGKJIIEPIOBuilder_ = null;
-        }
-
-        return this;
-      }
-      /**
-       * <code>.JCDPOCOOGCI PDGKJIIEPIO = 28;</code>
-       */
-      public emu.grasscutter.net.proto.JCDPOCOOGCIOuterClass.JCDPOCOOGCI.Builder getPDGKJIIEPIOBuilder() {
-        
-        onChanged();
-        return getPDGKJIIEPIOFieldBuilder().getBuilder();
-      }
-      /**
-       * <code>.JCDPOCOOGCI PDGKJIIEPIO = 28;</code>
-       */
-      public emu.grasscutter.net.proto.JCDPOCOOGCIOuterClass.JCDPOCOOGCIOrBuilder getPDGKJIIEPIOOrBuilder() {
-        if (pDGKJIIEPIOBuilder_ != null) {
-          return pDGKJIIEPIOBuilder_.getMessageOrBuilder();
-        } else {
-          return pDGKJIIEPIO_ == null ?
-              emu.grasscutter.net.proto.JCDPOCOOGCIOuterClass.JCDPOCOOGCI.getDefaultInstance() : pDGKJIIEPIO_;
-        }
-      }
-      /**
-       * <code>.JCDPOCOOGCI PDGKJIIEPIO = 28;</code>
-       */
-      private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.JCDPOCOOGCIOuterClass.JCDPOCOOGCI, emu.grasscutter.net.proto.JCDPOCOOGCIOuterClass.JCDPOCOOGCI.Builder, emu.grasscutter.net.proto.JCDPOCOOGCIOuterClass.JCDPOCOOGCIOrBuilder> 
-          getPDGKJIIEPIOFieldBuilder() {
-        if (pDGKJIIEPIOBuilder_ == null) {
-          pDGKJIIEPIOBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.JCDPOCOOGCIOuterClass.JCDPOCOOGCI, emu.grasscutter.net.proto.JCDPOCOOGCIOuterClass.JCDPOCOOGCI.Builder, emu.grasscutter.net.proto.JCDPOCOOGCIOuterClass.JCDPOCOOGCIOrBuilder>(
-                  getPDGKJIIEPIO(),
-                  getParentForChildren(),
-                  isClean());
-          pDGKJIIEPIO_ = null;
-        }
-        return pDGKJIIEPIOBuilder_;
-      }
-
       private int gJFKDCJENJE_ ;
       /**
+       * <pre>
+       *JCDPOCOOGCI PDGKJIIEPIO = 28;
+       * </pre>
+       *
        * <code>uint32 GJFKDCJENJE = 29;</code>
        * @return The gJFKDCJENJE.
        */
@@ -4942,6 +4751,10 @@ public final class AvatarInfoOuterClass {
         return gJFKDCJENJE_;
       }
       /**
+       * <pre>
+       *JCDPOCOOGCI PDGKJIIEPIO = 28;
+       * </pre>
+       *
        * <code>uint32 GJFKDCJENJE = 29;</code>
        * @param value The gJFKDCJENJE to set.
        * @return This builder for chaining.
@@ -4953,6 +4766,10 @@ public final class AvatarInfoOuterClass {
         return this;
       }
       /**
+       * <pre>
+       *JCDPOCOOGCI PDGKJIIEPIO = 28;
+       * </pre>
+       *
        * <code>uint32 GJFKDCJENJE = 29;</code>
        * @return This builder for chaining.
        */
@@ -5058,40 +4875,39 @@ public final class AvatarInfoOuterClass {
       "alAvatarInfo.proto\032\025AvatarSkillInfo.prot" +
       "o\032\026AvatarFetterInfo.proto\032\033AvatarExpedit" +
       "ionState.proto\032\032AvatarEquipAffixInfo.pro" +
-      "to\032\025AvatarExcelInfo.proto\032\021JCDPOCOOGCI.p" +
-      "roto\"\346\t\n\nAvatarInfo\022\021\n\tavatar_id\030\001 \001(\r\022\014" +
-      "\n\004guid\030\002 \001(\004\022*\n\010prop_map\030\003 \003(\0132\030.AvatarI" +
-      "nfo.PropMapEntry\022\022\n\nlife_state\030\004 \001(\r\022\027\n\017" +
-      "equip_guid_list\030\005 \003(\004\022\026\n\016talent_id_list\030" +
-      "\006 \003(\r\0225\n\016fight_prop_map\030\007 \003(\0132\035.AvatarIn" +
-      "fo.FightPropMapEntry\022+\n\021trial_avatar_inf" +
-      "o\030\t \001(\0132\020.TrialAvatarInfo\022,\n\tskill_map\030\n" +
-      " \003(\0132\031.AvatarInfo.SkillMapEntry\022\026\n\016skill" +
-      "_depot_id\030\013 \001(\r\022&\n\013fetter_info\030\014 \001(\0132\021.A" +
-      "vatarFetterInfo\022\036\n\026core_proud_skill_leve" +
-      "l\030\r \001(\r\022!\n\031inherent_proud_skill_list\030\016 \003" +
-      "(\r\0227\n\017skill_level_map\030\017 \003(\0132\036.AvatarInfo" +
-      ".SkillLevelMapEntry\0220\n\020expedition_state\030" +
-      "\020 \001(\0162\026.AvatarExpeditionState\022M\n\033proud_s" +
-      "kill_extra_level_map\030\021 \003(\0132(.AvatarInfo." +
-      "ProudSkillExtraLevelMapEntry\022\020\n\010is_focus" +
-      "\030\022 \001(\010\022\023\n\013avatar_type\030\023 \001(\r\022\033\n\023team_reso" +
-      "nance_list\030\024 \003(\r\022\033\n\023wearing_flycloak_id\030" +
-      "\025 \001(\r\022/\n\020equip_affix_list\030\026 \003(\0132\025.Avatar" +
-      "EquipAffixInfo\022\021\n\tborn_time\030\027 \001(\r\022#\n\033pen" +
-      "ding_promote_reward_list\030\030 \003(\r\022\022\n\ncostum" +
-      "e_id\030\031 \001(\r\022$\n\nexcel_info\030\032 \001(\0132\020.AvatarE" +
-      "xcelInfo\022\021\n\tanim_hash\030\033 \001(\r\022!\n\013PDGKJIIEP" +
-      "IO\030\034 \001(\0132\014.JCDPOCOOGCI\022\023\n\013GJFKDCJENJE\030\035 " +
-      "\001(\r\032:\n\014PropMapEntry\022\013\n\003key\030\001 \001(\r\022\031\n\005valu" +
-      "e\030\002 \001(\0132\n.PropValue:\0028\001\0323\n\021FightPropMapE" +
-      "ntry\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001(\002:\0028\001\032A\n\r" +
-      "SkillMapEntry\022\013\n\003key\030\001 \001(\r\022\037\n\005value\030\002 \001(" +
-      "\0132\020.AvatarSkillInfo:\0028\001\0324\n\022SkillLevelMap" +
-      "Entry\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002 \001(\r:\0028\001\032>\n" +
-      "\034ProudSkillExtraLevelMapEntry\022\013\n\003key\030\001 \001" +
-      "(\r\022\r\n\005value\030\002 \001(\r:\0028\001B\033\n\031emu.grasscutter" +
-      ".net.protob\006proto3"
+      "to\032\025AvatarExcelInfo.proto\"\303\t\n\nAvatarInfo" +
+      "\022\021\n\tavatar_id\030\001 \001(\r\022\014\n\004guid\030\002 \001(\004\022*\n\010pro" +
+      "p_map\030\003 \003(\0132\030.AvatarInfo.PropMapEntry\022\022\n" +
+      "\nlife_state\030\004 \001(\r\022\027\n\017equip_guid_list\030\005 \003" +
+      "(\004\022\026\n\016talent_id_list\030\006 \003(\r\0225\n\016fight_prop" +
+      "_map\030\007 \003(\0132\035.AvatarInfo.FightPropMapEntr" +
+      "y\022+\n\021trial_avatar_info\030\t \001(\0132\020.TrialAvat" +
+      "arInfo\022,\n\tskill_map\030\n \003(\0132\031.AvatarInfo.S" +
+      "killMapEntry\022\026\n\016skill_depot_id\030\013 \001(\r\022&\n\013" +
+      "fetter_info\030\014 \001(\0132\021.AvatarFetterInfo\022\036\n\026" +
+      "core_proud_skill_level\030\r \001(\r\022!\n\031inherent" +
+      "_proud_skill_list\030\016 \003(\r\0227\n\017skill_level_m" +
+      "ap\030\017 \003(\0132\036.AvatarInfo.SkillLevelMapEntry" +
+      "\0220\n\020expedition_state\030\020 \001(\0162\026.AvatarExped" +
+      "itionState\022M\n\033proud_skill_extra_level_ma" +
+      "p\030\021 \003(\0132(.AvatarInfo.ProudSkillExtraLeve" +
+      "lMapEntry\022\020\n\010is_focus\030\022 \001(\010\022\023\n\013avatar_ty" +
+      "pe\030\023 \001(\r\022\033\n\023team_resonance_list\030\024 \003(\r\022\033\n" +
+      "\023wearing_flycloak_id\030\025 \001(\r\022/\n\020equip_affi" +
+      "x_list\030\026 \003(\0132\025.AvatarEquipAffixInfo\022\021\n\tb" +
+      "orn_time\030\027 \001(\r\022#\n\033pending_promote_reward" +
+      "_list\030\030 \003(\r\022\022\n\ncostume_id\030\031 \001(\r\022$\n\nexcel" +
+      "_info\030\032 \001(\0132\020.AvatarExcelInfo\022\021\n\tanim_ha" +
+      "sh\030\033 \001(\r\022\023\n\013GJFKDCJENJE\030\035 \001(\r\032:\n\014PropMap" +
+      "Entry\022\013\n\003key\030\001 \001(\r\022\031\n\005value\030\002 \001(\0132\n.Prop" +
+      "Value:\0028\001\0323\n\021FightPropMapEntry\022\013\n\003key\030\001 " +
+      "\001(\r\022\r\n\005value\030\002 \001(\002:\0028\001\032A\n\rSkillMapEntry\022" +
+      "\013\n\003key\030\001 \001(\r\022\037\n\005value\030\002 \001(\0132\020.AvatarSkil" +
+      "lInfo:\0028\001\0324\n\022SkillLevelMapEntry\022\013\n\003key\030\001" +
+      " \001(\r\022\r\n\005value\030\002 \001(\r:\0028\001\032>\n\034ProudSkillExt" +
+      "raLevelMapEntry\022\013\n\003key\030\001 \001(\r\022\r\n\005value\030\002 " +
+      "\001(\r:\0028\001B\033\n\031emu.grasscutter.net.protob\006pr" +
+      "oto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -5103,14 +4919,13 @@ public final class AvatarInfoOuterClass {
           emu.grasscutter.net.proto.AvatarExpeditionStateOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.AvatarEquipAffixInfoOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.AvatarExcelInfoOuterClass.getDescriptor(),
-          emu.grasscutter.net.proto.JCDPOCOOGCIOuterClass.getDescriptor(),
         });
     internal_static_AvatarInfo_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_AvatarInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AvatarInfo_descriptor,
-        new java.lang.String[] { "AvatarId", "Guid", "PropMap", "LifeState", "EquipGuidList", "TalentIdList", "FightPropMap", "TrialAvatarInfo", "SkillMap", "SkillDepotId", "FetterInfo", "CoreProudSkillLevel", "InherentProudSkillList", "SkillLevelMap", "ExpeditionState", "ProudSkillExtraLevelMap", "IsFocus", "AvatarType", "TeamResonanceList", "WearingFlycloakId", "EquipAffixList", "BornTime", "PendingPromoteRewardList", "CostumeId", "ExcelInfo", "AnimHash", "PDGKJIIEPIO", "GJFKDCJENJE", });
+        new java.lang.String[] { "AvatarId", "Guid", "PropMap", "LifeState", "EquipGuidList", "TalentIdList", "FightPropMap", "TrialAvatarInfo", "SkillMap", "SkillDepotId", "FetterInfo", "CoreProudSkillLevel", "InherentProudSkillList", "SkillLevelMap", "ExpeditionState", "ProudSkillExtraLevelMap", "IsFocus", "AvatarType", "TeamResonanceList", "WearingFlycloakId", "EquipAffixList", "BornTime", "PendingPromoteRewardList", "CostumeId", "ExcelInfo", "AnimHash", "GJFKDCJENJE", });
     internal_static_AvatarInfo_PropMapEntry_descriptor =
       internal_static_AvatarInfo_descriptor.getNestedTypes().get(0);
     internal_static_AvatarInfo_PropMapEntry_fieldAccessorTable = new
@@ -5148,7 +4963,6 @@ public final class AvatarInfoOuterClass {
     emu.grasscutter.net.proto.AvatarExpeditionStateOuterClass.getDescriptor();
     emu.grasscutter.net.proto.AvatarEquipAffixInfoOuterClass.getDescriptor();
     emu.grasscutter.net.proto.AvatarExcelInfoOuterClass.getDescriptor();
-    emu.grasscutter.net.proto.JCDPOCOOGCIOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

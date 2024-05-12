@@ -145,10 +145,6 @@ public final class AbilitySyncStateInfoOuterClass {
         int index);
   }
   /**
-   * <pre>
-   * Obf: JDIFMANDKLC
-   * </pre>
-   *
    * Protobuf type {@code AbilitySyncStateInfo}
    */
   public static final class AbilitySyncStateInfo extends
@@ -729,10 +725,6 @@ public final class AbilitySyncStateInfoOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: JDIFMANDKLC
-     * </pre>
-     *
      * Protobuf type {@code AbilitySyncStateInfo}
      */
     public static final class Builder extends

@@ -32,7 +32,7 @@ public final class ModifierDurabilityOuterClass {
   }
   /**
    * <pre>
-   * Obf: GCNLPIHMJOL
+   * 4.6.0
    * </pre>
    *
    * Protobuf type {@code ModifierDurability}
@@ -315,7 +315,7 @@ public final class ModifierDurabilityOuterClass {
     }
     /**
      * <pre>
-     * Obf: GCNLPIHMJOL
+     * 4.6.0
      * </pre>
      *
      * Protobuf type {@code ModifierDurability}

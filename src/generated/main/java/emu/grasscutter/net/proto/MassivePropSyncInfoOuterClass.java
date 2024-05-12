@@ -50,7 +50,7 @@ public final class MassivePropSyncInfoOuterClass {
   }
   /**
    * <pre>
-   * Obf: HMEMJBACNJE
+   * 4.6.0
    * </pre>
    *
    * Protobuf type {@code MassivePropSyncInfo}
@@ -370,7 +370,7 @@ public final class MassivePropSyncInfoOuterClass {
     }
     /**
      * <pre>
-     * Obf: HMEMJBACNJE
+     * 4.6.0
      * </pre>
      *
      * Protobuf type {@code MassivePropSyncInfo}

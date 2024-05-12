@@ -50,7 +50,7 @@ public final class AbilityAttachedModifierOuterClass {
   }
   /**
    * <pre>
-   * Obf: COGFLLLFFFC
+   * 4.6.0
    * </pre>
    *
    * Protobuf type {@code AbilityAttachedModifier}
@@ -412,7 +412,7 @@ public final class AbilityAttachedModifierOuterClass {
     }
     /**
      * <pre>
-     * Obf: COGFLLLFFFC
+     * 4.6.0
      * </pre>
      *
      * Protobuf type {@code AbilityAttachedModifier}

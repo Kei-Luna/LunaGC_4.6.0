@@ -28,9 +28,9 @@ public class PacketPlayerEnterSceneNotify extends BasePacket {
                         .setTargetUid(player.getUid())
                         .setEnterSceneToken(player.getEnterSceneToken())
                         .setWorldLevel(player.getWorldLevel())
-                        .setEnterReason(EnterReason.Login.getValue())
-                        .setIsFirstLoginEnterScene(player.isFirstLoginEnterScene())
-                        .setWorldType(1)
+                        //.setEnterReason(EnterReason.Login.getValue())
+                        //.setIsFirstLoginEnterScene(player.isFirstLoginEnterScene())
+                        //.setWorldType(1)
                         .setSceneTransaction(
                                 "3-"
                                         + player.getUid()
@@ -79,8 +79,8 @@ public class PacketPlayerEnterSceneNotify extends BasePacket {
 
         var proto =
                 PlayerEnterSceneNotify.newBuilder()
-                        .setPrevSceneId(player.getSceneId())
-                        .setPrevPos(player.getPosition().toProto())
+                        //.setPrevSceneId(player.getSceneId())
+                        //.setPrevPos(player.getPosition().toProto())
                         .setSceneId(teleportProperties.getSceneId())
                         .setPos(teleportProperties.getTeleportTo().toProto())
                         .setSceneBeginTime(System.currentTimeMillis())
@@ -88,8 +88,8 @@ public class PacketPlayerEnterSceneNotify extends BasePacket {
                         .setTargetUid(target.getUid())
                         .setEnterSceneToken(player.getEnterSceneToken())
                         .setWorldLevel(target.getWorld().getWorldLevel())
-                        .setEnterReason(teleportProperties.getEnterReason().getValue())
-                        .setWorldType(1)
+                        //.setEnterReason(teleportProperties.getEnterReason().getValue())
+                        //.setWorldType(1)
                         .setSceneTransaction(
                                 teleportProperties.getSceneId()
                                         + "-"
@@ -117,16 +117,16 @@ public class PacketPlayerEnterSceneNotify extends BasePacket {
 
         var proto =
                 PlayerEnterSceneNotify.newBuilder()
-                        .setPrevSceneId(player.getSceneId())
-                        .setPrevPos(player.getPosition().toProto())
+                        //.setPrevSceneId(player.getSceneId())
+                        //.setPrevPos(player.getPosition().toProto())
                         .setSceneId(teleportProperties.getSceneId())
                         .setPos(teleportProperties.getTeleportTo().toProto())
                         .setSceneBeginTime(System.currentTimeMillis())
                         .setType(other ? EnterType.ENTER_TYPE_OTHER_HOME : EnterType.ENTER_TYPE_SELF_HOME)
                         .setTargetUid(targetUid)
                         .setEnterSceneToken(player.getEnterSceneToken())
-                        .setEnterReason(teleportProperties.getEnterReason().getValue())
-                        .setWorldType(64)
+                        //.setEnterReason(teleportProperties.getEnterReason().getValue())
+                        //.setWorldType(64)
                         .setSceneTransaction(
                                 teleportProperties.getSceneId()
                                         + "-"

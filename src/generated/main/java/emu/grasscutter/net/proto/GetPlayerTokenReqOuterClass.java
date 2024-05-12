@@ -68,6 +68,7 @@ public final class GetPlayerTokenReqOuterClass {
   }
   /**
    * <pre>
+   * 4.6.0
    * CmdId: 28960
    * </pre>
    *
@@ -512,6 +513,7 @@ public final class GetPlayerTokenReqOuterClass {
     }
     /**
      * <pre>
+     * 4.6.0
      * CmdId: 28960
      * </pre>
      *

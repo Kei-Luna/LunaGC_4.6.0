@@ -126,6 +126,7 @@ public final class GetPlayerTokenRspOuterClass {
   }
   /**
    * <pre>
+   * 4.6.0
    * CmdId: 4867
    * </pre>
    *
@@ -821,6 +822,7 @@ public final class GetPlayerTokenRspOuterClass {
     }
     /**
      * <pre>
+     * 4.6.0
      * CmdId: 4867
      * </pre>
      *

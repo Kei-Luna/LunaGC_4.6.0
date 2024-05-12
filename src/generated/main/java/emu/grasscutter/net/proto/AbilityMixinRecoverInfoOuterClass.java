@@ -112,7 +112,7 @@ public final class AbilityMixinRecoverInfoOuterClass {
   }
   /**
    * <pre>
-   * Obf: NNBAGDGFEKA
+   * 4.6.0
    * </pre>
    *
    * Protobuf type {@code AbilityMixinRecoverInfo}
@@ -731,7 +731,7 @@ public final class AbilityMixinRecoverInfoOuterClass {
     }
     /**
      * <pre>
-     * Obf: NNBAGDGFEKA
+     * 4.6.0
      * </pre>
      *
      * Protobuf type {@code AbilityMixinRecoverInfo}
@@ -1654,7 +1654,7 @@ public final class AbilityMixinRecoverInfoOuterClass {
       "a_list\030\004 \003(\r\022\036\n\026is_serverbuff_modifier\030\005" +
       " \001(\010\022/\n\021massive_prop_list\030\006 \003(\0132\024.Massiv" +
       "ePropSyncInfo\022-\n\022breakout_snap_shot\030\007 \001(" +
-      "\0132\021.BreakoutSnapShotB\010\n\006SourceB\033\n\031emu.gr" +
+      "\0132\021.BreakoutSnapShotB\010\n\006sourceB\033\n\031emu.gr" +
       "asscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

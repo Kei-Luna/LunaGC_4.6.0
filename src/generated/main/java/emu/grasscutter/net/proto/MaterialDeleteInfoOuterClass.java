@@ -73,7 +73,7 @@ public final class MaterialDeleteInfoOuterClass {
   }
   /**
    * <pre>
-   * Obf: FNECFKCJNOG
+   * 4.6.0
    * </pre>
    *
    * Protobuf type {@code MaterialDeleteInfo}
@@ -244,10 +244,6 @@ public final class MaterialDeleteInfoOuterClass {
       int getConfigCountDownTime();
     }
     /**
-     * <pre>
-     * Obf: OKEMONGEMOM
-     * </pre>
-     *
      * Protobuf type {@code MaterialDeleteInfo.CountDownDelete}
      */
     public static final class CountDownDelete extends
@@ -625,10 +621,6 @@ public final class MaterialDeleteInfoOuterClass {
         return builder;
       }
       /**
-       * <pre>
-       * Obf: OKEMONGEMOM
-       * </pre>
-       *
        * Protobuf type {@code MaterialDeleteInfo.CountDownDelete}
        */
       public static final class Builder extends
@@ -1026,10 +1018,6 @@ public final class MaterialDeleteInfoOuterClass {
       int getDeleteTime();
     }
     /**
-     * <pre>
-     * Obf: FBKLFJIOOPN
-     * </pre>
-     *
      * Protobuf type {@code MaterialDeleteInfo.DateTimeDelete}
      */
     public static final class DateTimeDelete extends
@@ -1278,10 +1266,6 @@ public final class MaterialDeleteInfoOuterClass {
         return builder;
       }
       /**
-       * <pre>
-       * Obf: FBKLFJIOOPN
-       * </pre>
-       *
        * Protobuf type {@code MaterialDeleteInfo.DateTimeDelete}
        */
       public static final class Builder extends
@@ -1562,10 +1546,6 @@ public final class MaterialDeleteInfoOuterClass {
       int getConfigCountDownTime();
     }
     /**
-     * <pre>
-     * Obf: HMLHBMKPHCA
-     * </pre>
-     *
      * Protobuf type {@code MaterialDeleteInfo.DelayWeekCountDownDelete}
      */
     public static final class DelayWeekCountDownDelete extends
@@ -1970,10 +1950,6 @@ public final class MaterialDeleteInfoOuterClass {
         return builder;
       }
       /**
-       * <pre>
-       * Obf: HMLHBMKPHCA
-       * </pre>
-       *
        * Protobuf type {@code MaterialDeleteInfo.DelayWeekCountDownDelete}
        */
       public static final class Builder extends
@@ -2756,7 +2732,7 @@ public final class MaterialDeleteInfoOuterClass {
     }
     /**
      * <pre>
-     * Obf: FNECFKCJNOG
+     * 4.6.0
      * </pre>
      *
      * Protobuf type {@code MaterialDeleteInfo}

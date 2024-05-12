@@ -26,8 +26,8 @@ public final class GetShopReqOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 9681
-   * Obf: BLGEHKEBJAA
+   * 4.6.0
+   * CmdId: 21735
    * </pre>
    *
    * Protobuf type {@code GetShopReq}
@@ -279,8 +279,8 @@ public final class GetShopReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 9681
-     * Obf: BLGEHKEBJAA
+     * 4.6.0
+     * CmdId: 21735
      * </pre>
      *
      * Protobuf type {@code GetShopReq}

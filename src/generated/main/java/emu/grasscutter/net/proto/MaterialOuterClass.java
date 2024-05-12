@@ -41,7 +41,7 @@ public final class MaterialOuterClass {
   }
   /**
    * <pre>
-   * Obf: LCHIHMEJNML
+   * 4.6.0
    * </pre>
    *
    * Protobuf type {@code Material}
@@ -348,7 +348,7 @@ public final class MaterialOuterClass {
     }
     /**
      * <pre>
-     * Obf: LCHIHMEJNML
+     * 4.6.0
      * </pre>
      *
      * Protobuf type {@code Material}

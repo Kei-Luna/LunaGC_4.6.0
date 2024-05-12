@@ -61,7 +61,7 @@ public final class ReliquaryOuterClass {
   }
   /**
    * <pre>
-   * Obf: EGIJNLNKCFH
+   * 4.6.0
    * </pre>
    *
    * Protobuf type {@code Reliquary}
@@ -476,7 +476,7 @@ public final class ReliquaryOuterClass {
     }
     /**
      * <pre>
-     * Obf: EGIJNLNKCFH
+     * 4.6.0
      * </pre>
      *
      * Protobuf type {@code Reliquary}

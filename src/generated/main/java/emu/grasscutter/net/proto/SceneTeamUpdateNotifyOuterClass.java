@@ -19,39 +19,43 @@ public final class SceneTeamUpdateNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_in_mp = 4;</code>
-     * @return The isInMp.
-     */
-    boolean getIsInMp();
-
-    /**
-     * <code>repeated .SceneTeamAvatar scene_team_avatar_list = 13;</code>
+     * <code>repeated .SceneTeamAvatar scene_team_avatar_list = 5;</code>
      */
     java.util.List<emu.grasscutter.net.proto.SceneTeamAvatarOuterClass.SceneTeamAvatar> 
         getSceneTeamAvatarListList();
     /**
-     * <code>repeated .SceneTeamAvatar scene_team_avatar_list = 13;</code>
+     * <code>repeated .SceneTeamAvatar scene_team_avatar_list = 5;</code>
      */
     emu.grasscutter.net.proto.SceneTeamAvatarOuterClass.SceneTeamAvatar getSceneTeamAvatarList(int index);
     /**
-     * <code>repeated .SceneTeamAvatar scene_team_avatar_list = 13;</code>
+     * <code>repeated .SceneTeamAvatar scene_team_avatar_list = 5;</code>
      */
     int getSceneTeamAvatarListCount();
     /**
-     * <code>repeated .SceneTeamAvatar scene_team_avatar_list = 13;</code>
+     * <code>repeated .SceneTeamAvatar scene_team_avatar_list = 5;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.SceneTeamAvatarOuterClass.SceneTeamAvatarOrBuilder> 
         getSceneTeamAvatarListOrBuilderList();
     /**
-     * <code>repeated .SceneTeamAvatar scene_team_avatar_list = 13;</code>
+     * <code>repeated .SceneTeamAvatar scene_team_avatar_list = 5;</code>
      */
     emu.grasscutter.net.proto.SceneTeamAvatarOuterClass.SceneTeamAvatarOrBuilder getSceneTeamAvatarListOrBuilder(
         int index);
+
+    /**
+     * <pre>
+     *tentativeID
+     * </pre>
+     *
+     * <code>bool is_in_mp = 88;</code>
+     * @return The isInMp.
+     */
+    boolean getIsInMp();
   }
   /**
    * <pre>
-   * CmdId: 4509
-   * Obf: CJJPNPLKBCA
+   * 4.6.0
+   * CmdId: 28422
    * </pre>
    *
    * Protobuf type {@code SceneTeamUpdateNotify}
@@ -100,18 +104,18 @@ public final class SceneTeamUpdateNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
-
-              isInMp_ = input.readBool();
-              break;
-            }
-            case 106: {
+            case 42: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 sceneTeamAvatarList_ = new java.util.ArrayList<emu.grasscutter.net.proto.SceneTeamAvatarOuterClass.SceneTeamAvatar>();
                 mutable_bitField0_ |= 0x00000001;
               }
               sceneTeamAvatarList_.add(
                   input.readMessage(emu.grasscutter.net.proto.SceneTeamAvatarOuterClass.SceneTeamAvatar.parser(), extensionRegistry));
+              break;
+            }
+            case 704: {
+
+              isInMp_ = input.readBool();
               break;
             }
             default: {
@@ -149,28 +153,17 @@ public final class SceneTeamUpdateNotifyOuterClass {
               emu.grasscutter.net.proto.SceneTeamUpdateNotifyOuterClass.SceneTeamUpdateNotify.class, emu.grasscutter.net.proto.SceneTeamUpdateNotifyOuterClass.SceneTeamUpdateNotify.Builder.class);
     }
 
-    public static final int IS_IN_MP_FIELD_NUMBER = 4;
-    private boolean isInMp_;
-    /**
-     * <code>bool is_in_mp = 4;</code>
-     * @return The isInMp.
-     */
-    @java.lang.Override
-    public boolean getIsInMp() {
-      return isInMp_;
-    }
-
-    public static final int SCENE_TEAM_AVATAR_LIST_FIELD_NUMBER = 13;
+    public static final int SCENE_TEAM_AVATAR_LIST_FIELD_NUMBER = 5;
     private java.util.List<emu.grasscutter.net.proto.SceneTeamAvatarOuterClass.SceneTeamAvatar> sceneTeamAvatarList_;
     /**
-     * <code>repeated .SceneTeamAvatar scene_team_avatar_list = 13;</code>
+     * <code>repeated .SceneTeamAvatar scene_team_avatar_list = 5;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.SceneTeamAvatarOuterClass.SceneTeamAvatar> getSceneTeamAvatarListList() {
       return sceneTeamAvatarList_;
     }
     /**
-     * <code>repeated .SceneTeamAvatar scene_team_avatar_list = 13;</code>
+     * <code>repeated .SceneTeamAvatar scene_team_avatar_list = 5;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.SceneTeamAvatarOuterClass.SceneTeamAvatarOrBuilder> 
@@ -178,26 +171,41 @@ public final class SceneTeamUpdateNotifyOuterClass {
       return sceneTeamAvatarList_;
     }
     /**
-     * <code>repeated .SceneTeamAvatar scene_team_avatar_list = 13;</code>
+     * <code>repeated .SceneTeamAvatar scene_team_avatar_list = 5;</code>
      */
     @java.lang.Override
     public int getSceneTeamAvatarListCount() {
       return sceneTeamAvatarList_.size();
     }
     /**
-     * <code>repeated .SceneTeamAvatar scene_team_avatar_list = 13;</code>
+     * <code>repeated .SceneTeamAvatar scene_team_avatar_list = 5;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.SceneTeamAvatarOuterClass.SceneTeamAvatar getSceneTeamAvatarList(int index) {
       return sceneTeamAvatarList_.get(index);
     }
     /**
-     * <code>repeated .SceneTeamAvatar scene_team_avatar_list = 13;</code>
+     * <code>repeated .SceneTeamAvatar scene_team_avatar_list = 5;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.SceneTeamAvatarOuterClass.SceneTeamAvatarOrBuilder getSceneTeamAvatarListOrBuilder(
         int index) {
       return sceneTeamAvatarList_.get(index);
+    }
+
+    public static final int IS_IN_MP_FIELD_NUMBER = 88;
+    private boolean isInMp_;
+    /**
+     * <pre>
+     *tentativeID
+     * </pre>
+     *
+     * <code>bool is_in_mp = 88;</code>
+     * @return The isInMp.
+     */
+    @java.lang.Override
+    public boolean getIsInMp() {
+      return isInMp_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -214,11 +222,11 @@ public final class SceneTeamUpdateNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (isInMp_ != false) {
-        output.writeBool(4, isInMp_);
-      }
       for (int i = 0; i < sceneTeamAvatarList_.size(); i++) {
-        output.writeMessage(13, sceneTeamAvatarList_.get(i));
+        output.writeMessage(5, sceneTeamAvatarList_.get(i));
+      }
+      if (isInMp_ != false) {
+        output.writeBool(88, isInMp_);
       }
       unknownFields.writeTo(output);
     }
@@ -229,13 +237,13 @@ public final class SceneTeamUpdateNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (isInMp_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(4, isInMp_);
-      }
       for (int i = 0; i < sceneTeamAvatarList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(13, sceneTeamAvatarList_.get(i));
+          .computeMessageSize(5, sceneTeamAvatarList_.get(i));
+      }
+      if (isInMp_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(88, isInMp_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -252,10 +260,10 @@ public final class SceneTeamUpdateNotifyOuterClass {
       }
       emu.grasscutter.net.proto.SceneTeamUpdateNotifyOuterClass.SceneTeamUpdateNotify other = (emu.grasscutter.net.proto.SceneTeamUpdateNotifyOuterClass.SceneTeamUpdateNotify) obj;
 
-      if (getIsInMp()
-          != other.getIsInMp()) return false;
       if (!getSceneTeamAvatarListList()
           .equals(other.getSceneTeamAvatarListList())) return false;
+      if (getIsInMp()
+          != other.getIsInMp()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -267,13 +275,13 @@ public final class SceneTeamUpdateNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + IS_IN_MP_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsInMp());
       if (getSceneTeamAvatarListCount() > 0) {
         hash = (37 * hash) + SCENE_TEAM_AVATAR_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getSceneTeamAvatarListList().hashCode();
       }
+      hash = (37 * hash) + IS_IN_MP_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsInMp());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -371,8 +379,8 @@ public final class SceneTeamUpdateNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 4509
-     * Obf: CJJPNPLKBCA
+     * 4.6.0
+     * CmdId: 28422
      * </pre>
      *
      * Protobuf type {@code SceneTeamUpdateNotify}
@@ -413,14 +421,14 @@ public final class SceneTeamUpdateNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        isInMp_ = false;
-
         if (sceneTeamAvatarListBuilder_ == null) {
           sceneTeamAvatarList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
           sceneTeamAvatarListBuilder_.clear();
         }
+        isInMp_ = false;
+
         return this;
       }
 
@@ -448,7 +456,6 @@ public final class SceneTeamUpdateNotifyOuterClass {
       public emu.grasscutter.net.proto.SceneTeamUpdateNotifyOuterClass.SceneTeamUpdateNotify buildPartial() {
         emu.grasscutter.net.proto.SceneTeamUpdateNotifyOuterClass.SceneTeamUpdateNotify result = new emu.grasscutter.net.proto.SceneTeamUpdateNotifyOuterClass.SceneTeamUpdateNotify(this);
         int from_bitField0_ = bitField0_;
-        result.isInMp_ = isInMp_;
         if (sceneTeamAvatarListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             sceneTeamAvatarList_ = java.util.Collections.unmodifiableList(sceneTeamAvatarList_);
@@ -458,6 +465,7 @@ public final class SceneTeamUpdateNotifyOuterClass {
         } else {
           result.sceneTeamAvatarList_ = sceneTeamAvatarListBuilder_.build();
         }
+        result.isInMp_ = isInMp_;
         onBuilt();
         return result;
       }
@@ -506,9 +514,6 @@ public final class SceneTeamUpdateNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.SceneTeamUpdateNotifyOuterClass.SceneTeamUpdateNotify other) {
         if (other == emu.grasscutter.net.proto.SceneTeamUpdateNotifyOuterClass.SceneTeamUpdateNotify.getDefaultInstance()) return this;
-        if (other.getIsInMp() != false) {
-          setIsInMp(other.getIsInMp());
-        }
         if (sceneTeamAvatarListBuilder_ == null) {
           if (!other.sceneTeamAvatarList_.isEmpty()) {
             if (sceneTeamAvatarList_.isEmpty()) {
@@ -534,6 +539,9 @@ public final class SceneTeamUpdateNotifyOuterClass {
               sceneTeamAvatarListBuilder_.addAllMessages(other.sceneTeamAvatarList_);
             }
           }
+        }
+        if (other.getIsInMp() != false) {
+          setIsInMp(other.getIsInMp());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -565,37 +573,6 @@ public final class SceneTeamUpdateNotifyOuterClass {
       }
       private int bitField0_;
 
-      private boolean isInMp_ ;
-      /**
-       * <code>bool is_in_mp = 4;</code>
-       * @return The isInMp.
-       */
-      @java.lang.Override
-      public boolean getIsInMp() {
-        return isInMp_;
-      }
-      /**
-       * <code>bool is_in_mp = 4;</code>
-       * @param value The isInMp to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsInMp(boolean value) {
-        
-        isInMp_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_in_mp = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsInMp() {
-        
-        isInMp_ = false;
-        onChanged();
-        return this;
-      }
-
       private java.util.List<emu.grasscutter.net.proto.SceneTeamAvatarOuterClass.SceneTeamAvatar> sceneTeamAvatarList_ =
         java.util.Collections.emptyList();
       private void ensureSceneTeamAvatarListIsMutable() {
@@ -609,7 +586,7 @@ public final class SceneTeamUpdateNotifyOuterClass {
           emu.grasscutter.net.proto.SceneTeamAvatarOuterClass.SceneTeamAvatar, emu.grasscutter.net.proto.SceneTeamAvatarOuterClass.SceneTeamAvatar.Builder, emu.grasscutter.net.proto.SceneTeamAvatarOuterClass.SceneTeamAvatarOrBuilder> sceneTeamAvatarListBuilder_;
 
       /**
-       * <code>repeated .SceneTeamAvatar scene_team_avatar_list = 13;</code>
+       * <code>repeated .SceneTeamAvatar scene_team_avatar_list = 5;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.SceneTeamAvatarOuterClass.SceneTeamAvatar> getSceneTeamAvatarListList() {
         if (sceneTeamAvatarListBuilder_ == null) {
@@ -619,7 +596,7 @@ public final class SceneTeamUpdateNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .SceneTeamAvatar scene_team_avatar_list = 13;</code>
+       * <code>repeated .SceneTeamAvatar scene_team_avatar_list = 5;</code>
        */
       public int getSceneTeamAvatarListCount() {
         if (sceneTeamAvatarListBuilder_ == null) {
@@ -629,7 +606,7 @@ public final class SceneTeamUpdateNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .SceneTeamAvatar scene_team_avatar_list = 13;</code>
+       * <code>repeated .SceneTeamAvatar scene_team_avatar_list = 5;</code>
        */
       public emu.grasscutter.net.proto.SceneTeamAvatarOuterClass.SceneTeamAvatar getSceneTeamAvatarList(int index) {
         if (sceneTeamAvatarListBuilder_ == null) {
@@ -639,7 +616,7 @@ public final class SceneTeamUpdateNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .SceneTeamAvatar scene_team_avatar_list = 13;</code>
+       * <code>repeated .SceneTeamAvatar scene_team_avatar_list = 5;</code>
        */
       public Builder setSceneTeamAvatarList(
           int index, emu.grasscutter.net.proto.SceneTeamAvatarOuterClass.SceneTeamAvatar value) {
@@ -656,7 +633,7 @@ public final class SceneTeamUpdateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SceneTeamAvatar scene_team_avatar_list = 13;</code>
+       * <code>repeated .SceneTeamAvatar scene_team_avatar_list = 5;</code>
        */
       public Builder setSceneTeamAvatarList(
           int index, emu.grasscutter.net.proto.SceneTeamAvatarOuterClass.SceneTeamAvatar.Builder builderForValue) {
@@ -670,7 +647,7 @@ public final class SceneTeamUpdateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SceneTeamAvatar scene_team_avatar_list = 13;</code>
+       * <code>repeated .SceneTeamAvatar scene_team_avatar_list = 5;</code>
        */
       public Builder addSceneTeamAvatarList(emu.grasscutter.net.proto.SceneTeamAvatarOuterClass.SceneTeamAvatar value) {
         if (sceneTeamAvatarListBuilder_ == null) {
@@ -686,7 +663,7 @@ public final class SceneTeamUpdateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SceneTeamAvatar scene_team_avatar_list = 13;</code>
+       * <code>repeated .SceneTeamAvatar scene_team_avatar_list = 5;</code>
        */
       public Builder addSceneTeamAvatarList(
           int index, emu.grasscutter.net.proto.SceneTeamAvatarOuterClass.SceneTeamAvatar value) {
@@ -703,7 +680,7 @@ public final class SceneTeamUpdateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SceneTeamAvatar scene_team_avatar_list = 13;</code>
+       * <code>repeated .SceneTeamAvatar scene_team_avatar_list = 5;</code>
        */
       public Builder addSceneTeamAvatarList(
           emu.grasscutter.net.proto.SceneTeamAvatarOuterClass.SceneTeamAvatar.Builder builderForValue) {
@@ -717,7 +694,7 @@ public final class SceneTeamUpdateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SceneTeamAvatar scene_team_avatar_list = 13;</code>
+       * <code>repeated .SceneTeamAvatar scene_team_avatar_list = 5;</code>
        */
       public Builder addSceneTeamAvatarList(
           int index, emu.grasscutter.net.proto.SceneTeamAvatarOuterClass.SceneTeamAvatar.Builder builderForValue) {
@@ -731,7 +708,7 @@ public final class SceneTeamUpdateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SceneTeamAvatar scene_team_avatar_list = 13;</code>
+       * <code>repeated .SceneTeamAvatar scene_team_avatar_list = 5;</code>
        */
       public Builder addAllSceneTeamAvatarList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.SceneTeamAvatarOuterClass.SceneTeamAvatar> values) {
@@ -746,7 +723,7 @@ public final class SceneTeamUpdateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SceneTeamAvatar scene_team_avatar_list = 13;</code>
+       * <code>repeated .SceneTeamAvatar scene_team_avatar_list = 5;</code>
        */
       public Builder clearSceneTeamAvatarList() {
         if (sceneTeamAvatarListBuilder_ == null) {
@@ -759,7 +736,7 @@ public final class SceneTeamUpdateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SceneTeamAvatar scene_team_avatar_list = 13;</code>
+       * <code>repeated .SceneTeamAvatar scene_team_avatar_list = 5;</code>
        */
       public Builder removeSceneTeamAvatarList(int index) {
         if (sceneTeamAvatarListBuilder_ == null) {
@@ -772,14 +749,14 @@ public final class SceneTeamUpdateNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SceneTeamAvatar scene_team_avatar_list = 13;</code>
+       * <code>repeated .SceneTeamAvatar scene_team_avatar_list = 5;</code>
        */
       public emu.grasscutter.net.proto.SceneTeamAvatarOuterClass.SceneTeamAvatar.Builder getSceneTeamAvatarListBuilder(
           int index) {
         return getSceneTeamAvatarListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .SceneTeamAvatar scene_team_avatar_list = 13;</code>
+       * <code>repeated .SceneTeamAvatar scene_team_avatar_list = 5;</code>
        */
       public emu.grasscutter.net.proto.SceneTeamAvatarOuterClass.SceneTeamAvatarOrBuilder getSceneTeamAvatarListOrBuilder(
           int index) {
@@ -789,7 +766,7 @@ public final class SceneTeamUpdateNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .SceneTeamAvatar scene_team_avatar_list = 13;</code>
+       * <code>repeated .SceneTeamAvatar scene_team_avatar_list = 5;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.SceneTeamAvatarOuterClass.SceneTeamAvatarOrBuilder> 
            getSceneTeamAvatarListOrBuilderList() {
@@ -800,14 +777,14 @@ public final class SceneTeamUpdateNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .SceneTeamAvatar scene_team_avatar_list = 13;</code>
+       * <code>repeated .SceneTeamAvatar scene_team_avatar_list = 5;</code>
        */
       public emu.grasscutter.net.proto.SceneTeamAvatarOuterClass.SceneTeamAvatar.Builder addSceneTeamAvatarListBuilder() {
         return getSceneTeamAvatarListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.SceneTeamAvatarOuterClass.SceneTeamAvatar.getDefaultInstance());
       }
       /**
-       * <code>repeated .SceneTeamAvatar scene_team_avatar_list = 13;</code>
+       * <code>repeated .SceneTeamAvatar scene_team_avatar_list = 5;</code>
        */
       public emu.grasscutter.net.proto.SceneTeamAvatarOuterClass.SceneTeamAvatar.Builder addSceneTeamAvatarListBuilder(
           int index) {
@@ -815,7 +792,7 @@ public final class SceneTeamUpdateNotifyOuterClass {
             index, emu.grasscutter.net.proto.SceneTeamAvatarOuterClass.SceneTeamAvatar.getDefaultInstance());
       }
       /**
-       * <code>repeated .SceneTeamAvatar scene_team_avatar_list = 13;</code>
+       * <code>repeated .SceneTeamAvatar scene_team_avatar_list = 5;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.SceneTeamAvatarOuterClass.SceneTeamAvatar.Builder> 
            getSceneTeamAvatarListBuilderList() {
@@ -834,6 +811,49 @@ public final class SceneTeamUpdateNotifyOuterClass {
           sceneTeamAvatarList_ = null;
         }
         return sceneTeamAvatarListBuilder_;
+      }
+
+      private boolean isInMp_ ;
+      /**
+       * <pre>
+       *tentativeID
+       * </pre>
+       *
+       * <code>bool is_in_mp = 88;</code>
+       * @return The isInMp.
+       */
+      @java.lang.Override
+      public boolean getIsInMp() {
+        return isInMp_;
+      }
+      /**
+       * <pre>
+       *tentativeID
+       * </pre>
+       *
+       * <code>bool is_in_mp = 88;</code>
+       * @param value The isInMp to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsInMp(boolean value) {
+        
+        isInMp_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       *tentativeID
+       * </pre>
+       *
+       * <code>bool is_in_mp = 88;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsInMp() {
+        
+        isInMp_ = false;
+        onChanged();
+        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -903,9 +923,9 @@ public final class SceneTeamUpdateNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033SceneTeamUpdateNotify.proto\032\025SceneTeam" +
-      "Avatar.proto\"[\n\025SceneTeamUpdateNotify\022\020\n" +
-      "\010is_in_mp\030\004 \001(\010\0220\n\026scene_team_avatar_lis" +
-      "t\030\r \003(\0132\020.SceneTeamAvatarB\033\n\031emu.grasscu" +
+      "Avatar.proto\"[\n\025SceneTeamUpdateNotify\0220\n" +
+      "\026scene_team_avatar_list\030\005 \003(\0132\020.SceneTea" +
+      "mAvatar\022\020\n\010is_in_mp\030X \001(\010B\033\n\031emu.grasscu" +
       "tter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -918,7 +938,7 @@ public final class SceneTeamUpdateNotifyOuterClass {
     internal_static_SceneTeamUpdateNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SceneTeamUpdateNotify_descriptor,
-        new java.lang.String[] { "IsInMp", "SceneTeamAvatarList", });
+        new java.lang.String[] { "SceneTeamAvatarList", "IsInMp", });
     emu.grasscutter.net.proto.SceneTeamAvatarOuterClass.getDescriptor();
   }
 

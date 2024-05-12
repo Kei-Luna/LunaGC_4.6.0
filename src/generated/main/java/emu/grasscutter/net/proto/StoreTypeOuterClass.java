@@ -16,7 +16,7 @@ public final class StoreTypeOuterClass {
   }
   /**
    * <pre>
-   * Obf: HDHLNCKJKCA
+   * 4.6.0
    * </pre>
    *
    * Protobuf enum {@code StoreType}
