@@ -249,7 +249,7 @@ public class ConfigContainer {
     }
 
     public static class Encryption {
-        public boolean useEncryption = true;
+        public boolean useEncryption = false;
         /* Should 'https' be appended to URLs? */
         public boolean useInRouting = true;
         public String keystore = "./keystore.p12";
@@ -360,11 +360,11 @@ public class ConfigContainer {
 
     public static class JoinOptions {
         public int[] welcomeEmotes = {2007, 1002, 4010};
-        public String welcomeMessage = "Welcome to a Grasscutter server.";
+        public String welcomeMessage = "Welcome to a LunaGC 4.6.0";
         public JoinOptions.Mail welcomeMail = new JoinOptions.Mail();
 
         public static class Mail {
-            public String title = "Welcome to Grasscutter!";
+            public String title = "Welcome to a LunaGC 4.6.0";
             public String content = """
                     Hi there!\r
                     First of all, welcome to Grasscutter. If you have any issues, please let us know so that Lawnmower can help you! \r
@@ -372,7 +372,7 @@ public class ConfigContainer {
                     Check out our:\r
                     <type="browser" text="Discord" href="https://discord.gg/T5vZU6UyeG"/>
                     """;
-            public String sender = "Lawnmower";
+            public String sender = "Kei-Luna";
             public emu.grasscutter.game.mail.Mail.MailItem[] items = {
                 new emu.grasscutter.game.mail.Mail.MailItem(13509, 1, 1),
                 new emu.grasscutter.game.mail.Mail.MailItem(201, 99999, 1)
@@ -386,8 +386,8 @@ public class ConfigContainer {
         public int adventureRank = 1;
         public int worldLevel = 0;
 
-        public String nickName = "Server";
-        public String signature = "Welcome to Grasscutter!";
+        public String nickName = "LunaGC";
+        public String signature = "Welcome to a LunaGC";
     }
 
     public static class Files {
