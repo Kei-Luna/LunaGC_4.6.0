@@ -45,7 +45,16 @@ public final class PacketOpcodes {
     public static final int PingReq = 26105;//4.6.0
     public static final int PingRsp = 28294;//4.6.0
     public static final int OpenStateUpdateNotify = 26330;//4.6.0
-
+    public static final int AvatarEquipChangeNotify = 24844;//4.6.0
+    public static final int CombatInvocationsNotify = 7549;     //4.6.0
+    public static final int GetSceneAreaReq = 7890;     //4.6.0
+    public static final int GetSceneAreaRsp = 24538;     //4.6.0
+    public static final int LevelupCityRsp = 4665;     //4.6.0
+    public static final int SceneEntityDisappearNotify = 21913;     //4.6.0
+    public static final int StoreItemChangeNotify = 7871;     //4.6.0
+    public static final int StoreItemDelNotify = 23904;     //4.6.0
+    public static final int WearEquipReq = 4499;     //4.6.0
+    public static final int WearEquipRsp = 24629;     //4.6.0
 
 
     // Opcodes     //4.0.0
@@ -171,7 +180,6 @@ public final class PacketOpcodes {
     public static final int AvatarDieAnimationEndRsp = 39924745;     //4.0.0
     public static final int AvatarEnterElementViewNotify = 39923736;     //4.0.0
     public static final int AvatarEquipAffixStartNotify = 39921354;     //4.0.0
-    public static final int AvatarEquipChangeNotify = 39920682;     //4.0.0
     public static final int AvatarExpeditionAllDataReq = 39924160;     //4.0.0
     public static final int AvatarExpeditionAllDataRsp = 3993990;     //4.0.0
     public static final int AvatarExpeditionCallBackReq = 39922881;     //4.0.0
@@ -467,7 +475,6 @@ public final class PacketOpcodes {
     public static final int CoinCollectPrepareReq = 39921763;     //4.0.0
     public static final int CoinCollectPrepareRsp = 39928970;     //4.0.0
     public static final int CoinCollectPrepareStageNotify = 3992218;     //4.0.0
-    public static final int CombatInvocationsNotify = 39920271;     //4.0.0
     public static final int CombineDataNotify = 3994969;     //4.0.0
     public static final int CombineFormulaDataNotify = 39925832;     //4.0.0
     public static final int CombineReq = 399753;     //4.0.0
@@ -1168,8 +1175,6 @@ public final class PacketOpcodes {
     public static final int GetReunionSignInInfoRsp = 39922823;     //4.0.0
     public static final int GetRogueDairyRepairInfoReq = 3996887;     //4.0.0
     public static final int GetRogueDairyRepairInfoRsp = 399133;     //4.0.0
-    public static final int GetSceneAreaReq = 39925175;     //4.0.0
-    public static final int GetSceneAreaRsp = 39927029;     //4.0.0
     public static final int GetSceneNpcPositionReq = 39924678;     //4.0.0
     public static final int GetSceneNpcPositionRsp = 399412;     //4.0.0
     public static final int GetScenePerformanceReq = 3993953;     //4.0.0
@@ -1558,7 +1563,6 @@ public final class PacketOpcodes {
     public static final int LeaveWorldNotify = 39922405;     //4.0.0
     public static final int LevelTagDataNotify = 3994502;     //4.0.0
     public static final int LevelupCityReq = 3998097;     //4.0.0
-    public static final int LevelupCityRsp = 3999797;     //4.0.0
     public static final int LifeStateChangeNotify = 39925474;     //4.0.0
     public static final int LikeCustomDungeonReq = 3996450;     //4.0.0
     public static final int LikeCustomDungeonRsp = 3999496;     //4.0.0
@@ -2103,7 +2107,6 @@ public final class PacketOpcodes {
     public static final int SceneEntitiesMoveCombineNotify = 39926073;     //4.0.0
     public static final int SceneEntitiesMovesReq = 39920585;     //4.0.0
     public static final int SceneEntitiesMovesRsp = 3998605;     //4.0.0
-    public static final int SceneEntityDisappearNotify = 3991787;     //4.0.0
     public static final int SceneEntityDrownReq = 39922277;     //4.0.0
     public static final int SceneEntityDrownRsp = 39923727;     //4.0.0
     public static final int SceneEntityMoveNotify = 39925367;     //4.0.0
@@ -2268,8 +2271,6 @@ public final class PacketOpcodes {
     public static final int StopReminderNotify = 39929994;     //4.0.0
     public static final int StoreCustomDungeonReq = 39924734;     //4.0.0
     public static final int StoreCustomDungeonRsp = 39928706;     //4.0.0
-    public static final int StoreItemChangeNotify = 399370;     //4.0.0
-    public static final int StoreItemDelNotify = 39928814;     //4.0.0
     public static final int SubmitInferenceWordReq = 39922181;     //4.0.0
     public static final int SubmitInferenceWordRsp = 3993679;     //4.0.0
     public static final int SummerTimeFloatSignalPositionNotify = 3999015;     //4.0.0
@@ -2499,8 +2500,6 @@ public final class PacketOpcodes {
     public static final int WeaponPromoteRsp = 399715;     //4.0.0
     public static final int WeaponUpgradeReq = 3999010;     //4.0.0
     public static final int WeaponUpgradeRsp = 3997193;     //4.0.0
-    public static final int WearEquipReq = 3997563;     //4.0.0
-    public static final int WearEquipRsp = 39922727;     //4.0.0
     public static final int WidgetActiveChangeNotify = 39922991;     //4.0.0
     public static final int WidgetCaptureAnimalReq = 3991304;     //4.0.0
     public static final int WidgetCaptureAnimalRsp = 39923199;     //4.0.0
