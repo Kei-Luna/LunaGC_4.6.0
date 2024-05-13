@@ -55,6 +55,9 @@ public final class PacketOpcodes {
     public static final int StoreItemDelNotify = 23904;     //4.6.0
     public static final int WearEquipReq = 4499;     //4.6.0
     public static final int WearEquipRsp = 24629;     //4.6.0
+    public static final int GetScenePointReq = 1207;     //4.6.0
+    public static final int GetScenePointRsp = 831;     //4.6.0
+
 
 
     // Opcodes     //4.0.0
@@ -1179,8 +1182,6 @@ public final class PacketOpcodes {
     public static final int GetSceneNpcPositionRsp = 399412;     //4.0.0
     public static final int GetScenePerformanceReq = 3993953;     //4.0.0
     public static final int GetScenePerformanceRsp = 39925307;     //4.0.0
-    public static final int GetScenePointReq = 39923197;     //4.0.0
-    public static final int GetScenePointRsp = 3997133;     //4.0.0
     public static final int GetShopmallDataReq = 3992616;     //4.0.0
     public static final int GetShopmallDataRsp = 3991087;     //4.0.0
     public static final int GetSignInRewardReq = 39925930;     //4.0.0
