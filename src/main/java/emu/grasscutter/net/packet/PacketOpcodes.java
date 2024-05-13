@@ -45,16 +45,18 @@ public final class PacketOpcodes {
     public static final int PingReq = 26105;//4.6.0
     public static final int PingRsp = 28294;//4.6.0
     public static final int OpenStateUpdateNotify = 26330;//4.6.0
+    public static final int AvatarEquipChangeNotify = 24844;//4.6.0
+    public static final int CombatInvocationsNotify = 7549;//4.6.0
     public static final int GetSceneAreaReq = 7890;//4.6.0
     public static final int GetSceneAreaRsp = 24538;//4.6.0
+    public static final int LevelupCityRsp = 4665;//4.6.0
+    public static final int SceneEntityDisappearNotify = 21913;//4.6.0
     public static final int StoreItemChangeNotify = 7871;//4.6.0
     public static final int StoreItemDelNotify = 23904;//4.6.0
-    public static final int SceneEntityDisappearNotify = 21913;//4.6.0
-    public static final int CombatInvocationsNotify = 7549;//4.6.0
-    public static final int AvatarEquipChangeNotify = 24844;//4.6.0
     public static final int WearEquipReq = 4499;//4.6.0
     public static final int WearEquipRsp = 24629;//4.6.0
-
+    public static final int GetScenePointReq = 1207;//4.6.0
+    public static final int GetScenePointRsp = 831;//4.6.0
 
 
     // Opcodes     //4.0.0
@@ -1179,8 +1181,6 @@ public final class PacketOpcodes {
     public static final int GetSceneNpcPositionRsp = 399412;     //4.0.0
     public static final int GetScenePerformanceReq = 3993953;     //4.0.0
     public static final int GetScenePerformanceRsp = 39925307;     //4.0.0
-    public static final int GetScenePointReq = 39923197;     //4.0.0
-    public static final int GetScenePointRsp = 3997133;     //4.0.0
     public static final int GetShopmallDataReq = 3992616;     //4.0.0
     public static final int GetShopmallDataRsp = 3991087;     //4.0.0
     public static final int GetSignInRewardReq = 39925930;     //4.0.0
@@ -1563,7 +1563,6 @@ public final class PacketOpcodes {
     public static final int LeaveWorldNotify = 39922405;     //4.0.0
     public static final int LevelTagDataNotify = 3994502;     //4.0.0
     public static final int LevelupCityReq = 3998097;     //4.0.0
-    public static final int LevelupCityRsp = 3999797;     //4.0.0
     public static final int LifeStateChangeNotify = 39925474;     //4.0.0
     public static final int LikeCustomDungeonReq = 3996450;     //4.0.0
     public static final int LikeCustomDungeonRsp = 3999496;     //4.0.0
