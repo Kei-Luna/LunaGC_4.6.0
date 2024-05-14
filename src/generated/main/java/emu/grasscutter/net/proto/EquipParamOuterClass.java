@@ -43,10 +43,6 @@ public final class EquipParamOuterClass {
     int getPromoteLevel();
   }
   /**
-   * <pre>
-   * Obf: HPFNFEJGODI
-   * </pre>
-   *
    * Protobuf type {@code EquipParam}
    */
   public static final class EquipParam extends
@@ -376,10 +372,6 @@ public final class EquipParamOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: HPFNFEJGODI
-     * </pre>
-     *
      * Protobuf type {@code EquipParam}
      */
     public static final class Builder extends
