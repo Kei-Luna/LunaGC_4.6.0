@@ -49,10 +49,6 @@ public final class MailItemOuterClass {
     emu.grasscutter.net.proto.MaterialDeleteInfoOuterClass.MaterialDeleteInfoOrBuilder getDeleteInfoOrBuilder();
   }
   /**
-   * <pre>
-   * Obf: BNPJNAPNHKB
-   * </pre>
-   *
    * Protobuf type {@code MailItem}
    */
   public static final class MailItem extends
@@ -384,10 +380,6 @@ public final class MailItemOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: BNPJNAPNHKB
-     * </pre>
-     *
      * Protobuf type {@code MailItem}
      */
     public static final class Builder extends

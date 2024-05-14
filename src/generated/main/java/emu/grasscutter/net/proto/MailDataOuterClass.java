@@ -136,10 +136,6 @@ public final class MailDataOuterClass {
     emu.grasscutter.net.proto.MailCollectStateOuterClass.MailCollectState getCollectState();
   }
   /**
-   * <pre>
-   * Obf: NGGHHPIHNPM
-   * </pre>
-   *
    * Protobuf type {@code MailData}
    */
   public static final class MailData extends
@@ -775,10 +771,6 @@ public final class MailDataOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: NGGHHPIHNPM
-     * </pre>
-     *
      * Protobuf type {@code MailData}
      */
     public static final class Builder extends
