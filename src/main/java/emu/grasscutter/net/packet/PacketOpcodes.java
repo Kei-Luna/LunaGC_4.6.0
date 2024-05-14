@@ -1079,7 +1079,7 @@ public final class PacketOpcodes {
     public static final int GetAllH5ActivityInfoRsp = 39928822;     //4.0.0
     public static final int GetAllMailNotify = 853;     //4.6.0
     public static final int GetAllMailReq = 39929228;     //4.0.0
-    public static final int GetAllMailResultNotify = 29484;     //4.0.0
+    public static final int GetAllMailResultNotify = 29484;     //4.6.0
     public static final int GetAllMailRsp = 3999526;     //4.0.0
     public static final int GetAllSceneGalleryInfoReq = 39922232;     //4.0.0
     public static final int GetAllSceneGalleryInfoRsp = 3997472;     //4.0.0
