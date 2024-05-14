@@ -26,8 +26,8 @@ public final class ChooseCurAvatarTeamReqOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 9406
-   * Obf: GFGPACAMELF
+   * 4.6.0
+   * CmdId: 7877
    * </pre>
    *
    * Protobuf type {@code ChooseCurAvatarTeamReq}
@@ -279,8 +279,8 @@ public final class ChooseCurAvatarTeamReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 9406
-     * Obf: GFGPACAMELF
+     * 4.6.0
+     * CmdId: 7877
      * </pre>
      *
      * Protobuf type {@code ChooseCurAvatarTeamReq}

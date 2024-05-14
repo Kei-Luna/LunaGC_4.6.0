@@ -59,6 +59,12 @@ public final class PacketOpcodes {
     public static final int GetScenePointRsp = 831;//4.6.0
     public static final int ChangeAvatarReq = 27362;//4.6.0
     public static final int ChangeAvatarRsp = 26267;//4.6.0
+    public static final int OpenStateChangeNotify = 24469;//4.6.0
+    public static final int ChangeTeamNameReq = 5863;//4.6.0
+    public static final int ChangeTeamNameRsp = 1674;//4.6.0
+    public static final int ChooseCurAvatarTeamReq = 7877;//4.6.0
+    public static final int SetUpAvatarTeamReq = 23569;//4.6.0
+    public static final int SetUpAvatarTeamRsp = 7187;//4.6.0
 
 
 
@@ -386,8 +392,6 @@ public final class PacketOpcodes {
     public static final int ChangeMpTeamAvatarReq = 39929260;     //4.0.0
     public static final int ChangeMpTeamAvatarRsp = 399352;     //4.0.0
     public static final int ChangeServerGlobalValueNotify = 3992846;     //4.0.0
-    public static final int ChangeTeamNameReq = 39924187;     //4.0.0
-    public static final int ChangeTeamNameRsp = 39929496;     //4.0.0
     public static final int ChangeWidgetBackgroundActiveStateReq = 39923423;     //4.0.0
     public static final int ChangeWidgetBackgroundActiveStateRsp = 3991073;     //4.0.0
     public static final int ChangeWorldToSingleModeNotify = 39924701;     //4.0.0
@@ -440,7 +444,6 @@ public final class PacketOpcodes {
     public static final int ChessPickCardRsp = 3998256;     //4.0.0
     public static final int ChessPlayerInfoNotify = 3993276;     //4.0.0
     public static final int ChessSelectedCardsNotify = 3998933;     //4.0.0
-    public static final int ChooseCurAvatarTeamReq = 3999406;     //4.0.0
     public static final int ChooseCurAvatarTeamRsp = 3994031;     //4.0.0
     public static final int CityReputationDataNotify = 3998325;     //4.0.0
     public static final int CityReputationLevelupNotify = 39929784;     //4.0.0
@@ -1757,7 +1760,6 @@ public final class PacketOpcodes {
     public static final int OpActivityStateNotify = 39924977;     //4.0.0
     public static final int OpActivityUpdateNotify = 39924399;     //4.0.0
     public static final int OpenBlossomCircleCampGuideNotify = 3994362;     //4.0.0
-    public static final int OpenStateChangeNotify = 3995778;     //4.0.0
     public static final int OrderDisplayNotify = 399595;     //4.0.0
     public static final int OrderFinishNotify = 39926680;     //4.0.0
     public static final int OtherPlayerEnterHomeNotify = 39925817;     //4.0.0
@@ -2222,8 +2224,6 @@ public final class PacketOpcodes {
     public static final int SetPlayerSignatureRsp = 39928588;     //4.0.0
     public static final int SetSceneWeatherAreaReq = 3996203;     //4.0.0
     public static final int SetSceneWeatherAreaRsp = 39929445;     //4.0.0
-    public static final int SetUpAvatarTeamReq = 3995889;     //4.0.0
-    public static final int SetUpAvatarTeamRsp = 3998572;     //4.0.0
     public static final int SetUpLunchBoxWidgetReq = 39920055;     //4.0.0
     public static final int SetUpLunchBoxWidgetRsp = 3996360;     //4.0.0
     public static final int SetWidgetSlotReq = 39921852;     //4.0.0
