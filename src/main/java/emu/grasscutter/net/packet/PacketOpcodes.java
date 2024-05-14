@@ -2,7 +2,7 @@ package emu.grasscutter.net.packet;
 
 public final class PacketOpcodes {
     // Empty
-    public static final int NONE = 3990;
+    public static final int NONE = 0;
 
     // Opcodes     //4.6.0
     public static final int GetPlayerTokenReq = 28960;//4.6.0
@@ -57,6 +57,9 @@ public final class PacketOpcodes {
     public static final int WearEquipRsp = 24629;//4.6.0
     public static final int GetScenePointReq = 1207;//4.6.0
     public static final int GetScenePointRsp = 831;//4.6.0
+    public static final int ChangeAvatarReq = 27362;//4.6.0
+    public static final int ChangeAvatarRsp = 26267;//4.6.0
+
 
 
     // Opcodes     //4.0.0
@@ -375,8 +378,6 @@ public final class PacketOpcodes {
     public static final int CataLogNewFinishedGlobalWatcherNotify = 39928630;     //4.0.0
     public static final int ChallengeDataNotify = 3992864;     //4.0.0
     public static final int ChallengeRecordNotify = 39927022;     //4.0.0
-    public static final int ChangeAvatarReq = 39923169;     //4.0.0
-    public static final int ChangeAvatarRsp = 39922163;     //4.0.0
     public static final int ChangeCustomDungeonRoomReq = 39925611;     //4.0.0
     public static final int ChangeCustomDungeonRoomRsp = 39923301;     //4.0.0
     public static final int ChangeGameTimeReq = 39927713;     //4.0.0
