@@ -65,6 +65,10 @@ public final class PacketOpcodes {
     public static final int ChooseCurAvatarTeamReq = 7877;//4.6.0
     public static final int SetUpAvatarTeamReq = 23569;//4.6.0
     public static final int SetUpAvatarTeamRsp = 7187;//4.6.0
+    public static final int UnionCmdNotify = 25659;//4.6.0
+    public static final int GetAllMailNotify = 853;//4.6.0
+    public static final int GetAllMailResultNotify = 29484;//4.6.0
+    public static final int MailChangeNotify = 27689;//4.6.0
 
 
 
@@ -1080,9 +1084,7 @@ public final class PacketOpcodes {
     public static final int GetAllActivatedBargainDataRsp = 3993517;     //4.0.0
     public static final int GetAllH5ActivityInfoReq = 3994793;     //4.0.0
     public static final int GetAllH5ActivityInfoRsp = 39928822;     //4.0.0
-    public static final int GetAllMailNotify = 853;     //4.6.0
     public static final int GetAllMailReq = 39929228;     //4.0.0
-    public static final int GetAllMailResultNotify = 29484;     //4.6.0
     public static final int GetAllMailRsp = 3999526;     //4.0.0
     public static final int GetAllSceneGalleryInfoReq = 39922232;     //4.0.0
     public static final int GetAllSceneGalleryInfoRsp = 3997472;     //4.0.0
@@ -1604,7 +1606,6 @@ public final class PacketOpcodes {
     public static final int MNNNLMGHOFG = 39928641;     //4.0.0
     public static final int MPIEGBJMCII = 39926609;     //4.0.0
     public static final int MPPBFLIIAOM = 39928429;     //4.0.0
-    public static final int MailChangeNotify = 27689;     //4.6.0
     public static final int MainCoopFailNotify = 3992503;     //4.0.0
     public static final int MainCoopUpdateNotify = 3991415;     //4.0.0
     public static final int MapAreaChangeNotify = 39921970;     //4.0.0
@@ -2421,7 +2422,6 @@ public final class PacketOpcodes {
     public static final int TryInterruptRogueDiaryDungeonRsp = 3994919;     //4.0.0
     public static final int UgcNotify = 39924435;     //4.0.0
     public static final int UnfreezeGroupLimitNotify = 39923739;     //4.0.0
-    public static final int UnionCmdNotify = 39921088;     //4.0.0
     public static final int UnlockAvatarTalentReq = 39920169;     //4.0.0
     public static final int UnlockAvatarTalentRsp = 39921745;     //4.0.0
     public static final int UnlockCoopChapterReq = 39927931;     //4.0.0
