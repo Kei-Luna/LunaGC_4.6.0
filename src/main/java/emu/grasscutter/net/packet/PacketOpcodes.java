@@ -83,6 +83,8 @@ public final class PacketOpcodes {
     public static final int ServerBuffChangeNotify = 9934;//4.6.0
     public static final int LuaSetOptionNotify = 850;//4.6.0
     public static final int ShowMessageNotify = 4061;//4.6.0
+    public static final int WindSeedClientNotify = 8575;//4.6.0
+    public static final int WindSeedType1Notify = 7733;//4.6.0
 
 
 
@@ -2524,8 +2526,6 @@ public final class PacketOpcodes {
     public static final int WindFieldGalleryInfoNotify = 3994173;     //4.0.0
     public static final int WindFieldRestartDungeonReq = 39927756;     //4.0.0
     public static final int WindFieldRestartDungeonRsp = 399816;     //4.0.0
-    public static final int WindSeedClientNotify = 39928351;     //4.0.0
-    public static final int WindSeedType1Notify = 3993604;     //4.0.0
     public static final int WindSeedType2Notify = 39924421;     //4.0.0
     public static final int WindSeedType3Notify = 3995640;     //4.0.0
     public static final int WinterCampAcceptAllGiveItemReq = 3996397;     //4.0.0
