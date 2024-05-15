@@ -16,7 +16,7 @@ public final class SvrMsgIdOuterClass {
   }
   /**
    * <pre>
-   * Obf: MGJMJBMPFPG
+   * 4.6.0
    * </pre>
    *
    * Protobuf enum {@code SvrMsgId}

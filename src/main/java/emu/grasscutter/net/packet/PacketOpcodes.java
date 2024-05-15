@@ -69,6 +69,21 @@ public final class PacketOpcodes {
     public static final int GetAllMailNotify = 853;//4.6.0
     public static final int GetAllMailResultNotify = 29484;//4.6.0
     public static final int MailChangeNotify = 27689;//4.6.0
+    public static final int AvatarLifeStateChangeNotify = 28742;//4.6.0
+    public static final int LifeStateChangeNotify = 2096;//4.6.0
+    public static final int DungeonPlayerDieReq = 23739;//4.6.0
+    public static final int AvatarSkillInfoNotify = 28799;//4.6.0
+    public static final int DropItemReq = 23960;//4.6.0
+    public static final int DropItemRsp = 26504;//4.6.0
+    public static final int UseItemReq = 5998;//4.6.0
+    public static final int UseItemRsp = 3305;//4.6.0
+    public static final int AvatarChangeAnimHashReq = 27660;//4.6.0
+    public static final int AvatarChangeAnimHashRsp = 416;//4.6.0
+    public static final int AvatarRenameInfoNotify = 24403;//4.6.0
+    public static final int ServerBuffChangeNotify = 9934;//4.6.0
+    public static final int LuaSetOptionNotify = 850;//4.6.0
+    public static final int ShowMessageNotify = 4061;//4.6.0
+
 
 
 
@@ -154,7 +169,7 @@ public final class PacketOpcodes {
     public static final int AdjustWorldLevelReq = 3998482;     //4.0.0
     public static final int AdjustWorldLevelRsp = 39929945;     //4.0.0
     public static final int AllCoopInfoNotify = 3992587;     //4.0.0
-    public static final int AllMarkPointNotify = 3992766;     //4.0.0
+    public static final int AllMarkPointNotify = 21841;     //4.0.0
     public static final int AllSeenMonsterNotify = 3997030;     //4.0.0
     public static final int AllShareCDDataNotify = 3993440;     //4.0.0
     public static final int AllWidgetBackgroundActiveStateNotify = 3994761;     //4.0.0
@@ -183,8 +198,6 @@ public final class PacketOpcodes {
     public static final int AvatarBuffDelNotify = 3993202;     //4.0.0
     public static final int AvatarCardChangeReq = 39927737;     //4.0.0
     public static final int AvatarCardChangeRsp = 3993627;     //4.0.0
-    public static final int AvatarChangeAnimHashReq = 3994097;     //4.0.0
-    public static final int AvatarChangeAnimHashRsp = 39927826;     //4.0.0
     public static final int AvatarChangeCostumeNotify = 39922376;     //4.0.0
     public static final int AvatarChangeCostumeReq = 3998840;     //4.0.0
     public static final int AvatarChangeCostumeRsp = 3999148;     //4.0.0
@@ -213,18 +226,15 @@ public final class PacketOpcodes {
     public static final int AvatarFollowRouteNotify = 3996834;     //4.0.0
     public static final int AvatarGainCostumeNotify = 39924251;     //4.0.0
     public static final int AvatarGainFlycloakNotify = 39929528;     //4.0.0
-    public static final int AvatarLifeStateChangeNotify = 39922381;     //4.0.0
     public static final int AvatarPromoteGetRewardReq = 399993;     //4.0.0
     public static final int AvatarPromoteGetRewardRsp = 3997336;     //4.0.0
     public static final int AvatarPromoteReq = 39923288;     //4.0.0
     public static final int AvatarPromoteRsp = 3998592;     //4.0.0
     public static final int AvatarPropChangeReasonNotify = 3993637;     //4.0.0
     public static final int AvatarPropNotify = 3995355;     //4.0.0
-    public static final int AvatarRenameInfoNotify = 39926468;     //4.0.0
     public static final int AvatarSatiationDataNotify = 399704;     //4.0.0
     public static final int AvatarSkillChangeNotify = 39920893;     //4.0.0
     public static final int AvatarSkillDepotChangeNotify = 3993748;     //4.0.0
-    public static final int AvatarSkillInfoNotify = 39929066;     //4.0.0
     public static final int AvatarSkillMaxChargeCountNotify = 39922843;     //4.0.0
     public static final int AvatarSkillUpgradeReq = 39929541;     //4.0.0
     public static final int AvatarSkillUpgradeRsp = 39922584;     //4.0.0
@@ -602,8 +612,6 @@ public final class PacketOpcodes {
     public static final int DragonSpineChapterProgressChangeNotify = 399892;     //4.0.0
     public static final int DragonSpineCoinChangeNotify = 3995502;     //4.0.0
     public static final int DropHintNotify = 3991884;     //4.0.0
-    public static final int DropItemReq = 39928541;     //4.0.0
-    public static final int DropItemRsp = 39925342;     //4.0.0
     public static final int DuelHeartCgEndNotify = 399509;     //4.0.0
     public static final int DuelHeartEnterDungeonReq = 39926744;     //4.0.0
     public static final int DuelHeartEnterDungeonRsp = 39921320;     //4.0.0
@@ -647,7 +655,6 @@ public final class PacketOpcodes {
     public static final int DungeonInterruptChallengeReq = 39925895;     //4.0.0
     public static final int DungeonInterruptChallengeRsp = 3994256;     //4.0.0
     public static final int DungeonPlayerDieNotify = 39928240;     //4.0.0
-    public static final int DungeonPlayerDieReq = 3993239;     //4.0.0
     public static final int DungeonPlayerDieRsp = 39929888;     //4.0.0
     public static final int DungeonRestartInviteNotify = 39929338;     //4.0.0
     public static final int DungeonRestartInviteReplyNotify = 3998778;     //4.0.0
@@ -1569,14 +1576,12 @@ public final class PacketOpcodes {
     public static final int LeaveWorldNotify = 39922405;     //4.0.0
     public static final int LevelTagDataNotify = 3994502;     //4.0.0
     public static final int LevelupCityReq = 3998097;     //4.0.0
-    public static final int LifeStateChangeNotify = 39925474;     //4.0.0
     public static final int LikeCustomDungeonReq = 3996450;     //4.0.0
     public static final int LikeCustomDungeonRsp = 3999496;     //4.0.0
     public static final int LiveEndNotify = 39924015;     //4.0.0
     public static final int LiveStartNotify = 3991396;     //4.0.0
     public static final int LoadActivityTerrainNotify = 3995;     //4.0.0
     public static final int LuaEnvironmentEffectNotify = 3993994;     //4.0.0
-    public static final int LuaSetOptionNotify = 39921205;     //4.0.0
     public static final int LuminanceStoneChallengeSettleNotify = 39922564;     //4.0.0
     public static final int LunaRiteAreaFinishNotify = 39922632;     //4.0.0
     public static final int LunaRiteGroupBundleRegisterNotify = 3995030;     //4.0.0
@@ -2176,7 +2181,6 @@ public final class PacketOpcodes {
     public static final int SelectWorktopOptionRsp = 39927194;     //4.0.0
     public static final int ServerAnnounceNotify = 3997548;     //4.0.0
     public static final int ServerAnnounceRevokeNotify = 39923231;     //4.0.0
-    public static final int ServerBuffChangeNotify = 3996462;     //4.0.0
     public static final int ServerCombatEndNotify = 3995895;     //4.0.0
     public static final int ServerCondMeetQuestListUpdateNotify = 39929009;     //4.0.0
     public static final int ServerDisconnectClientNotify = 39922635;     //4.0.0
@@ -2232,7 +2236,6 @@ public final class PacketOpcodes {
     public static final int ShowClientGuideNotify = 3998965;     //4.0.0
     public static final int ShowClientTutorialNotify = 3996463;     //4.0.0
     public static final int ShowCommonTipsNotify = 39928414;     //4.0.0
-    public static final int ShowMessageNotify = 39920664;     //4.0.0
     public static final int ShowTemplateReminderNotify = 39924864;     //4.0.0
     public static final int SignInInfoReq = 3991091;     //4.0.0
     public static final int SignInInfoRsp = 3991196;     //4.0.0
@@ -2450,8 +2453,6 @@ public final class PacketOpcodes {
     public static final int UpdateSalvageBundleMarkRsp = 39922649;     //4.0.0
     public static final int UpgradeRoguelikeShikigamiReq = 39923123;     //4.0.0
     public static final int UpgradeRoguelikeShikigamiRsp = 3991133;     //4.0.0
-    public static final int UseItemReq = 3999155;     //4.0.0
-    public static final int UseItemRsp = 3995970;     //4.0.0
     public static final int UseMiracleRingReq = 39920849;     //4.0.0
     public static final int UseMiracleRingRsp = 39986;     //4.0.0
     public static final int UseWidgetCreateGadgetReq = 3992124;     //4.0.0
