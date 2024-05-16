@@ -1,5 +1,6 @@
 package emu.grasscutter.game.player;
 
+import emu.grasscutter.Grasscutter;
 import emu.grasscutter.data.GameData;
 import emu.grasscutter.data.binout.AbilityModifier.AbilityModifierAction;
 import emu.grasscutter.data.excels.BuffData;
@@ -100,7 +101,11 @@ public final class PlayerBuffManager extends BasePlayerManager {
                                 onAdded -> {
                                     var shouldHeal = false;
                                     for (var ability : onAdded) {
-                                        if (Objects.requireNonNull(ability.type) == AbilityModifierAction.Type.HealHP) {
+                                        if (ability.type == null) {
+                                            continue;
+                                        }
+
+                                        if (ability.type == AbilityModifierAction.Type.HealHP) {
                                             if (target == null) continue;
 
                                             var maxHp = target.getFightProperty(FightProperty.FIGHT_PROP_MAX_HP);
