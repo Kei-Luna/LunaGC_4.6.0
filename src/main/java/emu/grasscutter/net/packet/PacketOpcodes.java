@@ -69,6 +69,8 @@ public final class PacketOpcodes {
     public static final int GetAllMailNotify = 853;//4.6.0
     public static final int GetAllMailResultNotify = 29484;//4.6.0
     public static final int MailChangeNotify = 27689;//4.6.0
+    public static final int AvatarAddNotify = 21159;//4.6.0
+    public static final int AvatarTeamUpdateNotify = 26704;//4.6.0
     public static final int AvatarLifeStateChangeNotify = 28742;//4.6.0
     public static final int LifeStateChangeNotify = 2096;//4.6.0
     public static final int DungeonPlayerDieReq = 23739;//4.6.0
@@ -195,7 +197,6 @@ public final class PacketOpcodes {
     public static final int AsterMidInfoNotify = 3996512;     //4.0.0
     public static final int AsterMiscInfoNotify = 3997912;     //4.0.0
     public static final int AsterProgressInfoNotify = 39926542;     //4.0.0
-    public static final int AvatarAddNotify = 3997458;     //4.0.0
     public static final int AvatarBuffAddNotify = 39924005;     //4.0.0
     public static final int AvatarBuffDelNotify = 3993202;     //4.0.0
     public static final int AvatarCardChangeReq = 39927737;     //4.0.0
@@ -241,7 +242,6 @@ public final class PacketOpcodes {
     public static final int AvatarSkillUpgradeReq = 39929541;     //4.0.0
     public static final int AvatarSkillUpgradeRsp = 39922584;     //4.0.0
     public static final int AvatarTeamAllDataNotify = 3999854;     //4.0.0
-    public static final int AvatarTeamUpdateNotify = 3997828;     //4.0.0
     public static final int AvatarUnlockTalentNotify = 3991805;     //4.0.0
     public static final int AvatarUpgradeReq = 39928204;     //4.0.0
     public static final int AvatarUpgradeRsp = 39924216;     //4.0.0
