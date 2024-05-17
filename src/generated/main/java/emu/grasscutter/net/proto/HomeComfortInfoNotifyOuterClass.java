@@ -43,11 +43,6 @@ public final class HomeComfortInfoNotifyOuterClass {
         int index);
   }
   /**
-   * <pre>
-   * CmdId: 4153
-   * Obf: CHCBFKOPHLG
-   * </pre>
-   *
    * Protobuf type {@code HomeComfortInfoNotify}
    */
   public static final class HomeComfortInfoNotify extends
@@ -336,11 +331,6 @@ public final class HomeComfortInfoNotifyOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * CmdId: 4153
-     * Obf: CHCBFKOPHLG
-     * </pre>
-     *
      * Protobuf type {@code HomeComfortInfoNotify}
      */
     public static final class Builder extends
