@@ -44,8 +44,8 @@ public final class AvatarRenameInfoNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 26468
-   * Obf: MEDFBIJCAGF
+   * 4.6.0
+   * CmdId: 24403
    * </pre>
    *
    * Protobuf type {@code AvatarRenameInfoNotify}
@@ -337,8 +337,8 @@ public final class AvatarRenameInfoNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 26468
-     * Obf: MEDFBIJCAGF
+     * 4.6.0
+     * CmdId: 24403
      * </pre>
      *
      * Protobuf type {@code AvatarRenameInfoNotify}

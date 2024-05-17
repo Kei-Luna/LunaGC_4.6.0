@@ -16,7 +16,7 @@ public final class ServerLogTypeOuterClass {
   }
   /**
    * <pre>
-   * Obf: DEJFCBNPEJO
+   * 4.6.0
    * </pre>
    *
    * Protobuf enum {@code ServerLogType}
@@ -43,6 +43,10 @@ public final class ServerLogTypeOuterClass {
      * <code>SERVER_LOG_LUA = 4;</code>
      */
     SERVER_LOG_LUA(4),
+    /**
+     * <code>SERVER_LOG_DAILYTASK = 5;</code>
+     */
+    SERVER_LOG_DAILYTASK(5),
     UNRECOGNIZED(-1),
     ;
 
@@ -66,6 +70,10 @@ public final class ServerLogTypeOuterClass {
      * <code>SERVER_LOG_LUA = 4;</code>
      */
     public static final int SERVER_LOG_LUA_VALUE = 4;
+    /**
+     * <code>SERVER_LOG_DAILYTASK = 5;</code>
+     */
+    public static final int SERVER_LOG_DAILYTASK_VALUE = 5;
 
 
     public final int getNumber() {
@@ -97,6 +105,7 @@ public final class ServerLogTypeOuterClass {
         case 2: return SERVER_LOG_LEVEL;
         case 3: return SERVER_LOG_ENTITY;
         case 4: return SERVER_LOG_LUA;
+        case 5: return SERVER_LOG_DAILYTASK;
         default: return null;
       }
     }
@@ -162,11 +171,12 @@ public final class ServerLogTypeOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\023ServerLogType.proto*}\n\rServerLogType\022\023" +
-      "\n\017SERVER_LOG_NONE\020\000\022\026\n\022SERVER_LOG_ABILIT" +
-      "Y\020\001\022\024\n\020SERVER_LOG_LEVEL\020\002\022\025\n\021SERVER_LOG_" +
-      "ENTITY\020\003\022\022\n\016SERVER_LOG_LUA\020\004B\033\n\031emu.gras" +
-      "scutter.net.protob\006proto3"
+      "\n\023ServerLogType.proto*\227\001\n\rServerLogType\022" +
+      "\023\n\017SERVER_LOG_NONE\020\000\022\026\n\022SERVER_LOG_ABILI" +
+      "TY\020\001\022\024\n\020SERVER_LOG_LEVEL\020\002\022\025\n\021SERVER_LOG" +
+      "_ENTITY\020\003\022\022\n\016SERVER_LOG_LUA\020\004\022\030\n\024SERVER_" +
+      "LOG_DAILYTASK\020\005B\033\n\031emu.grasscutter.net.p" +
+      "rotob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
