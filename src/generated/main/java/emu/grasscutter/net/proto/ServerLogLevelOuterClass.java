@@ -16,7 +16,7 @@ public final class ServerLogLevelOuterClass {
   }
   /**
    * <pre>
-   * Obf: AEKKKMKLLKD
+   * 4.6.0
    * </pre>
    *
    * Protobuf enum {@code ServerLogLevel}
