@@ -631,7 +631,7 @@ public final class WidgetGadgetDataOuterClass {
        * @return This builder for chaining.
        */
       public Builder setGadgetId(int value) {
-
+        
         gadgetId_ = value;
         onChanged();
         return this;
@@ -641,7 +641,7 @@ public final class WidgetGadgetDataOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearGadgetId() {
-
+        
         gadgetId_ = 0;
         onChanged();
         return this;
@@ -701,7 +701,7 @@ public final class WidgetGadgetDataOuterClass {
 
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_WidgetGadgetData_descriptor;
-  private static final
+  private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_WidgetGadgetData_fieldAccessorTable;
 

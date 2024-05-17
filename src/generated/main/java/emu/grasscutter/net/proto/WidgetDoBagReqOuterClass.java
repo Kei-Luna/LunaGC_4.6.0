@@ -681,7 +681,7 @@ public final class WidgetDoBagReqOuterClass {
        * @return This builder for chaining.
        */
       public Builder setMaterialId(int value) {
-
+        
         materialId_ = value;
         onChanged();
         return this;
@@ -691,7 +691,7 @@ public final class WidgetDoBagReqOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearMaterialId() {
-
+        
         materialId_ = 0;
         onChanged();
         return this;
@@ -820,7 +820,7 @@ public final class WidgetDoBagReqOuterClass {
        * <code>.WidgetCreateLocationInfo location_info = 451;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo, emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo.Builder, emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfoOrBuilder>
+          emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo, emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo.Builder, emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfoOrBuilder> 
           getLocationInfoFieldBuilder() {
         if (locationInfoBuilder_ == null) {
           if (!(infoCase_ == 451)) {
@@ -961,7 +961,7 @@ public final class WidgetDoBagReqOuterClass {
        * <code>.WidgetCreatorInfo widget_creator_info = 794;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo, emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo.Builder, emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfoOrBuilder>
+          emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo, emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfo.Builder, emu.grasscutter.net.proto.WidgetCreatorInfoOuterClass.WidgetCreatorInfoOrBuilder> 
           getWidgetCreatorInfoFieldBuilder() {
         if (widgetCreatorInfoBuilder_ == null) {
           if (!(infoCase_ == 794)) {
@@ -1033,7 +1033,7 @@ public final class WidgetDoBagReqOuterClass {
 
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_WidgetDoBagReq_descriptor;
-  private static final
+  private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_WidgetDoBagReq_fieldAccessorTable;
 
