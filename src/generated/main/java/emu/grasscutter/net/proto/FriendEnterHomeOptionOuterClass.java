@@ -15,10 +15,6 @@ public final class FriendEnterHomeOptionOuterClass {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   /**
-   * <pre>
-   * Obf: LDBJAIDJNMO
-   * </pre>
-   *
    * Protobuf enum {@code FriendEnterHomeOption}
    */
   public enum FriendEnterHomeOption

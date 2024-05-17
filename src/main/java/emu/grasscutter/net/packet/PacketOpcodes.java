@@ -71,6 +71,22 @@ public final class PacketOpcodes {
     public static final int MailChangeNotify = 27689;//4.6.0
     public static final int AvatarAddNotify = 21159;//4.6.0
     public static final int AvatarTeamUpdateNotify = 26704;//4.6.0
+    public static final int HomeBasicInfoNotify = 25591;//4.6.0
+    public static final int HomeChangeModuleReq = 26930;//4.6.0
+    public static final int HomeChangeModuleRsp = 9924;//4.6.0
+    public static final int HomeChooseModuleReq = 22321;//4.6.0
+    public static final int HomeChooseModuleRsp = 25183;//4.6.0
+    public static final int HomeComfortInfoNotify = 20200;//4.6.0
+    public static final int HomeMarkPointNotify = 7160;//4.6.0
+    public static final int HomeModuleUnlockNotify = 768;//4.6.0
+    public static final int HomeResourceNotify = 21381;//4.6.0
+    public static final int HomeTransferReq = 3980;//4.6.0
+    public static final int OtherPlayerEnterHomeNotify = 20379;//4.6.0
+    public static final int PlayerHomeCompInfoNotify = 9764;//4.6.0
+    public static final int PlayerQuitFromHomeNotify = 20429;//4.6.0
+    public static final int TryEnterHomeReq = 20306;//4.6.0
+    public static final int TryEnterHomeRsp = 25519;//4.6.0
+    public static final int BackMyWorldReq = 22635;//4.6.0
 
 
 
@@ -258,7 +274,6 @@ public final class PacketOpcodes {
     public static final int BOKHOGPNNKA = 39921070;     //4.0.0
     public static final int BOLCDNOPCFK = 3996106;     //4.0.0
     public static final int BPOLCGACIHE = 3996228;     //4.0.0
-    public static final int BackMyWorldReq = 3997284;     //4.0.0
     public static final int BackMyWorldRsp = 39925964;     //4.0.0
     public static final int BackPlayCustomDungeonOfficialReq = 399368;     //4.0.0
     public static final int BackPlayCustomDungeonOfficialRsp = 399329;     //4.0.0
@@ -1286,7 +1301,6 @@ public final class PacketOpcodes {
     public static final int HomeAvtarAllFinishRewardNotify = 3999713;     //4.0.0
     public static final int HomeBalloonGalleryScoreNotify = 39920418;     //4.0.0
     public static final int HomeBalloonGallerySettleNotify = 3995349;     //4.0.0
-    public static final int HomeBasicInfoNotify = 3994186;     //4.0.0
     public static final int HomeBlockNotify = 39920667;     //4.0.0
     public static final int HomeBlueprintInfoNotify = 39920806;     //4.0.0
     public static final int HomeChangeBgmNotify = 3992031;     //4.0.0
@@ -1294,13 +1308,8 @@ public final class PacketOpcodes {
     public static final int HomeChangeBgmRsp = 3996476;     //4.0.0
     public static final int HomeChangeEditModeReq = 3998351;     //4.0.0
     public static final int HomeChangeEditModeRsp = 3997491;     //4.0.0
-    public static final int HomeChangeModuleReq = 3991750;     //4.0.0
-    public static final int HomeChangeModuleRsp = 39920550;     //4.0.0
-    public static final int HomeChooseModuleReq = 39929914;     //4.0.0
-    public static final int HomeChooseModuleRsp = 39920087;     //4.0.0
     public static final int HomeClearGroupRecordReq = 39928348;     //4.0.0
     public static final int HomeClearGroupRecordRsp = 39921872;     //4.0.0
-    public static final int HomeComfortInfoNotify = 3994153;     //4.0.0
     public static final int HomeCreateBlueprintReq = 39928484;     //4.0.0
     public static final int HomeCreateBlueprintRsp = 39922980;     //4.0.0
     public static final int HomeCustomFurnitureInfoNotify = 3997355;     //4.0.0
@@ -1335,10 +1344,8 @@ public final class PacketOpcodes {
     public static final int HomeLimitedShopInfoNotify = 39925226;     //4.0.0
     public static final int HomeLimitedShopInfoReq = 39923396;     //4.0.0
     public static final int HomeLimitedShopInfoRsp = 3998746;     //4.0.0
-    public static final int HomeMarkPointNotify = 39923013;     //4.0.0
     public static final int HomeModuleSeenReq = 39927692;     //4.0.0
     public static final int HomeModuleSeenRsp = 3993944;     //4.0.0
-    public static final int HomeModuleUnlockNotify = 399811;     //4.0.0
     public static final int HomeNewUnlockedBgmIdListNotify = 3991089;     //4.0.0
     public static final int HomePictureFrameInfoNotify = 39924256;     //4.0.0
     public static final int HomePlantFieldNotify = 3995595;     //4.0.0
@@ -1354,7 +1361,6 @@ public final class PacketOpcodes {
     public static final int HomePreviewBlueprintRsp = 39923117;     //4.0.0
     public static final int HomePriorCheckNotify = 3991456;     //4.0.0
     public static final int HomeRacingGallerySettleNotify = 39920371;     //4.0.0
-    public static final int HomeResourceNotify = 3995204;     //4.0.0
     public static final int HomeResourceTakeFetterExpReq = 3994383;     //4.0.0
     public static final int HomeResourceTakeFetterExpRsp = 3999922;     //4.0.0
     public static final int HomeResourceTakeHomeCoinReq = 3994728;     //4.0.0
@@ -1373,7 +1379,6 @@ public final class PacketOpcodes {
     public static final int HomeSetBlueprintFriendOptionRsp = 3993981;     //4.0.0
     public static final int HomeSetBlueprintSlotOptionReq = 3991990;     //4.0.0
     public static final int HomeSetBlueprintSlotOptionRsp = 39926409;     //4.0.0
-    public static final int HomeTransferReq = 39928287;     //4.0.0
     public static final int HomeTransferRsp = 3995429;     //4.0.0
     public static final int HomeUpdateArrangementInfoReq = 3994976;     //4.0.0
     public static final int HomeUpdateArrangementInfoRsp = 39928545;     //4.0.0
@@ -1763,7 +1768,6 @@ public final class PacketOpcodes {
     public static final int OpenBlossomCircleCampGuideNotify = 3994362;     //4.0.0
     public static final int OrderDisplayNotify = 399595;     //4.0.0
     public static final int OrderFinishNotify = 39926680;     //4.0.0
-    public static final int OtherPlayerEnterHomeNotify = 39925817;     //4.0.0
     public static final int OutStuckCustomDungeonReq = 3998657;     //4.0.0
     public static final int OutStuckCustomDungeonRsp = 3999580;     //4.0.0
     public static final int PAFMFPNAFGD = 39929376;     //4.0.0
@@ -1879,7 +1883,6 @@ public final class PacketOpcodes {
     public static final int PlayerGeneralMatchDismissNotify = 3992964;     //4.0.0
     public static final int PlayerGetForceQuitBanInfoReq = 39924478;     //4.0.0
     public static final int PlayerGetForceQuitBanInfoRsp = 3998368;     //4.0.0
-    public static final int PlayerHomeCompInfoNotify = 399365;     //4.0.0
     public static final int PlayerInjectFixNotify = 39927662;     //4.0.0
     public static final int PlayerInvestigationAllInfoNotify = 39923777;     //4.0.0
     public static final int PlayerInvestigationNotify = 39922886;     //4.0.0
@@ -1905,7 +1908,6 @@ public final class PacketOpcodes {
     public static final int PlayerPropNotify = 3997058;     //4.0.0
     public static final int PlayerQuitDungeonReq = 39920980;     //4.0.0
     public static final int PlayerQuitDungeonRsp = 3994431;     //4.0.0
-    public static final int PlayerQuitFromHomeNotify = 39927102;     //4.0.0
     public static final int PlayerQuitFromMpNotify = 39920263;     //4.0.0
     public static final int PlayerRandomCookReq = 3997190;     //4.0.0
     public static final int PlayerRandomCookRsp = 3999489;     //4.0.0
@@ -2414,8 +2416,6 @@ public final class PacketOpcodes {
     public static final int TriggerRoguelikeRuneRsp = 3991039;     //4.0.0
     public static final int TryCustomDungeonReq = 39928599;     //4.0.0
     public static final int TryCustomDungeonRsp = 3999741;     //4.0.0
-    public static final int TryEnterHomeReq = 39926594;     //4.0.0
-    public static final int TryEnterHomeRsp = 399351;     //4.0.0
     public static final int TryEnterNextRogueDiaryDungeonReq = 399619;     //4.0.0
     public static final int TryEnterNextRogueDiaryDungeonRsp = 39928661;     //4.0.0
     public static final int TryInterruptRogueDiaryDungeonReq = 39923223;     //4.0.0
