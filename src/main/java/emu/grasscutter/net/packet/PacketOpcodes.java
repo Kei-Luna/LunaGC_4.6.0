@@ -103,6 +103,8 @@ public final class PacketOpcodes {
     public static final int TryEnterHomeReq = 20306;//4.6.0
     public static final int TryEnterHomeRsp = 25519;//4.6.0
     public static final int BackMyWorldReq = 22635;//4.6.0
+    public static final int WidgetDoBagReq = 128;//4.6.0
+    public static final int WidgetGadgetDataNotify = 5571;//4.6.0
 
 
 
@@ -2507,10 +2509,8 @@ public final class PacketOpcodes {
     public static final int WidgetCaptureAnimalReq = 3991304;     //4.0.0
     public static final int WidgetCaptureAnimalRsp = 39923199;     //4.0.0
     public static final int WidgetCoolDownNotify = 39927222;     //4.0.0
-    public static final int WidgetDoBagReq = 3992739;     //4.0.0
     public static final int WidgetDoBagRsp = 3998212;     //4.0.0
     public static final int WidgetGadgetAllDataNotify = 3996076;     //4.0.0
-    public static final int WidgetGadgetDataNotify = 3994861;     //4.0.0
     public static final int WidgetGadgetDestroyNotify = 3997666;     //4.0.0
     public static final int WidgetQuickHitTreeReq = 39926447;     //4.0.0
     public static final int WidgetQuickHitTreeRsp = 3991624;     //4.0.0

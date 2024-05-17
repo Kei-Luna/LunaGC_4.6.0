@@ -15,10 +15,6 @@ public final class WidgetCreatorOpTypeOuterClass {
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
   /**
-   * <pre>
-   * Obf: GCEFDCIHAKA
-   * </pre>
-   *
    * Protobuf enum {@code WidgetCreatorOpType}
    */
   public enum WidgetCreatorOpType
