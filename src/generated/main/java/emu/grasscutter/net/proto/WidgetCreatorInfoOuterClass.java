@@ -643,7 +643,7 @@ public final class WidgetCreatorInfoOuterClass {
        * <code>.WidgetCreateLocationInfo location_info = 6;</code>
        */
       public emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo.Builder getLocationInfoBuilder() {
-
+        
         onChanged();
         return getLocationInfoFieldBuilder().getBuilder();
       }
@@ -662,7 +662,7 @@ public final class WidgetCreatorInfoOuterClass {
        * <code>.WidgetCreateLocationInfo location_info = 6;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo, emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo.Builder, emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfoOrBuilder>
+          emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo, emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfo.Builder, emu.grasscutter.net.proto.WidgetCreateLocationInfoOuterClass.WidgetCreateLocationInfoOrBuilder> 
           getLocationInfoFieldBuilder() {
         if (locationInfoBuilder_ == null) {
           locationInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -690,7 +690,7 @@ public final class WidgetCreatorInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setEntityId(int value) {
-
+        
         entityId_ = value;
         onChanged();
         return this;
@@ -700,7 +700,7 @@ public final class WidgetCreatorInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearEntityId() {
-
+        
         entityId_ = 0;
         onChanged();
         return this;
@@ -720,7 +720,7 @@ public final class WidgetCreatorInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder setOpTypeValue(int value) {
-
+        
         opType_ = value;
         onChanged();
         return this;
@@ -744,7 +744,7 @@ public final class WidgetCreatorInfoOuterClass {
         if (value == null) {
           throw new NullPointerException();
         }
-
+        
         opType_ = value.getNumber();
         onChanged();
         return this;
@@ -754,7 +754,7 @@ public final class WidgetCreatorInfoOuterClass {
        * @return This builder for chaining.
        */
       public Builder clearOpType() {
-
+        
         opType_ = 0;
         onChanged();
         return this;
@@ -814,7 +814,7 @@ public final class WidgetCreatorInfoOuterClass {
 
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_WidgetCreatorInfo_descriptor;
-  private static final
+  private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_WidgetCreatorInfo_fieldAccessorTable;
 

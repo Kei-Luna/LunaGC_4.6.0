@@ -105,6 +105,8 @@ public final class PacketOpcodes {
     public static final int BackMyWorldReq = 22635;//4.6.0
     public static final int WidgetDoBagReq = 128;//4.6.0
     public static final int WidgetGadgetDataNotify = 5571;//4.6.0
+    public static final int NpcTalkReq = 24463;//4.6.0
+    public static final int NpcTalkRsp = 7039;//4.6.0
 
 
 
@@ -1745,8 +1747,6 @@ public final class PacketOpcodes {
     public static final int NightCrowGadgetObservationMatchReq = 3998693;     //4.0.0
     public static final int NightCrowGadgetObservationMatchRsp = 3993213;     //4.0.0
     public static final int NormalUidOpNotify = 39923286;     //4.0.0
-    public static final int NpcTalkReq = 3993174;     //4.0.0
-    public static final int NpcTalkRsp = 3993890;     //4.0.0
     public static final int NpcTalkStateNotify = 399943;     //4.0.0
     public static final int OBEDAFIDGEE = 39920912;     //4.0.0
     public static final int OBGDOGEFFJO = 39925946;     //4.0.0

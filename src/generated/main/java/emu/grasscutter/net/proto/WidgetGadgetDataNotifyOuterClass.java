@@ -559,7 +559,7 @@ public final class WidgetGadgetDataNotifyOuterClass {
        * <code>.WidgetGadgetData widget_gadget_data = 12;</code>
        */
       public emu.grasscutter.net.proto.WidgetGadgetDataOuterClass.WidgetGadgetData.Builder getWidgetGadgetDataBuilder() {
-
+        
         onChanged();
         return getWidgetGadgetDataFieldBuilder().getBuilder();
       }
@@ -578,7 +578,7 @@ public final class WidgetGadgetDataNotifyOuterClass {
        * <code>.WidgetGadgetData widget_gadget_data = 12;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.WidgetGadgetDataOuterClass.WidgetGadgetData, emu.grasscutter.net.proto.WidgetGadgetDataOuterClass.WidgetGadgetData.Builder, emu.grasscutter.net.proto.WidgetGadgetDataOuterClass.WidgetGadgetDataOrBuilder>
+          emu.grasscutter.net.proto.WidgetGadgetDataOuterClass.WidgetGadgetData, emu.grasscutter.net.proto.WidgetGadgetDataOuterClass.WidgetGadgetData.Builder, emu.grasscutter.net.proto.WidgetGadgetDataOuterClass.WidgetGadgetDataOrBuilder> 
           getWidgetGadgetDataFieldBuilder() {
         if (widgetGadgetDataBuilder_ == null) {
           widgetGadgetDataBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
@@ -645,7 +645,7 @@ public final class WidgetGadgetDataNotifyOuterClass {
 
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_WidgetGadgetDataNotify_descriptor;
-  private static final
+  private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_WidgetGadgetDataNotify_fieldAccessorTable;
 
