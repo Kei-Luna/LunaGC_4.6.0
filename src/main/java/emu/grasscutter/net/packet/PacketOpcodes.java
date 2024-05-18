@@ -107,6 +107,25 @@ public final class PacketOpcodes {
     public static final int WidgetGadgetDataNotify = 5571;//4.6.0
     public static final int NpcTalkReq = 24463;//4.6.0
     public static final int NpcTalkRsp = 7039;//4.6.0
+    public static final int PullRecentChatReq = 9148;//4.6.0
+    public static final int PullRecentChatRsp = 1830;//sus 1830 or 26010
+    public static final int PullPrivateChatReq = 28619;//4.6.0
+    public static final int PullPrivateChatRsp = 26010;//sus 1830 or 26010
+    public static final int PrivateChatNotify = 1701;//4.6.0
+    public static final int PrivateChatReq = 3342;//4.6.0
+    public static final int PrivateChatRsp = 7469;//4.6.0
+    public static final int PlayerChatNotify = 9695;//4.6.0
+    public static final int PlayerChatReq = 26464;//4.6.0
+    public static final int PlayerChatRsp = 29270;//4.6.0
+    public static final int ChatChannelUpdateNotify = 23218;//4.6.0
+    public static final int GetPlayerFriendListReq = 99999;//???
+    public static final int GetPlayerFriendListRsp = 8658;//4.6.0
+    public static final int ChatChannelDataNotify = 4276;//4.6.0
+    public static final int ChatChannelInfoNotify = 26577;//4.6.0
+    public static final int ChatChannelShieldNotify = 6815;//4.6.0
+
+
+
 
 
 
@@ -455,10 +474,6 @@ public final class PacketOpcodes {
     public static final int ChannellerSlabWearBuffRsp = 39921705;     //4.0.0
     public static final int ChapterStateNotify = 39921508;     //4.0.0
     public static final int CharAmusementSettleNotify = 3997004;     //4.0.0
-    public static final int ChatChannelDataNotify = 3993323;     //4.0.0
-    public static final int ChatChannelInfoNotify = 3995319;     //4.0.0
-    public static final int ChatChannelShieldNotify = 39921066;     //4.0.0
-    public static final int ChatChannelUpdateNotify = 39928285;     //4.0.0
     public static final int ChatHistoryNotify = 3994425;     //4.0.0
     public static final int CheckAddItemExceedLimitNotify = 39924230;     //4.0.0
     public static final int CheckGroupReplacedReq = 39929675;     //4.0.0
@@ -1188,8 +1203,6 @@ public final class PacketOpcodes {
     public static final int GetPlayerAskFriendListRsp = 39920085;     //4.0.0
     public static final int GetPlayerBlacklistReq = 39925338;     //4.0.0
     public static final int GetPlayerBlacklistRsp = 39920310;     //4.0.0
-    public static final int GetPlayerFriendListReq = 3992240;     //4.0.0
-    public static final int GetPlayerFriendListRsp = 39920997;     //4.0.0
     public static final int GetPlayerHomeCompInfoReq = 3993709;     //4.0.0
     public static final int GetPlayerMpModeAvailabilityReq = 39926251;     //4.0.0
     public static final int GetPlayerMpModeAvailabilityRsp = 39928762;     //4.0.0
@@ -1864,9 +1877,6 @@ public final class PacketOpcodes {
     public static final int PlayerCancelMatchReq = 3999117;     //4.0.0
     public static final int PlayerCancelMatchRsp = 3994875;     //4.0.0
     public static final int PlayerChatCDNotify = 39926350;     //4.0.0
-    public static final int PlayerChatNotify = 3999541;     //4.0.0
-    public static final int PlayerChatReq = 39923230;     //4.0.0
-    public static final int PlayerChatRsp = 39927239;     //4.0.0
     public static final int PlayerCompoundMaterialBoostReq = 39926353;     //4.0.0
     public static final int PlayerCompoundMaterialBoostRsp = 39926999;     //4.0.0
     public static final int PlayerCompoundMaterialReq = 3997541;     //4.0.0
@@ -1944,9 +1954,6 @@ public final class PacketOpcodes {
     public static final int PotionRestartDungeonRsp = 3994156;     //4.0.0
     public static final int PotionSaveDungeonResultReq = 3999617;     //4.0.0
     public static final int PotionSaveDungeonResultRsp = 3994568;     //4.0.0
-    public static final int PrivateChatNotify = 39929471;     //4.0.0
-    public static final int PrivateChatReq = 3998163;     //4.0.0
-    public static final int PrivateChatRsp = 3994033;     //4.0.0
     public static final int ProfilePictureChangeNotify = 3995763;     //4.0.0
     public static final int ProjectorOptionReq = 3995441;     //4.0.0
     public static final int ProjectorOptionRsp = 399919;     //4.0.0
@@ -1958,10 +1965,6 @@ public final class PacketOpcodes {
     public static final int PublishCustomDungeonRsp = 39920498;     //4.0.0
     public static final int PublishUgcReq = 39921198;     //4.0.0
     public static final int PublishUgcRsp = 39927453;     //4.0.0
-    public static final int PullPrivateChatReq = 39922346;     //4.0.0
-    public static final int PullPrivateChatRsp = 3994681;     //4.0.0
-    public static final int PullRecentChatReq = 39923337;     //4.0.0
-    public static final int PullRecentChatRsp = 399308;     //4.0.0
     public static final int PushTipsAllDataNotify = 39928129;     //4.0.0
     public static final int PushTipsChangeNotify = 39929035;     //4.0.0
     public static final int PushTipsReadFinishReq = 3991612;     //4.0.0

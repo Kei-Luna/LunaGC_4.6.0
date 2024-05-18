@@ -48,6 +48,10 @@ public final class HomeModuleComfortInfoOuterClass {
     int getModuleId();
   }
   /**
+   * <pre>
+   * 4.6.0
+   * </pre>
+   *
    * Protobuf type {@code HomeModuleComfortInfo}
    */
   public static final class HomeModuleComfortInfo extends
@@ -405,6 +409,10 @@ public final class HomeModuleComfortInfoOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * 4.6.0
+     * </pre>
+     *
      * Protobuf type {@code HomeModuleComfortInfo}
      */
     public static final class Builder extends
