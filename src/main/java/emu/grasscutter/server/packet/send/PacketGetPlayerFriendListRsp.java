@@ -30,6 +30,7 @@ public class PacketGetPlayerFriendListRsp extends BasePacket {
                         .setNameCardId(serverAccount.nameCardId)
                         .setOnlineState(FriendOnlineState.FRIEND_ONLINE_STATE_ONLINE)
                         .setParam(1)
+                        .setPLCFAEJEMCB(true) // true
                         //.setIsGameSource(true)
                         .setPlatformType(PlatformTypeOuterClass.PlatformType.PLATFORM_TYPE_PC)
                         .setFriendEnterHomeOptionValue(

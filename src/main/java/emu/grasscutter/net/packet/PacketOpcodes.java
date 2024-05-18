@@ -118,14 +118,16 @@ public final class PacketOpcodes {
     public static final int PlayerChatReq = 26464;//4.6.0
     public static final int PlayerChatRsp = 29270;//4.6.0
     public static final int ChatChannelUpdateNotify = 23218;//4.6.0
-    public static final int GetPlayerFriendListReq = 99999;//???
+    public static final int GetPlayerFriendListReq = 8524;//4.6.0
     public static final int GetPlayerFriendListRsp = 8658;//4.6.0
     public static final int ChatChannelDataNotify = 4276;//4.6.0
     public static final int ChatChannelInfoNotify = 26577;//4.6.0
     public static final int ChatChannelShieldNotify = 6815;//4.6.0
-
-
-
+    public static final int ClientAbilitiesInitFinishCombineNotify = 22401;//4.6.0
+    public static final int ClientAbilityChangeNotify = 28122;//4.6.0
+    public static final int ClientAbilityInitFinishNotify = 21190;//4.6.0
+    public static final int AbilityInvocationsNotify = 21569;//4.6.0
+    public static final int PlayerForceExitReq = 811;//4.6.0
 
 
 
@@ -153,7 +155,6 @@ public final class PacketOpcodes {
     public static final int AbilityChangeNotify = 399300;     //4.0.0
     public static final int AbilityInvocationFailNotify = 39926730;     //4.0.0
     public static final int AbilityInvocationFixedNotify = 3994864;     //4.0.0
-    public static final int AbilityInvocationsNotify = 39926313;     //4.0.0
     public static final int AcceptCityReputationRequestReq = 3996832;     //4.0.0
     public static final int AcceptCityReputationRequestRsp = 3997825;     //4.0.0
     public static final int AchievementAllDataNotify = 39927422;     //4.0.0
@@ -498,10 +499,7 @@ public final class PacketOpcodes {
     public static final int CityReputationLevelupNotify = 39929784;     //4.0.0
     public static final int ClearRoguelikeCurseNotify = 3994898;     //4.0.0
     public static final int ClientAIStateNotify = 3996944;     //4.0.0
-    public static final int ClientAbilitiesInitFinishCombineNotify = 3997505;     //4.0.0
-    public static final int ClientAbilityChangeNotify = 3998174;     //4.0.0
     public static final int ClientAbilityInitBeginNotify = 3994046;     //4.0.0
-    public static final int ClientAbilityInitFinishNotify = 3998666;     //4.0.0
     public static final int ClientBulletCreateNotify = 3994966;     //4.0.0
     public static final int ClientCollectorDataNotify = 39920387;     //4.0.0
     public static final int ClientHashDebugNotify = 3997727;     //4.0.0
@@ -1892,7 +1890,6 @@ public final class PacketOpcodes {
     public static final int PlayerEnterDungeonRsp = 39924874;     //4.0.0
     public static final int PlayerEyePointStateNotify = 39927367;     //4.0.0
     public static final int PlayerFishingDataNotify = 3996317;     //4.0.0
-    public static final int PlayerForceExitReq = 3991819;     //4.0.0
     public static final int PlayerForceExitRsp = 39922773;     //4.0.0
     public static final int PlayerGCGMatchConfirmNotify = 3995393;     //4.0.0
     public static final int PlayerGCGMatchDismissNotify = 39928090;     //4.0.0
