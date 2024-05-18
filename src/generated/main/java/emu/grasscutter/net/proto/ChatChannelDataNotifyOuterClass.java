@@ -19,41 +19,41 @@ public final class ChatChannelDataNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .ChatChannelInfo channel_info_list = 13;</code>
+     * <code>repeated .ChatChannelInfo channel_info_list = 6;</code>
      */
     java.util.List<emu.grasscutter.net.proto.ChatChannelInfoOuterClass.ChatChannelInfo> 
         getChannelInfoListList();
     /**
-     * <code>repeated .ChatChannelInfo channel_info_list = 13;</code>
+     * <code>repeated .ChatChannelInfo channel_info_list = 6;</code>
      */
     emu.grasscutter.net.proto.ChatChannelInfoOuterClass.ChatChannelInfo getChannelInfoList(int index);
     /**
-     * <code>repeated .ChatChannelInfo channel_info_list = 13;</code>
+     * <code>repeated .ChatChannelInfo channel_info_list = 6;</code>
      */
     int getChannelInfoListCount();
     /**
-     * <code>repeated .ChatChannelInfo channel_info_list = 13;</code>
+     * <code>repeated .ChatChannelInfo channel_info_list = 6;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.ChatChannelInfoOuterClass.ChatChannelInfoOrBuilder> 
         getChannelInfoListOrBuilderList();
     /**
-     * <code>repeated .ChatChannelInfo channel_info_list = 13;</code>
+     * <code>repeated .ChatChannelInfo channel_info_list = 6;</code>
      */
     emu.grasscutter.net.proto.ChatChannelInfoOuterClass.ChatChannelInfoOrBuilder getChannelInfoListOrBuilder(
         int index);
 
     /**
-     * <code>repeated uint32 channel_list = 4;</code>
+     * <code>repeated uint32 channel_list = 15;</code>
      * @return A list containing the channelList.
      */
     java.util.List<java.lang.Integer> getChannelListList();
     /**
-     * <code>repeated uint32 channel_list = 4;</code>
+     * <code>repeated uint32 channel_list = 15;</code>
      * @return The count of channelList.
      */
     int getChannelListCount();
     /**
-     * <code>repeated uint32 channel_list = 4;</code>
+     * <code>repeated uint32 channel_list = 15;</code>
      * @param index The index of the element to return.
      * @return The channelList at the given index.
      */
@@ -61,8 +61,8 @@ public final class ChatChannelDataNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 3323
-   * Obf: APJBDHFFLIF
+   * 4.6.0
+   * CmdId: 4276
    * </pre>
    *
    * Protobuf type {@code ChatChannelDataNotify}
@@ -112,7 +112,16 @@ public final class ChatChannelDataNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
+            case 50: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+                channelInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ChatChannelInfoOuterClass.ChatChannelInfo>();
+                mutable_bitField0_ |= 0x00000001;
+              }
+              channelInfoList_.add(
+                  input.readMessage(emu.grasscutter.net.proto.ChatChannelInfoOuterClass.ChatChannelInfo.parser(), extensionRegistry));
+              break;
+            }
+            case 120: {
               if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 channelList_ = newIntList();
                 mutable_bitField0_ |= 0x00000002;
@@ -120,7 +129,7 @@ public final class ChatChannelDataNotifyOuterClass {
               channelList_.addInt(input.readUInt32());
               break;
             }
-            case 34: {
+            case 122: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
@@ -131,15 +140,6 @@ public final class ChatChannelDataNotifyOuterClass {
                 channelList_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
-              break;
-            }
-            case 106: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                channelInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.ChatChannelInfoOuterClass.ChatChannelInfo>();
-                mutable_bitField0_ |= 0x00000001;
-              }
-              channelInfoList_.add(
-                  input.readMessage(emu.grasscutter.net.proto.ChatChannelInfoOuterClass.ChatChannelInfo.parser(), extensionRegistry));
               break;
             }
             default: {
@@ -157,11 +157,11 @@ public final class ChatChannelDataNotifyOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000002) != 0)) {
-          channelList_.makeImmutable(); // C
-        }
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
           channelInfoList_ = java.util.Collections.unmodifiableList(channelInfoList_);
+        }
+        if (((mutable_bitField0_ & 0x00000002) != 0)) {
+          channelList_.makeImmutable(); // C
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -180,17 +180,17 @@ public final class ChatChannelDataNotifyOuterClass {
               emu.grasscutter.net.proto.ChatChannelDataNotifyOuterClass.ChatChannelDataNotify.class, emu.grasscutter.net.proto.ChatChannelDataNotifyOuterClass.ChatChannelDataNotify.Builder.class);
     }
 
-    public static final int CHANNEL_INFO_LIST_FIELD_NUMBER = 13;
+    public static final int CHANNEL_INFO_LIST_FIELD_NUMBER = 6;
     private java.util.List<emu.grasscutter.net.proto.ChatChannelInfoOuterClass.ChatChannelInfo> channelInfoList_;
     /**
-     * <code>repeated .ChatChannelInfo channel_info_list = 13;</code>
+     * <code>repeated .ChatChannelInfo channel_info_list = 6;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.ChatChannelInfoOuterClass.ChatChannelInfo> getChannelInfoListList() {
       return channelInfoList_;
     }
     /**
-     * <code>repeated .ChatChannelInfo channel_info_list = 13;</code>
+     * <code>repeated .ChatChannelInfo channel_info_list = 6;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.ChatChannelInfoOuterClass.ChatChannelInfoOrBuilder> 
@@ -198,21 +198,21 @@ public final class ChatChannelDataNotifyOuterClass {
       return channelInfoList_;
     }
     /**
-     * <code>repeated .ChatChannelInfo channel_info_list = 13;</code>
+     * <code>repeated .ChatChannelInfo channel_info_list = 6;</code>
      */
     @java.lang.Override
     public int getChannelInfoListCount() {
       return channelInfoList_.size();
     }
     /**
-     * <code>repeated .ChatChannelInfo channel_info_list = 13;</code>
+     * <code>repeated .ChatChannelInfo channel_info_list = 6;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ChatChannelInfoOuterClass.ChatChannelInfo getChannelInfoList(int index) {
       return channelInfoList_.get(index);
     }
     /**
-     * <code>repeated .ChatChannelInfo channel_info_list = 13;</code>
+     * <code>repeated .ChatChannelInfo channel_info_list = 6;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.ChatChannelInfoOuterClass.ChatChannelInfoOrBuilder getChannelInfoListOrBuilder(
@@ -220,10 +220,10 @@ public final class ChatChannelDataNotifyOuterClass {
       return channelInfoList_.get(index);
     }
 
-    public static final int CHANNEL_LIST_FIELD_NUMBER = 4;
+    public static final int CHANNEL_LIST_FIELD_NUMBER = 15;
     private com.google.protobuf.Internal.IntList channelList_;
     /**
-     * <code>repeated uint32 channel_list = 4;</code>
+     * <code>repeated uint32 channel_list = 15;</code>
      * @return A list containing the channelList.
      */
     @java.lang.Override
@@ -232,14 +232,14 @@ public final class ChatChannelDataNotifyOuterClass {
       return channelList_;
     }
     /**
-     * <code>repeated uint32 channel_list = 4;</code>
+     * <code>repeated uint32 channel_list = 15;</code>
      * @return The count of channelList.
      */
     public int getChannelListCount() {
       return channelList_.size();
     }
     /**
-     * <code>repeated uint32 channel_list = 4;</code>
+     * <code>repeated uint32 channel_list = 15;</code>
      * @param index The index of the element to return.
      * @return The channelList at the given index.
      */
@@ -263,15 +263,15 @@ public final class ChatChannelDataNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
+      for (int i = 0; i < channelInfoList_.size(); i++) {
+        output.writeMessage(6, channelInfoList_.get(i));
+      }
       if (getChannelListList().size() > 0) {
-        output.writeUInt32NoTag(34);
+        output.writeUInt32NoTag(122);
         output.writeUInt32NoTag(channelListMemoizedSerializedSize);
       }
       for (int i = 0; i < channelList_.size(); i++) {
         output.writeUInt32NoTag(channelList_.getInt(i));
-      }
-      for (int i = 0; i < channelInfoList_.size(); i++) {
-        output.writeMessage(13, channelInfoList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -282,6 +282,10 @@ public final class ChatChannelDataNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      for (int i = 0; i < channelInfoList_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(6, channelInfoList_.get(i));
+      }
       {
         int dataSize = 0;
         for (int i = 0; i < channelList_.size(); i++) {
@@ -295,10 +299,6 @@ public final class ChatChannelDataNotifyOuterClass {
               .computeInt32SizeNoTag(dataSize);
         }
         channelListMemoizedSerializedSize = dataSize;
-      }
-      for (int i = 0; i < channelInfoList_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(13, channelInfoList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -435,8 +435,8 @@ public final class ChatChannelDataNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 3323
-     * Obf: APJBDHFFLIF
+     * 4.6.0
+     * CmdId: 4276
      * </pre>
      *
      * Protobuf type {@code ChatChannelDataNotify}
@@ -653,7 +653,7 @@ public final class ChatChannelDataNotifyOuterClass {
           emu.grasscutter.net.proto.ChatChannelInfoOuterClass.ChatChannelInfo, emu.grasscutter.net.proto.ChatChannelInfoOuterClass.ChatChannelInfo.Builder, emu.grasscutter.net.proto.ChatChannelInfoOuterClass.ChatChannelInfoOrBuilder> channelInfoListBuilder_;
 
       /**
-       * <code>repeated .ChatChannelInfo channel_info_list = 13;</code>
+       * <code>repeated .ChatChannelInfo channel_info_list = 6;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ChatChannelInfoOuterClass.ChatChannelInfo> getChannelInfoListList() {
         if (channelInfoListBuilder_ == null) {
@@ -663,7 +663,7 @@ public final class ChatChannelDataNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .ChatChannelInfo channel_info_list = 13;</code>
+       * <code>repeated .ChatChannelInfo channel_info_list = 6;</code>
        */
       public int getChannelInfoListCount() {
         if (channelInfoListBuilder_ == null) {
@@ -673,7 +673,7 @@ public final class ChatChannelDataNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .ChatChannelInfo channel_info_list = 13;</code>
+       * <code>repeated .ChatChannelInfo channel_info_list = 6;</code>
        */
       public emu.grasscutter.net.proto.ChatChannelInfoOuterClass.ChatChannelInfo getChannelInfoList(int index) {
         if (channelInfoListBuilder_ == null) {
@@ -683,7 +683,7 @@ public final class ChatChannelDataNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .ChatChannelInfo channel_info_list = 13;</code>
+       * <code>repeated .ChatChannelInfo channel_info_list = 6;</code>
        */
       public Builder setChannelInfoList(
           int index, emu.grasscutter.net.proto.ChatChannelInfoOuterClass.ChatChannelInfo value) {
@@ -700,7 +700,7 @@ public final class ChatChannelDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ChatChannelInfo channel_info_list = 13;</code>
+       * <code>repeated .ChatChannelInfo channel_info_list = 6;</code>
        */
       public Builder setChannelInfoList(
           int index, emu.grasscutter.net.proto.ChatChannelInfoOuterClass.ChatChannelInfo.Builder builderForValue) {
@@ -714,7 +714,7 @@ public final class ChatChannelDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ChatChannelInfo channel_info_list = 13;</code>
+       * <code>repeated .ChatChannelInfo channel_info_list = 6;</code>
        */
       public Builder addChannelInfoList(emu.grasscutter.net.proto.ChatChannelInfoOuterClass.ChatChannelInfo value) {
         if (channelInfoListBuilder_ == null) {
@@ -730,7 +730,7 @@ public final class ChatChannelDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ChatChannelInfo channel_info_list = 13;</code>
+       * <code>repeated .ChatChannelInfo channel_info_list = 6;</code>
        */
       public Builder addChannelInfoList(
           int index, emu.grasscutter.net.proto.ChatChannelInfoOuterClass.ChatChannelInfo value) {
@@ -747,7 +747,7 @@ public final class ChatChannelDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ChatChannelInfo channel_info_list = 13;</code>
+       * <code>repeated .ChatChannelInfo channel_info_list = 6;</code>
        */
       public Builder addChannelInfoList(
           emu.grasscutter.net.proto.ChatChannelInfoOuterClass.ChatChannelInfo.Builder builderForValue) {
@@ -761,7 +761,7 @@ public final class ChatChannelDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ChatChannelInfo channel_info_list = 13;</code>
+       * <code>repeated .ChatChannelInfo channel_info_list = 6;</code>
        */
       public Builder addChannelInfoList(
           int index, emu.grasscutter.net.proto.ChatChannelInfoOuterClass.ChatChannelInfo.Builder builderForValue) {
@@ -775,7 +775,7 @@ public final class ChatChannelDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ChatChannelInfo channel_info_list = 13;</code>
+       * <code>repeated .ChatChannelInfo channel_info_list = 6;</code>
        */
       public Builder addAllChannelInfoList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.ChatChannelInfoOuterClass.ChatChannelInfo> values) {
@@ -790,7 +790,7 @@ public final class ChatChannelDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ChatChannelInfo channel_info_list = 13;</code>
+       * <code>repeated .ChatChannelInfo channel_info_list = 6;</code>
        */
       public Builder clearChannelInfoList() {
         if (channelInfoListBuilder_ == null) {
@@ -803,7 +803,7 @@ public final class ChatChannelDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ChatChannelInfo channel_info_list = 13;</code>
+       * <code>repeated .ChatChannelInfo channel_info_list = 6;</code>
        */
       public Builder removeChannelInfoList(int index) {
         if (channelInfoListBuilder_ == null) {
@@ -816,14 +816,14 @@ public final class ChatChannelDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ChatChannelInfo channel_info_list = 13;</code>
+       * <code>repeated .ChatChannelInfo channel_info_list = 6;</code>
        */
       public emu.grasscutter.net.proto.ChatChannelInfoOuterClass.ChatChannelInfo.Builder getChannelInfoListBuilder(
           int index) {
         return getChannelInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .ChatChannelInfo channel_info_list = 13;</code>
+       * <code>repeated .ChatChannelInfo channel_info_list = 6;</code>
        */
       public emu.grasscutter.net.proto.ChatChannelInfoOuterClass.ChatChannelInfoOrBuilder getChannelInfoListOrBuilder(
           int index) {
@@ -833,7 +833,7 @@ public final class ChatChannelDataNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .ChatChannelInfo channel_info_list = 13;</code>
+       * <code>repeated .ChatChannelInfo channel_info_list = 6;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.ChatChannelInfoOuterClass.ChatChannelInfoOrBuilder> 
            getChannelInfoListOrBuilderList() {
@@ -844,14 +844,14 @@ public final class ChatChannelDataNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .ChatChannelInfo channel_info_list = 13;</code>
+       * <code>repeated .ChatChannelInfo channel_info_list = 6;</code>
        */
       public emu.grasscutter.net.proto.ChatChannelInfoOuterClass.ChatChannelInfo.Builder addChannelInfoListBuilder() {
         return getChannelInfoListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.ChatChannelInfoOuterClass.ChatChannelInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .ChatChannelInfo channel_info_list = 13;</code>
+       * <code>repeated .ChatChannelInfo channel_info_list = 6;</code>
        */
       public emu.grasscutter.net.proto.ChatChannelInfoOuterClass.ChatChannelInfo.Builder addChannelInfoListBuilder(
           int index) {
@@ -859,7 +859,7 @@ public final class ChatChannelDataNotifyOuterClass {
             index, emu.grasscutter.net.proto.ChatChannelInfoOuterClass.ChatChannelInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .ChatChannelInfo channel_info_list = 13;</code>
+       * <code>repeated .ChatChannelInfo channel_info_list = 6;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ChatChannelInfoOuterClass.ChatChannelInfo.Builder> 
            getChannelInfoListBuilderList() {
@@ -888,7 +888,7 @@ public final class ChatChannelDataNotifyOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 channel_list = 4;</code>
+       * <code>repeated uint32 channel_list = 15;</code>
        * @return A list containing the channelList.
        */
       public java.util.List<java.lang.Integer>
@@ -897,14 +897,14 @@ public final class ChatChannelDataNotifyOuterClass {
                  java.util.Collections.unmodifiableList(channelList_) : channelList_;
       }
       /**
-       * <code>repeated uint32 channel_list = 4;</code>
+       * <code>repeated uint32 channel_list = 15;</code>
        * @return The count of channelList.
        */
       public int getChannelListCount() {
         return channelList_.size();
       }
       /**
-       * <code>repeated uint32 channel_list = 4;</code>
+       * <code>repeated uint32 channel_list = 15;</code>
        * @param index The index of the element to return.
        * @return The channelList at the given index.
        */
@@ -912,7 +912,7 @@ public final class ChatChannelDataNotifyOuterClass {
         return channelList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 channel_list = 4;</code>
+       * <code>repeated uint32 channel_list = 15;</code>
        * @param index The index to set the value at.
        * @param value The channelList to set.
        * @return This builder for chaining.
@@ -925,7 +925,7 @@ public final class ChatChannelDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 channel_list = 4;</code>
+       * <code>repeated uint32 channel_list = 15;</code>
        * @param value The channelList to add.
        * @return This builder for chaining.
        */
@@ -936,7 +936,7 @@ public final class ChatChannelDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 channel_list = 4;</code>
+       * <code>repeated uint32 channel_list = 15;</code>
        * @param values The channelList to add.
        * @return This builder for chaining.
        */
@@ -949,7 +949,7 @@ public final class ChatChannelDataNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 channel_list = 4;</code>
+       * <code>repeated uint32 channel_list = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearChannelList() {
@@ -1027,8 +1027,8 @@ public final class ChatChannelDataNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\033ChatChannelDataNotify.proto\032\025ChatChann" +
       "elInfo.proto\"Z\n\025ChatChannelDataNotify\022+\n" +
-      "\021channel_info_list\030\r \003(\0132\020.ChatChannelIn" +
-      "fo\022\024\n\014channel_list\030\004 \003(\rB\033\n\031emu.grasscut" +
+      "\021channel_info_list\030\006 \003(\0132\020.ChatChannelIn" +
+      "fo\022\024\n\014channel_list\030\017 \003(\rB\033\n\031emu.grasscut" +
       "ter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

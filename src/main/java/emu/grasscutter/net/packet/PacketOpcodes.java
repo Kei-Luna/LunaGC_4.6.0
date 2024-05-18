@@ -128,6 +128,15 @@ public final class PacketOpcodes {
     public static final int ClientAbilityInitFinishNotify = 21190;//4.6.0
     public static final int AbilityInvocationsNotify = 21569;//4.6.0
     public static final int PlayerForceExitReq = 811;//4.6.0
+    public static final int AbilityInvocationFailNotify = 7473;//4.6.0
+    public static final int AbilityChangeNotify = 516;//4.6.0
+    public static final int UpdateAbilityCreatedMovingPlatformNotify = 3822;//4.6.0
+    public static final int WidgetUseAttachAbilityGroupChangeNotify = 24155;//4.6.0
+    public static final int AvatarTeamAllDataNotify = 3135;//4.6.0
+    public static final int AvatarUnlockTalentNotify = 23680;//4.6.0
+    public static final int ChangeMpTeamAvatarReq = 23126;//4.6.0
+    public static final int ChangeMpTeamAvatarRsp = 26144;//4.6.0
+
 
 
 
@@ -152,8 +161,6 @@ public final class PacketOpcodes {
     public static final int ANKONNPBGJC = 3996619;     //4.0.0
     public static final int AOJPBFBPDNB = 39925158;     //4.0.0
     public static final int APPJMEJEKKG = 3993898;     //4.0.0
-    public static final int AbilityChangeNotify = 399300;     //4.0.0
-    public static final int AbilityInvocationFailNotify = 39926730;     //4.0.0
     public static final int AbilityInvocationFixedNotify = 3994864;     //4.0.0
     public static final int AcceptCityReputationRequestReq = 3996832;     //4.0.0
     public static final int AcceptCityReputationRequestRsp = 3997825;     //4.0.0
@@ -280,8 +287,6 @@ public final class PacketOpcodes {
     public static final int AvatarSkillMaxChargeCountNotify = 39922843;     //4.0.0
     public static final int AvatarSkillUpgradeReq = 39929541;     //4.0.0
     public static final int AvatarSkillUpgradeRsp = 39922584;     //4.0.0
-    public static final int AvatarTeamAllDataNotify = 3999854;     //4.0.0
-    public static final int AvatarUnlockTalentNotify = 3991805;     //4.0.0
     public static final int AvatarUpgradeReq = 39928204;     //4.0.0
     public static final int AvatarUpgradeRsp = 39924216;     //4.0.0
     public static final int AvatarWearFlycloakReq = 399824;     //4.0.0
@@ -443,8 +448,6 @@ public final class PacketOpcodes {
     public static final int ChangeGameTimeReq = 39927713;     //4.0.0
     public static final int ChangeGameTimeRsp = 39928316;     //4.0.0
     public static final int ChangeMailStarNotify = 3992285;     //4.0.0
-    public static final int ChangeMpTeamAvatarReq = 39929260;     //4.0.0
-    public static final int ChangeMpTeamAvatarRsp = 399352;     //4.0.0
     public static final int ChangeServerGlobalValueNotify = 3992846;     //4.0.0
     public static final int ChangeWidgetBackgroundActiveStateReq = 39923423;     //4.0.0
     public static final int ChangeWidgetBackgroundActiveStateRsp = 3991073;     //4.0.0
@@ -2440,7 +2443,6 @@ public final class PacketOpcodes {
     public static final int UnlockedFurnitureFormulaDataNotify = 39928859;     //4.0.0
     public static final int UnlockedFurnitureSuiteDataNotify = 39921457;     //4.0.0
     public static final int UnmarkEntityInMinMapNotify = 3994510;     //4.0.0
-    public static final int UpdateAbilityCreatedMovingPlatformNotify = 3992608;     //4.0.0
     public static final int UpdatePS4BlockListReq = 39921934;     //4.0.0
     public static final int UpdatePS4BlockListRsp = 3995073;     //4.0.0
     public static final int UpdatePS4FriendListNotify = 39923862;     //4.0.0
@@ -2519,7 +2521,6 @@ public final class PacketOpcodes {
     public static final int WidgetSlotChangeNotify = 39926889;     //4.0.0
     public static final int WidgetUpdateExtraCDReq = 39924037;     //4.0.0
     public static final int WidgetUpdateExtraCDRsp = 3999991;     //4.0.0
-    public static final int WidgetUseAttachAbilityGroupChangeNotify = 3995280;     //4.0.0
     public static final int WidgetWeatherWizardDataNotify = 39924231;     //4.0.0
     public static final int WindFieldGalleryChallengeInfoNotify = 39923657;     //4.0.0
     public static final int WindFieldGalleryInfoNotify = 3994173;     //4.0.0

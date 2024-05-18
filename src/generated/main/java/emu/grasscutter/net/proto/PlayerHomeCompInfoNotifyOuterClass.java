@@ -34,6 +34,11 @@ public final class PlayerHomeCompInfoNotifyOuterClass {
     emu.grasscutter.net.proto.PlayerHomeCompInfoOuterClass.PlayerHomeCompInfoOrBuilder getCompInfoOrBuilder();
   }
   /**
+   * <pre>
+   * 4.6.0
+   * CmdId: 9764
+   * </pre>
+   *
    * Protobuf type {@code PlayerHomeCompInfoNotify}
    */
   public static final class PlayerHomeCompInfoNotify extends
@@ -310,6 +315,11 @@ public final class PlayerHomeCompInfoNotifyOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * 4.6.0
+     * CmdId: 9764
+     * </pre>
+     *
      * Protobuf type {@code PlayerHomeCompInfoNotify}
      */
     public static final class Builder extends
