@@ -136,7 +136,12 @@ public final class PacketOpcodes {
     public static final int AvatarUnlockTalentNotify = 23680;//4.6.0
     public static final int ChangeMpTeamAvatarReq = 23126;//4.6.0
     public static final int ChangeMpTeamAvatarRsp = 26144;//4.6.0
-
+    public static final int AvatarFightPropNotify = 9531;//4.6.0
+    public static final int AvatarFightPropUpdateNotify = 21817;//4.6.0
+    public static final int EntityFightPropChangeReasonNotify = 9207;//4.6.0
+    public static final int EntityFightPropUpdateNotify = 8257;//4.6.0  950 or 8257
+    public static final int MassiveEntityElementOpBatchNotify = 9010;//4.6.0
+    public static final int EvtDoSkillSuccNotify = 6290;//4.6.0
 
 
 
@@ -269,8 +274,6 @@ public final class PacketOpcodes {
     public static final int AvatarFetterDataNotify = 39929004;     //4.0.0
     public static final int AvatarFetterLevelRewardReq = 39928996;     //4.0.0
     public static final int AvatarFetterLevelRewardRsp = 3993975;     //4.0.0
-    public static final int AvatarFightPropNotify = 39920455;     //4.0.0
-    public static final int AvatarFightPropUpdateNotify = 39921000;     //4.0.0
     public static final int AvatarFlycloakChangeNotify = 39923578;     //4.0.0
     public static final int AvatarFollowRouteNotify = 3996834;     //4.0.0
     public static final int AvatarGainCostumeNotify = 39924251;     //4.0.0
@@ -780,9 +783,7 @@ public final class PacketOpcodes {
     public static final int EntityAiSyncNotify = 3995447;     //4.0.0
     public static final int EntityAuthorityChangeNotify = 3993913;     //4.0.0
     public static final int EntityConfigHashNotify = 39920100;     //4.0.0
-    public static final int EntityFightPropChangeReasonNotify = 3992489;     //4.0.0
     public static final int EntityFightPropNotify = 3999760;     //4.0.0
-    public static final int EntityFightPropUpdateNotify = 39924036;     //4.0.0
     public static final int EntityForceSyncReq = 3998671;     //4.0.0
     public static final int EntityForceSyncRsp = 39924909;     //4.0.0
     public static final int EntityJumpNotify = 3998767;     //4.0.0
@@ -812,7 +813,6 @@ public final class PacketOpcodes {
     public static final int EvtCreateGadgetNotify = 39922195;     //4.0.0
     public static final int EvtDestroyGadgetNotify = 3995833;     //4.0.0
     public static final int EvtDestroyServerGadgetNotify = 39923600;     //4.0.0
-    public static final int EvtDoSkillSuccNotify = 3998216;     //4.0.0
     public static final int EvtEntityRenderersChangedNotify = 3995525;     //4.0.0
     public static final int EvtEntityStartDieEndNotify = 39927889;     //4.0.0
     public static final int EvtFaceToDirNotify = 3993850;     //4.0.0
@@ -1643,7 +1643,6 @@ public final class PacketOpcodes {
     public static final int MarkMapRsp = 39928945;     //4.0.0
     public static final int MarkNewNotify = 39926228;     //4.0.0
     public static final int MarkTargetInvestigationMonsterNotify = 39921010;     //4.0.0
-    public static final int MassiveEntityElementOpBatchNotify = 399699;     //4.0.0
     public static final int MassiveEntityStateChangedNotify = 39921761;     //4.0.0
     public static final int MaterialDeleteReturnNotify = 3996719;     //4.0.0
     public static final int MaterialDeleteUpdateNotify = 3999737;     //4.0.0
