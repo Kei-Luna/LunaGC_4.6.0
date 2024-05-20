@@ -19,19 +19,19 @@ public final class MGHDLMIEMLIOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.HICCLGEKCIO detail_ability_info = 9;</code>
+     * <code>.DetailAbilityInfo detail_ability_info = 9;</code>
      * @return Whether the detailAbilityInfo field is set.
      */
     boolean hasDetailAbilityInfo();
     /**
-     * <code>.HICCLGEKCIO detail_ability_info = 9;</code>
+     * <code>.DetailAbilityInfo detail_ability_info = 9;</code>
      * @return The detailAbilityInfo.
      */
-    emu.grasscutter.net.proto.HICCLGEKCIOOuterClass.HICCLGEKCIO getDetailAbilityInfo();
+    emu.grasscutter.net.proto.DetailAbilityInfoOuterClass.DetailAbilityInfo getDetailAbilityInfo();
     /**
-     * <code>.HICCLGEKCIO detail_ability_info = 9;</code>
+     * <code>.DetailAbilityInfo detail_ability_info = 9;</code>
      */
-    emu.grasscutter.net.proto.HICCLGEKCIOOuterClass.HICCLGEKCIOOrBuilder getDetailAbilityInfoOrBuilder();
+    emu.grasscutter.net.proto.DetailAbilityInfoOuterClass.DetailAbilityInfoOrBuilder getDetailAbilityInfoOrBuilder();
 
     public emu.grasscutter.net.proto.MGHDLMIEMLIOuterClass.MGHDLMIEMLI.ADCLBBDEGBDCase getADCLBBDEGBDCase();
   }
@@ -81,14 +81,14 @@ public final class MGHDLMIEMLIOuterClass {
               done = true;
               break;
             case 74: {
-              emu.grasscutter.net.proto.HICCLGEKCIOOuterClass.HICCLGEKCIO.Builder subBuilder = null;
+              emu.grasscutter.net.proto.DetailAbilityInfoOuterClass.DetailAbilityInfo.Builder subBuilder = null;
               if (aDCLBBDEGBDCase_ == 9) {
-                subBuilder = ((emu.grasscutter.net.proto.HICCLGEKCIOOuterClass.HICCLGEKCIO) aDCLBBDEGBD_).toBuilder();
+                subBuilder = ((emu.grasscutter.net.proto.DetailAbilityInfoOuterClass.DetailAbilityInfo) aDCLBBDEGBD_).toBuilder();
               }
               aDCLBBDEGBD_ =
-                  input.readMessage(emu.grasscutter.net.proto.HICCLGEKCIOOuterClass.HICCLGEKCIO.parser(), extensionRegistry);
+                  input.readMessage(emu.grasscutter.net.proto.DetailAbilityInfoOuterClass.DetailAbilityInfo.parser(), extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom((emu.grasscutter.net.proto.HICCLGEKCIOOuterClass.HICCLGEKCIO) aDCLBBDEGBD_);
+                subBuilder.mergeFrom((emu.grasscutter.net.proto.DetailAbilityInfoOuterClass.DetailAbilityInfo) aDCLBBDEGBD_);
                 aDCLBBDEGBD_ = subBuilder.buildPartial();
               }
               aDCLBBDEGBDCase_ = 9;
@@ -167,7 +167,7 @@ public final class MGHDLMIEMLIOuterClass {
 
     public static final int DETAIL_ABILITY_INFO_FIELD_NUMBER = 9;
     /**
-     * <code>.HICCLGEKCIO detail_ability_info = 9;</code>
+     * <code>.DetailAbilityInfo detail_ability_info = 9;</code>
      * @return Whether the detailAbilityInfo field is set.
      */
     @java.lang.Override
@@ -175,25 +175,25 @@ public final class MGHDLMIEMLIOuterClass {
       return aDCLBBDEGBDCase_ == 9;
     }
     /**
-     * <code>.HICCLGEKCIO detail_ability_info = 9;</code>
+     * <code>.DetailAbilityInfo detail_ability_info = 9;</code>
      * @return The detailAbilityInfo.
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.HICCLGEKCIOOuterClass.HICCLGEKCIO getDetailAbilityInfo() {
+    public emu.grasscutter.net.proto.DetailAbilityInfoOuterClass.DetailAbilityInfo getDetailAbilityInfo() {
       if (aDCLBBDEGBDCase_ == 9) {
-         return (emu.grasscutter.net.proto.HICCLGEKCIOOuterClass.HICCLGEKCIO) aDCLBBDEGBD_;
+         return (emu.grasscutter.net.proto.DetailAbilityInfoOuterClass.DetailAbilityInfo) aDCLBBDEGBD_;
       }
-      return emu.grasscutter.net.proto.HICCLGEKCIOOuterClass.HICCLGEKCIO.getDefaultInstance();
+      return emu.grasscutter.net.proto.DetailAbilityInfoOuterClass.DetailAbilityInfo.getDefaultInstance();
     }
     /**
-     * <code>.HICCLGEKCIO detail_ability_info = 9;</code>
+     * <code>.DetailAbilityInfo detail_ability_info = 9;</code>
      */
     @java.lang.Override
-    public emu.grasscutter.net.proto.HICCLGEKCIOOuterClass.HICCLGEKCIOOrBuilder getDetailAbilityInfoOrBuilder() {
+    public emu.grasscutter.net.proto.DetailAbilityInfoOuterClass.DetailAbilityInfoOrBuilder getDetailAbilityInfoOrBuilder() {
       if (aDCLBBDEGBDCase_ == 9) {
-         return (emu.grasscutter.net.proto.HICCLGEKCIOOuterClass.HICCLGEKCIO) aDCLBBDEGBD_;
+         return (emu.grasscutter.net.proto.DetailAbilityInfoOuterClass.DetailAbilityInfo) aDCLBBDEGBD_;
       }
-      return emu.grasscutter.net.proto.HICCLGEKCIOOuterClass.HICCLGEKCIO.getDefaultInstance();
+      return emu.grasscutter.net.proto.DetailAbilityInfoOuterClass.DetailAbilityInfo.getDefaultInstance();
     }
 
     private byte memoizedIsInitialized = -1;
@@ -211,7 +211,7 @@ public final class MGHDLMIEMLIOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (aDCLBBDEGBDCase_ == 9) {
-        output.writeMessage(9, (emu.grasscutter.net.proto.HICCLGEKCIOOuterClass.HICCLGEKCIO) aDCLBBDEGBD_);
+        output.writeMessage(9, (emu.grasscutter.net.proto.DetailAbilityInfoOuterClass.DetailAbilityInfo) aDCLBBDEGBD_);
       }
       unknownFields.writeTo(output);
     }
@@ -224,7 +224,7 @@ public final class MGHDLMIEMLIOuterClass {
       size = 0;
       if (aDCLBBDEGBDCase_ == 9) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(9, (emu.grasscutter.net.proto.HICCLGEKCIOOuterClass.HICCLGEKCIO) aDCLBBDEGBD_);
+          .computeMessageSize(9, (emu.grasscutter.net.proto.DetailAbilityInfoOuterClass.DetailAbilityInfo) aDCLBBDEGBD_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -540,9 +540,9 @@ public final class MGHDLMIEMLIOuterClass {
 
 
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.HICCLGEKCIOOuterClass.HICCLGEKCIO, emu.grasscutter.net.proto.HICCLGEKCIOOuterClass.HICCLGEKCIO.Builder, emu.grasscutter.net.proto.HICCLGEKCIOOuterClass.HICCLGEKCIOOrBuilder> detailAbilityInfoBuilder_;
+          emu.grasscutter.net.proto.DetailAbilityInfoOuterClass.DetailAbilityInfo, emu.grasscutter.net.proto.DetailAbilityInfoOuterClass.DetailAbilityInfo.Builder, emu.grasscutter.net.proto.DetailAbilityInfoOuterClass.DetailAbilityInfoOrBuilder> detailAbilityInfoBuilder_;
       /**
-       * <code>.HICCLGEKCIO detail_ability_info = 9;</code>
+       * <code>.DetailAbilityInfo detail_ability_info = 9;</code>
        * @return Whether the detailAbilityInfo field is set.
        */
       @java.lang.Override
@@ -550,27 +550,27 @@ public final class MGHDLMIEMLIOuterClass {
         return aDCLBBDEGBDCase_ == 9;
       }
       /**
-       * <code>.HICCLGEKCIO detail_ability_info = 9;</code>
+       * <code>.DetailAbilityInfo detail_ability_info = 9;</code>
        * @return The detailAbilityInfo.
        */
       @java.lang.Override
-      public emu.grasscutter.net.proto.HICCLGEKCIOOuterClass.HICCLGEKCIO getDetailAbilityInfo() {
+      public emu.grasscutter.net.proto.DetailAbilityInfoOuterClass.DetailAbilityInfo getDetailAbilityInfo() {
         if (detailAbilityInfoBuilder_ == null) {
           if (aDCLBBDEGBDCase_ == 9) {
-            return (emu.grasscutter.net.proto.HICCLGEKCIOOuterClass.HICCLGEKCIO) aDCLBBDEGBD_;
+            return (emu.grasscutter.net.proto.DetailAbilityInfoOuterClass.DetailAbilityInfo) aDCLBBDEGBD_;
           }
-          return emu.grasscutter.net.proto.HICCLGEKCIOOuterClass.HICCLGEKCIO.getDefaultInstance();
+          return emu.grasscutter.net.proto.DetailAbilityInfoOuterClass.DetailAbilityInfo.getDefaultInstance();
         } else {
           if (aDCLBBDEGBDCase_ == 9) {
             return detailAbilityInfoBuilder_.getMessage();
           }
-          return emu.grasscutter.net.proto.HICCLGEKCIOOuterClass.HICCLGEKCIO.getDefaultInstance();
+          return emu.grasscutter.net.proto.DetailAbilityInfoOuterClass.DetailAbilityInfo.getDefaultInstance();
         }
       }
       /**
-       * <code>.HICCLGEKCIO detail_ability_info = 9;</code>
+       * <code>.DetailAbilityInfo detail_ability_info = 9;</code>
        */
-      public Builder setDetailAbilityInfo(emu.grasscutter.net.proto.HICCLGEKCIOOuterClass.HICCLGEKCIO value) {
+      public Builder setDetailAbilityInfo(emu.grasscutter.net.proto.DetailAbilityInfoOuterClass.DetailAbilityInfo value) {
         if (detailAbilityInfoBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
@@ -584,10 +584,10 @@ public final class MGHDLMIEMLIOuterClass {
         return this;
       }
       /**
-       * <code>.HICCLGEKCIO detail_ability_info = 9;</code>
+       * <code>.DetailAbilityInfo detail_ability_info = 9;</code>
        */
       public Builder setDetailAbilityInfo(
-          emu.grasscutter.net.proto.HICCLGEKCIOOuterClass.HICCLGEKCIO.Builder builderForValue) {
+          emu.grasscutter.net.proto.DetailAbilityInfoOuterClass.DetailAbilityInfo.Builder builderForValue) {
         if (detailAbilityInfoBuilder_ == null) {
           aDCLBBDEGBD_ = builderForValue.build();
           onChanged();
@@ -598,13 +598,13 @@ public final class MGHDLMIEMLIOuterClass {
         return this;
       }
       /**
-       * <code>.HICCLGEKCIO detail_ability_info = 9;</code>
+       * <code>.DetailAbilityInfo detail_ability_info = 9;</code>
        */
-      public Builder mergeDetailAbilityInfo(emu.grasscutter.net.proto.HICCLGEKCIOOuterClass.HICCLGEKCIO value) {
+      public Builder mergeDetailAbilityInfo(emu.grasscutter.net.proto.DetailAbilityInfoOuterClass.DetailAbilityInfo value) {
         if (detailAbilityInfoBuilder_ == null) {
           if (aDCLBBDEGBDCase_ == 9 &&
-              aDCLBBDEGBD_ != emu.grasscutter.net.proto.HICCLGEKCIOOuterClass.HICCLGEKCIO.getDefaultInstance()) {
-            aDCLBBDEGBD_ = emu.grasscutter.net.proto.HICCLGEKCIOOuterClass.HICCLGEKCIO.newBuilder((emu.grasscutter.net.proto.HICCLGEKCIOOuterClass.HICCLGEKCIO) aDCLBBDEGBD_)
+              aDCLBBDEGBD_ != emu.grasscutter.net.proto.DetailAbilityInfoOuterClass.DetailAbilityInfo.getDefaultInstance()) {
+            aDCLBBDEGBD_ = emu.grasscutter.net.proto.DetailAbilityInfoOuterClass.DetailAbilityInfo.newBuilder((emu.grasscutter.net.proto.DetailAbilityInfoOuterClass.DetailAbilityInfo) aDCLBBDEGBD_)
                 .mergeFrom(value).buildPartial();
           } else {
             aDCLBBDEGBD_ = value;
@@ -620,7 +620,7 @@ public final class MGHDLMIEMLIOuterClass {
         return this;
       }
       /**
-       * <code>.HICCLGEKCIO detail_ability_info = 9;</code>
+       * <code>.DetailAbilityInfo detail_ability_info = 9;</code>
        */
       public Builder clearDetailAbilityInfo() {
         if (detailAbilityInfoBuilder_ == null) {
@@ -639,38 +639,38 @@ public final class MGHDLMIEMLIOuterClass {
         return this;
       }
       /**
-       * <code>.HICCLGEKCIO detail_ability_info = 9;</code>
+       * <code>.DetailAbilityInfo detail_ability_info = 9;</code>
        */
-      public emu.grasscutter.net.proto.HICCLGEKCIOOuterClass.HICCLGEKCIO.Builder getDetailAbilityInfoBuilder() {
+      public emu.grasscutter.net.proto.DetailAbilityInfoOuterClass.DetailAbilityInfo.Builder getDetailAbilityInfoBuilder() {
         return getDetailAbilityInfoFieldBuilder().getBuilder();
       }
       /**
-       * <code>.HICCLGEKCIO detail_ability_info = 9;</code>
+       * <code>.DetailAbilityInfo detail_ability_info = 9;</code>
        */
       @java.lang.Override
-      public emu.grasscutter.net.proto.HICCLGEKCIOOuterClass.HICCLGEKCIOOrBuilder getDetailAbilityInfoOrBuilder() {
+      public emu.grasscutter.net.proto.DetailAbilityInfoOuterClass.DetailAbilityInfoOrBuilder getDetailAbilityInfoOrBuilder() {
         if ((aDCLBBDEGBDCase_ == 9) && (detailAbilityInfoBuilder_ != null)) {
           return detailAbilityInfoBuilder_.getMessageOrBuilder();
         } else {
           if (aDCLBBDEGBDCase_ == 9) {
-            return (emu.grasscutter.net.proto.HICCLGEKCIOOuterClass.HICCLGEKCIO) aDCLBBDEGBD_;
+            return (emu.grasscutter.net.proto.DetailAbilityInfoOuterClass.DetailAbilityInfo) aDCLBBDEGBD_;
           }
-          return emu.grasscutter.net.proto.HICCLGEKCIOOuterClass.HICCLGEKCIO.getDefaultInstance();
+          return emu.grasscutter.net.proto.DetailAbilityInfoOuterClass.DetailAbilityInfo.getDefaultInstance();
         }
       }
       /**
-       * <code>.HICCLGEKCIO detail_ability_info = 9;</code>
+       * <code>.DetailAbilityInfo detail_ability_info = 9;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          emu.grasscutter.net.proto.HICCLGEKCIOOuterClass.HICCLGEKCIO, emu.grasscutter.net.proto.HICCLGEKCIOOuterClass.HICCLGEKCIO.Builder, emu.grasscutter.net.proto.HICCLGEKCIOOuterClass.HICCLGEKCIOOrBuilder> 
+          emu.grasscutter.net.proto.DetailAbilityInfoOuterClass.DetailAbilityInfo, emu.grasscutter.net.proto.DetailAbilityInfoOuterClass.DetailAbilityInfo.Builder, emu.grasscutter.net.proto.DetailAbilityInfoOuterClass.DetailAbilityInfoOrBuilder> 
           getDetailAbilityInfoFieldBuilder() {
         if (detailAbilityInfoBuilder_ == null) {
           if (!(aDCLBBDEGBDCase_ == 9)) {
-            aDCLBBDEGBD_ = emu.grasscutter.net.proto.HICCLGEKCIOOuterClass.HICCLGEKCIO.getDefaultInstance();
+            aDCLBBDEGBD_ = emu.grasscutter.net.proto.DetailAbilityInfoOuterClass.DetailAbilityInfo.getDefaultInstance();
           }
           detailAbilityInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              emu.grasscutter.net.proto.HICCLGEKCIOOuterClass.HICCLGEKCIO, emu.grasscutter.net.proto.HICCLGEKCIOOuterClass.HICCLGEKCIO.Builder, emu.grasscutter.net.proto.HICCLGEKCIOOuterClass.HICCLGEKCIOOrBuilder>(
-                  (emu.grasscutter.net.proto.HICCLGEKCIOOuterClass.HICCLGEKCIO) aDCLBBDEGBD_,
+              emu.grasscutter.net.proto.DetailAbilityInfoOuterClass.DetailAbilityInfo, emu.grasscutter.net.proto.DetailAbilityInfoOuterClass.DetailAbilityInfo.Builder, emu.grasscutter.net.proto.DetailAbilityInfoOuterClass.DetailAbilityInfoOrBuilder>(
+                  (emu.grasscutter.net.proto.DetailAbilityInfoOuterClass.DetailAbilityInfo) aDCLBBDEGBD_,
                   getParentForChildren(),
                   isClean());
           aDCLBBDEGBD_ = null;
@@ -746,15 +746,16 @@ public final class MGHDLMIEMLIOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\021MGHDLMIEMLI.proto\032\021HICCLGEKCIO.proto\"I" +
-      "\n\013MGHDLMIEMLI\022+\n\023detail_ability_info\030\t \001" +
-      "(\0132\014.HICCLGEKCIOH\000B\r\n\013ADCLBBDEGBDB\033\n\031emu" +
-      ".grasscutter.net.protob\006proto3"
+      "\n\021MGHDLMIEMLI.proto\032\027DetailAbilityInfo.p" +
+      "roto\"O\n\013MGHDLMIEMLI\0221\n\023detail_ability_in" +
+      "fo\030\t \001(\0132\022.DetailAbilityInfoH\000B\r\n\013ADCLBB" +
+      "DEGBDB\033\n\031emu.grasscutter.net.protob\006prot" +
+      "o3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.HICCLGEKCIOOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.DetailAbilityInfoOuterClass.getDescriptor(),
         });
     internal_static_MGHDLMIEMLI_descriptor =
       getDescriptor().getMessageTypes().get(0);
@@ -762,7 +763,7 @@ public final class MGHDLMIEMLIOuterClass {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_MGHDLMIEMLI_descriptor,
         new java.lang.String[] { "DetailAbilityInfo", "ADCLBBDEGBD", });
-    emu.grasscutter.net.proto.HICCLGEKCIOOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.DetailAbilityInfoOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)
