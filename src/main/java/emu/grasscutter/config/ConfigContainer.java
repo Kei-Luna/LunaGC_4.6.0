@@ -311,7 +311,7 @@ public class ConfigContainer {
 
         public static class Questing {
             /* Should questing behavior be used? */
-            public boolean enabled = true;
+            public boolean enabled = false;
         }
 
         public static class HandbookOptions {
