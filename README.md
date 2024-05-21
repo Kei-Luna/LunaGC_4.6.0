@@ -74,3 +74,6 @@ chmod +x gradlew
 ```shell
 ./gradlew generateHandbook
 ```
+
+## Troubleshooting
+- Make sure to set useEncryption and useInRouting both to false otherwise you might encounter errors.
