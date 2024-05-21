@@ -37,7 +37,7 @@ If you need a more detailed guide, please refer to GrassCutter's official reposi
 - Place Rsa_Patch/version.dll in the game root directory
 - Download the older version of [mihoyonet.dll](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20231030132335_iOEfPMcbrXpiA8Ca/ScatteredFiles/GenshinImpact_Data/Plugins/mihoyonet.dll) (4.2.0) and replace `GenshinImpact_Data/Plugins/mihoyonet.dll`
 - Download the [Resources](https://github.com/Kei-Luna/LunaGC_Resources_4.6.0) and place it in `/Resources`
-- Set useEncryption to false(Set to false by default)
+- Set useEncryption and Questing to false(Set to false by default)
 - Start the server and game
 - have fun
 
