@@ -23,7 +23,7 @@ public final class HandlerItemGivingReq extends PacketHandler {
         var giveId = req.getGivingId();
         var items = req.getItemParamListList();
 
-        switch (req.getItemGivingType()) {
+/*        switch (req.getItemGivingType()) {
             case QUEST -> {
                 var questManager = player.getQuestManager();
                 var activeGivings = player.getPlayerProgress().getItemGivings();
@@ -111,6 +111,6 @@ public final class HandlerItemGivingReq extends PacketHandler {
                 Grasscutter.getLogger().debug("Unimplemented gadget giving was executed for {}.", giveId);
                 player.sendPacket(new PacketItemGivingRsp());
             }
-        }
+        }*/
     }
 }
