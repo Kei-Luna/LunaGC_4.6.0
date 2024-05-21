@@ -1,21 +1,20 @@
 # LunaGC-4.6.0
 
-my Discord https://discord.gg/8vSyTHVphj
+My Discord https://discord.gg/8vSyTHVphj
 
 Please contribute actively to this repository
 
 # Setup Guide
 
-There is only a minimal guide here
-
-If you need a more detailed guide, please refer to GrassCutter's official repository (no fiddler required)
-
+This guide is very minimal and contains steps to just get your server and client up and running.
+Connecting to the server won't require Fiddler.
+However, if you need a more detailed guide and help with the server please refer to GrassCutter's official repository and discord server.
 
 ## Main Requirements
 
 - Get [Java 17](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
 - Get [MongoDB Community Server](https://www.mongodb.com/try/download/community)
-- Get game version REL4.6.0 (If you don't have a 4.6.0 client, you can find it here and download it) :
+- Get game version REL4.6.0 (If you don't have a 4.6.0 client, you can find it here along with the audio files) :
 
 
 | Download link | Package size | MD5 checksum |
@@ -32,14 +31,14 @@ If you need a more detailed guide, please refer to GrassCutter's official reposi
 | [Audio_Korean_4.6.0.zip](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20240412191920_HThGUGlY3Gjy6AXP/Audio_Korean_4.6.0.zip) | 13.8 GB | 58c3fc8782f3d59b324dfd603fa93e6d |
 
 
-- set Java environment variables
-- build server
-- Place Rsa_Patch/version.dll in the game root directory
+- Make sure to install java and set the environment variables.
+- Build the server (refer to "Compile the actual server" in this guide.)
+- Get the version.dll file from the Rsa_Patch folder and put it into the game root directory.
 - Download the older version of [mihoyonet.dll](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20231030132335_iOEfPMcbrXpiA8Ca/ScatteredFiles/GenshinImpact_Data/Plugins/mihoyonet.dll) (4.2.0) and replace `GenshinImpact_Data/Plugins/mihoyonet.dll`
 - Download the [Resources](https://github.com/Kei-Luna/LunaGC_Resources_4.6.0) and place it in `/Resources`
-- Set useEncryption to false(Set to false by default)
-- Start the server and game
-- have fun
+- Set useEncryption to false (it should be false by default, if not then change it)
+- Start the server and the game, make sure to also create an account in the LunaGC console!
+- Have fun
 
 
 ### Compile the actual Server
