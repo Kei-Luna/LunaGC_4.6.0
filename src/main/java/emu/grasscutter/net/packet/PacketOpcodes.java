@@ -168,7 +168,9 @@ public final class PacketOpcodes {
     public static final int TakeoffEquipRsp = 25886;//4.6.0
     public static final int ItemGivingReq = 204;//4.6.0
     public static final int ItemGivingRsp = 5880;//4.6.0
-    
+    public static final int ServerGlobalValueChangeNotify = 24449;//4.6.0
+
+
 
 
 
@@ -2205,7 +2207,6 @@ public final class PacketOpcodes {
     public static final int ServerCombatEndNotify = 3995895;     //4.0.0
     public static final int ServerCondMeetQuestListUpdateNotify = 39929009;     //4.0.0
     public static final int ServerDisconnectClientNotify = 39922635;     //4.0.0
-    public static final int ServerGlobalValueChangeNotify = 39928698;     //4.0.0
     public static final int ServerLogNotify = 3997350;     //4.0.0
     public static final int ServerMessageNotify = 39920880;     //4.0.0
     public static final int ServerTryCancelGeneralMatchNotify = 3997158;     //4.0.0
