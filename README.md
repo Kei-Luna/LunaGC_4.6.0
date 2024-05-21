@@ -2,6 +2,8 @@
 
 my Discord https://discord.gg/8vSyTHVphj
 
+Please contribute actively to this repository
+
 # Setup Guide
 
 There is only a minimal guide here
