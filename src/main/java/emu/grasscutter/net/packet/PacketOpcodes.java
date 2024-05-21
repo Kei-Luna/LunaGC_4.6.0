@@ -142,6 +142,12 @@ public final class PacketOpcodes {
     public static final int EntityFightPropUpdateNotify = 8257;//4.6.0  950 or 8257
     public static final int MassiveEntityElementOpBatchNotify = 9010;//4.6.0
     public static final int EvtDoSkillSuccNotify = 6290;//4.6.0
+    public static final int SetPlayerNameReq = 22779;//4.6.0
+    public static final int SetPlayerNameRsp = 8082;//4.6.0
+    public static final int MarkMapReq = 1319;//4.6.0
+    public static final int MarkMapRsp = 1360;// sus 
+    public static final int AllMarkPointNotify = 4620;// sus
+
 
 
 
@@ -224,7 +230,6 @@ public final class PacketOpcodes {
     public static final int AdjustWorldLevelReq = 3998482;     //4.0.0
     public static final int AdjustWorldLevelRsp = 39929945;     //4.0.0
     public static final int AllCoopInfoNotify = 3992587;     //4.0.0
-    public static final int AllMarkPointNotify = 21841;     //4.0.0
     public static final int AllSeenMonsterNotify = 3997030;     //4.0.0
     public static final int AllShareCDDataNotify = 3993440;     //4.0.0
     public static final int AllWidgetBackgroundActiveStateNotify = 3994761;     //4.0.0
@@ -1639,8 +1644,6 @@ public final class PacketOpcodes {
     public static final int MainCoopUpdateNotify = 3991415;     //4.0.0
     public static final int MapAreaChangeNotify = 39921970;     //4.0.0
     public static final int MarkEntityInMinMapNotify = 399315;     //4.0.0
-    public static final int MarkMapReq = 1319;     //4.0.0
-    public static final int MarkMapRsp = 39928945;     //4.0.0
     public static final int MarkNewNotify = 39926228;     //4.0.0
     public static final int MarkTargetInvestigationMonsterNotify = 39921010;     //4.0.0
     public static final int MassiveEntityStateChangedNotify = 39921761;     //4.0.0
@@ -2228,8 +2231,6 @@ public final class PacketOpcodes {
     public static final int SetPlayerBornDataRsp = 39922804;     //4.0.0
     public static final int SetPlayerHeadImageReq = 3994071;     //4.0.0
     public static final int SetPlayerHeadImageRsp = 39920979;     //4.0.0
-    public static final int SetPlayerNameReq = 3992665;     //4.0.0
-    public static final int SetPlayerNameRsp = 39925056;     //4.0.0
     public static final int SetPlayerPropReq = 39925174;     //4.0.0
     public static final int SetPlayerPropRsp = 3991391;     //4.0.0
     public static final int SetPlayerSignatureReq = 399771;     //4.0.0
