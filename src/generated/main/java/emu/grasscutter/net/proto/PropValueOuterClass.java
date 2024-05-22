@@ -55,6 +55,10 @@ public final class PropValueOuterClass {
     public emu.grasscutter.net.proto.PropValueOuterClass.PropValue.ValueCase getValueCase();
   }
   /**
+   * <pre>
+   *4.6.0
+   * </pre>
+   *
    * Protobuf type {@code PropValue}
    */
   public static final class PropValue extends
@@ -470,6 +474,10 @@ public final class PropValueOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     *4.6.0
+     * </pre>
+     *
      * Protobuf type {@code PropValue}
      */
     public static final class Builder extends
