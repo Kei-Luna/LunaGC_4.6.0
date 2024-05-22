@@ -32,7 +32,7 @@ However, if you need a more detailed guide and help with the server please refer
 
 
 - Make sure to install java and set the environment variables.
-- Build the server (refer to "Compile the actual server" in this guide.), or if you don't know what to do or you are lazy just download the precompiled jar from the big header below.
+- Build the server (refer to "Compile the actual server" in this guide.)
 - Get the version.dll file from the Rsa_Patch folder and put it into the game root directory.
 - Download the older version of [mihoyonet.dll](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20231030132335_iOEfPMcbrXpiA8Ca/ScatteredFiles/GenshinImpact_Data/Plugins/mihoyonet.dll) (4.2.0) and replace `GenshinImpact_Data/Plugins/mihoyonet.dll`
 - Download the [Resources](https://github.com/Kei-Luna/LunaGC_Resources_4.6.0) and place it in `/Resources`
@@ -40,9 +40,6 @@ However, if you need a more detailed guide and help with the server please refer
 - Start the server and the game, make sure to also create an account in the LunaGC console!
 - Have fun
 =======
-
-# Precompiled server JAR file
-[Download](https://gi2.pmagickline.xyz/other/private-servers/LunaGC-4.6/precompiled-jar/LunaGC-4.6.0.jar)
 
 ### Compile the actual Server
 
