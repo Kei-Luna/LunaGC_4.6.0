@@ -1,0 +1,31 @@
+[package]
+name = "hk4e-patch"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "version"
+crate-type = ["cdylib"]
+
+[dependencies]
+anyhow = "1.0.81"
+ilhook = "2.1.0"
+lazy_static = "1.4.0"
+libloading = "0.8.3"
+windows = { version = "0.54.0", features = [
+	"Win32_Foundation",
+	"Win32_System_SystemServices",
+	"Win32_System_LibraryLoader",
+	"Win32_System_Console",
+	"Win32_System_Threading",
+	"Win32_System_Memory",
+] }
+
+[build-dependencies]
+cc = "1.0.90"
+
+[profile.release]
+strip = true      # Automatically strip symbols from the binary.
+lto = true        # Link-time optimization.
+opt-level = 3     # Optimization level 3.
+codegen-units = 1 # Maximum size reduction optimizations.
