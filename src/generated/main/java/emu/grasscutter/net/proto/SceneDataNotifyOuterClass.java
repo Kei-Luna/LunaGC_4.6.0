@@ -59,6 +59,21 @@ public final class SceneDataNotifyOuterClass {
      * @return The sceneTagIdList at the given index.
      */
     int getSceneTagIdList(int index);
+
+    /**
+     * <code>.MapLayerInfo map_layer_info = 11;</code>
+     * @return Whether the mapLayerInfo field is set.
+     */
+    boolean hasMapLayerInfo();
+    /**
+     * <code>.MapLayerInfo map_layer_info = 11;</code>
+     * @return The mapLayerInfo.
+     */
+    emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo getMapLayerInfo();
+    /**
+     * <code>.MapLayerInfo map_layer_info = 11;</code>
+     */
+    emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfoOrBuilder getMapLayerInfoOrBuilder();
   }
   /**
    * <pre>
@@ -141,6 +156,19 @@ public final class SceneDataNotifyOuterClass {
                 sceneTagIdList_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
+              break;
+            }
+            case 90: {
+              emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo.Builder subBuilder = null;
+              if (mapLayerInfo_ != null) {
+                subBuilder = mapLayerInfo_.toBuilder();
+              }
+              mapLayerInfo_ = input.readMessage(emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(mapLayerInfo_);
+                mapLayerInfo_ = subBuilder.buildPartial();
+              }
+
               break;
             }
             default: {
@@ -244,6 +272,32 @@ public final class SceneDataNotifyOuterClass {
     }
     private int sceneTagIdListMemoizedSerializedSize = -1;
 
+    public static final int MAP_LAYER_INFO_FIELD_NUMBER = 11;
+    private emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo mapLayerInfo_;
+    /**
+     * <code>.MapLayerInfo map_layer_info = 11;</code>
+     * @return Whether the mapLayerInfo field is set.
+     */
+    @java.lang.Override
+    public boolean hasMapLayerInfo() {
+      return mapLayerInfo_ != null;
+    }
+    /**
+     * <code>.MapLayerInfo map_layer_info = 11;</code>
+     * @return The mapLayerInfo.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo getMapLayerInfo() {
+      return mapLayerInfo_ == null ? emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo.getDefaultInstance() : mapLayerInfo_;
+    }
+    /**
+     * <code>.MapLayerInfo map_layer_info = 11;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfoOrBuilder getMapLayerInfoOrBuilder() {
+      return getMapLayerInfo();
+    }
+
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -268,6 +322,9 @@ public final class SceneDataNotifyOuterClass {
       }
       for (int i = 0; i < sceneTagIdList_.size(); i++) {
         output.writeUInt32NoTag(sceneTagIdList_.getInt(i));
+      }
+      if (mapLayerInfo_ != null) {
+        output.writeMessage(11, getMapLayerInfo());
       }
       unknownFields.writeTo(output);
     }
@@ -300,6 +357,10 @@ public final class SceneDataNotifyOuterClass {
         }
         sceneTagIdListMemoizedSerializedSize = dataSize;
       }
+      if (mapLayerInfo_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(11, getMapLayerInfo());
+      }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
       return size;
@@ -319,6 +380,11 @@ public final class SceneDataNotifyOuterClass {
           .equals(other.getLevelConfigNameListList())) return false;
       if (!getSceneTagIdListList()
           .equals(other.getSceneTagIdListList())) return false;
+      if (hasMapLayerInfo() != other.hasMapLayerInfo()) return false;
+      if (hasMapLayerInfo()) {
+        if (!getMapLayerInfo()
+            .equals(other.getMapLayerInfo())) return false;
+      }
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -337,6 +403,10 @@ public final class SceneDataNotifyOuterClass {
       if (getSceneTagIdListCount() > 0) {
         hash = (37 * hash) + SCENE_TAG_ID_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getSceneTagIdListList().hashCode();
+      }
+      if (hasMapLayerInfo()) {
+        hash = (37 * hash) + MAP_LAYER_INFO_FIELD_NUMBER;
+        hash = (53 * hash) + getMapLayerInfo().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -480,6 +550,12 @@ public final class SceneDataNotifyOuterClass {
         bitField0_ = (bitField0_ & ~0x00000001);
         sceneTagIdList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000002);
+        if (mapLayerInfoBuilder_ == null) {
+          mapLayerInfo_ = null;
+        } else {
+          mapLayerInfo_ = null;
+          mapLayerInfoBuilder_ = null;
+        }
         return this;
       }
 
@@ -517,6 +593,11 @@ public final class SceneDataNotifyOuterClass {
           bitField0_ = (bitField0_ & ~0x00000002);
         }
         result.sceneTagIdList_ = sceneTagIdList_;
+        if (mapLayerInfoBuilder_ == null) {
+          result.mapLayerInfo_ = mapLayerInfo_;
+        } else {
+          result.mapLayerInfo_ = mapLayerInfoBuilder_.build();
+        }
         onBuilt();
         return result;
       }
@@ -584,6 +665,9 @@ public final class SceneDataNotifyOuterClass {
             sceneTagIdList_.addAll(other.sceneTagIdList_);
           }
           onChanged();
+        }
+        if (other.hasMapLayerInfo()) {
+          mergeMapLayerInfo(other.getMapLayerInfo());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -803,6 +887,125 @@ public final class SceneDataNotifyOuterClass {
         onChanged();
         return this;
       }
+
+      private emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo mapLayerInfo_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo, emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo.Builder, emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfoOrBuilder> mapLayerInfoBuilder_;
+      /**
+       * <code>.MapLayerInfo map_layer_info = 11;</code>
+       * @return Whether the mapLayerInfo field is set.
+       */
+      public boolean hasMapLayerInfo() {
+        return mapLayerInfoBuilder_ != null || mapLayerInfo_ != null;
+      }
+      /**
+       * <code>.MapLayerInfo map_layer_info = 11;</code>
+       * @return The mapLayerInfo.
+       */
+      public emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo getMapLayerInfo() {
+        if (mapLayerInfoBuilder_ == null) {
+          return mapLayerInfo_ == null ? emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo.getDefaultInstance() : mapLayerInfo_;
+        } else {
+          return mapLayerInfoBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.MapLayerInfo map_layer_info = 11;</code>
+       */
+      public Builder setMapLayerInfo(emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo value) {
+        if (mapLayerInfoBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          mapLayerInfo_ = value;
+          onChanged();
+        } else {
+          mapLayerInfoBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.MapLayerInfo map_layer_info = 11;</code>
+       */
+      public Builder setMapLayerInfo(
+          emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo.Builder builderForValue) {
+        if (mapLayerInfoBuilder_ == null) {
+          mapLayerInfo_ = builderForValue.build();
+          onChanged();
+        } else {
+          mapLayerInfoBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.MapLayerInfo map_layer_info = 11;</code>
+       */
+      public Builder mergeMapLayerInfo(emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo value) {
+        if (mapLayerInfoBuilder_ == null) {
+          if (mapLayerInfo_ != null) {
+            mapLayerInfo_ =
+              emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo.newBuilder(mapLayerInfo_).mergeFrom(value).buildPartial();
+          } else {
+            mapLayerInfo_ = value;
+          }
+          onChanged();
+        } else {
+          mapLayerInfoBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.MapLayerInfo map_layer_info = 11;</code>
+       */
+      public Builder clearMapLayerInfo() {
+        if (mapLayerInfoBuilder_ == null) {
+          mapLayerInfo_ = null;
+          onChanged();
+        } else {
+          mapLayerInfo_ = null;
+          mapLayerInfoBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.MapLayerInfo map_layer_info = 11;</code>
+       */
+      public emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo.Builder getMapLayerInfoBuilder() {
+        
+        onChanged();
+        return getMapLayerInfoFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.MapLayerInfo map_layer_info = 11;</code>
+       */
+      public emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfoOrBuilder getMapLayerInfoOrBuilder() {
+        if (mapLayerInfoBuilder_ != null) {
+          return mapLayerInfoBuilder_.getMessageOrBuilder();
+        } else {
+          return mapLayerInfo_ == null ?
+              emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo.getDefaultInstance() : mapLayerInfo_;
+        }
+      }
+      /**
+       * <code>.MapLayerInfo map_layer_info = 11;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo, emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo.Builder, emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfoOrBuilder> 
+          getMapLayerInfoFieldBuilder() {
+        if (mapLayerInfoBuilder_ == null) {
+          mapLayerInfoBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo, emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfo.Builder, emu.grasscutter.net.proto.MapLayerInfoOuterClass.MapLayerInfoOrBuilder>(
+                  getMapLayerInfo(),
+                  getParentForChildren(),
+                  isClean());
+          mapLayerInfo_ = null;
+        }
+        return mapLayerInfoBuilder_;
+      }
       @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
@@ -870,21 +1073,24 @@ public final class SceneDataNotifyOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\025SceneDataNotify.proto\"L\n\017SceneDataNoti" +
-      "fy\022\036\n\026level_config_name_list\030\002 \003(\t\022\031\n\021sc" +
-      "ene_tag_id_list\030\005 \003(\rB\033\n\031emu.grasscutter" +
-      ".net.protob\006proto3"
+      "\n\025SceneDataNotify.proto\032\022MapLayerInfo.pr" +
+      "oto\"s\n\017SceneDataNotify\022\036\n\026level_config_n" +
+      "ame_list\030\002 \003(\t\022\031\n\021scene_tag_id_list\030\005 \003(" +
+      "\r\022%\n\016map_layer_info\030\013 \001(\0132\r.MapLayerInfo" +
+      "B\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
+          emu.grasscutter.net.proto.MapLayerInfoOuterClass.getDescriptor(),
         });
     internal_static_SceneDataNotify_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_SceneDataNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_SceneDataNotify_descriptor,
-        new java.lang.String[] { "LevelConfigNameList", "SceneTagIdList", });
+        new java.lang.String[] { "LevelConfigNameList", "SceneTagIdList", "MapLayerInfo", });
+    emu.grasscutter.net.proto.MapLayerInfoOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

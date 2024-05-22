@@ -169,6 +169,9 @@ public final class PacketOpcodes {
     public static final int ItemGivingReq = 204;//4.6.0
     public static final int ItemGivingRsp = 5880;//4.6.0
     public static final int ServerGlobalValueChangeNotify = 24449;//4.6.0
+    public static final int PlayerWorldSceneInfoListNotify = 250;//4.6.0
+    public static final int SceneTransToPointReq = 20814;//4.6.0
+    public static final int SceneTransToPointRsp = 29013;//4.6.0
 
 
 
@@ -1959,7 +1962,6 @@ public final class PacketOpcodes {
     public static final int PlayerStartMatchReq = 39927823;     //4.0.0
     public static final int PlayerStartMatchRsp = 39921172;     //4.0.0
     public static final int PlayerTimeNotify = 3999057;     //4.0.0
-    public static final int PlayerWorldSceneInfoListNotify = 3997017;     //4.0.0
     public static final int PotionEnterDungeonNotify = 39921097;     //4.0.0
     public static final int PotionEnterDungeonReq = 3994073;     //4.0.0
     public static final int PotionEnterDungeonRsp = 3997418;     //4.0.0
@@ -2172,8 +2174,6 @@ public final class PacketOpcodes {
     public static final int ScenePlayerSoundNotify = 39920293;     //4.0.0
     public static final int ScenePointUnlockNotify = 3995431;     //4.0.0
     public static final int SceneRouteChangeNotify = 3999691;     //4.0.0
-    public static final int SceneTransToPointReq = 39926498;     //4.0.0
-    public static final int SceneTransToPointRsp = 39928443;     //4.0.0
     public static final int SceneWeatherForcastReq = 39927174;     //4.0.0
     public static final int SceneWeatherForcastRsp = 3994766;     //4.0.0
     public static final int SeaLampCoinNotify = 3998079;     //4.0.0
