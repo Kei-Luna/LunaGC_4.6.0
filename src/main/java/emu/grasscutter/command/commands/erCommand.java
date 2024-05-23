@@ -57,6 +57,6 @@ public final class erCommand implements CommandHandler {
                 entity.getWorld().broadcastPacket(new PacketAvatarLifeStateChangeNotify(entity.getAvatar()));
             }
         });
-        CommandHandler.sendMessage(sender, "元素エネルギーを回復しました。");
+        CommandHandler.sendMessage(sender, "Restored elemental energy successfully.");
     }
 }
