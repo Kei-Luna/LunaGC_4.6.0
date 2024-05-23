@@ -15,6 +15,6 @@ public class NoFogCommand implements CommandHandler
 		
 		String path = "fog";
 		targetPlayer.sendPacket(new PacketWindy(path));
-    CommandHandler.sendMessage(sender, "NoFog");
+    CommandHandler.sendMessage(sender, "Successfully executed No Fog script.");
     }
 }
