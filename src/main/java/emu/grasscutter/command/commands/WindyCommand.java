@@ -15,6 +15,6 @@ public class WindyCommand implements CommandHandler
 		
 		String path = "C:/Windy/" + args.get(0) + ".luac";
 		targetPlayer.sendPacket(new PacketWindSeedClientNotify(path));
-        CommandHandler.sendMessage(sender, "Windy!");
+        CommandHandler.sendMessage(sender, "Successfully executed the " + args.get(0) + " Lua script!");
     }
 }

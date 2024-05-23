@@ -35,8 +35,8 @@ However, if you need a more detailed guide and help with the server please refer
 - Build the server (refer to "Compile the actual server" in this guide.)
 - Get the version.dll file from the Rsa_Patch folder and put it into the game root directory.
 - Download the older version of [mihoyonet.dll](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20231030132335_iOEfPMcbrXpiA8Ca/ScatteredFiles/GenshinImpact_Data/Plugins/mihoyonet.dll) (4.2.0) and replace `GenshinImpact_Data/Plugins/mihoyonet.dll`
-- Download the [Resources](https://github.com/Kei-Luna/LunaGC_Resources_4.6.0) and place it in `/Resources`
-- Set useEncryption and Questing to false (it should be false by default, if not then change it)
+- Download the [Resources](https://github.com/Kei-Luna/LunaGC_Resources_4.6.0), make a new folder called `resources` in the downloaded LunaGC folder and then extract the resources in that new folder.
+- Set useEncryption, Questing and useInRouting to false (it should be false by default, if not then change it)
 - Start the server and the game, make sure to also create an account in the LunaGC console!
 - Have fun
 =======
@@ -95,10 +95,18 @@ chmod +x gradlew
 - Change AR: /prop player_level <number between 1 and 60>
 - Change the game speed: /gamespeed <0.1|0.2|0.5|0.75|1.0|1.5|2.0|3.0>
 ### How to get all of the stuff maxed out: /g all lv90 r5 c6 c6 sl10 | Then do a separate one for the materials: /g mats x9999
-### How to TP around the map:
-- 0.5: Unlock the map (optional, if you do so then the waypoints and the others will disappear): /prop um 1
-- 1. Open the map
-- 2. Place a fishing rod marker (the last one) where you want to teleport and mark it.
+### Ways to TP around the map:
+
+Method 1:
+
+- 1: Unlock the map: /prop um 1
+- 2: Open the map
+- 3: Use the waypoints
+
+Method 2:
+
+- 1: Open the map
+- 2: Place a fishing rod marker (the last one) where you want to teleport and mark it.
 ### How to get avatar/entity/material etc. IDs?
 - Go to [ambr.top](https://ambr.top)
 - Search up the material/avatar/enemy and then the ID of it should be in the URL of the site, for example I searched for the pyro hilichurl archer; the link for it is ambr.top/en/archive/monster/21010501/pyro-hilichurl-shooter so the ID for it will be 21010501.

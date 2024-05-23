@@ -15,6 +15,6 @@ public class HideUICommand implements CommandHandler
 		
 		String path = "HideUI";
 		targetPlayer.sendPacket(new PacketWindy(path));
-        CommandHandler.sendMessage(sender, "HideUI");
+        CommandHandler.sendMessage(sender, "UI hidden successfully.");
     }
 }

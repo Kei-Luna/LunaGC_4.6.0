@@ -29,6 +29,7 @@ public final class InfoCommand implements CommandHandler {
         var fastRequire = config.server.fastRequire;
 
         CommandHandler.sendMessage(sender, """
+                Modified by Kei-Luna and the contributors
                 Created by Meledy
                 - currently maintained by KingRainbow44
                 - formerly maintained by Birdulon
@@ -54,7 +55,7 @@ public final class InfoCommand implements CommandHandler {
             Operating System: %s
             Resource Information: %s
 
-            discord.gg/T5vZU6UyeG"""
+            discord.gg/2AxayFampP"""
                     .formatted(
                             build, playerCount, questingEnabled, scriptsEnabled, fastRequire,
                             System.getProperty("os.name"), resourceInfo.toString()
@@ -62,7 +63,7 @@ public final class InfoCommand implements CommandHandler {
             );
         } else {
             CommandHandler.sendMessage(sender, """
-                    Grasscutter Discord: discord.gg/T5vZU6UyeG""");
+                    Grasscutter Discord: discord.gg/2AxayFampP""");
         }
     }
 }
