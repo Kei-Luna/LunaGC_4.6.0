@@ -15,6 +15,6 @@ public class RemoveCensorshipCommand implements CommandHandler
 		
 		String path = "RemoveCensorship";
 		targetPlayer.sendPacket(new PacketWindy(path));
-    CommandHandler.sendMessage(sender, "RemoveCensorship");
+    CommandHandler.sendMessage(sender, "Censhorship removed successfully.");
     }
 }
