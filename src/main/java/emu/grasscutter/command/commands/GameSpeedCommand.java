@@ -15,6 +15,6 @@ public class GameSpeedCommand implements CommandHandler
 		
 		String path = "GameSpeed/speed" + args.get(0);
 		targetPlayer.sendPacket(new PacketWindy(path));
-        CommandHandler.sendMessage(sender, "GameSpeed Change!");
+        CommandHandler.sendMessage(sender, "GameSpeed changed to " + args.get(0) + " successfully!");
     }
 }
