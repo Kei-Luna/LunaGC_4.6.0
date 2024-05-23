@@ -100,13 +100,13 @@ chmod +x gradlew
 Method 1:
 
 - 1: Unlock the map: /prop um 1
-- 2. Open the map
-- 3. Use the waypoints
+- 2: Open the map
+- 3: Use the waypoints
 
 Method 2:
 
-- 1. Open the map
-- 2. Place a fishing rod marker (the last one) where you want to teleport and mark it.
+- 1: Open the map
+- 2: Place a fishing rod marker (the last one) where you want to teleport and mark it.
 ### How to get avatar/entity/material etc. IDs?
 - Go to [ambr.top](https://ambr.top)
 - Search up the material/avatar/enemy and then the ID of it should be in the URL of the site, for example I searched for the pyro hilichurl archer; the link for it is ambr.top/en/archive/monster/21010501/pyro-hilichurl-shooter so the ID for it will be 21010501.
