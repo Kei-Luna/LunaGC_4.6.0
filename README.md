@@ -95,8 +95,16 @@ chmod +x gradlew
 - Change AR: /prop player_level <number between 1 and 60>
 - Change the game speed: /gamespeed <0.1|0.2|0.5|0.75|1.0|1.5|2.0|3.0>
 ### How to get all of the stuff maxed out: /g all lv90 r5 c6 c6 sl10 | Then do a separate one for the materials: /g mats x9999
-### How to TP around the map:
-- 0.5: Unlock the map (optional, if you do so then the waypoints and the others will disappear): /prop um 1
+### Ways to TP around the map:
+
+Method 1:
+
+- 1: Unlock the map: /prop um 1
+- 2. Open the map
+- 3. Use the waypoints
+
+Method 2:
+
 - 1. Open the map
 - 2. Place a fishing rod marker (the last one) where you want to teleport and mark it.
 ### How to get avatar/entity/material etc. IDs?
