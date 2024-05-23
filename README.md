@@ -35,8 +35,8 @@ However, if you need a more detailed guide and help with the server please refer
 - Build the server (refer to "Compile the actual server" in this guide.)
 - Get the version.dll file from the Rsa_Patch folder and put it into the game root directory.
 - Download the older version of [mihoyonet.dll](https://autopatchhk.yuanshen.com/client_app/download/pc_zip/20231030132335_iOEfPMcbrXpiA8Ca/ScatteredFiles/GenshinImpact_Data/Plugins/mihoyonet.dll) (4.2.0) and replace `GenshinImpact_Data/Plugins/mihoyonet.dll`
-- Download the [Resources](https://github.com/Kei-Luna/LunaGC_Resources_4.6.0) and place it in `/Resources`
-- Set useEncryption and Questing to false (it should be false by default, if not then change it)
+- Download the [Resources](https://github.com/Kei-Luna/LunaGC_Resources_4.6.0), make a new folder called `resources` in the downloaded LunaGC folder and then extract the resources in that new folder.
+- Set useEncryption, Questing and useInRouting to false (it should be false by default, if not then change it)
 - Start the server and the game, make sure to also create an account in the LunaGC console!
 - Have fun
 =======
