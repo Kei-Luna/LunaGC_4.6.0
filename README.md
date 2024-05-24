@@ -41,7 +41,7 @@ However, if you need a more detailed guide and help with the server please refer
 - Have fun
 
 ## Important!
-- If you use cultivation and you know what you are doing please disable the automatically patch RSA option in settings! (I recommend to use NotThorny's Cultivation mod) Cultivation will automatically patch the game either with a 4.0 or 4.5 patch which is not good because LunaGC is 4.6. So, uncheck automatically patch RSA in settings and then place the rsa patch dll again in the game folder if Cultivation has gotten rid of it.
+- If you use cultivation and you know what you are doing please disable the automatically patch RSA option in settings! (I recommend to use NotThorny's Cultivation modification if you really want to use Cultivation) Cultivation will automatically patch the game either with a 4.0 or 4.5 patch which is not good because LunaGC is 4.6. So, uncheck automatically patch RSA in settings and then place the rsa patch dll again in the game folder if Cultivation has gotten rid of it.
 
 ### Compile the actual Server
 
