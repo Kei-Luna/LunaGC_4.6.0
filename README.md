@@ -39,7 +39,9 @@ However, if you need a more detailed guide and help with the server please refer
 - Set useEncryption, Questing and useInRouting to false (it should be false by default, if not then change it)
 - Start the server and the game, make sure to also create an account in the LunaGC console!
 - Have fun
-=======
+
+## Important!
+- If you use cultivation and you know what you are doing please disable the automatically patch RSA option in settings! (I recommend to use NotThorny's Cultivation modification if you really want to use Cultivation) Cultivation will automatically patch the game either with a 4.0 or 4.5 patch which is not good because LunaGC is 4.6. So, uncheck automatically patch RSA in settings and then place the rsa patch dll again in the game folder if Cultivation has gotten rid of it.
 
 ### Compile the actual Server
 
