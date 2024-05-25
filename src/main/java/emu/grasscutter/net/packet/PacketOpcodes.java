@@ -172,6 +172,9 @@ public final class PacketOpcodes {
     public static final int PlayerWorldSceneInfoListNotify = 250;//4.6.0
     public static final int SceneTransToPointReq = 20814;//4.6.0
     public static final int SceneTransToPointRsp = 29013;//4.6.0
+    public static final int GadgetInteractReq = 9529;//4.6.0
+    public static final int GadgetInteractRsp = 20933;//4.6.0
+    public static final int ItemAddHintNotify = 7983;//4.6.0
 
 
 
@@ -1111,8 +1114,6 @@ public final class PacketOpcodes {
     public static final int GadgetChangeLevelTagRsp = 3999742;     //4.0.0
     public static final int GadgetCustomTreeInfoNotify = 3998377;     //4.0.0
     public static final int GadgetGeneralRewardInfoNotify = 3997557;     //4.0.0
-    public static final int GadgetInteractReq = 3999254;     //4.0.0
-    public static final int GadgetInteractRsp = 39929895;     //4.0.0
     public static final int GadgetPlayDataNotify = 39929586;     //4.0.0
     public static final int GadgetPlayStartNotify = 3991524;     //4.0.0
     public static final int GadgetPlayStopNotify = 39929757;     //4.0.0
@@ -1514,7 +1515,6 @@ public final class PacketOpcodes {
     public static final int IslandPartyRaftInfoNotify = 3995989;     //4.0.0
     public static final int IslandPartySailInfoNotify = 3998726;     //4.0.0
     public static final int IslandPartySettleNotify = 39923083;     //4.0.0
-    public static final int ItemAddHintNotify = 39920755;     //4.0.0
     public static final int ItemCdGroupTimeNotify = 39921839;     //4.0.0
     public static final int ItemRenameAvatarReq = 39929042;     //4.0.0
     public static final int ItemRenameAvatarRsp = 39927302;     //4.0.0

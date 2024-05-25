@@ -19,32 +19,32 @@ public final class ItemHintOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 count = 7;</code>
+     * <code>uint32 count = 3;</code>
      * @return The count.
      */
     int getCount();
 
     /**
-     * <code>uint32 item_id = 9;</code>
+     * <code>uint32 item_id = 4;</code>
      * @return The itemId.
      */
     int getItemId();
 
     /**
-     * <code>uint64 guid = 14;</code>
+     * <code>uint64 guid = 6;</code>
      * @return The guid.
      */
     long getGuid();
 
     /**
-     * <code>bool is_new = 8;</code>
+     * <code>bool is_new = 14;</code>
      * @return The isNew.
      */
     boolean getIsNew();
   }
   /**
    * <pre>
-   * Obf: OLBNAADPLKJ
+   * 4.6.0
    * </pre>
    *
    * Protobuf type {@code ItemHint}
@@ -91,24 +91,24 @@ public final class ItemHintOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
+            case 24: {
 
               count_ = input.readUInt32();
               break;
             }
-            case 64: {
-
-              isNew_ = input.readBool();
-              break;
-            }
-            case 72: {
+            case 32: {
 
               itemId_ = input.readUInt32();
               break;
             }
-            case 112: {
+            case 48: {
 
               guid_ = input.readUInt64();
+              break;
+            }
+            case 112: {
+
+              isNew_ = input.readBool();
               break;
             }
             default: {
@@ -143,10 +143,10 @@ public final class ItemHintOuterClass {
               emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint.class, emu.grasscutter.net.proto.ItemHintOuterClass.ItemHint.Builder.class);
     }
 
-    public static final int COUNT_FIELD_NUMBER = 7;
+    public static final int COUNT_FIELD_NUMBER = 3;
     private int count_;
     /**
-     * <code>uint32 count = 7;</code>
+     * <code>uint32 count = 3;</code>
      * @return The count.
      */
     @java.lang.Override
@@ -154,10 +154,10 @@ public final class ItemHintOuterClass {
       return count_;
     }
 
-    public static final int ITEM_ID_FIELD_NUMBER = 9;
+    public static final int ITEM_ID_FIELD_NUMBER = 4;
     private int itemId_;
     /**
-     * <code>uint32 item_id = 9;</code>
+     * <code>uint32 item_id = 4;</code>
      * @return The itemId.
      */
     @java.lang.Override
@@ -165,10 +165,10 @@ public final class ItemHintOuterClass {
       return itemId_;
     }
 
-    public static final int GUID_FIELD_NUMBER = 14;
+    public static final int GUID_FIELD_NUMBER = 6;
     private long guid_;
     /**
-     * <code>uint64 guid = 14;</code>
+     * <code>uint64 guid = 6;</code>
      * @return The guid.
      */
     @java.lang.Override
@@ -176,10 +176,10 @@ public final class ItemHintOuterClass {
       return guid_;
     }
 
-    public static final int IS_NEW_FIELD_NUMBER = 8;
+    public static final int IS_NEW_FIELD_NUMBER = 14;
     private boolean isNew_;
     /**
-     * <code>bool is_new = 8;</code>
+     * <code>bool is_new = 14;</code>
      * @return The isNew.
      */
     @java.lang.Override
@@ -202,16 +202,16 @@ public final class ItemHintOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (count_ != 0) {
-        output.writeUInt32(7, count_);
-      }
-      if (isNew_ != false) {
-        output.writeBool(8, isNew_);
+        output.writeUInt32(3, count_);
       }
       if (itemId_ != 0) {
-        output.writeUInt32(9, itemId_);
+        output.writeUInt32(4, itemId_);
       }
       if (guid_ != 0L) {
-        output.writeUInt64(14, guid_);
+        output.writeUInt64(6, guid_);
+      }
+      if (isNew_ != false) {
+        output.writeBool(14, isNew_);
       }
       unknownFields.writeTo(output);
     }
@@ -224,19 +224,19 @@ public final class ItemHintOuterClass {
       size = 0;
       if (count_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, count_);
-      }
-      if (isNew_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(8, isNew_);
+          .computeUInt32Size(3, count_);
       }
       if (itemId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, itemId_);
+          .computeUInt32Size(4, itemId_);
       }
       if (guid_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(14, guid_);
+          .computeUInt64Size(6, guid_);
+      }
+      if (isNew_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(14, isNew_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -379,7 +379,7 @@ public final class ItemHintOuterClass {
     }
     /**
      * <pre>
-     * Obf: OLBNAADPLKJ
+     * 4.6.0
      * </pre>
      *
      * Protobuf type {@code ItemHint}
@@ -548,7 +548,7 @@ public final class ItemHintOuterClass {
 
       private int count_ ;
       /**
-       * <code>uint32 count = 7;</code>
+       * <code>uint32 count = 3;</code>
        * @return The count.
        */
       @java.lang.Override
@@ -556,7 +556,7 @@ public final class ItemHintOuterClass {
         return count_;
       }
       /**
-       * <code>uint32 count = 7;</code>
+       * <code>uint32 count = 3;</code>
        * @param value The count to set.
        * @return This builder for chaining.
        */
@@ -567,7 +567,7 @@ public final class ItemHintOuterClass {
         return this;
       }
       /**
-       * <code>uint32 count = 7;</code>
+       * <code>uint32 count = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearCount() {
@@ -579,7 +579,7 @@ public final class ItemHintOuterClass {
 
       private int itemId_ ;
       /**
-       * <code>uint32 item_id = 9;</code>
+       * <code>uint32 item_id = 4;</code>
        * @return The itemId.
        */
       @java.lang.Override
@@ -587,7 +587,7 @@ public final class ItemHintOuterClass {
         return itemId_;
       }
       /**
-       * <code>uint32 item_id = 9;</code>
+       * <code>uint32 item_id = 4;</code>
        * @param value The itemId to set.
        * @return This builder for chaining.
        */
@@ -598,7 +598,7 @@ public final class ItemHintOuterClass {
         return this;
       }
       /**
-       * <code>uint32 item_id = 9;</code>
+       * <code>uint32 item_id = 4;</code>
        * @return This builder for chaining.
        */
       public Builder clearItemId() {
@@ -610,7 +610,7 @@ public final class ItemHintOuterClass {
 
       private long guid_ ;
       /**
-       * <code>uint64 guid = 14;</code>
+       * <code>uint64 guid = 6;</code>
        * @return The guid.
        */
       @java.lang.Override
@@ -618,7 +618,7 @@ public final class ItemHintOuterClass {
         return guid_;
       }
       /**
-       * <code>uint64 guid = 14;</code>
+       * <code>uint64 guid = 6;</code>
        * @param value The guid to set.
        * @return This builder for chaining.
        */
@@ -629,7 +629,7 @@ public final class ItemHintOuterClass {
         return this;
       }
       /**
-       * <code>uint64 guid = 14;</code>
+       * <code>uint64 guid = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearGuid() {
@@ -641,7 +641,7 @@ public final class ItemHintOuterClass {
 
       private boolean isNew_ ;
       /**
-       * <code>bool is_new = 8;</code>
+       * <code>bool is_new = 14;</code>
        * @return The isNew.
        */
       @java.lang.Override
@@ -649,7 +649,7 @@ public final class ItemHintOuterClass {
         return isNew_;
       }
       /**
-       * <code>bool is_new = 8;</code>
+       * <code>bool is_new = 14;</code>
        * @param value The isNew to set.
        * @return This builder for chaining.
        */
@@ -660,7 +660,7 @@ public final class ItemHintOuterClass {
         return this;
       }
       /**
-       * <code>bool is_new = 8;</code>
+       * <code>bool is_new = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsNew() {
@@ -736,9 +736,9 @@ public final class ItemHintOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\016ItemHint.proto\"H\n\010ItemHint\022\r\n\005count\030\007 " +
-      "\001(\r\022\017\n\007item_id\030\t \001(\r\022\014\n\004guid\030\016 \001(\004\022\016\n\006is" +
-      "_new\030\010 \001(\010B\033\n\031emu.grasscutter.net.protob" +
+      "\n\016ItemHint.proto\"H\n\010ItemHint\022\r\n\005count\030\003 " +
+      "\001(\r\022\017\n\007item_id\030\004 \001(\r\022\014\n\004guid\030\006 \001(\004\022\016\n\006is" +
+      "_new\030\016 \001(\010B\033\n\031emu.grasscutter.net.protob" +
       "\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

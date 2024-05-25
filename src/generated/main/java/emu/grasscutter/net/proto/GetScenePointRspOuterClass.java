@@ -160,7 +160,7 @@ public final class GetScenePointRspOuterClass {
 
     /**
      * <pre>
-     *1 ?
+     *1
      * </pre>
      *
      * <code>repeated uint32 DKKKDOJPNOK = 9;</code>
@@ -169,7 +169,7 @@ public final class GetScenePointRspOuterClass {
     java.util.List<java.lang.Integer> getDKKKDOJPNOKList();
     /**
      * <pre>
-     *1 ?
+     *1
      * </pre>
      *
      * <code>repeated uint32 DKKKDOJPNOK = 9;</code>
@@ -178,7 +178,7 @@ public final class GetScenePointRspOuterClass {
     int getDKKKDOJPNOKCount();
     /**
      * <pre>
-     *1 ?
+     *1
      * </pre>
      *
      * <code>repeated uint32 DKKKDOJPNOK = 9;</code>
@@ -189,7 +189,7 @@ public final class GetScenePointRspOuterClass {
 
     /**
      * <pre>
-     *1
+     *1 may be
      * </pre>
      *
      * <code>repeated uint32 unlocked_point_list = 10;</code>
@@ -198,7 +198,7 @@ public final class GetScenePointRspOuterClass {
     java.util.List<java.lang.Integer> getUnlockedPointListList();
     /**
      * <pre>
-     *1
+     *1 may be
      * </pre>
      *
      * <code>repeated uint32 unlocked_point_list = 10;</code>
@@ -207,7 +207,7 @@ public final class GetScenePointRspOuterClass {
     int getUnlockedPointListCount();
     /**
      * <pre>
-     *1
+     *1 may be
      * </pre>
      *
      * <code>repeated uint32 unlocked_point_list = 10;</code>
@@ -839,7 +839,7 @@ public final class GetScenePointRspOuterClass {
     private com.google.protobuf.Internal.IntList dKKKDOJPNOK_;
     /**
      * <pre>
-     *1 ?
+     *1
      * </pre>
      *
      * <code>repeated uint32 DKKKDOJPNOK = 9;</code>
@@ -852,7 +852,7 @@ public final class GetScenePointRspOuterClass {
     }
     /**
      * <pre>
-     *1 ?
+     *1
      * </pre>
      *
      * <code>repeated uint32 DKKKDOJPNOK = 9;</code>
@@ -863,7 +863,7 @@ public final class GetScenePointRspOuterClass {
     }
     /**
      * <pre>
-     *1 ?
+     *1
      * </pre>
      *
      * <code>repeated uint32 DKKKDOJPNOK = 9;</code>
@@ -879,7 +879,7 @@ public final class GetScenePointRspOuterClass {
     private com.google.protobuf.Internal.IntList unlockedPointList_;
     /**
      * <pre>
-     *1
+     *1 may be
      * </pre>
      *
      * <code>repeated uint32 unlocked_point_list = 10;</code>
@@ -892,7 +892,7 @@ public final class GetScenePointRspOuterClass {
     }
     /**
      * <pre>
-     *1
+     *1 may be
      * </pre>
      *
      * <code>repeated uint32 unlocked_point_list = 10;</code>
@@ -903,7 +903,7 @@ public final class GetScenePointRspOuterClass {
     }
     /**
      * <pre>
-     *1
+     *1 may be
      * </pre>
      *
      * <code>repeated uint32 unlocked_point_list = 10;</code>
@@ -2354,7 +2354,7 @@ public final class GetScenePointRspOuterClass {
       }
       /**
        * <pre>
-       *1 ?
+       *1
        * </pre>
        *
        * <code>repeated uint32 DKKKDOJPNOK = 9;</code>
@@ -2367,7 +2367,7 @@ public final class GetScenePointRspOuterClass {
       }
       /**
        * <pre>
-       *1 ?
+       *1
        * </pre>
        *
        * <code>repeated uint32 DKKKDOJPNOK = 9;</code>
@@ -2378,7 +2378,7 @@ public final class GetScenePointRspOuterClass {
       }
       /**
        * <pre>
-       *1 ?
+       *1
        * </pre>
        *
        * <code>repeated uint32 DKKKDOJPNOK = 9;</code>
@@ -2390,7 +2390,7 @@ public final class GetScenePointRspOuterClass {
       }
       /**
        * <pre>
-       *1 ?
+       *1
        * </pre>
        *
        * <code>repeated uint32 DKKKDOJPNOK = 9;</code>
@@ -2407,7 +2407,7 @@ public final class GetScenePointRspOuterClass {
       }
       /**
        * <pre>
-       *1 ?
+       *1
        * </pre>
        *
        * <code>repeated uint32 DKKKDOJPNOK = 9;</code>
@@ -2422,7 +2422,7 @@ public final class GetScenePointRspOuterClass {
       }
       /**
        * <pre>
-       *1 ?
+       *1
        * </pre>
        *
        * <code>repeated uint32 DKKKDOJPNOK = 9;</code>
@@ -2439,7 +2439,7 @@ public final class GetScenePointRspOuterClass {
       }
       /**
        * <pre>
-       *1 ?
+       *1
        * </pre>
        *
        * <code>repeated uint32 DKKKDOJPNOK = 9;</code>
@@ -2461,7 +2461,7 @@ public final class GetScenePointRspOuterClass {
       }
       /**
        * <pre>
-       *1
+       *1 may be
        * </pre>
        *
        * <code>repeated uint32 unlocked_point_list = 10;</code>
@@ -2474,7 +2474,7 @@ public final class GetScenePointRspOuterClass {
       }
       /**
        * <pre>
-       *1
+       *1 may be
        * </pre>
        *
        * <code>repeated uint32 unlocked_point_list = 10;</code>
@@ -2485,7 +2485,7 @@ public final class GetScenePointRspOuterClass {
       }
       /**
        * <pre>
-       *1
+       *1 may be
        * </pre>
        *
        * <code>repeated uint32 unlocked_point_list = 10;</code>
@@ -2497,7 +2497,7 @@ public final class GetScenePointRspOuterClass {
       }
       /**
        * <pre>
-       *1
+       *1 may be
        * </pre>
        *
        * <code>repeated uint32 unlocked_point_list = 10;</code>
@@ -2514,7 +2514,7 @@ public final class GetScenePointRspOuterClass {
       }
       /**
        * <pre>
-       *1
+       *1 may be
        * </pre>
        *
        * <code>repeated uint32 unlocked_point_list = 10;</code>
@@ -2529,7 +2529,7 @@ public final class GetScenePointRspOuterClass {
       }
       /**
        * <pre>
-       *1
+       *1 may be
        * </pre>
        *
        * <code>repeated uint32 unlocked_point_list = 10;</code>
@@ -2546,7 +2546,7 @@ public final class GetScenePointRspOuterClass {
       }
       /**
        * <pre>
-       *1
+       *1 may be
        * </pre>
        *
        * <code>repeated uint32 unlocked_point_list = 10;</code>
