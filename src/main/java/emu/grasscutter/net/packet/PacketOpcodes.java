@@ -145,7 +145,7 @@ public final class PacketOpcodes {
     public static final int SetPlayerNameReq = 22779;//4.6.0
     public static final int SetPlayerNameRsp = 8082;//4.6.0
     public static final int MarkMapReq = 1319;//4.6.0
-    public static final int MarkMapRsp = 1360;// sus 
+    public static final int MarkMapRsp = 1360;// sus
     public static final int AllMarkPointNotify = 4620;// sus
     public static final int SetPlayerBirthdayReq = 1528;//4.6.0
     public static final int SetPlayerBirthdayRsp = 21040;//4.6.0
@@ -175,6 +175,12 @@ public final class PacketOpcodes {
     public static final int GadgetInteractReq = 9529;//4.6.0
     public static final int GadgetInteractRsp = 20933;//4.6.0
     public static final int ItemAddHintNotify = 7983;//4.6.0
+    public static final int AchievementAllDataNotify = 1655;//4.6.0
+    public static final int AchievementUpdateNotify = 6011;//4.6.0
+    public static final int TakeAchievementGoalRewardReq = 2692;//4.6.0
+    public static final int TakeAchievementGoalRewardRsp = 23787;//4.6.0
+    public static final int TakeAchievementRewardReq = 8646;//4.6.0
+    public static final int TakeAchievementRewardRsp = 24805;//4.6.0
 
 
 
@@ -205,8 +211,6 @@ public final class PacketOpcodes {
     public static final int AbilityInvocationFixedNotify = 3994864;     //4.0.0
     public static final int AcceptCityReputationRequestReq = 3996832;     //4.0.0
     public static final int AcceptCityReputationRequestRsp = 3997825;     //4.0.0
-    public static final int AchievementAllDataNotify = 39927422;     //4.0.0
-    public static final int AchievementUpdateNotify = 3994460;     //4.0.0
     public static final int ActivityAcceptAllGiveGiftReq = 39926297;     //4.0.0
     public static final int ActivityAcceptAllGiveGiftRsp = 39926260;     //4.0.0
     public static final int ActivityAcceptGiveGiftReq = 39925362;     //4.0.0
@@ -2314,10 +2318,6 @@ public final class PacketOpcodes {
     public static final int SumoSetNoSwitchPunishTimeNotify = 3995911;     //4.0.0
     public static final int SumoSwitchTeamReq = 39921102;     //4.0.0
     public static final int SumoSwitchTeamRsp = 39928038;     //4.0.0
-    public static final int TakeAchievementGoalRewardReq = 399249;     //4.0.0
-    public static final int TakeAchievementGoalRewardRsp = 39920302;     //4.0.0
-    public static final int TakeAchievementRewardReq = 39920624;     //4.0.0
-    public static final int TakeAchievementRewardRsp = 39923696;     //4.0.0
     public static final int TakeAsterSpecialRewardReq = 3997641;     //4.0.0
     public static final int TakeAsterSpecialRewardRsp = 39925347;     //4.0.0
     public static final int TakeBackGivingItemReq = 39921351;     //4.0.0
