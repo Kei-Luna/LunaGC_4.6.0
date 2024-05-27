@@ -84,7 +84,7 @@ chmod +x gradlew
 - Create accounts: /account <username>
 - Get all achievements: /am grantall
 - God mode: /prop god 1
-- Enter a dungeon: 
+- Enter a domain: /dungeon <ID>
 - Unlimited stamina: /prop ns 0
 - Unlimited energy: /prop UnlimitedEnergy 1
 - Recharge energy: /er
@@ -94,11 +94,12 @@ chmod +x gradlew
 - Change weather: /weather <sunny/rain/cloudy/thunderstorm/snow/mist>
 - Change talent for selected character: /talent <n/e/q/all> <level> (n - normal attack only) (e - skill only) (q - burst only)
 - Give items: /g <itemId|avatarId|all|weapons|mats|avatars> [lv<number>] [r<refinement number>] [x<amount>] [c<constellation number>] [sl<skilllevel>]
-- Unlock all: /unlockall (unlocks all I don't recommend)
+- Unlock all: /unlockall
 - Change world level: /prop wl <number>
 - Change AR: /prop player_level <number between 1 and 60>
 - Change the game speed: /gamespeed <0.1|0.2|0.5|0.75|1.0|1.5|2.0|3.0>
-### How to get all of the stuff maxed out: /g all lv90 r5 c6 c6 sl10 | Then do a separate one for the materials: /g mats x9999
+### Make sure to not include <> or [] in the commands! The stuff in <> means its required and the stuff in [] means its not required.
+### How to get all of the stuff maxed out: /g all lv90 r5 c6 c6 sl10 | Then do a separate one for the materials: /g mats x99999
 ### Ways to TP around the map:
 
 Method 1:
@@ -114,3 +115,7 @@ Method 2:
 ### How to get avatar/entity/material etc. IDs?
 - Go to [ambr.top](https://ambr.top)
 - Search up the material/avatar/enemy and then the ID of it should be in the URL of the site, for example I searched for the pyro hilichurl archer; the link for it is ambr.top/en/archive/monster/21010501/pyro-hilichurl-shooter so the ID for it will be 21010501.
+
+## Tips
+- Don't open the wishing screen (wait for fix)
+- Serenitea pot is bugged
