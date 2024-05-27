@@ -184,6 +184,7 @@ public final class PacketOpcodes {
     public static final int AvatarChangeCostumeNotify = 5930;//4.6.0
     public static final int AvatarChangeCostumeReq = 27094;//4.6.0
     public static final int AvatarChangeCostumeRsp = 657;//4.6.0
+    public static final int AvatarGainCostumeNotify = 27498;//4.6.0
 
 
 
@@ -313,7 +314,6 @@ public final class PacketOpcodes {
     public static final int AvatarFetterLevelRewardRsp = 3993975;     //4.0.0
     public static final int AvatarFlycloakChangeNotify = 39923578;     //4.0.0
     public static final int AvatarFollowRouteNotify = 3996834;     //4.0.0
-    public static final int AvatarGainCostumeNotify = 39924251;     //4.0.0
     public static final int AvatarGainFlycloakNotify = 39929528;     //4.0.0
     public static final int AvatarPromoteGetRewardReq = 399993;     //4.0.0
     public static final int AvatarPromoteGetRewardRsp = 3997336;     //4.0.0
