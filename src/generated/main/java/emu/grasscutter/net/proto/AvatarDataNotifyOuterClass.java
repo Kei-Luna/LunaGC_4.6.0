@@ -19,28 +19,16 @@ public final class AvatarDataNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     *sus
-     * </pre>
-     *
      * <code>repeated uint32 owned_flycloak_list = 13;</code>
      * @return A list containing the ownedFlycloakList.
      */
     java.util.List<java.lang.Integer> getOwnedFlycloakListList();
     /**
-     * <pre>
-     *sus
-     * </pre>
-     *
      * <code>repeated uint32 owned_flycloak_list = 13;</code>
      * @return The count of ownedFlycloakList.
      */
     int getOwnedFlycloakListCount();
     /**
-     * <pre>
-     *sus
-     * </pre>
-     *
      * <code>repeated uint32 owned_flycloak_list = 13;</code>
      * @param index The index of the element to return.
      * @return The ownedFlycloakList at the given index.
@@ -371,10 +359,6 @@ public final class AvatarDataNotifyOuterClass {
     public static final int OWNED_FLYCLOAK_LIST_FIELD_NUMBER = 13;
     private com.google.protobuf.Internal.IntList ownedFlycloakList_;
     /**
-     * <pre>
-     *sus
-     * </pre>
-     *
      * <code>repeated uint32 owned_flycloak_list = 13;</code>
      * @return A list containing the ownedFlycloakList.
      */
@@ -384,10 +368,6 @@ public final class AvatarDataNotifyOuterClass {
       return ownedFlycloakList_;
     }
     /**
-     * <pre>
-     *sus
-     * </pre>
-     *
      * <code>repeated uint32 owned_flycloak_list = 13;</code>
      * @return The count of ownedFlycloakList.
      */
@@ -395,10 +375,6 @@ public final class AvatarDataNotifyOuterClass {
       return ownedFlycloakList_.size();
     }
     /**
-     * <pre>
-     *sus
-     * </pre>
-     *
      * <code>repeated uint32 owned_flycloak_list = 13;</code>
      * @param index The index of the element to return.
      * @return The ownedFlycloakList at the given index.
@@ -1218,10 +1194,6 @@ public final class AvatarDataNotifyOuterClass {
          }
       }
       /**
-       * <pre>
-       *sus
-       * </pre>
-       *
        * <code>repeated uint32 owned_flycloak_list = 13;</code>
        * @return A list containing the ownedFlycloakList.
        */
@@ -1231,10 +1203,6 @@ public final class AvatarDataNotifyOuterClass {
                  java.util.Collections.unmodifiableList(ownedFlycloakList_) : ownedFlycloakList_;
       }
       /**
-       * <pre>
-       *sus
-       * </pre>
-       *
        * <code>repeated uint32 owned_flycloak_list = 13;</code>
        * @return The count of ownedFlycloakList.
        */
@@ -1242,10 +1210,6 @@ public final class AvatarDataNotifyOuterClass {
         return ownedFlycloakList_.size();
       }
       /**
-       * <pre>
-       *sus
-       * </pre>
-       *
        * <code>repeated uint32 owned_flycloak_list = 13;</code>
        * @param index The index of the element to return.
        * @return The ownedFlycloakList at the given index.
@@ -1254,10 +1218,6 @@ public final class AvatarDataNotifyOuterClass {
         return ownedFlycloakList_.getInt(index);
       }
       /**
-       * <pre>
-       *sus
-       * </pre>
-       *
        * <code>repeated uint32 owned_flycloak_list = 13;</code>
        * @param index The index to set the value at.
        * @param value The ownedFlycloakList to set.
@@ -1271,10 +1231,6 @@ public final class AvatarDataNotifyOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *sus
-       * </pre>
-       *
        * <code>repeated uint32 owned_flycloak_list = 13;</code>
        * @param value The ownedFlycloakList to add.
        * @return This builder for chaining.
@@ -1286,10 +1242,6 @@ public final class AvatarDataNotifyOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *sus
-       * </pre>
-       *
        * <code>repeated uint32 owned_flycloak_list = 13;</code>
        * @param values The ownedFlycloakList to add.
        * @return This builder for chaining.
@@ -1303,10 +1255,6 @@ public final class AvatarDataNotifyOuterClass {
         return this;
       }
       /**
-       * <pre>
-       *sus
-       * </pre>
-       *
        * <code>repeated uint32 owned_flycloak_list = 13;</code>
        * @return This builder for chaining.
        */

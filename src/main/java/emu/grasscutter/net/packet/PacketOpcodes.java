@@ -185,6 +185,10 @@ public final class PacketOpcodes {
     public static final int AvatarChangeCostumeReq = 27094;//4.6.0
     public static final int AvatarChangeCostumeRsp = 657;//4.6.0
     public static final int AvatarGainCostumeNotify = 27498;//4.6.0
+    public static final int AvatarWearFlycloakReq = 21936;     //4.0.0
+    public static final int AvatarWearFlycloakRsp = 924;//4.6.0
+    public static final int AvatarGainFlycloakNotify = 22682;//4.6.0
+    public static final int AvatarFlycloakChangeNotify = 2952;     //4.0.0
 
 
 
@@ -312,9 +316,7 @@ public final class PacketOpcodes {
     public static final int AvatarFetterDataNotify = 39929004;     //4.0.0
     public static final int AvatarFetterLevelRewardReq = 39928996;     //4.0.0
     public static final int AvatarFetterLevelRewardRsp = 3993975;     //4.0.0
-    public static final int AvatarFlycloakChangeNotify = 39923578;     //4.0.0
     public static final int AvatarFollowRouteNotify = 3996834;     //4.0.0
-    public static final int AvatarGainFlycloakNotify = 39929528;     //4.0.0
     public static final int AvatarPromoteGetRewardReq = 399993;     //4.0.0
     public static final int AvatarPromoteGetRewardRsp = 3997336;     //4.0.0
     public static final int AvatarPromoteReq = 39923288;     //4.0.0
@@ -329,8 +331,6 @@ public final class PacketOpcodes {
     public static final int AvatarSkillUpgradeRsp = 39922584;     //4.0.0
     public static final int AvatarUpgradeReq = 39928204;     //4.0.0
     public static final int AvatarUpgradeRsp = 39924216;     //4.0.0
-    public static final int AvatarWearFlycloakReq = 399824;     //4.0.0
-    public static final int AvatarWearFlycloakRsp = 39921633;     //4.0.0
     public static final int BAAOCAEGJBP = 39922430;     //4.0.0
     public static final int BBLDMLJIAIM = 3999880;     //4.0.0
     public static final int BBLFOGIBMGA = 39925847;     //4.0.0
