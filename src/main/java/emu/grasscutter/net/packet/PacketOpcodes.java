@@ -181,6 +181,9 @@ public final class PacketOpcodes {
     public static final int TakeAchievementGoalRewardRsp = 23787;//4.6.0
     public static final int TakeAchievementRewardReq = 8646;//4.6.0
     public static final int TakeAchievementRewardRsp = 24805;//4.6.0
+    public static final int AvatarChangeCostumeNotify = 5930;//4.6.0
+    public static final int AvatarChangeCostumeReq = 27094;//4.6.0
+    public static final int AvatarChangeCostumeRsp = 657;//4.6.0
 
 
 
@@ -291,9 +294,6 @@ public final class PacketOpcodes {
     public static final int AvatarBuffDelNotify = 3993202;     //4.0.0
     public static final int AvatarCardChangeReq = 39927737;     //4.0.0
     public static final int AvatarCardChangeRsp = 3993627;     //4.0.0
-    public static final int AvatarChangeCostumeNotify = 39922376;     //4.0.0
-    public static final int AvatarChangeCostumeReq = 3998840;     //4.0.0
-    public static final int AvatarChangeCostumeRsp = 3999148;     //4.0.0
     public static final int AvatarChangeElementTypeReq = 3993696;     //4.0.0
     public static final int AvatarChangeElementTypeRsp = 39926227;     //4.0.0
     public static final int AvatarDelNotify = 3998219;     //4.0.0
