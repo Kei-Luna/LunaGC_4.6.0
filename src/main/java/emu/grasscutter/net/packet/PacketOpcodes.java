@@ -185,10 +185,17 @@ public final class PacketOpcodes {
     public static final int AvatarChangeCostumeReq = 27094;//4.6.0
     public static final int AvatarChangeCostumeRsp = 657;//4.6.0
     public static final int AvatarGainCostumeNotify = 27498;//4.6.0
-    public static final int AvatarWearFlycloakReq = 21936;     //4.0.0
+    public static final int AvatarWearFlycloakReq = 21936;//4.6.0
     public static final int AvatarWearFlycloakRsp = 924;//4.6.0
     public static final int AvatarGainFlycloakNotify = 22682;//4.6.0
-    public static final int AvatarFlycloakChangeNotify = 2952;     //4.0.0
+    public static final int AvatarFlycloakChangeNotify = 2952;//4.6.0
+    public static final int CrystalLinkDungeonInfoNotify = 3946;//4.6.0
+    public static final int CrystalLinkEnterDungeonReq = 29969;//4.6.0
+    public static final int CrystalLinkEnterDungeonRsp = 8016;//4.6.0
+    public static final int EntityPropNotify = 9051;//4.6.0
+    public static final int AvatarPropNotify = 24899;//4.6.0
+    public static final int MarkNewNotify = 5948;//4.6.0
+    public static final int MarkEntityInMinMapNotify = 1480;//4.6.0
 
 
 
@@ -322,7 +329,6 @@ public final class PacketOpcodes {
     public static final int AvatarPromoteReq = 39923288;     //4.0.0
     public static final int AvatarPromoteRsp = 3998592;     //4.0.0
     public static final int AvatarPropChangeReasonNotify = 3993637;     //4.0.0
-    public static final int AvatarPropNotify = 3995355;     //4.0.0
     public static final int AvatarSatiationDataNotify = 399704;     //4.0.0
     public static final int AvatarSkillChangeNotify = 39920893;     //4.0.0
     public static final int AvatarSkillDepotChangeNotify = 3993748;     //4.0.0
@@ -593,9 +599,6 @@ public final class PacketOpcodes {
     public static final int CreateMassiveEntityRsp = 39920637;     //4.0.0
     public static final int CreateVehicleReq = 39929875;     //4.0.0
     public static final int CreateVehicleRsp = 399958;     //4.0.0
-    public static final int CrystalLinkDungeonInfoNotify = 39923068;     //4.0.0
-    public static final int CrystalLinkEnterDungeonReq = 39926178;     //4.0.0
-    public static final int CrystalLinkEnterDungeonRsp = 3991502;     //4.0.0
     public static final int CrystalLinkRestartDungeonReq = 39928616;     //4.0.0
     public static final int CrystalLinkRestartDungeonRsp = 39928113;     //4.0.0
     public static final int CustomDungeonBattleRecordNotify = 3998284;     //4.0.0
@@ -823,7 +826,6 @@ public final class PacketOpcodes {
     public static final int EntityForceSyncRsp = 39924909;     //4.0.0
     public static final int EntityJumpNotify = 3998767;     //4.0.0
     public static final int EntityMoveRoomNotify = 39926583;     //4.0.0
-    public static final int EntityPropNotify = 3993503;     //4.0.0
     public static final int EntityTagChangeNotify = 3996805;     //4.0.0
     public static final int EquipRoguelikeRuneReq = 3995188;     //4.0.0
     public static final int EquipRoguelikeRuneRsp = 3993632;     //4.0.0
@@ -1666,8 +1668,6 @@ public final class PacketOpcodes {
     public static final int MainCoopFailNotify = 3992503;     //4.0.0
     public static final int MainCoopUpdateNotify = 3991415;     //4.0.0
     public static final int MapAreaChangeNotify = 39921970;     //4.0.0
-    public static final int MarkEntityInMinMapNotify = 399315;     //4.0.0
-    public static final int MarkNewNotify = 39926228;     //4.0.0
     public static final int MarkTargetInvestigationMonsterNotify = 39921010;     //4.0.0
     public static final int MassiveEntityStateChangedNotify = 39921761;     //4.0.0
     public static final int MaterialDeleteReturnNotify = 3996719;     //4.0.0
