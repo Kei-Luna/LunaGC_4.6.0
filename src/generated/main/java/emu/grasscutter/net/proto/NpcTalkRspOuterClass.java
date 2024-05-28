@@ -44,7 +44,7 @@ public final class NpcTalkRspOuterClass {
   }
   /**
    * <pre>
-   *obf: DMFMFBJOGFD
+   * 4.6.0
    * CmdId: 7039
    * </pre>
    *
@@ -378,7 +378,7 @@ public final class NpcTalkRspOuterClass {
     }
     /**
      * <pre>
-     *obf: DMFMFBJOGFD
+     * 4.6.0
      * CmdId: 7039
      * </pre>
      *

@@ -38,7 +38,7 @@ public final class NpcTalkReqOuterClass {
   }
   /**
    * <pre>
-   *obf: CDBBDCLDJFB
+   * 4.6.0
    * CmdId: 24463
    * </pre>
    *
@@ -345,7 +345,7 @@ public final class NpcTalkReqOuterClass {
     }
     /**
      * <pre>
-     *obf: CDBBDCLDJFB
+     * 4.6.0
      * CmdId: 24463
      * </pre>
      *

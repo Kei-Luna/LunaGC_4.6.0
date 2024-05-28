@@ -215,6 +215,7 @@ public final class PacketOpcodes {
     public static final int CodexDataUpdateNotify = 8002;//4.6.0
     public static final int DoGachaReq = 7748;//4.6.0
     public static final int DoGachaRsp = 3838;//4.6.0
+    public static final int PlayerTimeNotify = 1391;//4.6.0
 
 
 
@@ -1967,7 +1968,6 @@ public final class PacketOpcodes {
     public static final int PlayerSignatureNotify = 39922738;     //4.0.0
     public static final int PlayerStartMatchReq = 39927823;     //4.0.0
     public static final int PlayerStartMatchRsp = 39921172;     //4.0.0
-    public static final int PlayerTimeNotify = 3999057;     //4.0.0
     public static final int PotionEnterDungeonNotify = 39921097;     //4.0.0
     public static final int PotionEnterDungeonReq = 3994073;     //4.0.0
     public static final int PotionEnterDungeonRsp = 3997418;     //4.0.0
