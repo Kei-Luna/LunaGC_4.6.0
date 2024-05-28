@@ -19,6 +19,12 @@ public final class UpdatePlayerShowAvatarListReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <code>bool is_show_avatar = 3;</code>
+     * @return The isShowAvatar.
+     */
+    boolean getIsShowAvatar();
+
+    /**
      * <code>repeated uint32 show_avatar_id_list = 14;</code>
      * @return A list containing the showAvatarIdList.
      */
@@ -34,17 +40,10 @@ public final class UpdatePlayerShowAvatarListReqOuterClass {
      * @return The showAvatarIdList at the given index.
      */
     int getShowAvatarIdList(int index);
-
-    /**
-     * <code>bool is_show_avatar = 2;</code>
-     * @return The isShowAvatar.
-     */
-    boolean getIsShowAvatar();
   }
   /**
    * <pre>
-   * CmdId: 6950
-   * Obf: JJAJFEBFLED
+   * CmdId: 973
    * </pre>
    *
    * Protobuf type {@code UpdatePlayerShowAvatarListReq}
@@ -93,7 +92,7 @@ public final class UpdatePlayerShowAvatarListReqOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
+            case 24: {
 
               isShowAvatar_ = input.readBool();
               break;
@@ -154,6 +153,17 @@ public final class UpdatePlayerShowAvatarListReqOuterClass {
               emu.grasscutter.net.proto.UpdatePlayerShowAvatarListReqOuterClass.UpdatePlayerShowAvatarListReq.class, emu.grasscutter.net.proto.UpdatePlayerShowAvatarListReqOuterClass.UpdatePlayerShowAvatarListReq.Builder.class);
     }
 
+    public static final int IS_SHOW_AVATAR_FIELD_NUMBER = 3;
+    private boolean isShowAvatar_;
+    /**
+     * <code>bool is_show_avatar = 3;</code>
+     * @return The isShowAvatar.
+     */
+    @java.lang.Override
+    public boolean getIsShowAvatar() {
+      return isShowAvatar_;
+    }
+
     public static final int SHOW_AVATAR_ID_LIST_FIELD_NUMBER = 14;
     private com.google.protobuf.Internal.IntList showAvatarIdList_;
     /**
@@ -182,17 +192,6 @@ public final class UpdatePlayerShowAvatarListReqOuterClass {
     }
     private int showAvatarIdListMemoizedSerializedSize = -1;
 
-    public static final int IS_SHOW_AVATAR_FIELD_NUMBER = 2;
-    private boolean isShowAvatar_;
-    /**
-     * <code>bool is_show_avatar = 2;</code>
-     * @return The isShowAvatar.
-     */
-    @java.lang.Override
-    public boolean getIsShowAvatar() {
-      return isShowAvatar_;
-    }
-
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -209,7 +208,7 @@ public final class UpdatePlayerShowAvatarListReqOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (isShowAvatar_ != false) {
-        output.writeBool(2, isShowAvatar_);
+        output.writeBool(3, isShowAvatar_);
       }
       if (getShowAvatarIdListList().size() > 0) {
         output.writeUInt32NoTag(114);
@@ -229,7 +228,7 @@ public final class UpdatePlayerShowAvatarListReqOuterClass {
       size = 0;
       if (isShowAvatar_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(2, isShowAvatar_);
+          .computeBoolSize(3, isShowAvatar_);
       }
       {
         int dataSize = 0;
@@ -260,10 +259,10 @@ public final class UpdatePlayerShowAvatarListReqOuterClass {
       }
       emu.grasscutter.net.proto.UpdatePlayerShowAvatarListReqOuterClass.UpdatePlayerShowAvatarListReq other = (emu.grasscutter.net.proto.UpdatePlayerShowAvatarListReqOuterClass.UpdatePlayerShowAvatarListReq) obj;
 
-      if (!getShowAvatarIdListList()
-          .equals(other.getShowAvatarIdListList())) return false;
       if (getIsShowAvatar()
           != other.getIsShowAvatar()) return false;
+      if (!getShowAvatarIdListList()
+          .equals(other.getShowAvatarIdListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -275,13 +274,13 @@ public final class UpdatePlayerShowAvatarListReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + IS_SHOW_AVATAR_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsShowAvatar());
       if (getShowAvatarIdListCount() > 0) {
         hash = (37 * hash) + SHOW_AVATAR_ID_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getShowAvatarIdListList().hashCode();
       }
-      hash = (37 * hash) + IS_SHOW_AVATAR_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsShowAvatar());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -379,8 +378,7 @@ public final class UpdatePlayerShowAvatarListReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 6950
-     * Obf: JJAJFEBFLED
+     * CmdId: 973
      * </pre>
      *
      * Protobuf type {@code UpdatePlayerShowAvatarListReq}
@@ -420,10 +418,10 @@ public final class UpdatePlayerShowAvatarListReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        showAvatarIdList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
         isShowAvatar_ = false;
 
+        showAvatarIdList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
 
@@ -451,12 +449,12 @@ public final class UpdatePlayerShowAvatarListReqOuterClass {
       public emu.grasscutter.net.proto.UpdatePlayerShowAvatarListReqOuterClass.UpdatePlayerShowAvatarListReq buildPartial() {
         emu.grasscutter.net.proto.UpdatePlayerShowAvatarListReqOuterClass.UpdatePlayerShowAvatarListReq result = new emu.grasscutter.net.proto.UpdatePlayerShowAvatarListReqOuterClass.UpdatePlayerShowAvatarListReq(this);
         int from_bitField0_ = bitField0_;
+        result.isShowAvatar_ = isShowAvatar_;
         if (((bitField0_ & 0x00000001) != 0)) {
           showAvatarIdList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.showAvatarIdList_ = showAvatarIdList_;
-        result.isShowAvatar_ = isShowAvatar_;
         onBuilt();
         return result;
       }
@@ -505,6 +503,9 @@ public final class UpdatePlayerShowAvatarListReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.UpdatePlayerShowAvatarListReqOuterClass.UpdatePlayerShowAvatarListReq other) {
         if (other == emu.grasscutter.net.proto.UpdatePlayerShowAvatarListReqOuterClass.UpdatePlayerShowAvatarListReq.getDefaultInstance()) return this;
+        if (other.getIsShowAvatar() != false) {
+          setIsShowAvatar(other.getIsShowAvatar());
+        }
         if (!other.showAvatarIdList_.isEmpty()) {
           if (showAvatarIdList_.isEmpty()) {
             showAvatarIdList_ = other.showAvatarIdList_;
@@ -514,9 +515,6 @@ public final class UpdatePlayerShowAvatarListReqOuterClass {
             showAvatarIdList_.addAll(other.showAvatarIdList_);
           }
           onChanged();
-        }
-        if (other.getIsShowAvatar() != false) {
-          setIsShowAvatar(other.getIsShowAvatar());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -547,6 +545,37 @@ public final class UpdatePlayerShowAvatarListReqOuterClass {
         return this;
       }
       private int bitField0_;
+
+      private boolean isShowAvatar_ ;
+      /**
+       * <code>bool is_show_avatar = 3;</code>
+       * @return The isShowAvatar.
+       */
+      @java.lang.Override
+      public boolean getIsShowAvatar() {
+        return isShowAvatar_;
+      }
+      /**
+       * <code>bool is_show_avatar = 3;</code>
+       * @param value The isShowAvatar to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsShowAvatar(boolean value) {
+        
+        isShowAvatar_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_show_avatar = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsShowAvatar() {
+        
+        isShowAvatar_ = false;
+        onChanged();
+        return this;
+      }
 
       private com.google.protobuf.Internal.IntList showAvatarIdList_ = emptyIntList();
       private void ensureShowAvatarIdListIsMutable() {
@@ -626,37 +655,6 @@ public final class UpdatePlayerShowAvatarListReqOuterClass {
         onChanged();
         return this;
       }
-
-      private boolean isShowAvatar_ ;
-      /**
-       * <code>bool is_show_avatar = 2;</code>
-       * @return The isShowAvatar.
-       */
-      @java.lang.Override
-      public boolean getIsShowAvatar() {
-        return isShowAvatar_;
-      }
-      /**
-       * <code>bool is_show_avatar = 2;</code>
-       * @param value The isShowAvatar to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsShowAvatar(boolean value) {
-        
-        isShowAvatar_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_show_avatar = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsShowAvatar() {
-        
-        isShowAvatar_ = false;
-        onChanged();
-        return this;
-      }
       @java.lang.Override
       public final Builder setUnknownFields(
           final com.google.protobuf.UnknownFieldSet unknownFields) {
@@ -725,9 +723,9 @@ public final class UpdatePlayerShowAvatarListReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n#UpdatePlayerShowAvatarListReq.proto\"T\n" +
-      "\035UpdatePlayerShowAvatarListReq\022\033\n\023show_a" +
-      "vatar_id_list\030\016 \003(\r\022\026\n\016is_show_avatar\030\002 " +
-      "\001(\010B\033\n\031emu.grasscutter.net.protob\006proto3"
+      "\035UpdatePlayerShowAvatarListReq\022\026\n\016is_sho" +
+      "w_avatar\030\003 \001(\010\022\033\n\023show_avatar_id_list\030\016 " +
+      "\003(\rB\033\n\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -738,7 +736,7 @@ public final class UpdatePlayerShowAvatarListReqOuterClass {
     internal_static_UpdatePlayerShowAvatarListReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_UpdatePlayerShowAvatarListReq_descriptor,
-        new java.lang.String[] { "ShowAvatarIdList", "IsShowAvatar", });
+        new java.lang.String[] { "IsShowAvatar", "ShowAvatarIdList", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

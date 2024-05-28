@@ -36,10 +36,6 @@ public final class ChatEmojiCollectionDataOuterClass {
     int getEmojiIdList(int index);
   }
   /**
-   * <pre>
-   * Obf: GFDAHNLKKNG
-   * </pre>
-   *
    * Protobuf type {@code ChatEmojiCollectionData}
    */
   public static final class ChatEmojiCollectionData extends
@@ -343,10 +339,6 @@ public final class ChatEmojiCollectionDataOuterClass {
       return builder;
     }
     /**
-     * <pre>
-     * Obf: GFDAHNLKKNG
-     * </pre>
-     *
      * Protobuf type {@code ChatEmojiCollectionData}
      */
     public static final class Builder extends

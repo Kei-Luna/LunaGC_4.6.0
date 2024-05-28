@@ -1175,7 +1175,7 @@ public final class PacketOpcodes {
     public static final int GetAllMailRsp = 3999526;     //4.0.0
     public static final int GetAllSceneGalleryInfoReq = 39922232;     //4.0.0
     public static final int GetAllSceneGalleryInfoRsp = 3997472;     //4.0.0
-    public static final int GetAllUnlockNameCardReq = 3993551;     //4.0.0
+    public static final int GetAllUnlockNameCardReq = 245;     //4.0.0
     public static final int GetAllUnlockNameCardRsp = 39928550;     //4.0.0
     public static final int GetAreaExplorePointReq = 39920438;     //4.0.0
     public static final int GetAreaExplorePointRsp = 39927637;     //4.0.0
@@ -2218,8 +2218,8 @@ public final class PacketOpcodes {
     public static final int ServerUpdateGlobalValueNotify = 3991181;     //4.0.0
     public static final int SetBattlePassViewedReq = 3997320;     //4.0.0
     public static final int SetBattlePassViewedRsp = 39925281;     //4.0.0
-    public static final int SetChatEmojiCollectionReq = 39921632;     //4.0.0
-    public static final int SetChatEmojiCollectionRsp = 3992098;     //4.0.0
+    public static final int SetChatEmojiCollectionReq = 27423;     //4.0.0
+    public static final int SetChatEmojiCollectionRsp = 28482;     //4.0.0
     public static final int SetCodexPushtipsReadReq = 39926795;     //4.0.0
     public static final int SetCodexPushtipsReadRsp = 39920900;     //4.0.0
     public static final int SetCoopChapterViewedReq = 3992879;     //4.0.0
@@ -2227,7 +2227,7 @@ public final class PacketOpcodes {
     public static final int SetCurExpeditionChallengeIdReq = 39920340;     //4.0.0
     public static final int SetCurExpeditionChallengeIdRsp = 39924543;     //4.0.0
     public static final int SetEntityClientDataNotify = 3991139;     //4.0.0
-    public static final int SetFriendEnterHomeOptionReq = 39926896;     //4.0.0
+    public static final int SetFriendEnterHomeOptionReq = 24484;     //4.0.0
     public static final int SetFriendEnterHomeOptionRsp = 39921101;     //4.0.0
     public static final int SetFriendRemarkNameReq = 3991521;     //4.0.0
     public static final int SetFriendRemarkNameRsp = 39925535;     //4.0.0
@@ -2242,8 +2242,8 @@ public final class PacketOpcodes {
     public static final int SetPlayerHeadImageRsp = 39920979;     //4.0.0
     public static final int SetPlayerPropReq = 39925174;     //4.0.0
     public static final int SetPlayerPropRsp = 3991391;     //4.0.0
-    public static final int SetPlayerSignatureReq = 399771;     //4.0.0
-    public static final int SetPlayerSignatureRsp = 39928588;     //4.0.0
+    public static final int SetPlayerSignatureReq = 24552;     //4.0.0
+    public static final int SetPlayerSignatureRsp = 6470;     //4.0.0
     public static final int SetSceneWeatherAreaReq = 3996203;     //4.0.0
     public static final int SetSceneWeatherAreaRsp = 39929445;     //4.0.0
     public static final int SetUpLunchBoxWidgetReq = 39920055;     //4.0.0
@@ -2451,8 +2451,8 @@ public final class PacketOpcodes {
     public static final int UpdatePS4FriendListNotify = 39923862;     //4.0.0
     public static final int UpdatePS4FriendListReq = 3994656;     //4.0.0
     public static final int UpdatePS4FriendListRsp = 3995389;     //4.0.0
-    public static final int UpdatePlayerShowAvatarListReq = 3996950;     //4.0.0
-    public static final int UpdatePlayerShowAvatarListRsp = 3999339;     //4.0.0
+    public static final int UpdatePlayerShowAvatarListReq = 973;     //4.0.0
+    public static final int UpdatePlayerShowAvatarListRsp = 186;     //4.0.0
     public static final int UpdateRedPointNotify = 39921359;     //4.0.0
     public static final int UpdateReunionWatcherNotify = 3998205;     //4.0.0
     public static final int UpdateSalvageBundleMarkReq = 39920695;     //4.0.0
