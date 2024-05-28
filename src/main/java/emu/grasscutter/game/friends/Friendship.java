@@ -101,14 +101,14 @@ public class Friendship {
                         player != null && player.isOnline()
                                 ? FriendOnlineState.FRIEND_ONLINE_STATE_ONLINE
                                 : FriendOnlineState.FRIEND_ONLINE_STATE_DISCONNECT)
-                //.setIsMpModeAvailable(true)
-                //.setLastActiveTime(getFriendProfile().getLastActiveTime())
+                .setIsMpModeAvailable(true)
+                .setLastActiveTime(getFriendProfile().getLastActiveTime())
                 .setNameCardId(getFriendProfile().getNameCard())
                 .setParam(getFriendProfile().getDaysSinceLogin())
-                //.setIsGameSource(true)
+                .setIsGameSource(true)
                 .setPlatformType(PlatformTypeOuterClass.PlatformType.PLATFORM_TYPE_PC)
-                //.setIsInDuel(getFriendProfile().isInDuel())
-                //.setIsDuelObservable(getFriendProfile().isDuelObservable())
+                .setIsInDuel(getFriendProfile().isInDuel())
+                .setIsDuelObservable(getFriendProfile().isDuelObservable())
                 .build();
     }
 }

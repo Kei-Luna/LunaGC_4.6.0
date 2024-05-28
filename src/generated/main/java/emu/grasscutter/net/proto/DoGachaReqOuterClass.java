@@ -19,45 +19,46 @@ public final class DoGachaReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
+     * <code>string gachaTag = 1;</code>
+     * @return The gachaTag.
+     */
+    java.lang.String getGachaTag();
+    /**
+     * <code>string gachaTag = 1;</code>
+     * @return The bytes for gachaTag.
+     */
+    com.google.protobuf.ByteString
+        getGachaTagBytes();
+
+    /**
+     * <code>uint32 gachaScheduleId = 7;</code>
+     * @return The gachaScheduleId.
+     */
+    int getGachaScheduleId();
+
+    /**
      * <code>uint32 gachaTimes = 8;</code>
      * @return The gachaTimes.
      */
     int getGachaTimes();
 
     /**
-     * <code>uint32 gachaScheduleId = 5;</code>
-     * @return The gachaScheduleId.
-     */
-    int getGachaScheduleId();
-
-    /**
-     * <code>uint32 gachaRandom = 6;</code>
+     * <code>uint32 gachaRandom = 10;</code>
      * @return The gachaRandom.
      */
     int getGachaRandom();
 
     /**
-     * <code>uint32 gachaType = 3;</code>
+     * <code>uint32 gachaType = 13;</code>
      * @return The gachaType.
      */
     int getGachaType();
-
-    /**
-     * <code>string gachaTag = 15;</code>
-     * @return The gachaTag.
-     */
-    java.lang.String getGachaTag();
-    /**
-     * <code>string gachaTag = 15;</code>
-     * @return The bytes for gachaTag.
-     */
-    com.google.protobuf.ByteString
-        getGachaTagBytes();
   }
   /**
    * <pre>
-   * CmdId: 6499
-   * Obf: JHEFDEDCGBA
+   * CmdId: 7748
+   * Version: 4.6.0
+   * Obfs: ???
    * </pre>
    *
    * Protobuf type {@code DoGachaReq}
@@ -105,19 +106,15 @@ public final class DoGachaReqOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
+            case 10: {
+              java.lang.String s = input.readStringRequireUtf8();
 
-              gachaType_ = input.readUInt32();
+              gachaTag_ = s;
               break;
             }
-            case 40: {
+            case 56: {
 
               gachaScheduleId_ = input.readUInt32();
-              break;
-            }
-            case 48: {
-
-              gachaRandom_ = input.readUInt32();
               break;
             }
             case 64: {
@@ -125,10 +122,14 @@ public final class DoGachaReqOuterClass {
               gachaTimes_ = input.readUInt32();
               break;
             }
-            case 122: {
-              java.lang.String s = input.readStringRequireUtf8();
+            case 80: {
 
-              gachaTag_ = s;
+              gachaRandom_ = input.readUInt32();
+              break;
+            }
+            case 104: {
+
+              gachaType_ = input.readUInt32();
               break;
             }
             default: {
@@ -163,54 +164,10 @@ public final class DoGachaReqOuterClass {
               emu.grasscutter.net.proto.DoGachaReqOuterClass.DoGachaReq.class, emu.grasscutter.net.proto.DoGachaReqOuterClass.DoGachaReq.Builder.class);
     }
 
-    public static final int GACHATIMES_FIELD_NUMBER = 8;
-    private int gachaTimes_;
-    /**
-     * <code>uint32 gachaTimes = 8;</code>
-     * @return The gachaTimes.
-     */
-    @java.lang.Override
-    public int getGachaTimes() {
-      return gachaTimes_;
-    }
-
-    public static final int GACHASCHEDULEID_FIELD_NUMBER = 5;
-    private int gachaScheduleId_;
-    /**
-     * <code>uint32 gachaScheduleId = 5;</code>
-     * @return The gachaScheduleId.
-     */
-    @java.lang.Override
-    public int getGachaScheduleId() {
-      return gachaScheduleId_;
-    }
-
-    public static final int GACHARANDOM_FIELD_NUMBER = 6;
-    private int gachaRandom_;
-    /**
-     * <code>uint32 gachaRandom = 6;</code>
-     * @return The gachaRandom.
-     */
-    @java.lang.Override
-    public int getGachaRandom() {
-      return gachaRandom_;
-    }
-
-    public static final int GACHATYPE_FIELD_NUMBER = 3;
-    private int gachaType_;
-    /**
-     * <code>uint32 gachaType = 3;</code>
-     * @return The gachaType.
-     */
-    @java.lang.Override
-    public int getGachaType() {
-      return gachaType_;
-    }
-
-    public static final int GACHATAG_FIELD_NUMBER = 15;
+    public static final int GACHATAG_FIELD_NUMBER = 1;
     private volatile java.lang.Object gachaTag_;
     /**
-     * <code>string gachaTag = 15;</code>
+     * <code>string gachaTag = 1;</code>
      * @return The gachaTag.
      */
     @java.lang.Override
@@ -227,7 +184,7 @@ public final class DoGachaReqOuterClass {
       }
     }
     /**
-     * <code>string gachaTag = 15;</code>
+     * <code>string gachaTag = 1;</code>
      * @return The bytes for gachaTag.
      */
     @java.lang.Override
@@ -245,6 +202,50 @@ public final class DoGachaReqOuterClass {
       }
     }
 
+    public static final int GACHASCHEDULEID_FIELD_NUMBER = 7;
+    private int gachaScheduleId_;
+    /**
+     * <code>uint32 gachaScheduleId = 7;</code>
+     * @return The gachaScheduleId.
+     */
+    @java.lang.Override
+    public int getGachaScheduleId() {
+      return gachaScheduleId_;
+    }
+
+    public static final int GACHATIMES_FIELD_NUMBER = 8;
+    private int gachaTimes_;
+    /**
+     * <code>uint32 gachaTimes = 8;</code>
+     * @return The gachaTimes.
+     */
+    @java.lang.Override
+    public int getGachaTimes() {
+      return gachaTimes_;
+    }
+
+    public static final int GACHARANDOM_FIELD_NUMBER = 10;
+    private int gachaRandom_;
+    /**
+     * <code>uint32 gachaRandom = 10;</code>
+     * @return The gachaRandom.
+     */
+    @java.lang.Override
+    public int getGachaRandom() {
+      return gachaRandom_;
+    }
+
+    public static final int GACHATYPE_FIELD_NUMBER = 13;
+    private int gachaType_;
+    /**
+     * <code>uint32 gachaType = 13;</code>
+     * @return The gachaType.
+     */
+    @java.lang.Override
+    public int getGachaType() {
+      return gachaType_;
+    }
+
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
     public final boolean isInitialized() {
@@ -259,20 +260,20 @@ public final class DoGachaReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (gachaType_ != 0) {
-        output.writeUInt32(3, gachaType_);
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(gachaTag_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, gachaTag_);
       }
       if (gachaScheduleId_ != 0) {
-        output.writeUInt32(5, gachaScheduleId_);
-      }
-      if (gachaRandom_ != 0) {
-        output.writeUInt32(6, gachaRandom_);
+        output.writeUInt32(7, gachaScheduleId_);
       }
       if (gachaTimes_ != 0) {
         output.writeUInt32(8, gachaTimes_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(gachaTag_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 15, gachaTag_);
+      if (gachaRandom_ != 0) {
+        output.writeUInt32(10, gachaRandom_);
+      }
+      if (gachaType_ != 0) {
+        output.writeUInt32(13, gachaType_);
       }
       unknownFields.writeTo(output);
     }
@@ -283,24 +284,24 @@ public final class DoGachaReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (gachaType_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, gachaType_);
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(gachaTag_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, gachaTag_);
       }
       if (gachaScheduleId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, gachaScheduleId_);
-      }
-      if (gachaRandom_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, gachaRandom_);
+          .computeUInt32Size(7, gachaScheduleId_);
       }
       if (gachaTimes_ != 0) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt32Size(8, gachaTimes_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(gachaTag_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(15, gachaTag_);
+      if (gachaRandom_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(10, gachaRandom_);
+      }
+      if (gachaType_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, gachaType_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -317,16 +318,16 @@ public final class DoGachaReqOuterClass {
       }
       emu.grasscutter.net.proto.DoGachaReqOuterClass.DoGachaReq other = (emu.grasscutter.net.proto.DoGachaReqOuterClass.DoGachaReq) obj;
 
-      if (getGachaTimes()
-          != other.getGachaTimes()) return false;
+      if (!getGachaTag()
+          .equals(other.getGachaTag())) return false;
       if (getGachaScheduleId()
           != other.getGachaScheduleId()) return false;
+      if (getGachaTimes()
+          != other.getGachaTimes()) return false;
       if (getGachaRandom()
           != other.getGachaRandom()) return false;
       if (getGachaType()
           != other.getGachaType()) return false;
-      if (!getGachaTag()
-          .equals(other.getGachaTag())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -338,16 +339,16 @@ public final class DoGachaReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + GACHATIMES_FIELD_NUMBER;
-      hash = (53 * hash) + getGachaTimes();
+      hash = (37 * hash) + GACHATAG_FIELD_NUMBER;
+      hash = (53 * hash) + getGachaTag().hashCode();
       hash = (37 * hash) + GACHASCHEDULEID_FIELD_NUMBER;
       hash = (53 * hash) + getGachaScheduleId();
+      hash = (37 * hash) + GACHATIMES_FIELD_NUMBER;
+      hash = (53 * hash) + getGachaTimes();
       hash = (37 * hash) + GACHARANDOM_FIELD_NUMBER;
       hash = (53 * hash) + getGachaRandom();
       hash = (37 * hash) + GACHATYPE_FIELD_NUMBER;
       hash = (53 * hash) + getGachaType();
-      hash = (37 * hash) + GACHATAG_FIELD_NUMBER;
-      hash = (53 * hash) + getGachaTag().hashCode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -445,8 +446,9 @@ public final class DoGachaReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 6499
-     * Obf: JHEFDEDCGBA
+     * CmdId: 7748
+     * Version: 4.6.0
+     * Obfs: ???
      * </pre>
      *
      * Protobuf type {@code DoGachaReq}
@@ -486,15 +488,15 @@ public final class DoGachaReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        gachaTimes_ = 0;
+        gachaTag_ = "";
 
         gachaScheduleId_ = 0;
+
+        gachaTimes_ = 0;
 
         gachaRandom_ = 0;
 
         gachaType_ = 0;
-
-        gachaTag_ = "";
 
         return this;
       }
@@ -522,11 +524,11 @@ public final class DoGachaReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.DoGachaReqOuterClass.DoGachaReq buildPartial() {
         emu.grasscutter.net.proto.DoGachaReqOuterClass.DoGachaReq result = new emu.grasscutter.net.proto.DoGachaReqOuterClass.DoGachaReq(this);
-        result.gachaTimes_ = gachaTimes_;
+        result.gachaTag_ = gachaTag_;
         result.gachaScheduleId_ = gachaScheduleId_;
+        result.gachaTimes_ = gachaTimes_;
         result.gachaRandom_ = gachaRandom_;
         result.gachaType_ = gachaType_;
-        result.gachaTag_ = gachaTag_;
         onBuilt();
         return result;
       }
@@ -575,21 +577,21 @@ public final class DoGachaReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.DoGachaReqOuterClass.DoGachaReq other) {
         if (other == emu.grasscutter.net.proto.DoGachaReqOuterClass.DoGachaReq.getDefaultInstance()) return this;
-        if (other.getGachaTimes() != 0) {
-          setGachaTimes(other.getGachaTimes());
+        if (!other.getGachaTag().isEmpty()) {
+          gachaTag_ = other.gachaTag_;
+          onChanged();
         }
         if (other.getGachaScheduleId() != 0) {
           setGachaScheduleId(other.getGachaScheduleId());
+        }
+        if (other.getGachaTimes() != 0) {
+          setGachaTimes(other.getGachaTimes());
         }
         if (other.getGachaRandom() != 0) {
           setGachaRandom(other.getGachaRandom());
         }
         if (other.getGachaType() != 0) {
           setGachaType(other.getGachaType());
-        }
-        if (!other.getGachaTag().isEmpty()) {
-          gachaTag_ = other.gachaTag_;
-          onChanged();
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -617,6 +619,113 @@ public final class DoGachaReqOuterClass {
             mergeFrom(parsedMessage);
           }
         }
+        return this;
+      }
+
+      private java.lang.Object gachaTag_ = "";
+      /**
+       * <code>string gachaTag = 1;</code>
+       * @return The gachaTag.
+       */
+      public java.lang.String getGachaTag() {
+        java.lang.Object ref = gachaTag_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          gachaTag_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string gachaTag = 1;</code>
+       * @return The bytes for gachaTag.
+       */
+      public com.google.protobuf.ByteString
+          getGachaTagBytes() {
+        java.lang.Object ref = gachaTag_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          gachaTag_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string gachaTag = 1;</code>
+       * @param value The gachaTag to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGachaTag(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        gachaTag_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string gachaTag = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearGachaTag() {
+        
+        gachaTag_ = getDefaultInstance().getGachaTag();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string gachaTag = 1;</code>
+       * @param value The bytes for gachaTag to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGachaTagBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        gachaTag_ = value;
+        onChanged();
+        return this;
+      }
+
+      private int gachaScheduleId_ ;
+      /**
+       * <code>uint32 gachaScheduleId = 7;</code>
+       * @return The gachaScheduleId.
+       */
+      @java.lang.Override
+      public int getGachaScheduleId() {
+        return gachaScheduleId_;
+      }
+      /**
+       * <code>uint32 gachaScheduleId = 7;</code>
+       * @param value The gachaScheduleId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setGachaScheduleId(int value) {
+        
+        gachaScheduleId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 gachaScheduleId = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearGachaScheduleId() {
+        
+        gachaScheduleId_ = 0;
+        onChanged();
         return this;
       }
 
@@ -651,40 +760,9 @@ public final class DoGachaReqOuterClass {
         return this;
       }
 
-      private int gachaScheduleId_ ;
-      /**
-       * <code>uint32 gachaScheduleId = 5;</code>
-       * @return The gachaScheduleId.
-       */
-      @java.lang.Override
-      public int getGachaScheduleId() {
-        return gachaScheduleId_;
-      }
-      /**
-       * <code>uint32 gachaScheduleId = 5;</code>
-       * @param value The gachaScheduleId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setGachaScheduleId(int value) {
-        
-        gachaScheduleId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 gachaScheduleId = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearGachaScheduleId() {
-        
-        gachaScheduleId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private int gachaRandom_ ;
       /**
-       * <code>uint32 gachaRandom = 6;</code>
+       * <code>uint32 gachaRandom = 10;</code>
        * @return The gachaRandom.
        */
       @java.lang.Override
@@ -692,7 +770,7 @@ public final class DoGachaReqOuterClass {
         return gachaRandom_;
       }
       /**
-       * <code>uint32 gachaRandom = 6;</code>
+       * <code>uint32 gachaRandom = 10;</code>
        * @param value The gachaRandom to set.
        * @return This builder for chaining.
        */
@@ -703,7 +781,7 @@ public final class DoGachaReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 gachaRandom = 6;</code>
+       * <code>uint32 gachaRandom = 10;</code>
        * @return This builder for chaining.
        */
       public Builder clearGachaRandom() {
@@ -715,7 +793,7 @@ public final class DoGachaReqOuterClass {
 
       private int gachaType_ ;
       /**
-       * <code>uint32 gachaType = 3;</code>
+       * <code>uint32 gachaType = 13;</code>
        * @return The gachaType.
        */
       @java.lang.Override
@@ -723,7 +801,7 @@ public final class DoGachaReqOuterClass {
         return gachaType_;
       }
       /**
-       * <code>uint32 gachaType = 3;</code>
+       * <code>uint32 gachaType = 13;</code>
        * @param value The gachaType to set.
        * @return This builder for chaining.
        */
@@ -734,88 +812,12 @@ public final class DoGachaReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 gachaType = 3;</code>
+       * <code>uint32 gachaType = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearGachaType() {
         
         gachaType_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private java.lang.Object gachaTag_ = "";
-      /**
-       * <code>string gachaTag = 15;</code>
-       * @return The gachaTag.
-       */
-      public java.lang.String getGachaTag() {
-        java.lang.Object ref = gachaTag_;
-        if (!(ref instanceof java.lang.String)) {
-          com.google.protobuf.ByteString bs =
-              (com.google.protobuf.ByteString) ref;
-          java.lang.String s = bs.toStringUtf8();
-          gachaTag_ = s;
-          return s;
-        } else {
-          return (java.lang.String) ref;
-        }
-      }
-      /**
-       * <code>string gachaTag = 15;</code>
-       * @return The bytes for gachaTag.
-       */
-      public com.google.protobuf.ByteString
-          getGachaTagBytes() {
-        java.lang.Object ref = gachaTag_;
-        if (ref instanceof String) {
-          com.google.protobuf.ByteString b = 
-              com.google.protobuf.ByteString.copyFromUtf8(
-                  (java.lang.String) ref);
-          gachaTag_ = b;
-          return b;
-        } else {
-          return (com.google.protobuf.ByteString) ref;
-        }
-      }
-      /**
-       * <code>string gachaTag = 15;</code>
-       * @param value The gachaTag to set.
-       * @return This builder for chaining.
-       */
-      public Builder setGachaTag(
-          java.lang.String value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  
-        gachaTag_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string gachaTag = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearGachaTag() {
-        
-        gachaTag_ = getDefaultInstance().getGachaTag();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>string gachaTag = 15;</code>
-       * @param value The bytes for gachaTag to set.
-       * @return This builder for chaining.
-       */
-      public Builder setGachaTagBytes(
-          com.google.protobuf.ByteString value) {
-        if (value == null) {
-    throw new NullPointerException();
-  }
-  checkByteStringIsUtf8(value);
-        
-        gachaTag_ = value;
         onChanged();
         return this;
       }
@@ -886,10 +888,10 @@ public final class DoGachaReqOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\020DoGachaReq.proto\"s\n\nDoGachaReq\022\022\n\ngach" +
-      "aTimes\030\010 \001(\r\022\027\n\017gachaScheduleId\030\005 \001(\r\022\023\n" +
-      "\013gachaRandom\030\006 \001(\r\022\021\n\tgachaType\030\003 \001(\r\022\020\n" +
-      "\010gachaTag\030\017 \001(\tB\033\n\031emu.grasscutter.net.p" +
+      "\n\020DoGachaReq.proto\"s\n\nDoGachaReq\022\020\n\010gach" +
+      "aTag\030\001 \001(\t\022\027\n\017gachaScheduleId\030\007 \001(\r\022\022\n\ng" +
+      "achaTimes\030\010 \001(\r\022\023\n\013gachaRandom\030\n \001(\r\022\021\n\t" +
+      "gachaType\030\r \001(\rB\033\n\031emu.grasscutter.net.p" +
       "rotob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -901,7 +903,7 @@ public final class DoGachaReqOuterClass {
     internal_static_DoGachaReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_DoGachaReq_descriptor,
-        new java.lang.String[] { "GachaTimes", "GachaScheduleId", "GachaRandom", "GachaType", "GachaTag", });
+        new java.lang.String[] { "GachaTag", "GachaScheduleId", "GachaTimes", "GachaRandom", "GachaType", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

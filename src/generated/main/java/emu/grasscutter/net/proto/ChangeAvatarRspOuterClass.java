@@ -19,14 +19,20 @@ public final class ChangeAvatarRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <pre>
-     * protected &#64; 0x28 
-     * </pre>
-     *
      * <code>uint64 cur_guid = 2;</code>
      * @return The curGuid.
      */
     long getCurGuid();
+
+    /**
+     * <pre>
+     * OK
+     * </pre>
+     *
+     * <code>int32 retcode = 15;</code>
+     * @return The retcode.
+     */
+    int getRetcode();
   }
   /**
    * <pre>
@@ -83,6 +89,11 @@ public final class ChangeAvatarRspOuterClass {
               curGuid_ = input.readUInt64();
               break;
             }
+            case 120: {
+
+              retcode_ = input.readInt32();
+              break;
+            }
             default: {
               if (!parseUnknownField(
                   input, unknownFields, extensionRegistry, tag)) {
@@ -118,16 +129,27 @@ public final class ChangeAvatarRspOuterClass {
     public static final int CUR_GUID_FIELD_NUMBER = 2;
     private long curGuid_;
     /**
-     * <pre>
-     * protected &#64; 0x28 
-     * </pre>
-     *
      * <code>uint64 cur_guid = 2;</code>
      * @return The curGuid.
      */
     @java.lang.Override
     public long getCurGuid() {
       return curGuid_;
+    }
+
+    public static final int RETCODE_FIELD_NUMBER = 15;
+    private int retcode_;
+    /**
+     * <pre>
+     * OK
+     * </pre>
+     *
+     * <code>int32 retcode = 15;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -147,6 +169,9 @@ public final class ChangeAvatarRspOuterClass {
       if (curGuid_ != 0L) {
         output.writeUInt64(2, curGuid_);
       }
+      if (retcode_ != 0) {
+        output.writeInt32(15, retcode_);
+      }
       unknownFields.writeTo(output);
     }
 
@@ -159,6 +184,10 @@ public final class ChangeAvatarRspOuterClass {
       if (curGuid_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
           .computeUInt64Size(2, curGuid_);
+      }
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(15, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -177,6 +206,8 @@ public final class ChangeAvatarRspOuterClass {
 
       if (getCurGuid()
           != other.getCurGuid()) return false;
+      if (getRetcode()
+          != other.getRetcode()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -191,6 +222,8 @@ public final class ChangeAvatarRspOuterClass {
       hash = (37 * hash) + CUR_GUID_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
           getCurGuid());
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -331,6 +364,8 @@ public final class ChangeAvatarRspOuterClass {
         super.clear();
         curGuid_ = 0L;
 
+        retcode_ = 0;
+
         return this;
       }
 
@@ -358,6 +393,7 @@ public final class ChangeAvatarRspOuterClass {
       public emu.grasscutter.net.proto.ChangeAvatarRspOuterClass.ChangeAvatarRsp buildPartial() {
         emu.grasscutter.net.proto.ChangeAvatarRspOuterClass.ChangeAvatarRsp result = new emu.grasscutter.net.proto.ChangeAvatarRspOuterClass.ChangeAvatarRsp(this);
         result.curGuid_ = curGuid_;
+        result.retcode_ = retcode_;
         onBuilt();
         return result;
       }
@@ -409,6 +445,9 @@ public final class ChangeAvatarRspOuterClass {
         if (other.getCurGuid() != 0L) {
           setCurGuid(other.getCurGuid());
         }
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
+        }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
         return this;
@@ -440,10 +479,6 @@ public final class ChangeAvatarRspOuterClass {
 
       private long curGuid_ ;
       /**
-       * <pre>
-       * protected &#64; 0x28 
-       * </pre>
-       *
        * <code>uint64 cur_guid = 2;</code>
        * @return The curGuid.
        */
@@ -452,10 +487,6 @@ public final class ChangeAvatarRspOuterClass {
         return curGuid_;
       }
       /**
-       * <pre>
-       * protected &#64; 0x28 
-       * </pre>
-       *
        * <code>uint64 cur_guid = 2;</code>
        * @param value The curGuid to set.
        * @return This builder for chaining.
@@ -467,16 +498,55 @@ public final class ChangeAvatarRspOuterClass {
         return this;
       }
       /**
-       * <pre>
-       * protected &#64; 0x28 
-       * </pre>
-       *
        * <code>uint64 cur_guid = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearCurGuid() {
         
         curGuid_ = 0L;
+        onChanged();
+        return this;
+      }
+
+      private int retcode_ ;
+      /**
+       * <pre>
+       * OK
+       * </pre>
+       *
+       * <code>int32 retcode = 15;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <pre>
+       * OK
+       * </pre>
+       *
+       * <code>int32 retcode = 15;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <pre>
+       * OK
+       * </pre>
+       *
+       * <code>int32 retcode = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
         onChanged();
         return this;
       }
@@ -547,9 +617,9 @@ public final class ChangeAvatarRspOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\025ChangeAvatarRsp.proto\"#\n\017ChangeAvatarR" +
-      "sp\022\020\n\010cur_guid\030\002 \001(\004B\033\n\031emu.grasscutter." +
-      "net.protob\006proto3"
+      "\n\025ChangeAvatarRsp.proto\"4\n\017ChangeAvatarR" +
+      "sp\022\020\n\010cur_guid\030\002 \001(\004\022\017\n\007retcode\030\017 \001(\005B\033\n" +
+      "\031emu.grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -560,7 +630,7 @@ public final class ChangeAvatarRspOuterClass {
     internal_static_ChangeAvatarRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ChangeAvatarRsp_descriptor,
-        new java.lang.String[] { "CurGuid", });
+        new java.lang.String[] { "CurGuid", "Retcode", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

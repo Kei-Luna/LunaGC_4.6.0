@@ -196,7 +196,25 @@ public final class PacketOpcodes {
     public static final int AvatarPropNotify = 24899;//4.6.0
     public static final int MarkNewNotify = 5948;//4.6.0
     public static final int MarkEntityInMinMapNotify = 1480;//4.6.0
-
+    public static final int PlayerSetPauseReq = 853;//4.6.0
+    public static final int PlayerSetPauseRsp = 28367;//4.6.0
+    public static final int SceneEntityDrownReq = 24672;//4.6.0
+    public static final int EntityTagChangeNotify = 26996;//4.6.0
+    public static final int EvtCreateGadgetNotify = 24638;//4.6.0
+    public static final int EvtDestroyGadgetNotify = 21713;//4.6.0
+    public static final int HitClientTrivialNotify = 8588;//4.6.0
+    public static final int GetGachaInfoReq = 20029;//4.6.0
+    public static final int GetGachaInfoRsp = 1610;//4.6.0
+    public static final int GetAuthkeyReq = 20926;//4.6.0
+    public static final int GetAuthkeyRsp = 24258;//4.6.0
+    public static final int GetMailItemReq = 7230;//4.6.0
+    public static final int GetMailItemRsp = 6607;//4.6.0
+    public static final int DoSetPlayerBornDataNotify = 6487;//4.6.0
+    public static final int SetPlayerBornDataReq = 26645;//4.6.0
+    public static final int SetPlayerBornDataRsp = 23193;//4.6.0 TODO retcode 25994
+    public static final int CodexDataUpdateNotify = 8002;//4.6.0
+    public static final int DoGachaReq = 7748;//4.6.0
+    public static final int DoGachaRsp = 3838;//4.6.0
 
 
 
@@ -566,7 +584,6 @@ public final class PacketOpcodes {
     public static final int CloseCommonTipsNotify = 39927695;     //4.0.0
     public static final int ClosedItemNotify = 3991446;     //4.0.0
     public static final int CodexDataFullNotify = 39929256;     //4.0.0
-    public static final int CodexDataUpdateNotify = 3996551;     //4.0.0
     public static final int CoinCollectCheckDoubleStartPlayReq = 39929525;     //4.0.0
     public static final int CoinCollectCheckDoubleStartPlayRsp = 39920610;     //4.0.0
     public static final int CoinCollectChooseSkillReq = 3995314;     //4.0.0
@@ -669,11 +686,8 @@ public final class PacketOpcodes {
     public static final int DigActivityChangeGadgetStateRsp = 39926496;     //4.0.0
     public static final int DigActivityMarkPointChangeNotify = 3998406;     //4.0.0
     public static final int DisableRoguelikeTrapNotify = 3991027;     //4.0.0
-    public static final int DoGachaReq = 3996499;     //4.0.0
-    public static final int DoGachaRsp = 39925647;     //4.0.0
     public static final int DoRoguelikeDungeonCardGachaReq = 39921709;     //4.0.0
     public static final int DoRoguelikeDungeonCardGachaRsp = 3993293;     //4.0.0
-    public static final int DoSetPlayerBornDataNotify = 3995710;     //4.0.0
     public static final int DraftGuestReplyInviteNotify = 399969;     //4.0.0
     public static final int DraftGuestReplyInviteReq = 3992082;     //4.0.0
     public static final int DraftGuestReplyInviteRsp = 3995277;     //4.0.0
@@ -826,7 +840,6 @@ public final class PacketOpcodes {
     public static final int EntityForceSyncRsp = 39924909;     //4.0.0
     public static final int EntityJumpNotify = 3998767;     //4.0.0
     public static final int EntityMoveRoomNotify = 39926583;     //4.0.0
-    public static final int EntityTagChangeNotify = 3996805;     //4.0.0
     public static final int EquipRoguelikeRuneReq = 3995188;     //4.0.0
     public static final int EquipRoguelikeRuneRsp = 3993632;     //4.0.0
     public static final int EvtAiSyncCombatThreatInfoNotify = 3997714;     //4.0.0
@@ -847,8 +860,6 @@ public final class PacketOpcodes {
     public static final int EvtBulletHitNotify = 39923746;     //4.0.0
     public static final int EvtBulletMoveNotify = 3998672;     //4.0.0
     public static final int EvtCostStaminaNotify = 399810;     //4.0.0
-    public static final int EvtCreateGadgetNotify = 39922195;     //4.0.0
-    public static final int EvtDestroyGadgetNotify = 3995833;     //4.0.0
     public static final int EvtDestroyServerGadgetNotify = 39923600;     //4.0.0
     public static final int EvtEntityRenderersChangedNotify = 3995525;     //4.0.0
     public static final int EvtEntityStartDieEndNotify = 39927889;     //4.0.0
@@ -1170,8 +1181,6 @@ public final class PacketOpcodes {
     public static final int GetAreaExplorePointRsp = 39927637;     //4.0.0
     public static final int GetAuthSalesmanInfoReq = 39928580;     //4.0.0
     public static final int GetAuthSalesmanInfoRsp = 3998294;     //4.0.0
-    public static final int GetAuthkeyReq = 39927875;     //4.0.0
-    public static final int GetAuthkeyRsp = 39929353;     //4.0.0
     public static final int GetBargainDataReq = 3997358;     //4.0.0
     public static final int GetBargainDataRsp = 3998330;     //4.0.0
     public static final int GetBattlePassProductReq = 3992201;     //4.0.0
@@ -1203,8 +1212,6 @@ public final class PacketOpcodes {
     public static final int GetFriendShowNameCardInfoReq = 39929743;     //4.0.0
     public static final int GetFriendShowNameCardInfoRsp = 39920479;     //4.0.0
     public static final int GetFurnitureCurModuleArrangeCountReq = 39927516;     //4.0.0
-    public static final int GetGachaInfoReq = 399181;     //4.0.0
-    public static final int GetGachaInfoRsp = 39923881;     //4.0.0
     public static final int GetGameplayRecommendationReq = 39929716;     //4.0.0
     public static final int GetGameplayRecommendationRsp = 39923992;     //4.0.0
     public static final int GetHomeExchangeWoodInfoReq = 39920885;     //4.0.0
@@ -1215,8 +1222,6 @@ public final class PacketOpcodes {
     public static final int GetHuntingOfferRewardRsp = 39926705;     //4.0.0
     public static final int GetInvestigationMonsterReq = 39923800;     //4.0.0
     public static final int GetInvestigationMonsterRsp = 39923497;     //4.0.0
-    public static final int GetMailItemReq = 3995317;     //4.0.0
-    public static final int GetMailItemRsp = 39927050;     //4.0.0
     public static final int GetMapAreaReq = 3998758;     //4.0.0
     public static final int GetMapAreaRsp = 3999654;     //4.0.0
     public static final int GetMapMarkTipsReq = 3994445;     //4.0.0
@@ -1341,7 +1346,6 @@ public final class PacketOpcodes {
     public static final int HideAndSeekSetReadyReq = 39924183;     //4.0.0
     public static final int HideAndSeekSetReadyRsp = 39927329;     //4.0.0
     public static final int HideAndSeekSettleNotify = 39921206;     //4.0.0
-    public static final int HitClientTrivialNotify = 39920211;     //4.0.0
     public static final int HitTreeNotify = 3998766;     //4.0.0
     public static final int HomeAllUnlockedBgmIdListNotify = 39923471;     //4.0.0
     public static final int HomeAvatarAllFinishRewardNotify = 3999497;     //4.0.0
@@ -1959,8 +1963,6 @@ public final class PacketOpcodes {
     public static final int PlayerSetLanguageRsp = 39921982;     //4.0.0
     public static final int PlayerSetOnlyMPWithPSPlayerReq = 3995396;     //4.0.0
     public static final int PlayerSetOnlyMPWithPSPlayerRsp = 39925610;     //4.0.0
-    public static final int PlayerSetPauseReq = 3994448;     //4.0.0
-    public static final int PlayerSetPauseRsp = 3991771;     //4.0.0
     public static final int PlayerSignatureAuditDataNotify = 39924855;     //4.0.0
     public static final int PlayerSignatureNotify = 39922738;     //4.0.0
     public static final int PlayerStartMatchReq = 39927823;     //4.0.0
@@ -2145,7 +2147,6 @@ public final class PacketOpcodes {
     public static final int SceneEntitiesMoveCombineNotify = 39926073;     //4.0.0
     public static final int SceneEntitiesMovesReq = 39920585;     //4.0.0
     public static final int SceneEntitiesMovesRsp = 3998605;     //4.0.0
-    public static final int SceneEntityDrownReq = 39922277;     //4.0.0
     public static final int SceneEntityDrownRsp = 39923727;     //4.0.0
     public static final int SceneEntityMoveNotify = 39925367;     //4.0.0
     public static final int SceneEntityMoveReq = 39926916;     //4.0.0
@@ -2237,8 +2238,6 @@ public final class PacketOpcodes {
     public static final int SetLimitOptimizationNotify = 3993723;     //4.0.0
     public static final int SetNameCardReq = 3993853;     //4.0.0
     public static final int SetNameCardRsp = 39922422;     //4.0.0
-    public static final int SetPlayerBornDataReq = 3997992;     //4.0.0
-    public static final int SetPlayerBornDataRsp = 39922804;     //4.0.0
     public static final int SetPlayerHeadImageReq = 3994071;     //4.0.0
     public static final int SetPlayerHeadImageRsp = 39920979;     //4.0.0
     public static final int SetPlayerPropReq = 39925174;     //4.0.0

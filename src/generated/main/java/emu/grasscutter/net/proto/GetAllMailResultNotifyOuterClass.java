@@ -79,6 +79,12 @@ public final class GetAllMailResultNotifyOuterClass {
     int getPacketBeSentNum();
   }
   /**
+   * <pre>
+   * CmdId: 29484
+   * Version: 4.6.0
+   * Obfs: MPLFKHHMJKP
+   * </pre>
+   *
    * Protobuf type {@code GetAllMailResultNotify}
    */
   public static final class GetAllMailResultNotify extends
@@ -531,6 +537,12 @@ public final class GetAllMailResultNotifyOuterClass {
       return builder;
     }
     /**
+     * <pre>
+     * CmdId: 29484
+     * Version: 4.6.0
+     * Obfs: MPLFKHHMJKP
+     * </pre>
+     *
      * Protobuf type {@code GetAllMailResultNotify}
      */
     public static final class Builder extends
