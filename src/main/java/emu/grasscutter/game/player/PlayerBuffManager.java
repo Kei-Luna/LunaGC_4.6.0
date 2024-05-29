@@ -110,7 +110,7 @@ public final class PlayerBuffManager extends BasePlayerManager {
 
                                             var maxHp = target.getFightProperty(FightProperty.FIGHT_PROP_MAX_HP);
                                             var amount =
-                                                    ability.amount.get() + ability.amountByTargetMaxHPRatio.get() * maxHp;
+                                                    ability.amount.get() + ability.amountByCasterMaxHPRatio.get() * maxHp;
 
                                             target.getAsEntity().heal(amount);
                                             shouldHeal = true;
