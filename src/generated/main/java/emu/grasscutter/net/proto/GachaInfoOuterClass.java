@@ -425,29 +425,29 @@ public final class GachaInfoOuterClass {
      * single DHONBCHNPJD (1621, 1921)
      * </pre>
      *
-     * <code>repeated uint32 DHONBCHNPJD = 1921;</code>
-     * @return A list containing the dHONBCHNPJD.
+     * <code>repeated uint32 display_chronicle5_item_list = 1921;</code>
+     * @return A list containing the displayChronicle5ItemList.
      */
-    java.util.List<java.lang.Integer> getDHONBCHNPJDList();
+    java.util.List<java.lang.Integer> getDisplayChronicle5ItemListList();
     /**
      * <pre>
      * single DHONBCHNPJD (1621, 1921)
      * </pre>
      *
-     * <code>repeated uint32 DHONBCHNPJD = 1921;</code>
-     * @return The count of dHONBCHNPJD.
+     * <code>repeated uint32 display_chronicle5_item_list = 1921;</code>
+     * @return The count of displayChronicle5ItemList.
      */
-    int getDHONBCHNPJDCount();
+    int getDisplayChronicle5ItemListCount();
     /**
      * <pre>
      * single DHONBCHNPJD (1621, 1921)
      * </pre>
      *
-     * <code>repeated uint32 DHONBCHNPJD = 1921;</code>
+     * <code>repeated uint32 display_chronicle5_item_list = 1921;</code>
      * @param index The index of the element to return.
-     * @return The dHONBCHNPJD at the given index.
+     * @return The displayChronicle5ItemList at the given index.
      */
-    int getDHONBCHNPJD(int index);
+    int getDisplayChronicle5ItemList(int index);
   }
   /**
    * <pre>
@@ -479,7 +479,7 @@ public final class GachaInfoOuterClass {
       displayUp4ItemList_ = emptyIntList();
       gachaRecordUrlOversea_ = "";
       displayUp5ItemList_ = emptyIntList();
-      dHONBCHNPJD_ = emptyIntList();
+      displayChronicle5ItemList_ = emptyIntList();
     }
 
     @java.lang.Override
@@ -688,21 +688,21 @@ public final class GachaInfoOuterClass {
             }
             case 15368: {
               if (!((mutable_bitField0_ & 0x00000008) != 0)) {
-                dHONBCHNPJD_ = newIntList();
+                displayChronicle5ItemList_ = newIntList();
                 mutable_bitField0_ |= 0x00000008;
               }
-              dHONBCHNPJD_.addInt(input.readUInt32());
+              displayChronicle5ItemList_.addInt(input.readUInt32());
               break;
             }
             case 15370: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000008) != 0) && input.getBytesUntilLimit() > 0) {
-                dHONBCHNPJD_ = newIntList();
+                displayChronicle5ItemList_ = newIntList();
                 mutable_bitField0_ |= 0x00000008;
               }
               while (input.getBytesUntilLimit() > 0) {
-                dHONBCHNPJD_.addInt(input.readUInt32());
+                displayChronicle5ItemList_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
               break;
@@ -732,7 +732,7 @@ public final class GachaInfoOuterClass {
           displayUp5ItemList_.makeImmutable(); // C
         }
         if (((mutable_bitField0_ & 0x00000008) != 0)) {
-          dHONBCHNPJD_.makeImmutable(); // C
+          displayChronicle5ItemList_.makeImmutable(); // C
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -1453,45 +1453,45 @@ public final class GachaInfoOuterClass {
       return wishProgress_;
     }
 
-    public static final int DHONBCHNPJD_FIELD_NUMBER = 1921;
-    private com.google.protobuf.Internal.IntList dHONBCHNPJD_;
+    public static final int DISPLAY_CHRONICLE5_ITEM_LIST_FIELD_NUMBER = 1921;
+    private com.google.protobuf.Internal.IntList displayChronicle5ItemList_;
     /**
      * <pre>
      * single DHONBCHNPJD (1621, 1921)
      * </pre>
      *
-     * <code>repeated uint32 DHONBCHNPJD = 1921;</code>
-     * @return A list containing the dHONBCHNPJD.
+     * <code>repeated uint32 display_chronicle5_item_list = 1921;</code>
+     * @return A list containing the displayChronicle5ItemList.
      */
     @java.lang.Override
     public java.util.List<java.lang.Integer>
-        getDHONBCHNPJDList() {
-      return dHONBCHNPJD_;
+        getDisplayChronicle5ItemListList() {
+      return displayChronicle5ItemList_;
     }
     /**
      * <pre>
      * single DHONBCHNPJD (1621, 1921)
      * </pre>
      *
-     * <code>repeated uint32 DHONBCHNPJD = 1921;</code>
-     * @return The count of dHONBCHNPJD.
+     * <code>repeated uint32 display_chronicle5_item_list = 1921;</code>
+     * @return The count of displayChronicle5ItemList.
      */
-    public int getDHONBCHNPJDCount() {
-      return dHONBCHNPJD_.size();
+    public int getDisplayChronicle5ItemListCount() {
+      return displayChronicle5ItemList_.size();
     }
     /**
      * <pre>
      * single DHONBCHNPJD (1621, 1921)
      * </pre>
      *
-     * <code>repeated uint32 DHONBCHNPJD = 1921;</code>
+     * <code>repeated uint32 display_chronicle5_item_list = 1921;</code>
      * @param index The index of the element to return.
-     * @return The dHONBCHNPJD at the given index.
+     * @return The displayChronicle5ItemList at the given index.
      */
-    public int getDHONBCHNPJD(int index) {
-      return dHONBCHNPJD_.getInt(index);
+    public int getDisplayChronicle5ItemList(int index) {
+      return displayChronicle5ItemList_.getInt(index);
     }
-    private int dHONBCHNPJDMemoizedSerializedSize = -1;
+    private int displayChronicle5ItemListMemoizedSerializedSize = -1;
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
@@ -1594,12 +1594,12 @@ public final class GachaInfoOuterClass {
       if (wishProgress_ != 0) {
         output.writeUInt32(1799, wishProgress_);
       }
-      if (getDHONBCHNPJDList().size() > 0) {
+      if (getDisplayChronicle5ItemListList().size() > 0) {
         output.writeUInt32NoTag(15370);
-        output.writeUInt32NoTag(dHONBCHNPJDMemoizedSerializedSize);
+        output.writeUInt32NoTag(displayChronicle5ItemListMemoizedSerializedSize);
       }
-      for (int i = 0; i < dHONBCHNPJD_.size(); i++) {
-        output.writeUInt32NoTag(dHONBCHNPJD_.getInt(i));
+      for (int i = 0; i < displayChronicle5ItemList_.size(); i++) {
+        output.writeUInt32NoTag(displayChronicle5ItemList_.getInt(i));
       }
       unknownFields.writeTo(output);
     }
@@ -1729,17 +1729,17 @@ public final class GachaInfoOuterClass {
       }
       {
         int dataSize = 0;
-        for (int i = 0; i < dHONBCHNPJD_.size(); i++) {
+        for (int i = 0; i < displayChronicle5ItemList_.size(); i++) {
           dataSize += com.google.protobuf.CodedOutputStream
-            .computeUInt32SizeNoTag(dHONBCHNPJD_.getInt(i));
+            .computeUInt32SizeNoTag(displayChronicle5ItemList_.getInt(i));
         }
         size += dataSize;
-        if (!getDHONBCHNPJDList().isEmpty()) {
+        if (!getDisplayChronicle5ItemListList().isEmpty()) {
           size += 2;
           size += com.google.protobuf.CodedOutputStream
               .computeInt32SizeNoTag(dataSize);
         }
-        dHONBCHNPJDMemoizedSerializedSize = dataSize;
+        displayChronicle5ItemListMemoizedSerializedSize = dataSize;
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -1808,8 +1808,8 @@ public final class GachaInfoOuterClass {
           != other.getWishMaxProgress()) return false;
       if (getWishProgress()
           != other.getWishProgress()) return false;
-      if (!getDHONBCHNPJDList()
-          .equals(other.getDHONBCHNPJDList())) return false;
+      if (!getDisplayChronicle5ItemListList()
+          .equals(other.getDisplayChronicle5ItemListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -1880,9 +1880,9 @@ public final class GachaInfoOuterClass {
       hash = (53 * hash) + getWishMaxProgress();
       hash = (37 * hash) + WISH_PROGRESS_FIELD_NUMBER;
       hash = (53 * hash) + getWishProgress();
-      if (getDHONBCHNPJDCount() > 0) {
-        hash = (37 * hash) + DHONBCHNPJD_FIELD_NUMBER;
-        hash = (53 * hash) + getDHONBCHNPJDList().hashCode();
+      if (getDisplayChronicle5ItemListCount() > 0) {
+        hash = (37 * hash) + DISPLAY_CHRONICLE5_ITEM_LIST_FIELD_NUMBER;
+        hash = (53 * hash) + getDisplayChronicle5ItemListList().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
@@ -2081,7 +2081,7 @@ public final class GachaInfoOuterClass {
 
         wishProgress_ = 0;
 
-        dHONBCHNPJD_ = emptyIntList();
+        displayChronicle5ItemList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000008);
         return this;
       }
@@ -2153,10 +2153,10 @@ public final class GachaInfoOuterClass {
         result.wishMaxProgress_ = wishMaxProgress_;
         result.wishProgress_ = wishProgress_;
         if (((bitField0_ & 0x00000008) != 0)) {
-          dHONBCHNPJD_.makeImmutable();
+          displayChronicle5ItemList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000008);
         }
-        result.dHONBCHNPJD_ = dHONBCHNPJD_;
+        result.displayChronicle5ItemList_ = displayChronicle5ItemList_;
         onBuilt();
         return result;
       }
@@ -2327,13 +2327,13 @@ public final class GachaInfoOuterClass {
         if (other.getWishProgress() != 0) {
           setWishProgress(other.getWishProgress());
         }
-        if (!other.dHONBCHNPJD_.isEmpty()) {
-          if (dHONBCHNPJD_.isEmpty()) {
-            dHONBCHNPJD_ = other.dHONBCHNPJD_;
+        if (!other.displayChronicle5ItemList_.isEmpty()) {
+          if (displayChronicle5ItemList_.isEmpty()) {
+            displayChronicle5ItemList_ = other.displayChronicle5ItemList_;
             bitField0_ = (bitField0_ & ~0x00000008);
           } else {
-            ensureDHONBCHNPJDIsMutable();
-            dHONBCHNPJD_.addAll(other.dHONBCHNPJD_);
+            ensureDisplayChronicle5ItemListIsMutable();
+            displayChronicle5ItemList_.addAll(other.displayChronicle5ItemList_);
           }
           onChanged();
         }
@@ -4253,10 +4253,10 @@ public final class GachaInfoOuterClass {
         return this;
       }
 
-      private com.google.protobuf.Internal.IntList dHONBCHNPJD_ = emptyIntList();
-      private void ensureDHONBCHNPJDIsMutable() {
+      private com.google.protobuf.Internal.IntList displayChronicle5ItemList_ = emptyIntList();
+      private void ensureDisplayChronicle5ItemListIsMutable() {
         if (!((bitField0_ & 0x00000008) != 0)) {
-          dHONBCHNPJD_ = mutableCopy(dHONBCHNPJD_);
+          displayChronicle5ItemList_ = mutableCopy(displayChronicle5ItemList_);
           bitField0_ |= 0x00000008;
          }
       }
@@ -4265,51 +4265,51 @@ public final class GachaInfoOuterClass {
        * single DHONBCHNPJD (1621, 1921)
        * </pre>
        *
-       * <code>repeated uint32 DHONBCHNPJD = 1921;</code>
-       * @return A list containing the dHONBCHNPJD.
+       * <code>repeated uint32 display_chronicle5_item_list = 1921;</code>
+       * @return A list containing the displayChronicle5ItemList.
        */
       public java.util.List<java.lang.Integer>
-          getDHONBCHNPJDList() {
+          getDisplayChronicle5ItemListList() {
         return ((bitField0_ & 0x00000008) != 0) ?
-                 java.util.Collections.unmodifiableList(dHONBCHNPJD_) : dHONBCHNPJD_;
+                 java.util.Collections.unmodifiableList(displayChronicle5ItemList_) : displayChronicle5ItemList_;
       }
       /**
        * <pre>
        * single DHONBCHNPJD (1621, 1921)
        * </pre>
        *
-       * <code>repeated uint32 DHONBCHNPJD = 1921;</code>
-       * @return The count of dHONBCHNPJD.
+       * <code>repeated uint32 display_chronicle5_item_list = 1921;</code>
+       * @return The count of displayChronicle5ItemList.
        */
-      public int getDHONBCHNPJDCount() {
-        return dHONBCHNPJD_.size();
+      public int getDisplayChronicle5ItemListCount() {
+        return displayChronicle5ItemList_.size();
       }
       /**
        * <pre>
        * single DHONBCHNPJD (1621, 1921)
        * </pre>
        *
-       * <code>repeated uint32 DHONBCHNPJD = 1921;</code>
+       * <code>repeated uint32 display_chronicle5_item_list = 1921;</code>
        * @param index The index of the element to return.
-       * @return The dHONBCHNPJD at the given index.
+       * @return The displayChronicle5ItemList at the given index.
        */
-      public int getDHONBCHNPJD(int index) {
-        return dHONBCHNPJD_.getInt(index);
+      public int getDisplayChronicle5ItemList(int index) {
+        return displayChronicle5ItemList_.getInt(index);
       }
       /**
        * <pre>
        * single DHONBCHNPJD (1621, 1921)
        * </pre>
        *
-       * <code>repeated uint32 DHONBCHNPJD = 1921;</code>
+       * <code>repeated uint32 display_chronicle5_item_list = 1921;</code>
        * @param index The index to set the value at.
-       * @param value The dHONBCHNPJD to set.
+       * @param value The displayChronicle5ItemList to set.
        * @return This builder for chaining.
        */
-      public Builder setDHONBCHNPJD(
+      public Builder setDisplayChronicle5ItemList(
           int index, int value) {
-        ensureDHONBCHNPJDIsMutable();
-        dHONBCHNPJD_.setInt(index, value);
+        ensureDisplayChronicle5ItemListIsMutable();
+        displayChronicle5ItemList_.setInt(index, value);
         onChanged();
         return this;
       }
@@ -4318,13 +4318,13 @@ public final class GachaInfoOuterClass {
        * single DHONBCHNPJD (1621, 1921)
        * </pre>
        *
-       * <code>repeated uint32 DHONBCHNPJD = 1921;</code>
-       * @param value The dHONBCHNPJD to add.
+       * <code>repeated uint32 display_chronicle5_item_list = 1921;</code>
+       * @param value The displayChronicle5ItemList to add.
        * @return This builder for chaining.
        */
-      public Builder addDHONBCHNPJD(int value) {
-        ensureDHONBCHNPJDIsMutable();
-        dHONBCHNPJD_.addInt(value);
+      public Builder addDisplayChronicle5ItemList(int value) {
+        ensureDisplayChronicle5ItemListIsMutable();
+        displayChronicle5ItemList_.addInt(value);
         onChanged();
         return this;
       }
@@ -4333,15 +4333,15 @@ public final class GachaInfoOuterClass {
        * single DHONBCHNPJD (1621, 1921)
        * </pre>
        *
-       * <code>repeated uint32 DHONBCHNPJD = 1921;</code>
-       * @param values The dHONBCHNPJD to add.
+       * <code>repeated uint32 display_chronicle5_item_list = 1921;</code>
+       * @param values The displayChronicle5ItemList to add.
        * @return This builder for chaining.
        */
-      public Builder addAllDHONBCHNPJD(
+      public Builder addAllDisplayChronicle5ItemList(
           java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureDHONBCHNPJDIsMutable();
+        ensureDisplayChronicle5ItemListIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, dHONBCHNPJD_);
+            values, displayChronicle5ItemList_);
         onChanged();
         return this;
       }
@@ -4350,11 +4350,11 @@ public final class GachaInfoOuterClass {
        * single DHONBCHNPJD (1621, 1921)
        * </pre>
        *
-       * <code>repeated uint32 DHONBCHNPJD = 1921;</code>
+       * <code>repeated uint32 display_chronicle5_item_list = 1921;</code>
        * @return This builder for chaining.
        */
-      public Builder clearDHONBCHNPJD() {
-        dHONBCHNPJD_ = emptyIntList();
+      public Builder clearDisplayChronicle5ItemList() {
+        displayChronicle5ItemList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000008);
         onChanged();
         return this;
@@ -4426,7 +4426,7 @@ public final class GachaInfoOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\017GachaInfo.proto\032\021GachaUpInfo.proto\"\336\005\n" +
+      "\n\017GachaInfo.proto\032\021GachaUpInfo.proto\"\357\005\n" +
       "\tGachaInfo\022\030\n\020left_gacha_times\030\001 \001(\r\022\030\n\020" +
       "ten_cost_item_id\030\002 \001(\r\022\020\n\010end_time\030\003 \001(\r" +
       "\022!\n\031gacha_preview_prefab_path\030\004 \001(\t\022\030\n\020g" +
@@ -4444,9 +4444,9 @@ public final class GachaInfoOuterClass {
       "chedule_daily_gacha_times\030\321\t \001(\r\022!\n\030gach" +
       "a_record_url_oversea\030\312\n \001(\t\022\036\n\025display_u" +
       "p5_item_list\030\325\014 \003(\r\022\032\n\021wish_max_progress" +
-      "\030\335\r \001(\r\022\026\n\rwish_progress\030\207\016 \001(\r\022\024\n\013DHONB" +
-      "CHNPJD\030\201\017 \003(\rB\033\n\031emu.grasscutter.net.pro" +
-      "tob\006proto3"
+      "\030\335\r \001(\r\022\026\n\rwish_progress\030\207\016 \001(\r\022%\n\034displ" +
+      "ay_chronicle5_item_list\030\201\017 \003(\rB\033\n\031emu.gr" +
+      "asscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -4458,7 +4458,7 @@ public final class GachaInfoOuterClass {
     internal_static_GachaInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_GachaInfo_descriptor,
-        new java.lang.String[] { "LeftGachaTimes", "TenCostItemId", "EndTime", "GachaPreviewPrefabPath", "GachaRecordUrl", "TenCostItemNum", "GachaType", "GachaTimesLimit", "ScheduleId", "GachaProbUrl", "CostItemId", "GachaSortId", "CostItemNum", "GachaPrefabPath", "BeginTime", "IsNewWish", "GachaProbUrlOversea", "GachaUpInfoList", "TitleTextmap", "DisplayUp4ItemList", "WishItemId", "CurScheduleDailyGachaTimes", "GachaRecordUrlOversea", "DisplayUp5ItemList", "WishMaxProgress", "WishProgress", "DHONBCHNPJD", });
+        new java.lang.String[] { "LeftGachaTimes", "TenCostItemId", "EndTime", "GachaPreviewPrefabPath", "GachaRecordUrl", "TenCostItemNum", "GachaType", "GachaTimesLimit", "ScheduleId", "GachaProbUrl", "CostItemId", "GachaSortId", "CostItemNum", "GachaPrefabPath", "BeginTime", "IsNewWish", "GachaProbUrlOversea", "GachaUpInfoList", "TitleTextmap", "DisplayUp4ItemList", "WishItemId", "CurScheduleDailyGachaTimes", "GachaRecordUrlOversea", "DisplayUp5ItemList", "WishMaxProgress", "WishProgress", "DisplayChronicle5ItemList", });
     emu.grasscutter.net.proto.GachaUpInfoOuterClass.getDescriptor();
   }
 

@@ -19,23 +19,23 @@ public final class RefreshRogueDiaryCardRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 11;</code>
+     * <code>int32 retcode = 3;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>repeated uint32 rand_card_list = 5;</code>
+     * <code>repeated uint32 rand_card_list = 12;</code>
      * @return A list containing the randCardList.
      */
     java.util.List<java.lang.Integer> getRandCardListList();
     /**
-     * <code>repeated uint32 rand_card_list = 5;</code>
+     * <code>repeated uint32 rand_card_list = 12;</code>
      * @return The count of randCardList.
      */
     int getRandCardListCount();
     /**
-     * <code>repeated uint32 rand_card_list = 5;</code>
+     * <code>repeated uint32 rand_card_list = 12;</code>
      * @param index The index of the element to return.
      * @return The randCardList at the given index.
      */
@@ -43,8 +43,9 @@ public final class RefreshRogueDiaryCardRspOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 2711
-   * Obf: HODLMPCEKJL
+   * CmdId: 28587
+   * Version: 4.6.0
+   * Obfs: KBCGJCGOPNI
    * </pre>
    *
    * Protobuf type {@code RefreshRogueDiaryCardRsp}
@@ -93,7 +94,12 @@ public final class RefreshRogueDiaryCardRspOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
+            case 24: {
+
+              retcode_ = input.readInt32();
+              break;
+            }
+            case 96: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 randCardList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -101,7 +107,7 @@ public final class RefreshRogueDiaryCardRspOuterClass {
               randCardList_.addInt(input.readUInt32());
               break;
             }
-            case 42: {
+            case 98: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -112,11 +118,6 @@ public final class RefreshRogueDiaryCardRspOuterClass {
                 randCardList_.addInt(input.readUInt32());
               }
               input.popLimit(limit);
-              break;
-            }
-            case 88: {
-
-              retcode_ = input.readInt32();
               break;
             }
             default: {
@@ -154,10 +155,10 @@ public final class RefreshRogueDiaryCardRspOuterClass {
               emu.grasscutter.net.proto.RefreshRogueDiaryCardRspOuterClass.RefreshRogueDiaryCardRsp.class, emu.grasscutter.net.proto.RefreshRogueDiaryCardRspOuterClass.RefreshRogueDiaryCardRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 11;
+    public static final int RETCODE_FIELD_NUMBER = 3;
     private int retcode_;
     /**
-     * <code>int32 retcode = 11;</code>
+     * <code>int32 retcode = 3;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -165,10 +166,10 @@ public final class RefreshRogueDiaryCardRspOuterClass {
       return retcode_;
     }
 
-    public static final int RAND_CARD_LIST_FIELD_NUMBER = 5;
+    public static final int RAND_CARD_LIST_FIELD_NUMBER = 12;
     private com.google.protobuf.Internal.IntList randCardList_;
     /**
-     * <code>repeated uint32 rand_card_list = 5;</code>
+     * <code>repeated uint32 rand_card_list = 12;</code>
      * @return A list containing the randCardList.
      */
     @java.lang.Override
@@ -177,14 +178,14 @@ public final class RefreshRogueDiaryCardRspOuterClass {
       return randCardList_;
     }
     /**
-     * <code>repeated uint32 rand_card_list = 5;</code>
+     * <code>repeated uint32 rand_card_list = 12;</code>
      * @return The count of randCardList.
      */
     public int getRandCardListCount() {
       return randCardList_.size();
     }
     /**
-     * <code>repeated uint32 rand_card_list = 5;</code>
+     * <code>repeated uint32 rand_card_list = 12;</code>
      * @param index The index of the element to return.
      * @return The randCardList at the given index.
      */
@@ -208,15 +209,15 @@ public final class RefreshRogueDiaryCardRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
+      if (retcode_ != 0) {
+        output.writeInt32(3, retcode_);
+      }
       if (getRandCardListList().size() > 0) {
-        output.writeUInt32NoTag(42);
+        output.writeUInt32NoTag(98);
         output.writeUInt32NoTag(randCardListMemoizedSerializedSize);
       }
       for (int i = 0; i < randCardList_.size(); i++) {
         output.writeUInt32NoTag(randCardList_.getInt(i));
-      }
-      if (retcode_ != 0) {
-        output.writeInt32(11, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -227,6 +228,10 @@ public final class RefreshRogueDiaryCardRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(3, retcode_);
+      }
       {
         int dataSize = 0;
         for (int i = 0; i < randCardList_.size(); i++) {
@@ -240,10 +245,6 @@ public final class RefreshRogueDiaryCardRspOuterClass {
               .computeInt32SizeNoTag(dataSize);
         }
         randCardListMemoizedSerializedSize = dataSize;
-      }
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(11, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -378,8 +379,9 @@ public final class RefreshRogueDiaryCardRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2711
-     * Obf: HODLMPCEKJL
+     * CmdId: 28587
+     * Version: 4.6.0
+     * Obfs: KBCGJCGOPNI
      * </pre>
      *
      * Protobuf type {@code RefreshRogueDiaryCardRsp}
@@ -549,7 +551,7 @@ public final class RefreshRogueDiaryCardRspOuterClass {
 
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 11;</code>
+       * <code>int32 retcode = 3;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -557,7 +559,7 @@ public final class RefreshRogueDiaryCardRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 11;</code>
+       * <code>int32 retcode = 3;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -568,7 +570,7 @@ public final class RefreshRogueDiaryCardRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 11;</code>
+       * <code>int32 retcode = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -586,7 +588,7 @@ public final class RefreshRogueDiaryCardRspOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 rand_card_list = 5;</code>
+       * <code>repeated uint32 rand_card_list = 12;</code>
        * @return A list containing the randCardList.
        */
       public java.util.List<java.lang.Integer>
@@ -595,14 +597,14 @@ public final class RefreshRogueDiaryCardRspOuterClass {
                  java.util.Collections.unmodifiableList(randCardList_) : randCardList_;
       }
       /**
-       * <code>repeated uint32 rand_card_list = 5;</code>
+       * <code>repeated uint32 rand_card_list = 12;</code>
        * @return The count of randCardList.
        */
       public int getRandCardListCount() {
         return randCardList_.size();
       }
       /**
-       * <code>repeated uint32 rand_card_list = 5;</code>
+       * <code>repeated uint32 rand_card_list = 12;</code>
        * @param index The index of the element to return.
        * @return The randCardList at the given index.
        */
@@ -610,7 +612,7 @@ public final class RefreshRogueDiaryCardRspOuterClass {
         return randCardList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 rand_card_list = 5;</code>
+       * <code>repeated uint32 rand_card_list = 12;</code>
        * @param index The index to set the value at.
        * @param value The randCardList to set.
        * @return This builder for chaining.
@@ -623,7 +625,7 @@ public final class RefreshRogueDiaryCardRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 rand_card_list = 5;</code>
+       * <code>repeated uint32 rand_card_list = 12;</code>
        * @param value The randCardList to add.
        * @return This builder for chaining.
        */
@@ -634,7 +636,7 @@ public final class RefreshRogueDiaryCardRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 rand_card_list = 5;</code>
+       * <code>repeated uint32 rand_card_list = 12;</code>
        * @param values The randCardList to add.
        * @return This builder for chaining.
        */
@@ -647,7 +649,7 @@ public final class RefreshRogueDiaryCardRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 rand_card_list = 5;</code>
+       * <code>repeated uint32 rand_card_list = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearRandCardList() {
@@ -724,8 +726,8 @@ public final class RefreshRogueDiaryCardRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\036RefreshRogueDiaryCardRsp.proto\"C\n\030Refr" +
-      "eshRogueDiaryCardRsp\022\017\n\007retcode\030\013 \001(\005\022\026\n" +
-      "\016rand_card_list\030\005 \003(\rB\033\n\031emu.grasscutter" +
+      "eshRogueDiaryCardRsp\022\017\n\007retcode\030\003 \001(\005\022\026\n" +
+      "\016rand_card_list\030\014 \003(\rB\033\n\031emu.grasscutter" +
       ".net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

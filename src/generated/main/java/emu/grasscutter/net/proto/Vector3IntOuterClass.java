@@ -38,7 +38,8 @@ public final class Vector3IntOuterClass {
   }
   /**
    * <pre>
-   * Obf: KKPDGAEKGHF
+   * Version: 4.6.0
+   * Obfs: IPDNLGHMCNH
    * </pre>
    *
    * Protobuf type {@code Vector3Int}
@@ -344,7 +345,8 @@ public final class Vector3IntOuterClass {
     }
     /**
      * <pre>
-     * Obf: KKPDGAEKGHF
+     * Version: 4.6.0
+     * Obfs: IPDNLGHMCNH
      * </pre>
      *
      * Protobuf type {@code Vector3Int}
