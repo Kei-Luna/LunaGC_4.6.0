@@ -216,6 +216,12 @@ public final class PacketOpcodes {
     public static final int DoGachaReq = 7748;//4.6.0
     public static final int DoGachaRsp = 3838;//4.6.0
     public static final int PlayerTimeNotify = 1391;//4.6.0
+    public static final int BatchBuyGoodsReq = 6661;//4.6.0
+    public static final int BatchBuyGoodsRsp = 23001;//4.6.0
+    public static final int BuyGoodsReq = 28819;//4.6.0
+    public static final int BuyGoodsRsp = 8;//4.6.0
+    public static final int GetShopmallDataReq = 9573;//4.6.0
+    public static final int GetShopmallDataRsp = 6481;//4.6.0
 
 
 
@@ -401,8 +407,6 @@ public final class PacketOpcodes {
     public static final int BartenderLevelProgressNotify = 3998176;     //4.0.0
     public static final int BartenderStartLevelReq = 3997285;     //4.0.0
     public static final int BartenderStartLevelRsp = 39927218;     //4.0.0
-    public static final int BatchBuyGoodsReq = 3996294;     //4.0.0
-    public static final int BatchBuyGoodsRsp = 39929700;     //4.0.0
     public static final int BattlePassAllDataNotify = 3993474;     //4.0.0
     public static final int BattlePassBuySuccNotify = 39928080;     //4.0.0
     public static final int BattlePassCurScheduleUpdateNotify = 39927464;     //4.0.0
@@ -457,8 +461,6 @@ public final class PacketOpcodes {
     public static final int BuoyantCombatSettleNotify = 39925655;     //4.0.0
     public static final int BuyBattlePassLevelReq = 39920824;     //4.0.0
     public static final int BuyBattlePassLevelRsp = 39926570;     //4.0.0
-    public static final int BuyGoodsReq = 3998034;     //4.0.0
-    public static final int BuyGoodsRsp = 399611;     //4.0.0
     public static final int BuyResinReq = 3999368;     //4.0.0
     public static final int BuyResinRsp = 3993650;     //4.0.0
     public static final int CAKPFOKMGEJ = 39921770;     //4.0.0
@@ -1267,8 +1269,6 @@ public final class PacketOpcodes {
     public static final int GetSceneNpcPositionRsp = 399412;     //4.0.0
     public static final int GetScenePerformanceReq = 3993953;     //4.0.0
     public static final int GetScenePerformanceRsp = 39925307;     //4.0.0
-    public static final int GetShopmallDataReq = 3992616;     //4.0.0
-    public static final int GetShopmallDataRsp = 3991087;     //4.0.0
     public static final int GetSignInRewardReq = 39925930;     //4.0.0
     public static final int GetSignInRewardRsp = 39927270;     //4.0.0
     public static final int GetStoreCustomDungeonReq = 3998591;     //4.0.0
