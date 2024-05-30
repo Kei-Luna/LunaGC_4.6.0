@@ -216,6 +216,11 @@ public final class PacketOpcodes {
     public static final int DoGachaReq = 7748;//4.6.0
     public static final int DoGachaRsp = 3838;//4.6.0
     public static final int PlayerTimeNotify = 1391;//4.6.0
+    public static final int HomePreChangeEditModeNotify = 24506;//4.6.0
+    public static final int HomeChangeEditModeReq = 26622;//4.6.0
+    public static final int HomeChangeEditModeRsp = 27049;//4.6.0
+    public static final int HomeGetArrangementInfoReq = 25934;//4.6.0
+    public static final int HomeGetArrangementInfoRsp = 614;//4.6.0
 
 
 
@@ -1370,8 +1375,6 @@ public final class PacketOpcodes {
     public static final int HomeChangeBgmNotify = 3992031;     //4.0.0
     public static final int HomeChangeBgmReq = 39928739;     //4.0.0
     public static final int HomeChangeBgmRsp = 3996476;     //4.0.0
-    public static final int HomeChangeEditModeReq = 3998351;     //4.0.0
-    public static final int HomeChangeEditModeRsp = 3997491;     //4.0.0
     public static final int HomeClearGroupRecordReq = 39928348;     //4.0.0
     public static final int HomeClearGroupRecordRsp = 39921872;     //4.0.0
     public static final int HomeCreateBlueprintReq = 39928484;     //4.0.0
@@ -1387,8 +1390,6 @@ public final class PacketOpcodes {
     public static final int HomeExchangeWoodRsp = 3991815;     //4.0.0
     public static final int HomeFishFarmingInfoNotify = 399136;     //4.0.0
     public static final int HomeGalleryInPlayingNotify = 39920552;     //4.0.0
-    public static final int HomeGetArrangementInfoReq = 39922421;     //4.0.0
-    public static final int HomeGetArrangementInfoRsp = 39924303;     //4.0.0
     public static final int HomeGetBasicInfoReq = 39927734;     //4.0.0
     public static final int HomeGetBlueprintSlotInfoReq = 3992811;     //4.0.0
     public static final int HomeGetBlueprintSlotInfoRsp = 3996723;     //4.0.0
@@ -1420,7 +1421,6 @@ public final class PacketOpcodes {
     public static final int HomePlantSeedRsp = 3999241;     //4.0.0
     public static final int HomePlantWeedReq = 39920037;     //4.0.0
     public static final int HomePlantWeedRsp = 3992656;     //4.0.0
-    public static final int HomePreChangeEditModeNotify = 39927578;     //4.0.0
     public static final int HomePreviewBlueprintReq = 3994668;     //4.0.0
     public static final int HomePreviewBlueprintRsp = 39923117;     //4.0.0
     public static final int HomePriorCheckNotify = 3991456;     //4.0.0

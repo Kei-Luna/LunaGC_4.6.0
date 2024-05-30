@@ -19,21 +19,20 @@ public final class HomeChangeEditModeRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>int32 retcode = 2;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
-
-    /**
-     * <code>bool is_enter_edit_mode = 6;</code>
+     * <code>bool is_enter_edit_mode = 9;</code>
      * @return The isEnterEditMode.
      */
     boolean getIsEnterEditMode();
+
+    /**
+     * <code>int32 retcode = 11;</code>
+     * @return The retcode.
+     */
+    int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 7491
-   * Obf: CICADGGFJOK
+   * CmdId: 27049
    * </pre>
    *
    * Protobuf type {@code HomeChangeEditModeRsp}
@@ -80,14 +79,14 @@ public final class HomeChangeEditModeRspOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
-
-              retcode_ = input.readInt32();
-              break;
-            }
-            case 48: {
+            case 72: {
 
               isEnterEditMode_ = input.readBool();
+              break;
+            }
+            case 88: {
+
+              retcode_ = input.readInt32();
               break;
             }
             default: {
@@ -122,26 +121,26 @@ public final class HomeChangeEditModeRspOuterClass {
               emu.grasscutter.net.proto.HomeChangeEditModeRspOuterClass.HomeChangeEditModeRsp.class, emu.grasscutter.net.proto.HomeChangeEditModeRspOuterClass.HomeChangeEditModeRsp.Builder.class);
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 2;
-    private int retcode_;
-    /**
-     * <code>int32 retcode = 2;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
-    }
-
-    public static final int IS_ENTER_EDIT_MODE_FIELD_NUMBER = 6;
+    public static final int IS_ENTER_EDIT_MODE_FIELD_NUMBER = 9;
     private boolean isEnterEditMode_;
     /**
-     * <code>bool is_enter_edit_mode = 6;</code>
+     * <code>bool is_enter_edit_mode = 9;</code>
      * @return The isEnterEditMode.
      */
     @java.lang.Override
     public boolean getIsEnterEditMode() {
       return isEnterEditMode_;
+    }
+
+    public static final int RETCODE_FIELD_NUMBER = 11;
+    private int retcode_;
+    /**
+     * <code>int32 retcode = 11;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -158,11 +157,11 @@ public final class HomeChangeEditModeRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (retcode_ != 0) {
-        output.writeInt32(2, retcode_);
-      }
       if (isEnterEditMode_ != false) {
-        output.writeBool(6, isEnterEditMode_);
+        output.writeBool(9, isEnterEditMode_);
+      }
+      if (retcode_ != 0) {
+        output.writeInt32(11, retcode_);
       }
       unknownFields.writeTo(output);
     }
@@ -173,13 +172,13 @@ public final class HomeChangeEditModeRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (retcode_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(2, retcode_);
-      }
       if (isEnterEditMode_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(6, isEnterEditMode_);
+          .computeBoolSize(9, isEnterEditMode_);
+      }
+      if (retcode_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(11, retcode_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -196,10 +195,10 @@ public final class HomeChangeEditModeRspOuterClass {
       }
       emu.grasscutter.net.proto.HomeChangeEditModeRspOuterClass.HomeChangeEditModeRsp other = (emu.grasscutter.net.proto.HomeChangeEditModeRspOuterClass.HomeChangeEditModeRsp) obj;
 
-      if (getRetcode()
-          != other.getRetcode()) return false;
       if (getIsEnterEditMode()
           != other.getIsEnterEditMode()) return false;
+      if (getRetcode()
+          != other.getRetcode()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -211,11 +210,11 @@ public final class HomeChangeEditModeRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       hash = (37 * hash) + IS_ENTER_EDIT_MODE_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsEnterEditMode());
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -313,8 +312,7 @@ public final class HomeChangeEditModeRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 7491
-     * Obf: CICADGGFJOK
+     * CmdId: 27049
      * </pre>
      *
      * Protobuf type {@code HomeChangeEditModeRsp}
@@ -354,9 +352,9 @@ public final class HomeChangeEditModeRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        retcode_ = 0;
-
         isEnterEditMode_ = false;
+
+        retcode_ = 0;
 
         return this;
       }
@@ -384,8 +382,8 @@ public final class HomeChangeEditModeRspOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.HomeChangeEditModeRspOuterClass.HomeChangeEditModeRsp buildPartial() {
         emu.grasscutter.net.proto.HomeChangeEditModeRspOuterClass.HomeChangeEditModeRsp result = new emu.grasscutter.net.proto.HomeChangeEditModeRspOuterClass.HomeChangeEditModeRsp(this);
-        result.retcode_ = retcode_;
         result.isEnterEditMode_ = isEnterEditMode_;
+        result.retcode_ = retcode_;
         onBuilt();
         return result;
       }
@@ -434,11 +432,11 @@ public final class HomeChangeEditModeRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.HomeChangeEditModeRspOuterClass.HomeChangeEditModeRsp other) {
         if (other == emu.grasscutter.net.proto.HomeChangeEditModeRspOuterClass.HomeChangeEditModeRsp.getDefaultInstance()) return this;
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
-        }
         if (other.getIsEnterEditMode() != false) {
           setIsEnterEditMode(other.getIsEnterEditMode());
+        }
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -469,40 +467,9 @@ public final class HomeChangeEditModeRspOuterClass {
         return this;
       }
 
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 2;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 2;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
-      }
-
       private boolean isEnterEditMode_ ;
       /**
-       * <code>bool is_enter_edit_mode = 6;</code>
+       * <code>bool is_enter_edit_mode = 9;</code>
        * @return The isEnterEditMode.
        */
       @java.lang.Override
@@ -510,7 +477,7 @@ public final class HomeChangeEditModeRspOuterClass {
         return isEnterEditMode_;
       }
       /**
-       * <code>bool is_enter_edit_mode = 6;</code>
+       * <code>bool is_enter_edit_mode = 9;</code>
        * @param value The isEnterEditMode to set.
        * @return This builder for chaining.
        */
@@ -521,12 +488,43 @@ public final class HomeChangeEditModeRspOuterClass {
         return this;
       }
       /**
-       * <code>bool is_enter_edit_mode = 6;</code>
+       * <code>bool is_enter_edit_mode = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsEnterEditMode() {
         
         isEnterEditMode_ = false;
+        onChanged();
+        return this;
+      }
+
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 11;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 11;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 11;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
         onChanged();
         return this;
       }
@@ -598,8 +596,8 @@ public final class HomeChangeEditModeRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\033HomeChangeEditModeRsp.proto\"D\n\025HomeCha" +
-      "ngeEditModeRsp\022\017\n\007retcode\030\002 \001(\005\022\032\n\022is_en" +
-      "ter_edit_mode\030\006 \001(\010B\033\n\031emu.grasscutter.n" +
+      "ngeEditModeRsp\022\032\n\022is_enter_edit_mode\030\t \001" +
+      "(\010\022\017\n\007retcode\030\013 \001(\005B\033\n\031emu.grasscutter.n" +
       "et.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -611,7 +609,7 @@ public final class HomeChangeEditModeRspOuterClass {
     internal_static_HomeChangeEditModeRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_HomeChangeEditModeRsp_descriptor,
-        new java.lang.String[] { "Retcode", "IsEnterEditMode", });
+        new java.lang.String[] { "IsEnterEditMode", "Retcode", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)
