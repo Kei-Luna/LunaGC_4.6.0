@@ -117,5 +117,5 @@ Method 2:
 - Search up the material/avatar/enemy and then the ID of it should be in the URL of the site, for example I searched for the pyro hilichurl archer; the link for it is ambr.top/en/archive/monster/21010501/pyro-hilichurl-shooter so the ID for it will be 21010501.
 
 ## Tips
-- Don't open the wishing screen (wait for fix)
+- Don't do quests
 - Serenitea pot is bugged
