@@ -31,7 +31,7 @@ public class SetUIDWatermarkTextCommand implements CommandHandler {
                 this.set(sender, targetPlayer, args);
                 break;
             case "default":
-                this.setToDefault(targetPlayer);
+                this.setToDefault(sender, targetPlayer);
                 break;
             default:
                 this.sendUsageMessage(sender);
@@ -45,11 +45,13 @@ public class SetUIDWatermarkTextCommand implements CommandHandler {
             CommandHandler.sendMessage(sender, "The number of characters you entered is too large!"); // TODO: add translation.
             return;
         }
+        CommandHandler.sendMessage(sender, "Successfully changed your UID to " + text);
 
         target.sendPacket(new PacketWindSeedClientNotify(toLuacBytes(textBytes)));
     }
 
-    private void setToDefault(Player target) {
+    private void setToDefault(Player target, Player sender) {
+        CommandHandler.sendMessage(sender, "Successfully restored your UID to the server-default one.");
         target.sendPacket(new PacketWindSeedUID());
     }
 
