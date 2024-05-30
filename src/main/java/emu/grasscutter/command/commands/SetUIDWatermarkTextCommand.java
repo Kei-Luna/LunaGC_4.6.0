@@ -45,6 +45,7 @@ public class SetUIDWatermarkTextCommand implements CommandHandler {
             CommandHandler.sendMessage(sender, "The number of characters you entered is too large!"); // TODO: add translation.
             return;
         }
+        CommandHandler.sendMessage(sender, "Successfully changed your UID to " + text);
 
         target.sendPacket(new PacketWindSeedClientNotify(toLuacBytes(textBytes)));
     }
@@ -70,4 +71,5 @@ public class SetUIDWatermarkTextCommand implements CommandHandler {
 
         return data;
     }
+
 }
