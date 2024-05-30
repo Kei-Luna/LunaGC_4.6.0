@@ -10,6 +10,8 @@ This guide is very minimal and contains steps to just get your server and client
 Connecting to the server won't require Fiddler.
 However, if you need a more detailed guide and help with the server please refer to GrassCutter's official repository and discord server.
 
+## Read the handbook (found at the end of the file)
+
 ## Main Requirements
 
 - Get [Java 17](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
