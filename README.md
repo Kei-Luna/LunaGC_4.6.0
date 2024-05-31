@@ -130,6 +130,7 @@ Method 2:
 ### How to use the brand new /uid command?
 - Rich text is supported
 - How to set custom UID: `/uid set changethistext` | bold: `/uid set <b>changethistext</b>` | italic: `/uid set <i>changethistext</i>` | combined: `/uid set <i><b>changethistext</b></i>` | colored text (you'll need a hex color code, you can easy get and pick one by search hex color picker on google now let's assume that you have done it): `/uid set <color=#698ae8>changethistext</color>`
+- You can also include spaces like this: `/uid set <b>B O L D</b>`
 - You can combine the bold, italic and colored text
 - Restore to server-default UID: `/uid default`
 
