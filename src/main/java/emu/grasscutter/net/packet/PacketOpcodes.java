@@ -238,6 +238,10 @@ public final class PacketOpcodes {
     public static final int ToTheMoonEnterSceneReq = 6106;//4.6.0
     public static final int ChangeMailStarNotify = 23996;//4.6.0
     public static final int GachaOpenWishNotify = 3594;//4.6.0
+    public static final int EnterTransPointRegionNotify = 7189;//4.6.0
+    public static final int EvtEntityRenderersChangedNotify = 5936;//4.6.0
+    public static final int ExitTransPointRegionNotify = 6413;//4.6.0
+    public static final int SetEntityClientDataNotify = 7008;//4.6.0
     public static final int ClientLoadingCostumeVerificationNotify = 9147;//4.6.0
     public static final int DungeonEntryInfoReq = 8949;//4.6.0
     public static final int DungeonEntryInfoRsp = 21310;//4.6.0
@@ -250,6 +254,7 @@ public final class PacketOpcodes {
     public static final int GetInvestigationMonsterReq = 25947;//4.6.0
     public static final int GetInvestigationMonsterRsp = 27061;//4.6.0
     public static final int WorldPlayerDieNotify = 9771;//4.6.0
+    public static final int ScenePlayerLocationNotify = 801;//4.6.0
 
 
 
@@ -852,7 +857,6 @@ public final class PacketOpcodes {
     public static final int EnterRogueDiaryDungeonRsp = 39926399;     //4.0.0
     public static final int EnterRoguelikeDungeonNotify = 3998336;     //4.0.0
     public static final int EnterSceneWeatherAreaNotify = 3997317;     //4.0.0
-    public static final int EnterTransPointRegionNotify = 39922064;     //4.0.0
     public static final int EnterTrialAvatarActivityDungeonReq = 3997738;     //4.0.0
     public static final int EnterTrialAvatarActivityDungeonRsp = 3998751;     //4.0.0
     public static final int EntityAiKillSelfNotify = 3992606;     //4.0.0
@@ -885,7 +889,6 @@ public final class PacketOpcodes {
     public static final int EvtBulletMoveNotify = 3998672;     //4.0.0
     public static final int EvtCostStaminaNotify = 399810;     //4.0.0
     public static final int EvtDestroyServerGadgetNotify = 39923600;     //4.0.0
-    public static final int EvtEntityRenderersChangedNotify = 3995525;     //4.0.0
     public static final int EvtEntityStartDieEndNotify = 39927889;     //4.0.0
     public static final int EvtFaceToDirNotify = 3993850;     //4.0.0
     public static final int EvtFaceToEntityNotify = 39928358;     //4.0.0
@@ -902,7 +905,6 @@ public final class PacketOpcodes {
     public static final int ExitFishingReq = 3995737;     //4.0.0
     public static final int ExitFishingRsp = 3994039;     //4.0.0
     public static final int ExitSceneWeatherAreaNotify = 39929563;     //4.0.0
-    public static final int ExitTransPointRegionNotify = 3992696;     //4.0.0
     public static final int ExpeditionChallengeEnterRegionNotify = 39929889;     //4.0.0
     public static final int ExpeditionChallengeFinishedNotify = 3997357;     //4.0.0
     public static final int ExpeditionRecallReq = 39924533;     //4.0.0
@@ -2184,7 +2186,6 @@ public final class PacketOpcodes {
     public static final int ScenePlayOwnerStartInviteReq = 3995530;     //4.0.0
     public static final int ScenePlayOwnerStartInviteRsp = 39922034;     //4.0.0
     public static final int ScenePlayerBackgroundAvatarRefreshNotify = 39923971;     //4.0.0
-    public static final int ScenePlayerLocationNotify = 39929652;     //4.0.0
     public static final int ScenePlayerSoundNotify = 39920293;     //4.0.0
     public static final int ScenePointUnlockNotify = 3995431;     //4.0.0
     public static final int SceneRouteChangeNotify = 3999691;     //4.0.0
@@ -2235,7 +2236,6 @@ public final class PacketOpcodes {
     public static final int SetCoopChapterViewedRsp = 39923389;     //4.0.0
     public static final int SetCurExpeditionChallengeIdReq = 39920340;     //4.0.0
     public static final int SetCurExpeditionChallengeIdRsp = 39924543;     //4.0.0
-    public static final int SetEntityClientDataNotify = 3991139;     //4.0.0
     public static final int SetFriendEnterHomeOptionReq = 39926896;     //4.0.0
     public static final int SetFriendEnterHomeOptionRsp = 39921101;     //4.0.0
     public static final int SetFriendRemarkNameReq = 3991521;     //4.0.0
