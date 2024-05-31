@@ -19,56 +19,57 @@ public final class BartenderCompleteOrderRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 finish_order_id = 14;</code>
-     * @return The finishOrderId.
-     */
-    int getFinishOrderId();
-
-    /**
-     * <code>uint32 quest_id = 2;</code>
-     * @return The questId.
-     */
-    int getQuestId();
-
-    /**
-     * <code>repeated uint32 affix_list = 7;</code>
+     * <code>repeated uint32 affix_list = 2;</code>
      * @return A list containing the affixList.
      */
     java.util.List<java.lang.Integer> getAffixListList();
     /**
-     * <code>repeated uint32 affix_list = 7;</code>
+     * <code>repeated uint32 affix_list = 2;</code>
      * @return The count of affixList.
      */
     int getAffixListCount();
     /**
-     * <code>repeated uint32 affix_list = 7;</code>
+     * <code>repeated uint32 affix_list = 2;</code>
      * @param index The index of the element to return.
      * @return The affixList at the given index.
      */
     int getAffixList(int index);
 
     /**
-     * <code>bool is_new = 15;</code>
+     * <code>bool is_new = 8;</code>
      * @return The isNew.
      */
     boolean getIsNew();
 
     /**
-     * <code>int32 retcode = 11;</code>
+     * <code>uint32 quest_id = 10;</code>
+     * @return The questId.
+     */
+    int getQuestId();
+
+    /**
+     * <code>int32 retcode = 12;</code>
      * @return The retcode.
      */
     int getRetcode();
 
     /**
-     * <code>uint32 formula_id = 3;</code>
+     * <code>uint32 formula_id = 14;</code>
      * @return The formulaId.
      */
     int getFormulaId();
+
+    /**
+     * <code>uint32 finish_order_id = 15;</code>
+     * @return The finishOrderId.
+     */
+    int getFinishOrderId();
   }
   /**
    * <pre>
-   * CmdId: 26145
-   * Obf: DHBJNNPHMEF
+   * CmdId: 8981
+   * Version: 4.6.0
+   * Obfs: DOFHDNANHEF
    * </pre>
    *
    * Protobuf type {@code BartenderCompleteOrderRsp}
@@ -118,16 +119,6 @@ public final class BartenderCompleteOrderRspOuterClass {
               done = true;
               break;
             case 16: {
-
-              questId_ = input.readUInt32();
-              break;
-            }
-            case 24: {
-
-              formulaId_ = input.readUInt32();
-              break;
-            }
-            case 56: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 affixList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -135,7 +126,7 @@ public final class BartenderCompleteOrderRspOuterClass {
               affixList_.addInt(input.readUInt32());
               break;
             }
-            case 58: {
+            case 18: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -148,19 +139,29 @@ public final class BartenderCompleteOrderRspOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 88: {
+            case 64: {
+
+              isNew_ = input.readBool();
+              break;
+            }
+            case 80: {
+
+              questId_ = input.readUInt32();
+              break;
+            }
+            case 96: {
 
               retcode_ = input.readInt32();
               break;
             }
             case 112: {
 
-              finishOrderId_ = input.readUInt32();
+              formulaId_ = input.readUInt32();
               break;
             }
             case 120: {
 
-              isNew_ = input.readBool();
+              finishOrderId_ = input.readUInt32();
               break;
             }
             default: {
@@ -198,32 +199,10 @@ public final class BartenderCompleteOrderRspOuterClass {
               emu.grasscutter.net.proto.BartenderCompleteOrderRspOuterClass.BartenderCompleteOrderRsp.class, emu.grasscutter.net.proto.BartenderCompleteOrderRspOuterClass.BartenderCompleteOrderRsp.Builder.class);
     }
 
-    public static final int FINISH_ORDER_ID_FIELD_NUMBER = 14;
-    private int finishOrderId_;
-    /**
-     * <code>uint32 finish_order_id = 14;</code>
-     * @return The finishOrderId.
-     */
-    @java.lang.Override
-    public int getFinishOrderId() {
-      return finishOrderId_;
-    }
-
-    public static final int QUEST_ID_FIELD_NUMBER = 2;
-    private int questId_;
-    /**
-     * <code>uint32 quest_id = 2;</code>
-     * @return The questId.
-     */
-    @java.lang.Override
-    public int getQuestId() {
-      return questId_;
-    }
-
-    public static final int AFFIX_LIST_FIELD_NUMBER = 7;
+    public static final int AFFIX_LIST_FIELD_NUMBER = 2;
     private com.google.protobuf.Internal.IntList affixList_;
     /**
-     * <code>repeated uint32 affix_list = 7;</code>
+     * <code>repeated uint32 affix_list = 2;</code>
      * @return A list containing the affixList.
      */
     @java.lang.Override
@@ -232,14 +211,14 @@ public final class BartenderCompleteOrderRspOuterClass {
       return affixList_;
     }
     /**
-     * <code>repeated uint32 affix_list = 7;</code>
+     * <code>repeated uint32 affix_list = 2;</code>
      * @return The count of affixList.
      */
     public int getAffixListCount() {
       return affixList_.size();
     }
     /**
-     * <code>repeated uint32 affix_list = 7;</code>
+     * <code>repeated uint32 affix_list = 2;</code>
      * @param index The index of the element to return.
      * @return The affixList at the given index.
      */
@@ -248,10 +227,10 @@ public final class BartenderCompleteOrderRspOuterClass {
     }
     private int affixListMemoizedSerializedSize = -1;
 
-    public static final int IS_NEW_FIELD_NUMBER = 15;
+    public static final int IS_NEW_FIELD_NUMBER = 8;
     private boolean isNew_;
     /**
-     * <code>bool is_new = 15;</code>
+     * <code>bool is_new = 8;</code>
      * @return The isNew.
      */
     @java.lang.Override
@@ -259,10 +238,21 @@ public final class BartenderCompleteOrderRspOuterClass {
       return isNew_;
     }
 
-    public static final int RETCODE_FIELD_NUMBER = 11;
+    public static final int QUEST_ID_FIELD_NUMBER = 10;
+    private int questId_;
+    /**
+     * <code>uint32 quest_id = 10;</code>
+     * @return The questId.
+     */
+    @java.lang.Override
+    public int getQuestId() {
+      return questId_;
+    }
+
+    public static final int RETCODE_FIELD_NUMBER = 12;
     private int retcode_;
     /**
-     * <code>int32 retcode = 11;</code>
+     * <code>int32 retcode = 12;</code>
      * @return The retcode.
      */
     @java.lang.Override
@@ -270,15 +260,26 @@ public final class BartenderCompleteOrderRspOuterClass {
       return retcode_;
     }
 
-    public static final int FORMULA_ID_FIELD_NUMBER = 3;
+    public static final int FORMULA_ID_FIELD_NUMBER = 14;
     private int formulaId_;
     /**
-     * <code>uint32 formula_id = 3;</code>
+     * <code>uint32 formula_id = 14;</code>
      * @return The formulaId.
      */
     @java.lang.Override
     public int getFormulaId() {
       return formulaId_;
+    }
+
+    public static final int FINISH_ORDER_ID_FIELD_NUMBER = 15;
+    private int finishOrderId_;
+    /**
+     * <code>uint32 finish_order_id = 15;</code>
+     * @return The finishOrderId.
+     */
+    @java.lang.Override
+    public int getFinishOrderId() {
+      return finishOrderId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -296,27 +297,27 @@ public final class BartenderCompleteOrderRspOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
-      if (questId_ != 0) {
-        output.writeUInt32(2, questId_);
-      }
-      if (formulaId_ != 0) {
-        output.writeUInt32(3, formulaId_);
-      }
       if (getAffixListList().size() > 0) {
-        output.writeUInt32NoTag(58);
+        output.writeUInt32NoTag(18);
         output.writeUInt32NoTag(affixListMemoizedSerializedSize);
       }
       for (int i = 0; i < affixList_.size(); i++) {
         output.writeUInt32NoTag(affixList_.getInt(i));
       }
+      if (isNew_ != false) {
+        output.writeBool(8, isNew_);
+      }
+      if (questId_ != 0) {
+        output.writeUInt32(10, questId_);
+      }
       if (retcode_ != 0) {
-        output.writeInt32(11, retcode_);
+        output.writeInt32(12, retcode_);
+      }
+      if (formulaId_ != 0) {
+        output.writeUInt32(14, formulaId_);
       }
       if (finishOrderId_ != 0) {
-        output.writeUInt32(14, finishOrderId_);
-      }
-      if (isNew_ != false) {
-        output.writeBool(15, isNew_);
+        output.writeUInt32(15, finishOrderId_);
       }
       unknownFields.writeTo(output);
     }
@@ -327,14 +328,6 @@ public final class BartenderCompleteOrderRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (questId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, questId_);
-      }
-      if (formulaId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, formulaId_);
-      }
       {
         int dataSize = 0;
         for (int i = 0; i < affixList_.size(); i++) {
@@ -349,17 +342,25 @@ public final class BartenderCompleteOrderRspOuterClass {
         }
         affixListMemoizedSerializedSize = dataSize;
       }
+      if (isNew_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(8, isNew_);
+      }
+      if (questId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(10, questId_);
+      }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(11, retcode_);
+          .computeInt32Size(12, retcode_);
+      }
+      if (formulaId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(14, formulaId_);
       }
       if (finishOrderId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(14, finishOrderId_);
-      }
-      if (isNew_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(15, isNew_);
+          .computeUInt32Size(15, finishOrderId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -376,18 +377,18 @@ public final class BartenderCompleteOrderRspOuterClass {
       }
       emu.grasscutter.net.proto.BartenderCompleteOrderRspOuterClass.BartenderCompleteOrderRsp other = (emu.grasscutter.net.proto.BartenderCompleteOrderRspOuterClass.BartenderCompleteOrderRsp) obj;
 
-      if (getFinishOrderId()
-          != other.getFinishOrderId()) return false;
-      if (getQuestId()
-          != other.getQuestId()) return false;
       if (!getAffixListList()
           .equals(other.getAffixListList())) return false;
       if (getIsNew()
           != other.getIsNew()) return false;
+      if (getQuestId()
+          != other.getQuestId()) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
       if (getFormulaId()
           != other.getFormulaId()) return false;
+      if (getFinishOrderId()
+          != other.getFinishOrderId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -399,10 +400,6 @@ public final class BartenderCompleteOrderRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + FINISH_ORDER_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getFinishOrderId();
-      hash = (37 * hash) + QUEST_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getQuestId();
       if (getAffixListCount() > 0) {
         hash = (37 * hash) + AFFIX_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getAffixListList().hashCode();
@@ -410,10 +407,14 @@ public final class BartenderCompleteOrderRspOuterClass {
       hash = (37 * hash) + IS_NEW_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getIsNew());
+      hash = (37 * hash) + QUEST_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getQuestId();
       hash = (37 * hash) + RETCODE_FIELD_NUMBER;
       hash = (53 * hash) + getRetcode();
       hash = (37 * hash) + FORMULA_ID_FIELD_NUMBER;
       hash = (53 * hash) + getFormulaId();
+      hash = (37 * hash) + FINISH_ORDER_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getFinishOrderId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -511,8 +512,9 @@ public final class BartenderCompleteOrderRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 26145
-     * Obf: DHBJNNPHMEF
+     * CmdId: 8981
+     * Version: 4.6.0
+     * Obfs: DOFHDNANHEF
      * </pre>
      *
      * Protobuf type {@code BartenderCompleteOrderRsp}
@@ -552,17 +554,17 @@ public final class BartenderCompleteOrderRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        finishOrderId_ = 0;
-
-        questId_ = 0;
-
         affixList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
         isNew_ = false;
 
+        questId_ = 0;
+
         retcode_ = 0;
 
         formulaId_ = 0;
+
+        finishOrderId_ = 0;
 
         return this;
       }
@@ -591,16 +593,16 @@ public final class BartenderCompleteOrderRspOuterClass {
       public emu.grasscutter.net.proto.BartenderCompleteOrderRspOuterClass.BartenderCompleteOrderRsp buildPartial() {
         emu.grasscutter.net.proto.BartenderCompleteOrderRspOuterClass.BartenderCompleteOrderRsp result = new emu.grasscutter.net.proto.BartenderCompleteOrderRspOuterClass.BartenderCompleteOrderRsp(this);
         int from_bitField0_ = bitField0_;
-        result.finishOrderId_ = finishOrderId_;
-        result.questId_ = questId_;
         if (((bitField0_ & 0x00000001) != 0)) {
           affixList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.affixList_ = affixList_;
         result.isNew_ = isNew_;
+        result.questId_ = questId_;
         result.retcode_ = retcode_;
         result.formulaId_ = formulaId_;
+        result.finishOrderId_ = finishOrderId_;
         onBuilt();
         return result;
       }
@@ -649,12 +651,6 @@ public final class BartenderCompleteOrderRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.BartenderCompleteOrderRspOuterClass.BartenderCompleteOrderRsp other) {
         if (other == emu.grasscutter.net.proto.BartenderCompleteOrderRspOuterClass.BartenderCompleteOrderRsp.getDefaultInstance()) return this;
-        if (other.getFinishOrderId() != 0) {
-          setFinishOrderId(other.getFinishOrderId());
-        }
-        if (other.getQuestId() != 0) {
-          setQuestId(other.getQuestId());
-        }
         if (!other.affixList_.isEmpty()) {
           if (affixList_.isEmpty()) {
             affixList_ = other.affixList_;
@@ -668,11 +664,17 @@ public final class BartenderCompleteOrderRspOuterClass {
         if (other.getIsNew() != false) {
           setIsNew(other.getIsNew());
         }
+        if (other.getQuestId() != 0) {
+          setQuestId(other.getQuestId());
+        }
         if (other.getRetcode() != 0) {
           setRetcode(other.getRetcode());
         }
         if (other.getFormulaId() != 0) {
           setFormulaId(other.getFormulaId());
+        }
+        if (other.getFinishOrderId() != 0) {
+          setFinishOrderId(other.getFinishOrderId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -704,68 +706,6 @@ public final class BartenderCompleteOrderRspOuterClass {
       }
       private int bitField0_;
 
-      private int finishOrderId_ ;
-      /**
-       * <code>uint32 finish_order_id = 14;</code>
-       * @return The finishOrderId.
-       */
-      @java.lang.Override
-      public int getFinishOrderId() {
-        return finishOrderId_;
-      }
-      /**
-       * <code>uint32 finish_order_id = 14;</code>
-       * @param value The finishOrderId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setFinishOrderId(int value) {
-        
-        finishOrderId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 finish_order_id = 14;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearFinishOrderId() {
-        
-        finishOrderId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int questId_ ;
-      /**
-       * <code>uint32 quest_id = 2;</code>
-       * @return The questId.
-       */
-      @java.lang.Override
-      public int getQuestId() {
-        return questId_;
-      }
-      /**
-       * <code>uint32 quest_id = 2;</code>
-       * @param value The questId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setQuestId(int value) {
-        
-        questId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 quest_id = 2;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearQuestId() {
-        
-        questId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private com.google.protobuf.Internal.IntList affixList_ = emptyIntList();
       private void ensureAffixListIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
@@ -774,7 +714,7 @@ public final class BartenderCompleteOrderRspOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 affix_list = 7;</code>
+       * <code>repeated uint32 affix_list = 2;</code>
        * @return A list containing the affixList.
        */
       public java.util.List<java.lang.Integer>
@@ -783,14 +723,14 @@ public final class BartenderCompleteOrderRspOuterClass {
                  java.util.Collections.unmodifiableList(affixList_) : affixList_;
       }
       /**
-       * <code>repeated uint32 affix_list = 7;</code>
+       * <code>repeated uint32 affix_list = 2;</code>
        * @return The count of affixList.
        */
       public int getAffixListCount() {
         return affixList_.size();
       }
       /**
-       * <code>repeated uint32 affix_list = 7;</code>
+       * <code>repeated uint32 affix_list = 2;</code>
        * @param index The index of the element to return.
        * @return The affixList at the given index.
        */
@@ -798,7 +738,7 @@ public final class BartenderCompleteOrderRspOuterClass {
         return affixList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 affix_list = 7;</code>
+       * <code>repeated uint32 affix_list = 2;</code>
        * @param index The index to set the value at.
        * @param value The affixList to set.
        * @return This builder for chaining.
@@ -811,7 +751,7 @@ public final class BartenderCompleteOrderRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 affix_list = 7;</code>
+       * <code>repeated uint32 affix_list = 2;</code>
        * @param value The affixList to add.
        * @return This builder for chaining.
        */
@@ -822,7 +762,7 @@ public final class BartenderCompleteOrderRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 affix_list = 7;</code>
+       * <code>repeated uint32 affix_list = 2;</code>
        * @param values The affixList to add.
        * @return This builder for chaining.
        */
@@ -835,7 +775,7 @@ public final class BartenderCompleteOrderRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 affix_list = 7;</code>
+       * <code>repeated uint32 affix_list = 2;</code>
        * @return This builder for chaining.
        */
       public Builder clearAffixList() {
@@ -847,7 +787,7 @@ public final class BartenderCompleteOrderRspOuterClass {
 
       private boolean isNew_ ;
       /**
-       * <code>bool is_new = 15;</code>
+       * <code>bool is_new = 8;</code>
        * @return The isNew.
        */
       @java.lang.Override
@@ -855,7 +795,7 @@ public final class BartenderCompleteOrderRspOuterClass {
         return isNew_;
       }
       /**
-       * <code>bool is_new = 15;</code>
+       * <code>bool is_new = 8;</code>
        * @param value The isNew to set.
        * @return This builder for chaining.
        */
@@ -866,7 +806,7 @@ public final class BartenderCompleteOrderRspOuterClass {
         return this;
       }
       /**
-       * <code>bool is_new = 15;</code>
+       * <code>bool is_new = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsNew() {
@@ -876,9 +816,40 @@ public final class BartenderCompleteOrderRspOuterClass {
         return this;
       }
 
+      private int questId_ ;
+      /**
+       * <code>uint32 quest_id = 10;</code>
+       * @return The questId.
+       */
+      @java.lang.Override
+      public int getQuestId() {
+        return questId_;
+      }
+      /**
+       * <code>uint32 quest_id = 10;</code>
+       * @param value The questId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setQuestId(int value) {
+        
+        questId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 quest_id = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearQuestId() {
+        
+        questId_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int retcode_ ;
       /**
-       * <code>int32 retcode = 11;</code>
+       * <code>int32 retcode = 12;</code>
        * @return The retcode.
        */
       @java.lang.Override
@@ -886,7 +857,7 @@ public final class BartenderCompleteOrderRspOuterClass {
         return retcode_;
       }
       /**
-       * <code>int32 retcode = 11;</code>
+       * <code>int32 retcode = 12;</code>
        * @param value The retcode to set.
        * @return This builder for chaining.
        */
@@ -897,7 +868,7 @@ public final class BartenderCompleteOrderRspOuterClass {
         return this;
       }
       /**
-       * <code>int32 retcode = 11;</code>
+       * <code>int32 retcode = 12;</code>
        * @return This builder for chaining.
        */
       public Builder clearRetcode() {
@@ -909,7 +880,7 @@ public final class BartenderCompleteOrderRspOuterClass {
 
       private int formulaId_ ;
       /**
-       * <code>uint32 formula_id = 3;</code>
+       * <code>uint32 formula_id = 14;</code>
        * @return The formulaId.
        */
       @java.lang.Override
@@ -917,7 +888,7 @@ public final class BartenderCompleteOrderRspOuterClass {
         return formulaId_;
       }
       /**
-       * <code>uint32 formula_id = 3;</code>
+       * <code>uint32 formula_id = 14;</code>
        * @param value The formulaId to set.
        * @return This builder for chaining.
        */
@@ -928,12 +899,43 @@ public final class BartenderCompleteOrderRspOuterClass {
         return this;
       }
       /**
-       * <code>uint32 formula_id = 3;</code>
+       * <code>uint32 formula_id = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearFormulaId() {
         
         formulaId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int finishOrderId_ ;
+      /**
+       * <code>uint32 finish_order_id = 15;</code>
+       * @return The finishOrderId.
+       */
+      @java.lang.Override
+      public int getFinishOrderId() {
+        return finishOrderId_;
+      }
+      /**
+       * <code>uint32 finish_order_id = 15;</code>
+       * @param value The finishOrderId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setFinishOrderId(int value) {
+        
+        finishOrderId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 finish_order_id = 15;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearFinishOrderId() {
+        
+        finishOrderId_ = 0;
         onChanged();
         return this;
       }
@@ -1005,10 +1007,10 @@ public final class BartenderCompleteOrderRspOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\037BartenderCompleteOrderRsp.proto\"\217\001\n\031Ba" +
-      "rtenderCompleteOrderRsp\022\027\n\017finish_order_" +
-      "id\030\016 \001(\r\022\020\n\010quest_id\030\002 \001(\r\022\022\n\naffix_list" +
-      "\030\007 \003(\r\022\016\n\006is_new\030\017 \001(\010\022\017\n\007retcode\030\013 \001(\005\022" +
-      "\022\n\nformula_id\030\003 \001(\rB\033\n\031emu.grasscutter.n" +
+      "rtenderCompleteOrderRsp\022\022\n\naffix_list\030\002 " +
+      "\003(\r\022\016\n\006is_new\030\010 \001(\010\022\020\n\010quest_id\030\n \001(\r\022\017\n" +
+      "\007retcode\030\014 \001(\005\022\022\n\nformula_id\030\016 \001(\r\022\027\n\017fi" +
+      "nish_order_id\030\017 \001(\rB\033\n\031emu.grasscutter.n" +
       "et.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1020,7 +1022,7 @@ public final class BartenderCompleteOrderRspOuterClass {
     internal_static_BartenderCompleteOrderRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_BartenderCompleteOrderRsp_descriptor,
-        new java.lang.String[] { "FinishOrderId", "QuestId", "AffixList", "IsNew", "Retcode", "FormulaId", });
+        new java.lang.String[] { "AffixList", "IsNew", "QuestId", "Retcode", "FormulaId", "FinishOrderId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

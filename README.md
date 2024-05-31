@@ -10,6 +10,8 @@ This guide is very minimal and contains steps to just get your server and client
 Connecting to the server won't require Fiddler.
 However, if you need a more detailed guide and help with the server please refer to GrassCutter's official repository and discord server.
 
+## Read the handbook (found at the end of the file)
+
 ## Main Requirements
 
 - Get [Java 17](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
@@ -98,6 +100,10 @@ chmod +x gradlew
 - Change world level: /prop wl <number>
 - Change AR: /prop player_level <number between 1 and 60>
 - Change the game speed: /gamespeed <0.1|0.2|0.5|0.75|1.0|1.5|2.0|3.0>
+- Get 9999 Intertwined fates: /g 223 x9999
+- Get 9999 Acquaint fates: /g 224 x9999
+- Get 9999 Mora: /g 202 x9999
+- Get 9999 Primogems: /g 201 x9999
 ### Make sure to not include <> or [] in the commands! The stuff in <> means its required and the stuff in [] means its not required.
 ### How to get all of the stuff maxed out: /g all lv90 r5 c6 c6 sl10 | Then do a separate one for the materials: /g mats x99999
 ### Ways to TP around the map:
@@ -116,6 +122,18 @@ Method 2:
 - Go to [ambr.top](https://ambr.top)
 - Search up the material/avatar/enemy and then the ID of it should be in the URL of the site, for example I searched for the pyro hilichurl archer; the link for it is ambr.top/en/archive/monster/21010501/pyro-hilichurl-shooter so the ID for it will be 21010501.
 
+
+### How to spawn monsters?
+- Get the ID from the ambr.top link (above)
+- Do /spawn <id> in the in-game chat. You can also find out more arguments that you can use to modify the monster hp etc by doing `/help spawn` or `/spawn` | Example: `/spawn 21010501`, that will spawn a pyro hilichurl. Give it more hp: `/spawn 21010501 hp9999` and you can find more about the arguments trough the method I mentioned above.
+
+### How to use the brand new /uid command?
+- Rich text is supported
+- How to set custom UID: `/uid set changethistext` | bold: `/uid set <b>changethistext</b>` | italic: `/uid set <i>changethistext</i>` | combined: `/uid set <i><b>changethistext</b></i>` | colored text (you'll need a hex color code, you can easy get and pick one by search hex color picker on google now let's assume that you have done it): `/uid set <color=#698ae8>changethistext</color>`
+- You can also include spaces like this: `/uid set <b>B O L D</b>`
+- You can combine the bold, italic and colored text
+- Restore to server-default UID: `/uid default`
+
 ## Tips
-- Don't open the wishing screen (wait for fix)
+- Don't do quests
 - Serenitea pot is bugged

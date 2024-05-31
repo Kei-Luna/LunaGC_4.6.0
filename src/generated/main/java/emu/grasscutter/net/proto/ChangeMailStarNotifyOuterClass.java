@@ -19,23 +19,23 @@ public final class ChangeMailStarNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>bool is_star = 13;</code>
+     * <code>bool is_star = 1;</code>
      * @return The isStar.
      */
     boolean getIsStar();
 
     /**
-     * <code>repeated uint32 mail_id_list = 15;</code>
+     * <code>repeated uint32 mail_id_list = 5;</code>
      * @return A list containing the mailIdList.
      */
     java.util.List<java.lang.Integer> getMailIdListList();
     /**
-     * <code>repeated uint32 mail_id_list = 15;</code>
+     * <code>repeated uint32 mail_id_list = 5;</code>
      * @return The count of mailIdList.
      */
     int getMailIdListCount();
     /**
-     * <code>repeated uint32 mail_id_list = 15;</code>
+     * <code>repeated uint32 mail_id_list = 5;</code>
      * @param index The index of the element to return.
      * @return The mailIdList at the given index.
      */
@@ -43,8 +43,9 @@ public final class ChangeMailStarNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 2285
-   * Obf: BNOGMFJDHHL
+   * CmdId: 23996
+   * Version: 4.6.0
+   * Obfs: BOJJIDKEMOJ
    * </pre>
    *
    * Protobuf type {@code ChangeMailStarNotify}
@@ -93,12 +94,12 @@ public final class ChangeMailStarNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 104: {
+            case 8: {
 
               isStar_ = input.readBool();
               break;
             }
-            case 120: {
+            case 40: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 mailIdList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -106,7 +107,7 @@ public final class ChangeMailStarNotifyOuterClass {
               mailIdList_.addInt(input.readUInt32());
               break;
             }
-            case 122: {
+            case 42: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -154,10 +155,10 @@ public final class ChangeMailStarNotifyOuterClass {
               emu.grasscutter.net.proto.ChangeMailStarNotifyOuterClass.ChangeMailStarNotify.class, emu.grasscutter.net.proto.ChangeMailStarNotifyOuterClass.ChangeMailStarNotify.Builder.class);
     }
 
-    public static final int IS_STAR_FIELD_NUMBER = 13;
+    public static final int IS_STAR_FIELD_NUMBER = 1;
     private boolean isStar_;
     /**
-     * <code>bool is_star = 13;</code>
+     * <code>bool is_star = 1;</code>
      * @return The isStar.
      */
     @java.lang.Override
@@ -165,10 +166,10 @@ public final class ChangeMailStarNotifyOuterClass {
       return isStar_;
     }
 
-    public static final int MAIL_ID_LIST_FIELD_NUMBER = 15;
+    public static final int MAIL_ID_LIST_FIELD_NUMBER = 5;
     private com.google.protobuf.Internal.IntList mailIdList_;
     /**
-     * <code>repeated uint32 mail_id_list = 15;</code>
+     * <code>repeated uint32 mail_id_list = 5;</code>
      * @return A list containing the mailIdList.
      */
     @java.lang.Override
@@ -177,14 +178,14 @@ public final class ChangeMailStarNotifyOuterClass {
       return mailIdList_;
     }
     /**
-     * <code>repeated uint32 mail_id_list = 15;</code>
+     * <code>repeated uint32 mail_id_list = 5;</code>
      * @return The count of mailIdList.
      */
     public int getMailIdListCount() {
       return mailIdList_.size();
     }
     /**
-     * <code>repeated uint32 mail_id_list = 15;</code>
+     * <code>repeated uint32 mail_id_list = 5;</code>
      * @param index The index of the element to return.
      * @return The mailIdList at the given index.
      */
@@ -209,10 +210,10 @@ public final class ChangeMailStarNotifyOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (isStar_ != false) {
-        output.writeBool(13, isStar_);
+        output.writeBool(1, isStar_);
       }
       if (getMailIdListList().size() > 0) {
-        output.writeUInt32NoTag(122);
+        output.writeUInt32NoTag(42);
         output.writeUInt32NoTag(mailIdListMemoizedSerializedSize);
       }
       for (int i = 0; i < mailIdList_.size(); i++) {
@@ -229,7 +230,7 @@ public final class ChangeMailStarNotifyOuterClass {
       size = 0;
       if (isStar_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(13, isStar_);
+          .computeBoolSize(1, isStar_);
       }
       {
         int dataSize = 0;
@@ -379,8 +380,9 @@ public final class ChangeMailStarNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 2285
-     * Obf: BNOGMFJDHHL
+     * CmdId: 23996
+     * Version: 4.6.0
+     * Obfs: BOJJIDKEMOJ
      * </pre>
      *
      * Protobuf type {@code ChangeMailStarNotify}
@@ -550,7 +552,7 @@ public final class ChangeMailStarNotifyOuterClass {
 
       private boolean isStar_ ;
       /**
-       * <code>bool is_star = 13;</code>
+       * <code>bool is_star = 1;</code>
        * @return The isStar.
        */
       @java.lang.Override
@@ -558,7 +560,7 @@ public final class ChangeMailStarNotifyOuterClass {
         return isStar_;
       }
       /**
-       * <code>bool is_star = 13;</code>
+       * <code>bool is_star = 1;</code>
        * @param value The isStar to set.
        * @return This builder for chaining.
        */
@@ -569,7 +571,7 @@ public final class ChangeMailStarNotifyOuterClass {
         return this;
       }
       /**
-       * <code>bool is_star = 13;</code>
+       * <code>bool is_star = 1;</code>
        * @return This builder for chaining.
        */
       public Builder clearIsStar() {
@@ -587,7 +589,7 @@ public final class ChangeMailStarNotifyOuterClass {
          }
       }
       /**
-       * <code>repeated uint32 mail_id_list = 15;</code>
+       * <code>repeated uint32 mail_id_list = 5;</code>
        * @return A list containing the mailIdList.
        */
       public java.util.List<java.lang.Integer>
@@ -596,14 +598,14 @@ public final class ChangeMailStarNotifyOuterClass {
                  java.util.Collections.unmodifiableList(mailIdList_) : mailIdList_;
       }
       /**
-       * <code>repeated uint32 mail_id_list = 15;</code>
+       * <code>repeated uint32 mail_id_list = 5;</code>
        * @return The count of mailIdList.
        */
       public int getMailIdListCount() {
         return mailIdList_.size();
       }
       /**
-       * <code>repeated uint32 mail_id_list = 15;</code>
+       * <code>repeated uint32 mail_id_list = 5;</code>
        * @param index The index of the element to return.
        * @return The mailIdList at the given index.
        */
@@ -611,7 +613,7 @@ public final class ChangeMailStarNotifyOuterClass {
         return mailIdList_.getInt(index);
       }
       /**
-       * <code>repeated uint32 mail_id_list = 15;</code>
+       * <code>repeated uint32 mail_id_list = 5;</code>
        * @param index The index to set the value at.
        * @param value The mailIdList to set.
        * @return This builder for chaining.
@@ -624,7 +626,7 @@ public final class ChangeMailStarNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 mail_id_list = 15;</code>
+       * <code>repeated uint32 mail_id_list = 5;</code>
        * @param value The mailIdList to add.
        * @return This builder for chaining.
        */
@@ -635,7 +637,7 @@ public final class ChangeMailStarNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 mail_id_list = 15;</code>
+       * <code>repeated uint32 mail_id_list = 5;</code>
        * @param values The mailIdList to add.
        * @return This builder for chaining.
        */
@@ -648,7 +650,7 @@ public final class ChangeMailStarNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated uint32 mail_id_list = 15;</code>
+       * <code>repeated uint32 mail_id_list = 5;</code>
        * @return This builder for chaining.
        */
       public Builder clearMailIdList() {
@@ -725,8 +727,8 @@ public final class ChangeMailStarNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\032ChangeMailStarNotify.proto\"=\n\024ChangeMa" +
-      "ilStarNotify\022\017\n\007is_star\030\r \001(\010\022\024\n\014mail_id" +
-      "_list\030\017 \003(\rB\033\n\031emu.grasscutter.net.proto" +
+      "ilStarNotify\022\017\n\007is_star\030\001 \001(\010\022\024\n\014mail_id" +
+      "_list\030\005 \003(\rB\033\n\031emu.grasscutter.net.proto" +
       "b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

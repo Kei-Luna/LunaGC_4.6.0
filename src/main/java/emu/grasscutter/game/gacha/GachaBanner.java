@@ -77,7 +77,7 @@ public class GachaBanner {
     }; // Used to ensure that players won't go too many rolls without getting something from pool 1
     // (avatar) or pool 2 (weapon)
     private int[][] poolBalanceWeights5 = {{1, 30}, {147, 150}, {181, 10230}};
-    @Getter private int wishMaxProgress = 2;
+    @Getter private int wishMaxProgress = 0;
 
     // Deprecated fields that were tolerated in early May 2022 but have apparently still being
     // circulating in new custom configs
@@ -135,6 +135,9 @@ public class GachaBanner {
             this.fallbackItems5Pool1 = this.bannerType.fallbackItems5Pool1;
         if (this.fallbackItems5Pool2 == null)
             this.fallbackItems5Pool2 = this.bannerType.fallbackItems5Pool2;
+        // Set max wish progress based on wish type, otherwise its 0
+        if (this.bannerType.equals(BannerType.WEAPON)) this.wishMaxProgress = 2;
+        if (this.bannerType.equals(BannerType.CHRONICLE)) this.wishMaxProgress = 1;
     }
 
     public ItemParamData getCost(int numRolls) {
@@ -150,7 +153,7 @@ public class GachaBanner {
     }
 
     public boolean hasEpitomized() {
-        return bannerType.equals(BannerType.WEAPON);
+        return bannerType.equals(BannerType.WEAPON) || bannerType.equals(BannerType.CHRONICLE);
     }
 
     public int getWeight(int rarity, int pity) {
@@ -230,6 +233,7 @@ public class GachaBanner {
 
         if (hasEpitomized()) {
             info.setWishItemId(gachaInfo.getWishItemId())
+                    .setIsNewWish(gachaInfo.getWishItemId() == 0 ? true : false) // ask player set if not set yet
                     .setWishProgress(gachaInfo.getFailedChosenItemPulls())
                     .setWishMaxProgress(this.getWishMaxProgress());
         }
@@ -244,6 +248,8 @@ public class GachaBanner {
             for (int id : getRateUpItems5()) {
                 upInfo.addItemIdList(id);
                 info.addDisplayUp5ItemList(id);
+                // NEEDED for new chronicle wish or else selector bugs
+                if (hasEpitomized()) info.addDisplayChronicle5ItemList(id);
             }
 
             info.addGachaUpInfoList(upInfo);
@@ -318,6 +324,15 @@ public class GachaBanner {
                 DEFAULT_WEIGHTS_5_WEAPON,
                 75,
                 75,
+                EMPTY_POOL,
+                DEFAULT_FALLBACK_ITEMS_5_POOL_2),
+        CHRONICLE(
+                500,
+                223,
+                DEFAULT_WEIGHTS_4_WEAPON,
+                DEFAULT_WEIGHTS_5_WEAPON,
+                50,
+                50,
                 EMPTY_POOL,
                 DEFAULT_FALLBACK_ITEMS_5_POOL_2);
 
