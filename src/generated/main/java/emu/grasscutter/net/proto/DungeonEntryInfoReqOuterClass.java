@@ -43,21 +43,22 @@ public final class DungeonEntryInfoReqOuterClass {
         int index);
 
     /**
-     * <code>uint32 point_id = 11;</code>
+     * <code>uint32 point_id = 9;</code>
      * @return The pointId.
      */
     int getPointId();
 
     /**
-     * <code>uint32 scene_id = 3;</code>
+     * <code>uint32 scene_id = 14;</code>
      * @return The sceneId.
      */
     int getSceneId();
   }
   /**
    * <pre>
-   * CmdId: 782
-   * Obf: JJMKBALLDNB
+   * CmdId: 8949
+   * Version: 4.6.0
+   * Obfs: ABMPEDCFHIF
    * </pre>
    *
    * Protobuf type {@code DungeonEntryInfoReq}
@@ -106,11 +107,6 @@ public final class DungeonEntryInfoReqOuterClass {
             case 0:
               done = true;
               break;
-            case 24: {
-
-              sceneId_ = input.readUInt32();
-              break;
-            }
             case 66: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 scenePointIdList_ = new java.util.ArrayList<emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair>();
@@ -120,9 +116,14 @@ public final class DungeonEntryInfoReqOuterClass {
                   input.readMessage(emu.grasscutter.net.proto.Uint32PairOuterClass.Uint32Pair.parser(), extensionRegistry));
               break;
             }
-            case 88: {
+            case 72: {
 
               pointId_ = input.readUInt32();
+              break;
+            }
+            case 112: {
+
+              sceneId_ = input.readUInt32();
               break;
             }
             default: {
@@ -200,10 +201,10 @@ public final class DungeonEntryInfoReqOuterClass {
       return scenePointIdList_.get(index);
     }
 
-    public static final int POINT_ID_FIELD_NUMBER = 11;
+    public static final int POINT_ID_FIELD_NUMBER = 9;
     private int pointId_;
     /**
-     * <code>uint32 point_id = 11;</code>
+     * <code>uint32 point_id = 9;</code>
      * @return The pointId.
      */
     @java.lang.Override
@@ -211,10 +212,10 @@ public final class DungeonEntryInfoReqOuterClass {
       return pointId_;
     }
 
-    public static final int SCENE_ID_FIELD_NUMBER = 3;
+    public static final int SCENE_ID_FIELD_NUMBER = 14;
     private int sceneId_;
     /**
-     * <code>uint32 scene_id = 3;</code>
+     * <code>uint32 scene_id = 14;</code>
      * @return The sceneId.
      */
     @java.lang.Override
@@ -236,14 +237,14 @@ public final class DungeonEntryInfoReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (sceneId_ != 0) {
-        output.writeUInt32(3, sceneId_);
-      }
       for (int i = 0; i < scenePointIdList_.size(); i++) {
         output.writeMessage(8, scenePointIdList_.get(i));
       }
       if (pointId_ != 0) {
-        output.writeUInt32(11, pointId_);
+        output.writeUInt32(9, pointId_);
+      }
+      if (sceneId_ != 0) {
+        output.writeUInt32(14, sceneId_);
       }
       unknownFields.writeTo(output);
     }
@@ -254,17 +255,17 @@ public final class DungeonEntryInfoReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (sceneId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, sceneId_);
-      }
       for (int i = 0; i < scenePointIdList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(8, scenePointIdList_.get(i));
       }
       if (pointId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(11, pointId_);
+          .computeUInt32Size(9, pointId_);
+      }
+      if (sceneId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(14, sceneId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -403,8 +404,9 @@ public final class DungeonEntryInfoReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 782
-     * Obf: JJMKBALLDNB
+     * CmdId: 8949
+     * Version: 4.6.0
+     * Obfs: ABMPEDCFHIF
      * </pre>
      *
      * Protobuf type {@code DungeonEntryInfoReq}
@@ -845,7 +847,7 @@ public final class DungeonEntryInfoReqOuterClass {
 
       private int pointId_ ;
       /**
-       * <code>uint32 point_id = 11;</code>
+       * <code>uint32 point_id = 9;</code>
        * @return The pointId.
        */
       @java.lang.Override
@@ -853,7 +855,7 @@ public final class DungeonEntryInfoReqOuterClass {
         return pointId_;
       }
       /**
-       * <code>uint32 point_id = 11;</code>
+       * <code>uint32 point_id = 9;</code>
        * @param value The pointId to set.
        * @return This builder for chaining.
        */
@@ -864,7 +866,7 @@ public final class DungeonEntryInfoReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 point_id = 11;</code>
+       * <code>uint32 point_id = 9;</code>
        * @return This builder for chaining.
        */
       public Builder clearPointId() {
@@ -876,7 +878,7 @@ public final class DungeonEntryInfoReqOuterClass {
 
       private int sceneId_ ;
       /**
-       * <code>uint32 scene_id = 3;</code>
+       * <code>uint32 scene_id = 14;</code>
        * @return The sceneId.
        */
       @java.lang.Override
@@ -884,7 +886,7 @@ public final class DungeonEntryInfoReqOuterClass {
         return sceneId_;
       }
       /**
-       * <code>uint32 scene_id = 3;</code>
+       * <code>uint32 scene_id = 14;</code>
        * @param value The sceneId to set.
        * @return This builder for chaining.
        */
@@ -895,7 +897,7 @@ public final class DungeonEntryInfoReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 scene_id = 3;</code>
+       * <code>uint32 scene_id = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearSceneId() {
@@ -974,7 +976,7 @@ public final class DungeonEntryInfoReqOuterClass {
       "\n\031DungeonEntryInfoReq.proto\032\020Uint32Pair." +
       "proto\"c\n\023DungeonEntryInfoReq\022(\n\023scene_po" +
       "int_id_list\030\010 \003(\0132\013.Uint32Pair\022\020\n\010point_" +
-      "id\030\013 \001(\r\022\020\n\010scene_id\030\003 \001(\rB\033\n\031emu.grassc" +
+      "id\030\t \001(\r\022\020\n\010scene_id\030\016 \001(\rB\033\n\031emu.grassc" +
       "utter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

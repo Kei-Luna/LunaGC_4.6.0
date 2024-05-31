@@ -19,15 +19,16 @@ public final class GetDailyDungeonEntryInfoReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 scene_id = 5;</code>
+     * <code>uint32 scene_id = 7;</code>
      * @return The sceneId.
      */
     int getSceneId();
   }
   /**
    * <pre>
-   * CmdId: 6924
-   * Obf: MBPLOJNEPHM
+   * CmdId: 25932
+   * Version: 4.6.0
+   * Obfs: KOEFMCGDFGA
    * </pre>
    *
    * Protobuf type {@code GetDailyDungeonEntryInfoReq}
@@ -74,7 +75,7 @@ public final class GetDailyDungeonEntryInfoReqOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
+            case 56: {
 
               sceneId_ = input.readUInt32();
               break;
@@ -111,10 +112,10 @@ public final class GetDailyDungeonEntryInfoReqOuterClass {
               emu.grasscutter.net.proto.GetDailyDungeonEntryInfoReqOuterClass.GetDailyDungeonEntryInfoReq.class, emu.grasscutter.net.proto.GetDailyDungeonEntryInfoReqOuterClass.GetDailyDungeonEntryInfoReq.Builder.class);
     }
 
-    public static final int SCENE_ID_FIELD_NUMBER = 5;
+    public static final int SCENE_ID_FIELD_NUMBER = 7;
     private int sceneId_;
     /**
-     * <code>uint32 scene_id = 5;</code>
+     * <code>uint32 scene_id = 7;</code>
      * @return The sceneId.
      */
     @java.lang.Override
@@ -137,7 +138,7 @@ public final class GetDailyDungeonEntryInfoReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (sceneId_ != 0) {
-        output.writeUInt32(5, sceneId_);
+        output.writeUInt32(7, sceneId_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +151,7 @@ public final class GetDailyDungeonEntryInfoReqOuterClass {
       size = 0;
       if (sceneId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, sceneId_);
+          .computeUInt32Size(7, sceneId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -279,8 +280,9 @@ public final class GetDailyDungeonEntryInfoReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 6924
-     * Obf: MBPLOJNEPHM
+     * CmdId: 25932
+     * Version: 4.6.0
+     * Obfs: KOEFMCGDFGA
      * </pre>
      *
      * Protobuf type {@code GetDailyDungeonEntryInfoReq}
@@ -431,7 +433,7 @@ public final class GetDailyDungeonEntryInfoReqOuterClass {
 
       private int sceneId_ ;
       /**
-       * <code>uint32 scene_id = 5;</code>
+       * <code>uint32 scene_id = 7;</code>
        * @return The sceneId.
        */
       @java.lang.Override
@@ -439,7 +441,7 @@ public final class GetDailyDungeonEntryInfoReqOuterClass {
         return sceneId_;
       }
       /**
-       * <code>uint32 scene_id = 5;</code>
+       * <code>uint32 scene_id = 7;</code>
        * @param value The sceneId to set.
        * @return This builder for chaining.
        */
@@ -450,7 +452,7 @@ public final class GetDailyDungeonEntryInfoReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 scene_id = 5;</code>
+       * <code>uint32 scene_id = 7;</code>
        * @return This builder for chaining.
        */
       public Builder clearSceneId() {
@@ -527,7 +529,7 @@ public final class GetDailyDungeonEntryInfoReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n!GetDailyDungeonEntryInfoReq.proto\"/\n\033G" +
-      "etDailyDungeonEntryInfoReq\022\020\n\010scene_id\030\005" +
+      "etDailyDungeonEntryInfoReq\022\020\n\010scene_id\030\007" +
       " \001(\rB\033\n\031emu.grasscutter.net.protob\006proto" +
       "3"
     };
