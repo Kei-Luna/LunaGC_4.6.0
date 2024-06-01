@@ -134,6 +134,8 @@ public final class PacketOpcodes {
     public static final int WidgetUseAttachAbilityGroupChangeNotify = 24155;//4.6.0
     public static final int AvatarTeamAllDataNotify = 3135;//4.6.0
     public static final int AvatarUnlockTalentNotify = 23680;//4.6.0
+    public static final int UnlockAvatarTalentReq = 4199;//4.6.0
+    public static final int UnlockAvatarTalentRsp = 28618;//4.6.0
     public static final int ChangeMpTeamAvatarReq = 23126;//4.6.0
     public static final int ChangeMpTeamAvatarRsp = 26144;//4.6.0
     public static final int AvatarFightPropNotify = 9531;//4.6.0
@@ -255,6 +257,13 @@ public final class PacketOpcodes {
     public static final int GetInvestigationMonsterRsp = 27061;//4.6.0
     public static final int WorldPlayerDieNotify = 9771;//4.6.0
     public static final int ScenePlayerLocationNotify = 801;//4.6.0
+    public static final int SetNameCardReq = 21516;     //sus
+    public static final int SetNameCardRsp = 1786;//4.6.0
+    public static final int AvatarPromoteGetRewardReq = 287;//4.6.0
+    public static final int AvatarPromoteGetRewardRsp = 229;//4.6.0
+    public static final int AvatarFetterDataNotify = 28961;//4.6.0
+    public static final int AvatarFetterLevelRewardReq = 4220;//4.6.0
+    public static final int AvatarFetterLevelRewardRsp = 27738;//4.6.0
 
 
 
@@ -383,12 +392,7 @@ public final class PacketOpcodes {
     public static final int AvatarExpeditionGetRewardRsp = 39925237;     //4.0.0
     public static final int AvatarExpeditionStartReq = 399751;     //4.0.0
     public static final int AvatarExpeditionStartRsp = 39928415;     //4.0.0
-    public static final int AvatarFetterDataNotify = 39929004;     //4.0.0
-    public static final int AvatarFetterLevelRewardReq = 39928996;     //4.0.0
-    public static final int AvatarFetterLevelRewardRsp = 3993975;     //4.0.0
     public static final int AvatarFollowRouteNotify = 3996834;     //4.0.0
-    public static final int AvatarPromoteGetRewardReq = 399993;     //4.0.0
-    public static final int AvatarPromoteGetRewardRsp = 3997336;     //4.0.0
     public static final int AvatarPromoteReq = 39923288;     //4.0.0
     public static final int AvatarPromoteRsp = 3998592;     //4.0.0
     public static final int AvatarPropChangeReasonNotify = 3993637;     //4.0.0
@@ -2245,8 +2249,6 @@ public final class PacketOpcodes {
     public static final int SetIsAutoUnlockSpecificEquipReq = 39924611;     //4.0.0
     public static final int SetIsAutoUnlockSpecificEquipRsp = 39923704;     //4.0.0
     public static final int SetLimitOptimizationNotify = 3993723;     //4.0.0
-    public static final int SetNameCardReq = 3993853;     //4.0.0
-    public static final int SetNameCardRsp = 39922422;     //4.0.0
     public static final int SetPlayerHeadImageReq = 3994071;     //4.0.0
     public static final int SetPlayerHeadImageRsp = 39920979;     //4.0.0
     public static final int SetPlayerPropReq = 39925174;     //4.0.0
@@ -2440,8 +2442,6 @@ public final class PacketOpcodes {
     public static final int TryInterruptRogueDiaryDungeonRsp = 3994919;     //4.0.0
     public static final int UgcNotify = 39924435;     //4.0.0
     public static final int UnfreezeGroupLimitNotify = 39923739;     //4.0.0
-    public static final int UnlockAvatarTalentReq = 39920169;     //4.0.0
-    public static final int UnlockAvatarTalentRsp = 39921745;     //4.0.0
     public static final int UnlockCoopChapterReq = 39927931;     //4.0.0
     public static final int UnlockCoopChapterRsp = 3993122;     //4.0.0
     public static final int UnlockNameCardNotify = 3993896;     //4.0.0
