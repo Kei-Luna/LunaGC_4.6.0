@@ -257,13 +257,30 @@ public final class PacketOpcodes {
     public static final int GetInvestigationMonsterRsp = 27061;//4.6.0
     public static final int WorldPlayerDieNotify = 9771;//4.6.0
     public static final int ScenePlayerLocationNotify = 801;//4.6.0
-    public static final int SetNameCardReq = 21516;     //sus
+    public static final int SetNameCardReq = 21516;//sus
     public static final int SetNameCardRsp = 1786;//4.6.0
     public static final int AvatarPromoteGetRewardReq = 287;//4.6.0
     public static final int AvatarPromoteGetRewardRsp = 229;//4.6.0
     public static final int AvatarFetterDataNotify = 28961;//4.6.0
     public static final int AvatarFetterLevelRewardReq = 4220;//4.6.0
     public static final int AvatarFetterLevelRewardRsp = 27738;//4.6.0
+    public static final int AvatarUpgradeReq = 1111111111;//???????
+    public static final int AvatarUpgradeRsp = 6374;//maybe
+    public static final int AvatarSkillUpgradeReq = 3446;//4.6.0
+    public static final int AvatarSkillUpgradeRsp = 119;//4.6.0
+    public static final int AvatarSkillChangeNotify = 854;//4.6.0
+    public static final int ReliquaryDecomposeReq = 23132;//4.6.0
+    public static final int ReliquaryDecomposeRsp = 22479;//4.6.0
+    public static final int ReliquaryUpgradeReq = 20208;//4.6.0
+    public static final int ReliquaryUpgradeRsp = 336;//4.6.0
+    public static final int ReliquaryPromoteReq = 8833;//4.6.0
+    public static final int ReliquaryPromoteRsp = 5597;//4.6.0
+    public static final int WeaponPromoteReq = 27774;//4.6.0
+    public static final int WeaponPromoteRsp = 27473;//4.6.0
+    public static final int WeaponUpgradeReq = 28307;//4.6.0
+    public static final int WeaponUpgradeRsp = 22828;//4.6.0
+    public static final int CalcWeaponUpgradeReturnItemsReq = 20664;//4.6.0
+    public static final int CalcWeaponUpgradeReturnItemsRsp = 20136;//4.6.0
 
 
 
@@ -397,13 +414,8 @@ public final class PacketOpcodes {
     public static final int AvatarPromoteRsp = 3998592;     //4.0.0
     public static final int AvatarPropChangeReasonNotify = 3993637;     //4.0.0
     public static final int AvatarSatiationDataNotify = 399704;     //4.0.0
-    public static final int AvatarSkillChangeNotify = 39920893;     //4.0.0
     public static final int AvatarSkillDepotChangeNotify = 3993748;     //4.0.0
     public static final int AvatarSkillMaxChargeCountNotify = 39922843;     //4.0.0
-    public static final int AvatarSkillUpgradeReq = 39929541;     //4.0.0
-    public static final int AvatarSkillUpgradeRsp = 39922584;     //4.0.0
-    public static final int AvatarUpgradeReq = 39928204;     //4.0.0
-    public static final int AvatarUpgradeRsp = 39924216;     //4.0.0
     public static final int BAAOCAEGJBP = 39922430;     //4.0.0
     public static final int BBLDMLJIAIM = 3999880;     //4.0.0
     public static final int BBLFOGIBMGA = 39925847;     //4.0.0
@@ -534,8 +546,6 @@ public final class PacketOpcodes {
     public static final int COKBMINIAOH = 3991045;     //4.0.0
     public static final int CPBCJBADPPD = 3996196;     //4.0.0
     public static final int CPLDBPNPOEM = 39925795;     //4.0.0
-    public static final int CalcWeaponUpgradeReturnItemsReq = 39923232;     //4.0.0
-    public static final int CalcWeaponUpgradeReturnItemsRsp = 39924299;     //4.0.0
     public static final int CanUseSkillNotify = 3991186;     //4.0.0
     public static final int CancelCityReputationRequestReq = 3993312;     //4.0.0
     public static final int CancelCityReputationRequestRsp = 39920165;     //4.0.0
@@ -2059,14 +2069,8 @@ public final class PacketOpcodes {
     public static final int RegionSearchChangeRegionNotify = 39928838;     //4.0.0
     public static final int RegionSearchNotify = 39926579;     //4.0.0
     public static final int RegionalPlayInfoNotify = 3994556;     //4.0.0
-    public static final int ReliquaryDecomposeReq = 3992906;     //4.0.0
-    public static final int ReliquaryDecomposeRsp = 3995943;     //4.0.0
     public static final int ReliquaryFilterStateNotify = 3996547;     //4.0.0
     public static final int ReliquaryFilterStateSaveNotify = 3994815;     //4.0.0
-    public static final int ReliquaryPromoteReq = 39929241;     //4.0.0
-    public static final int ReliquaryPromoteRsp = 39928265;     //4.0.0
-    public static final int ReliquaryUpgradeReq = 3991702;     //4.0.0
-    public static final int ReliquaryUpgradeRsp = 39925485;     //4.0.0
     public static final int RemotePlayerWidgetNotify = 39920779;     //4.0.0
     public static final int RemoveBlacklistReq = 399850;     //4.0.0
     public static final int RemoveBlacklistRsp = 39922319;     //4.0.0
@@ -2510,10 +2514,6 @@ public final class PacketOpcodes {
     public static final int WaterSpritePhaseFinishNotify = 39922107;     //4.0.0
     public static final int WeaponAwakenReq = 39923146;     //4.0.0
     public static final int WeaponAwakenRsp = 39926318;     //4.0.0
-    public static final int WeaponPromoteReq = 39923298;     //4.0.0
-    public static final int WeaponPromoteRsp = 399715;     //4.0.0
-    public static final int WeaponUpgradeReq = 3999010;     //4.0.0
-    public static final int WeaponUpgradeRsp = 3997193;     //4.0.0
     public static final int WidgetActiveChangeNotify = 39922991;     //4.0.0
     public static final int WidgetCaptureAnimalReq = 3991304;     //4.0.0
     public static final int WidgetCaptureAnimalRsp = 39923199;     //4.0.0
