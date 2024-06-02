@@ -19,45 +19,46 @@ public final class SceneRouteChangeNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 scene_time = 13;</code>
+     * <code>uint32 scene_time = 6;</code>
      * @return The sceneTime.
      */
     int getSceneTime();
 
     /**
-     * <code>uint32 scene_id = 7;</code>
+     * <code>uint32 scene_id = 8;</code>
      * @return The sceneId.
      */
     int getSceneId();
 
     /**
-     * <code>repeated .SceneRouteChangeInfo route_list = 11;</code>
+     * <code>repeated .SceneRouteChangeInfo route_list = 12;</code>
      */
     java.util.List<emu.grasscutter.net.proto.SceneRouteChangeInfoOuterClass.SceneRouteChangeInfo> 
         getRouteListList();
     /**
-     * <code>repeated .SceneRouteChangeInfo route_list = 11;</code>
+     * <code>repeated .SceneRouteChangeInfo route_list = 12;</code>
      */
     emu.grasscutter.net.proto.SceneRouteChangeInfoOuterClass.SceneRouteChangeInfo getRouteList(int index);
     /**
-     * <code>repeated .SceneRouteChangeInfo route_list = 11;</code>
+     * <code>repeated .SceneRouteChangeInfo route_list = 12;</code>
      */
     int getRouteListCount();
     /**
-     * <code>repeated .SceneRouteChangeInfo route_list = 11;</code>
+     * <code>repeated .SceneRouteChangeInfo route_list = 12;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.SceneRouteChangeInfoOuterClass.SceneRouteChangeInfoOrBuilder> 
         getRouteListOrBuilderList();
     /**
-     * <code>repeated .SceneRouteChangeInfo route_list = 11;</code>
+     * <code>repeated .SceneRouteChangeInfo route_list = 12;</code>
      */
     emu.grasscutter.net.proto.SceneRouteChangeInfoOuterClass.SceneRouteChangeInfoOrBuilder getRouteListOrBuilder(
         int index);
   }
   /**
    * <pre>
-   * CmdId: 9691
-   * Obf: JOCLHFBINGA
+   * CmdId: 9498
+   * Version: 4.6.0
+   * Obfs: EFPEFPLEDJA
    * </pre>
    *
    * Protobuf type {@code SceneRouteChangeNotify}
@@ -106,23 +107,23 @@ public final class SceneRouteChangeNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 56: {
+            case 48: {
+
+              sceneTime_ = input.readUInt32();
+              break;
+            }
+            case 64: {
 
               sceneId_ = input.readUInt32();
               break;
             }
-            case 90: {
+            case 98: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 routeList_ = new java.util.ArrayList<emu.grasscutter.net.proto.SceneRouteChangeInfoOuterClass.SceneRouteChangeInfo>();
                 mutable_bitField0_ |= 0x00000001;
               }
               routeList_.add(
                   input.readMessage(emu.grasscutter.net.proto.SceneRouteChangeInfoOuterClass.SceneRouteChangeInfo.parser(), extensionRegistry));
-              break;
-            }
-            case 104: {
-
-              sceneTime_ = input.readUInt32();
               break;
             }
             default: {
@@ -160,10 +161,10 @@ public final class SceneRouteChangeNotifyOuterClass {
               emu.grasscutter.net.proto.SceneRouteChangeNotifyOuterClass.SceneRouteChangeNotify.class, emu.grasscutter.net.proto.SceneRouteChangeNotifyOuterClass.SceneRouteChangeNotify.Builder.class);
     }
 
-    public static final int SCENE_TIME_FIELD_NUMBER = 13;
+    public static final int SCENE_TIME_FIELD_NUMBER = 6;
     private int sceneTime_;
     /**
-     * <code>uint32 scene_time = 13;</code>
+     * <code>uint32 scene_time = 6;</code>
      * @return The sceneTime.
      */
     @java.lang.Override
@@ -171,10 +172,10 @@ public final class SceneRouteChangeNotifyOuterClass {
       return sceneTime_;
     }
 
-    public static final int SCENE_ID_FIELD_NUMBER = 7;
+    public static final int SCENE_ID_FIELD_NUMBER = 8;
     private int sceneId_;
     /**
-     * <code>uint32 scene_id = 7;</code>
+     * <code>uint32 scene_id = 8;</code>
      * @return The sceneId.
      */
     @java.lang.Override
@@ -182,17 +183,17 @@ public final class SceneRouteChangeNotifyOuterClass {
       return sceneId_;
     }
 
-    public static final int ROUTE_LIST_FIELD_NUMBER = 11;
+    public static final int ROUTE_LIST_FIELD_NUMBER = 12;
     private java.util.List<emu.grasscutter.net.proto.SceneRouteChangeInfoOuterClass.SceneRouteChangeInfo> routeList_;
     /**
-     * <code>repeated .SceneRouteChangeInfo route_list = 11;</code>
+     * <code>repeated .SceneRouteChangeInfo route_list = 12;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.SceneRouteChangeInfoOuterClass.SceneRouteChangeInfo> getRouteListList() {
       return routeList_;
     }
     /**
-     * <code>repeated .SceneRouteChangeInfo route_list = 11;</code>
+     * <code>repeated .SceneRouteChangeInfo route_list = 12;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.SceneRouteChangeInfoOuterClass.SceneRouteChangeInfoOrBuilder> 
@@ -200,21 +201,21 @@ public final class SceneRouteChangeNotifyOuterClass {
       return routeList_;
     }
     /**
-     * <code>repeated .SceneRouteChangeInfo route_list = 11;</code>
+     * <code>repeated .SceneRouteChangeInfo route_list = 12;</code>
      */
     @java.lang.Override
     public int getRouteListCount() {
       return routeList_.size();
     }
     /**
-     * <code>repeated .SceneRouteChangeInfo route_list = 11;</code>
+     * <code>repeated .SceneRouteChangeInfo route_list = 12;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.SceneRouteChangeInfoOuterClass.SceneRouteChangeInfo getRouteList(int index) {
       return routeList_.get(index);
     }
     /**
-     * <code>repeated .SceneRouteChangeInfo route_list = 11;</code>
+     * <code>repeated .SceneRouteChangeInfo route_list = 12;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.SceneRouteChangeInfoOuterClass.SceneRouteChangeInfoOrBuilder getRouteListOrBuilder(
@@ -236,14 +237,14 @@ public final class SceneRouteChangeNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (sceneTime_ != 0) {
+        output.writeUInt32(6, sceneTime_);
+      }
       if (sceneId_ != 0) {
-        output.writeUInt32(7, sceneId_);
+        output.writeUInt32(8, sceneId_);
       }
       for (int i = 0; i < routeList_.size(); i++) {
-        output.writeMessage(11, routeList_.get(i));
-      }
-      if (sceneTime_ != 0) {
-        output.writeUInt32(13, sceneTime_);
+        output.writeMessage(12, routeList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -254,17 +255,17 @@ public final class SceneRouteChangeNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (sceneTime_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(6, sceneTime_);
+      }
       if (sceneId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, sceneId_);
+          .computeUInt32Size(8, sceneId_);
       }
       for (int i = 0; i < routeList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(11, routeList_.get(i));
-      }
-      if (sceneTime_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(13, sceneTime_);
+          .computeMessageSize(12, routeList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -403,8 +404,9 @@ public final class SceneRouteChangeNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 9691
-     * Obf: JOCLHFBINGA
+     * CmdId: 9498
+     * Version: 4.6.0
+     * Obfs: EFPEFPLEDJA
      * </pre>
      *
      * Protobuf type {@code SceneRouteChangeNotify}
@@ -605,7 +607,7 @@ public final class SceneRouteChangeNotifyOuterClass {
 
       private int sceneTime_ ;
       /**
-       * <code>uint32 scene_time = 13;</code>
+       * <code>uint32 scene_time = 6;</code>
        * @return The sceneTime.
        */
       @java.lang.Override
@@ -613,7 +615,7 @@ public final class SceneRouteChangeNotifyOuterClass {
         return sceneTime_;
       }
       /**
-       * <code>uint32 scene_time = 13;</code>
+       * <code>uint32 scene_time = 6;</code>
        * @param value The sceneTime to set.
        * @return This builder for chaining.
        */
@@ -624,7 +626,7 @@ public final class SceneRouteChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 scene_time = 13;</code>
+       * <code>uint32 scene_time = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearSceneTime() {
@@ -636,7 +638,7 @@ public final class SceneRouteChangeNotifyOuterClass {
 
       private int sceneId_ ;
       /**
-       * <code>uint32 scene_id = 7;</code>
+       * <code>uint32 scene_id = 8;</code>
        * @return The sceneId.
        */
       @java.lang.Override
@@ -644,7 +646,7 @@ public final class SceneRouteChangeNotifyOuterClass {
         return sceneId_;
       }
       /**
-       * <code>uint32 scene_id = 7;</code>
+       * <code>uint32 scene_id = 8;</code>
        * @param value The sceneId to set.
        * @return This builder for chaining.
        */
@@ -655,7 +657,7 @@ public final class SceneRouteChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 scene_id = 7;</code>
+       * <code>uint32 scene_id = 8;</code>
        * @return This builder for chaining.
        */
       public Builder clearSceneId() {
@@ -678,7 +680,7 @@ public final class SceneRouteChangeNotifyOuterClass {
           emu.grasscutter.net.proto.SceneRouteChangeInfoOuterClass.SceneRouteChangeInfo, emu.grasscutter.net.proto.SceneRouteChangeInfoOuterClass.SceneRouteChangeInfo.Builder, emu.grasscutter.net.proto.SceneRouteChangeInfoOuterClass.SceneRouteChangeInfoOrBuilder> routeListBuilder_;
 
       /**
-       * <code>repeated .SceneRouteChangeInfo route_list = 11;</code>
+       * <code>repeated .SceneRouteChangeInfo route_list = 12;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.SceneRouteChangeInfoOuterClass.SceneRouteChangeInfo> getRouteListList() {
         if (routeListBuilder_ == null) {
@@ -688,7 +690,7 @@ public final class SceneRouteChangeNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .SceneRouteChangeInfo route_list = 11;</code>
+       * <code>repeated .SceneRouteChangeInfo route_list = 12;</code>
        */
       public int getRouteListCount() {
         if (routeListBuilder_ == null) {
@@ -698,7 +700,7 @@ public final class SceneRouteChangeNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .SceneRouteChangeInfo route_list = 11;</code>
+       * <code>repeated .SceneRouteChangeInfo route_list = 12;</code>
        */
       public emu.grasscutter.net.proto.SceneRouteChangeInfoOuterClass.SceneRouteChangeInfo getRouteList(int index) {
         if (routeListBuilder_ == null) {
@@ -708,7 +710,7 @@ public final class SceneRouteChangeNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .SceneRouteChangeInfo route_list = 11;</code>
+       * <code>repeated .SceneRouteChangeInfo route_list = 12;</code>
        */
       public Builder setRouteList(
           int index, emu.grasscutter.net.proto.SceneRouteChangeInfoOuterClass.SceneRouteChangeInfo value) {
@@ -725,7 +727,7 @@ public final class SceneRouteChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SceneRouteChangeInfo route_list = 11;</code>
+       * <code>repeated .SceneRouteChangeInfo route_list = 12;</code>
        */
       public Builder setRouteList(
           int index, emu.grasscutter.net.proto.SceneRouteChangeInfoOuterClass.SceneRouteChangeInfo.Builder builderForValue) {
@@ -739,7 +741,7 @@ public final class SceneRouteChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SceneRouteChangeInfo route_list = 11;</code>
+       * <code>repeated .SceneRouteChangeInfo route_list = 12;</code>
        */
       public Builder addRouteList(emu.grasscutter.net.proto.SceneRouteChangeInfoOuterClass.SceneRouteChangeInfo value) {
         if (routeListBuilder_ == null) {
@@ -755,7 +757,7 @@ public final class SceneRouteChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SceneRouteChangeInfo route_list = 11;</code>
+       * <code>repeated .SceneRouteChangeInfo route_list = 12;</code>
        */
       public Builder addRouteList(
           int index, emu.grasscutter.net.proto.SceneRouteChangeInfoOuterClass.SceneRouteChangeInfo value) {
@@ -772,7 +774,7 @@ public final class SceneRouteChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SceneRouteChangeInfo route_list = 11;</code>
+       * <code>repeated .SceneRouteChangeInfo route_list = 12;</code>
        */
       public Builder addRouteList(
           emu.grasscutter.net.proto.SceneRouteChangeInfoOuterClass.SceneRouteChangeInfo.Builder builderForValue) {
@@ -786,7 +788,7 @@ public final class SceneRouteChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SceneRouteChangeInfo route_list = 11;</code>
+       * <code>repeated .SceneRouteChangeInfo route_list = 12;</code>
        */
       public Builder addRouteList(
           int index, emu.grasscutter.net.proto.SceneRouteChangeInfoOuterClass.SceneRouteChangeInfo.Builder builderForValue) {
@@ -800,7 +802,7 @@ public final class SceneRouteChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SceneRouteChangeInfo route_list = 11;</code>
+       * <code>repeated .SceneRouteChangeInfo route_list = 12;</code>
        */
       public Builder addAllRouteList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.SceneRouteChangeInfoOuterClass.SceneRouteChangeInfo> values) {
@@ -815,7 +817,7 @@ public final class SceneRouteChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SceneRouteChangeInfo route_list = 11;</code>
+       * <code>repeated .SceneRouteChangeInfo route_list = 12;</code>
        */
       public Builder clearRouteList() {
         if (routeListBuilder_ == null) {
@@ -828,7 +830,7 @@ public final class SceneRouteChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SceneRouteChangeInfo route_list = 11;</code>
+       * <code>repeated .SceneRouteChangeInfo route_list = 12;</code>
        */
       public Builder removeRouteList(int index) {
         if (routeListBuilder_ == null) {
@@ -841,14 +843,14 @@ public final class SceneRouteChangeNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .SceneRouteChangeInfo route_list = 11;</code>
+       * <code>repeated .SceneRouteChangeInfo route_list = 12;</code>
        */
       public emu.grasscutter.net.proto.SceneRouteChangeInfoOuterClass.SceneRouteChangeInfo.Builder getRouteListBuilder(
           int index) {
         return getRouteListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .SceneRouteChangeInfo route_list = 11;</code>
+       * <code>repeated .SceneRouteChangeInfo route_list = 12;</code>
        */
       public emu.grasscutter.net.proto.SceneRouteChangeInfoOuterClass.SceneRouteChangeInfoOrBuilder getRouteListOrBuilder(
           int index) {
@@ -858,7 +860,7 @@ public final class SceneRouteChangeNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .SceneRouteChangeInfo route_list = 11;</code>
+       * <code>repeated .SceneRouteChangeInfo route_list = 12;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.SceneRouteChangeInfoOuterClass.SceneRouteChangeInfoOrBuilder> 
            getRouteListOrBuilderList() {
@@ -869,14 +871,14 @@ public final class SceneRouteChangeNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .SceneRouteChangeInfo route_list = 11;</code>
+       * <code>repeated .SceneRouteChangeInfo route_list = 12;</code>
        */
       public emu.grasscutter.net.proto.SceneRouteChangeInfoOuterClass.SceneRouteChangeInfo.Builder addRouteListBuilder() {
         return getRouteListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.SceneRouteChangeInfoOuterClass.SceneRouteChangeInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .SceneRouteChangeInfo route_list = 11;</code>
+       * <code>repeated .SceneRouteChangeInfo route_list = 12;</code>
        */
       public emu.grasscutter.net.proto.SceneRouteChangeInfoOuterClass.SceneRouteChangeInfo.Builder addRouteListBuilder(
           int index) {
@@ -884,7 +886,7 @@ public final class SceneRouteChangeNotifyOuterClass {
             index, emu.grasscutter.net.proto.SceneRouteChangeInfoOuterClass.SceneRouteChangeInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .SceneRouteChangeInfo route_list = 11;</code>
+       * <code>repeated .SceneRouteChangeInfo route_list = 12;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.SceneRouteChangeInfoOuterClass.SceneRouteChangeInfo.Builder> 
            getRouteListBuilderList() {
@@ -973,8 +975,8 @@ public final class SceneRouteChangeNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n\034SceneRouteChangeNotify.proto\032\032SceneRou" +
       "teChangeInfo.proto\"i\n\026SceneRouteChangeNo" +
-      "tify\022\022\n\nscene_time\030\r \001(\r\022\020\n\010scene_id\030\007 \001" +
-      "(\r\022)\n\nroute_list\030\013 \003(\0132\025.SceneRouteChang" +
+      "tify\022\022\n\nscene_time\030\006 \001(\r\022\020\n\010scene_id\030\010 \001" +
+      "(\r\022)\n\nroute_list\030\014 \003(\0132\025.SceneRouteChang" +
       "eInfoB\033\n\031emu.grasscutter.net.protob\006prot" +
       "o3"
     };

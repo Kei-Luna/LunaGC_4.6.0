@@ -50,7 +50,8 @@ public final class PlayProductOuterClass {
   }
   /**
    * <pre>
-   * Obf: JHHADHKEAAD
+   * Version: 4.6.0
+   * Obfs: DFKPGHOBLLC
    * </pre>
    *
    * Protobuf type {@code PlayProduct}
@@ -412,7 +413,8 @@ public final class PlayProductOuterClass {
     }
     /**
      * <pre>
-     * Obf: JHHADHKEAAD
+     * Version: 4.6.0
+     * Obfs: DFKPGHOBLLC
      * </pre>
      *
      * Protobuf type {@code PlayProduct}

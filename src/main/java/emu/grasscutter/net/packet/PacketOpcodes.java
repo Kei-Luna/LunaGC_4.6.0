@@ -264,8 +264,8 @@ public final class PacketOpcodes {
     public static final int AvatarFetterDataNotify = 28961;//4.6.0
     public static final int AvatarFetterLevelRewardReq = 4220;//4.6.0
     public static final int AvatarFetterLevelRewardRsp = 27738;//4.6.0
-    public static final int AvatarUpgradeReq = 1111111111;//???????
-    public static final int AvatarUpgradeRsp = 6374;//maybe
+    public static final int AvatarUpgradeReq = 2937;//4.6.0
+    public static final int AvatarUpgradeRsp = 6374;//4.6.0
     public static final int AvatarSkillUpgradeReq = 3446;//4.6.0
     public static final int AvatarSkillUpgradeRsp = 119;//4.6.0
     public static final int AvatarSkillChangeNotify = 854;//4.6.0
@@ -281,6 +281,8 @@ public final class PacketOpcodes {
     public static final int WeaponUpgradeRsp = 22828;//4.6.0
     public static final int CalcWeaponUpgradeReturnItemsReq = 20664;//4.6.0
     public static final int CalcWeaponUpgradeReturnItemsRsp = 20136;//4.6.0
+    public static final int GetAllUnlockNameCardReq = 245;//4.6.0
+    public static final int GetAllUnlockNameCardRsp = 1123123;//????
 
 
 
@@ -1212,8 +1214,6 @@ public final class PacketOpcodes {
     public static final int GetAllMailRsp = 3999526;     //4.0.0
     public static final int GetAllSceneGalleryInfoReq = 39922232;     //4.0.0
     public static final int GetAllSceneGalleryInfoRsp = 3997472;     //4.0.0
-    public static final int GetAllUnlockNameCardReq = 3993551;     //4.0.0
-    public static final int GetAllUnlockNameCardRsp = 39928550;     //4.0.0
     public static final int GetAreaExplorePointReq = 39920438;     //4.0.0
     public static final int GetAreaExplorePointRsp = 39927637;     //4.0.0
     public static final int GetAuthSalesmanInfoReq = 39928580;     //4.0.0
