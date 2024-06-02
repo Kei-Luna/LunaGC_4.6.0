@@ -19,49 +19,50 @@ public final class BattlePassMissionOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 total_progress = 7;</code>
-     * @return The totalProgress.
+     * <code>uint32 reward_battle_pass_point = 5;</code>
+     * @return The rewardBattlePassPoint.
      */
-    int getTotalProgress();
+    int getRewardBattlePassPoint();
 
     /**
-     * <code>uint32 mission_type = 3;</code>
-     * @return The missionType.
-     */
-    int getMissionType();
-
-    /**
-     * <code>uint32 cur_progress = 2;</code>
+     * <code>uint32 cur_progress = 6;</code>
      * @return The curProgress.
      */
     int getCurProgress();
 
     /**
-     * <code>.BattlePassMission.MissionStatus mission_status = 15;</code>
-     * @return The enum numeric value on the wire for missionStatus.
+     * <code>uint32 mission_type = 7;</code>
+     * @return The missionType.
      */
-    int getMissionStatusValue();
-    /**
-     * <code>.BattlePassMission.MissionStatus mission_status = 15;</code>
-     * @return The missionStatus.
-     */
-    emu.grasscutter.net.proto.BattlePassMissionOuterClass.BattlePassMission.MissionStatus getMissionStatus();
+    int getMissionType();
 
     /**
-     * <code>uint32 mission_id = 8;</code>
+     * <code>uint32 total_progress = 10;</code>
+     * @return The totalProgress.
+     */
+    int getTotalProgress();
+
+    /**
+     * <code>uint32 mission_id = 12;</code>
      * @return The missionId.
      */
     int getMissionId();
 
     /**
-     * <code>uint32 reward_battle_pass_point = 9;</code>
-     * @return The rewardBattlePassPoint.
+     * <code>.BattlePassMission.MissionStatus mission_status = 14;</code>
+     * @return The enum numeric value on the wire for missionStatus.
      */
-    int getRewardBattlePassPoint();
+    int getMissionStatusValue();
+    /**
+     * <code>.BattlePassMission.MissionStatus mission_status = 14;</code>
+     * @return The missionStatus.
+     */
+    emu.grasscutter.net.proto.BattlePassMissionOuterClass.BattlePassMission.MissionStatus getMissionStatus();
   }
   /**
    * <pre>
-   * Obf: ELGGKMAOOGA
+   * Version: 4.6.0
+   * Obfs: KLNCDOLLCFF
    * </pre>
    *
    * Protobuf type {@code BattlePassMission}
@@ -109,32 +110,32 @@ public final class BattlePassMissionOuterClass {
             case 0:
               done = true;
               break;
-            case 16: {
-
-              curProgress_ = input.readUInt32();
-              break;
-            }
-            case 24: {
-
-              missionType_ = input.readUInt32();
-              break;
-            }
-            case 56: {
-
-              totalProgress_ = input.readUInt32();
-              break;
-            }
-            case 64: {
-
-              missionId_ = input.readUInt32();
-              break;
-            }
-            case 72: {
+            case 40: {
 
               rewardBattlePassPoint_ = input.readUInt32();
               break;
             }
-            case 120: {
+            case 48: {
+
+              curProgress_ = input.readUInt32();
+              break;
+            }
+            case 56: {
+
+              missionType_ = input.readUInt32();
+              break;
+            }
+            case 80: {
+
+              totalProgress_ = input.readUInt32();
+              break;
+            }
+            case 96: {
+
+              missionId_ = input.readUInt32();
+              break;
+            }
+            case 112: {
               int rawValue = input.readEnum();
 
               missionStatus_ = rawValue;
@@ -173,10 +174,6 @@ public final class BattlePassMissionOuterClass {
     }
 
     /**
-     * <pre>
-     * Obf: JAOFNPAFHIB
-     * </pre>
-     *
      * Protobuf enum {@code BattlePassMission.MissionStatus}
      */
     public enum MissionStatus
@@ -302,32 +299,21 @@ public final class BattlePassMissionOuterClass {
       // @@protoc_insertion_point(enum_scope:BattlePassMission.MissionStatus)
     }
 
-    public static final int TOTAL_PROGRESS_FIELD_NUMBER = 7;
-    private int totalProgress_;
+    public static final int REWARD_BATTLE_PASS_POINT_FIELD_NUMBER = 5;
+    private int rewardBattlePassPoint_;
     /**
-     * <code>uint32 total_progress = 7;</code>
-     * @return The totalProgress.
+     * <code>uint32 reward_battle_pass_point = 5;</code>
+     * @return The rewardBattlePassPoint.
      */
     @java.lang.Override
-    public int getTotalProgress() {
-      return totalProgress_;
+    public int getRewardBattlePassPoint() {
+      return rewardBattlePassPoint_;
     }
 
-    public static final int MISSION_TYPE_FIELD_NUMBER = 3;
-    private int missionType_;
-    /**
-     * <code>uint32 mission_type = 3;</code>
-     * @return The missionType.
-     */
-    @java.lang.Override
-    public int getMissionType() {
-      return missionType_;
-    }
-
-    public static final int CUR_PROGRESS_FIELD_NUMBER = 2;
+    public static final int CUR_PROGRESS_FIELD_NUMBER = 6;
     private int curProgress_;
     /**
-     * <code>uint32 cur_progress = 2;</code>
+     * <code>uint32 cur_progress = 6;</code>
      * @return The curProgress.
      */
     @java.lang.Override
@@ -335,29 +321,32 @@ public final class BattlePassMissionOuterClass {
       return curProgress_;
     }
 
-    public static final int MISSION_STATUS_FIELD_NUMBER = 15;
-    private int missionStatus_;
+    public static final int MISSION_TYPE_FIELD_NUMBER = 7;
+    private int missionType_;
     /**
-     * <code>.BattlePassMission.MissionStatus mission_status = 15;</code>
-     * @return The enum numeric value on the wire for missionStatus.
+     * <code>uint32 mission_type = 7;</code>
+     * @return The missionType.
      */
-    @java.lang.Override public int getMissionStatusValue() {
-      return missionStatus_;
-    }
-    /**
-     * <code>.BattlePassMission.MissionStatus mission_status = 15;</code>
-     * @return The missionStatus.
-     */
-    @java.lang.Override public emu.grasscutter.net.proto.BattlePassMissionOuterClass.BattlePassMission.MissionStatus getMissionStatus() {
-      @SuppressWarnings("deprecation")
-      emu.grasscutter.net.proto.BattlePassMissionOuterClass.BattlePassMission.MissionStatus result = emu.grasscutter.net.proto.BattlePassMissionOuterClass.BattlePassMission.MissionStatus.valueOf(missionStatus_);
-      return result == null ? emu.grasscutter.net.proto.BattlePassMissionOuterClass.BattlePassMission.MissionStatus.UNRECOGNIZED : result;
+    @java.lang.Override
+    public int getMissionType() {
+      return missionType_;
     }
 
-    public static final int MISSION_ID_FIELD_NUMBER = 8;
+    public static final int TOTAL_PROGRESS_FIELD_NUMBER = 10;
+    private int totalProgress_;
+    /**
+     * <code>uint32 total_progress = 10;</code>
+     * @return The totalProgress.
+     */
+    @java.lang.Override
+    public int getTotalProgress() {
+      return totalProgress_;
+    }
+
+    public static final int MISSION_ID_FIELD_NUMBER = 12;
     private int missionId_;
     /**
-     * <code>uint32 mission_id = 8;</code>
+     * <code>uint32 mission_id = 12;</code>
      * @return The missionId.
      */
     @java.lang.Override
@@ -365,15 +354,23 @@ public final class BattlePassMissionOuterClass {
       return missionId_;
     }
 
-    public static final int REWARD_BATTLE_PASS_POINT_FIELD_NUMBER = 9;
-    private int rewardBattlePassPoint_;
+    public static final int MISSION_STATUS_FIELD_NUMBER = 14;
+    private int missionStatus_;
     /**
-     * <code>uint32 reward_battle_pass_point = 9;</code>
-     * @return The rewardBattlePassPoint.
+     * <code>.BattlePassMission.MissionStatus mission_status = 14;</code>
+     * @return The enum numeric value on the wire for missionStatus.
      */
-    @java.lang.Override
-    public int getRewardBattlePassPoint() {
-      return rewardBattlePassPoint_;
+    @java.lang.Override public int getMissionStatusValue() {
+      return missionStatus_;
+    }
+    /**
+     * <code>.BattlePassMission.MissionStatus mission_status = 14;</code>
+     * @return The missionStatus.
+     */
+    @java.lang.Override public emu.grasscutter.net.proto.BattlePassMissionOuterClass.BattlePassMission.MissionStatus getMissionStatus() {
+      @SuppressWarnings("deprecation")
+      emu.grasscutter.net.proto.BattlePassMissionOuterClass.BattlePassMission.MissionStatus result = emu.grasscutter.net.proto.BattlePassMissionOuterClass.BattlePassMission.MissionStatus.valueOf(missionStatus_);
+      return result == null ? emu.grasscutter.net.proto.BattlePassMissionOuterClass.BattlePassMission.MissionStatus.UNRECOGNIZED : result;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -390,23 +387,23 @@ public final class BattlePassMissionOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
+      if (rewardBattlePassPoint_ != 0) {
+        output.writeUInt32(5, rewardBattlePassPoint_);
+      }
       if (curProgress_ != 0) {
-        output.writeUInt32(2, curProgress_);
+        output.writeUInt32(6, curProgress_);
       }
       if (missionType_ != 0) {
-        output.writeUInt32(3, missionType_);
+        output.writeUInt32(7, missionType_);
       }
       if (totalProgress_ != 0) {
-        output.writeUInt32(7, totalProgress_);
+        output.writeUInt32(10, totalProgress_);
       }
       if (missionId_ != 0) {
-        output.writeUInt32(8, missionId_);
-      }
-      if (rewardBattlePassPoint_ != 0) {
-        output.writeUInt32(9, rewardBattlePassPoint_);
+        output.writeUInt32(12, missionId_);
       }
       if (missionStatus_ != emu.grasscutter.net.proto.BattlePassMissionOuterClass.BattlePassMission.MissionStatus.MISSION_STATUS_INVALID.getNumber()) {
-        output.writeEnum(15, missionStatus_);
+        output.writeEnum(14, missionStatus_);
       }
       unknownFields.writeTo(output);
     }
@@ -417,29 +414,29 @@ public final class BattlePassMissionOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (rewardBattlePassPoint_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(5, rewardBattlePassPoint_);
+      }
       if (curProgress_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(2, curProgress_);
+          .computeUInt32Size(6, curProgress_);
       }
       if (missionType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(3, missionType_);
+          .computeUInt32Size(7, missionType_);
       }
       if (totalProgress_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(7, totalProgress_);
+          .computeUInt32Size(10, totalProgress_);
       }
       if (missionId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, missionId_);
-      }
-      if (rewardBattlePassPoint_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, rewardBattlePassPoint_);
+          .computeUInt32Size(12, missionId_);
       }
       if (missionStatus_ != emu.grasscutter.net.proto.BattlePassMissionOuterClass.BattlePassMission.MissionStatus.MISSION_STATUS_INVALID.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(15, missionStatus_);
+          .computeEnumSize(14, missionStatus_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -456,17 +453,17 @@ public final class BattlePassMissionOuterClass {
       }
       emu.grasscutter.net.proto.BattlePassMissionOuterClass.BattlePassMission other = (emu.grasscutter.net.proto.BattlePassMissionOuterClass.BattlePassMission) obj;
 
-      if (getTotalProgress()
-          != other.getTotalProgress()) return false;
-      if (getMissionType()
-          != other.getMissionType()) return false;
-      if (getCurProgress()
-          != other.getCurProgress()) return false;
-      if (missionStatus_ != other.missionStatus_) return false;
-      if (getMissionId()
-          != other.getMissionId()) return false;
       if (getRewardBattlePassPoint()
           != other.getRewardBattlePassPoint()) return false;
+      if (getCurProgress()
+          != other.getCurProgress()) return false;
+      if (getMissionType()
+          != other.getMissionType()) return false;
+      if (getTotalProgress()
+          != other.getTotalProgress()) return false;
+      if (getMissionId()
+          != other.getMissionId()) return false;
+      if (missionStatus_ != other.missionStatus_) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -478,18 +475,18 @@ public final class BattlePassMissionOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + TOTAL_PROGRESS_FIELD_NUMBER;
-      hash = (53 * hash) + getTotalProgress();
-      hash = (37 * hash) + MISSION_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + getMissionType();
-      hash = (37 * hash) + CUR_PROGRESS_FIELD_NUMBER;
-      hash = (53 * hash) + getCurProgress();
-      hash = (37 * hash) + MISSION_STATUS_FIELD_NUMBER;
-      hash = (53 * hash) + missionStatus_;
-      hash = (37 * hash) + MISSION_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getMissionId();
       hash = (37 * hash) + REWARD_BATTLE_PASS_POINT_FIELD_NUMBER;
       hash = (53 * hash) + getRewardBattlePassPoint();
+      hash = (37 * hash) + CUR_PROGRESS_FIELD_NUMBER;
+      hash = (53 * hash) + getCurProgress();
+      hash = (37 * hash) + MISSION_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + getMissionType();
+      hash = (37 * hash) + TOTAL_PROGRESS_FIELD_NUMBER;
+      hash = (53 * hash) + getTotalProgress();
+      hash = (37 * hash) + MISSION_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getMissionId();
+      hash = (37 * hash) + MISSION_STATUS_FIELD_NUMBER;
+      hash = (53 * hash) + missionStatus_;
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -587,7 +584,8 @@ public final class BattlePassMissionOuterClass {
     }
     /**
      * <pre>
-     * Obf: ELGGKMAOOGA
+     * Version: 4.6.0
+     * Obfs: KLNCDOLLCFF
      * </pre>
      *
      * Protobuf type {@code BattlePassMission}
@@ -627,17 +625,17 @@ public final class BattlePassMissionOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        totalProgress_ = 0;
-
-        missionType_ = 0;
+        rewardBattlePassPoint_ = 0;
 
         curProgress_ = 0;
 
-        missionStatus_ = 0;
+        missionType_ = 0;
+
+        totalProgress_ = 0;
 
         missionId_ = 0;
 
-        rewardBattlePassPoint_ = 0;
+        missionStatus_ = 0;
 
         return this;
       }
@@ -665,12 +663,12 @@ public final class BattlePassMissionOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.BattlePassMissionOuterClass.BattlePassMission buildPartial() {
         emu.grasscutter.net.proto.BattlePassMissionOuterClass.BattlePassMission result = new emu.grasscutter.net.proto.BattlePassMissionOuterClass.BattlePassMission(this);
-        result.totalProgress_ = totalProgress_;
-        result.missionType_ = missionType_;
-        result.curProgress_ = curProgress_;
-        result.missionStatus_ = missionStatus_;
-        result.missionId_ = missionId_;
         result.rewardBattlePassPoint_ = rewardBattlePassPoint_;
+        result.curProgress_ = curProgress_;
+        result.missionType_ = missionType_;
+        result.totalProgress_ = totalProgress_;
+        result.missionId_ = missionId_;
+        result.missionStatus_ = missionStatus_;
         onBuilt();
         return result;
       }
@@ -719,23 +717,23 @@ public final class BattlePassMissionOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.BattlePassMissionOuterClass.BattlePassMission other) {
         if (other == emu.grasscutter.net.proto.BattlePassMissionOuterClass.BattlePassMission.getDefaultInstance()) return this;
-        if (other.getTotalProgress() != 0) {
-          setTotalProgress(other.getTotalProgress());
-        }
-        if (other.getMissionType() != 0) {
-          setMissionType(other.getMissionType());
+        if (other.getRewardBattlePassPoint() != 0) {
+          setRewardBattlePassPoint(other.getRewardBattlePassPoint());
         }
         if (other.getCurProgress() != 0) {
           setCurProgress(other.getCurProgress());
         }
-        if (other.missionStatus_ != 0) {
-          setMissionStatusValue(other.getMissionStatusValue());
+        if (other.getMissionType() != 0) {
+          setMissionType(other.getMissionType());
+        }
+        if (other.getTotalProgress() != 0) {
+          setTotalProgress(other.getTotalProgress());
         }
         if (other.getMissionId() != 0) {
           setMissionId(other.getMissionId());
         }
-        if (other.getRewardBattlePassPoint() != 0) {
-          setRewardBattlePassPoint(other.getRewardBattlePassPoint());
+        if (other.missionStatus_ != 0) {
+          setMissionStatusValue(other.getMissionStatusValue());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -766,71 +764,40 @@ public final class BattlePassMissionOuterClass {
         return this;
       }
 
-      private int totalProgress_ ;
+      private int rewardBattlePassPoint_ ;
       /**
-       * <code>uint32 total_progress = 7;</code>
-       * @return The totalProgress.
+       * <code>uint32 reward_battle_pass_point = 5;</code>
+       * @return The rewardBattlePassPoint.
        */
       @java.lang.Override
-      public int getTotalProgress() {
-        return totalProgress_;
+      public int getRewardBattlePassPoint() {
+        return rewardBattlePassPoint_;
       }
       /**
-       * <code>uint32 total_progress = 7;</code>
-       * @param value The totalProgress to set.
+       * <code>uint32 reward_battle_pass_point = 5;</code>
+       * @param value The rewardBattlePassPoint to set.
        * @return This builder for chaining.
        */
-      public Builder setTotalProgress(int value) {
+      public Builder setRewardBattlePassPoint(int value) {
         
-        totalProgress_ = value;
+        rewardBattlePassPoint_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 total_progress = 7;</code>
+       * <code>uint32 reward_battle_pass_point = 5;</code>
        * @return This builder for chaining.
        */
-      public Builder clearTotalProgress() {
+      public Builder clearRewardBattlePassPoint() {
         
-        totalProgress_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int missionType_ ;
-      /**
-       * <code>uint32 mission_type = 3;</code>
-       * @return The missionType.
-       */
-      @java.lang.Override
-      public int getMissionType() {
-        return missionType_;
-      }
-      /**
-       * <code>uint32 mission_type = 3;</code>
-       * @param value The missionType to set.
-       * @return This builder for chaining.
-       */
-      public Builder setMissionType(int value) {
-        
-        missionType_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 mission_type = 3;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearMissionType() {
-        
-        missionType_ = 0;
+        rewardBattlePassPoint_ = 0;
         onChanged();
         return this;
       }
 
       private int curProgress_ ;
       /**
-       * <code>uint32 cur_progress = 2;</code>
+       * <code>uint32 cur_progress = 6;</code>
        * @return The curProgress.
        */
       @java.lang.Override
@@ -838,7 +805,7 @@ public final class BattlePassMissionOuterClass {
         return curProgress_;
       }
       /**
-       * <code>uint32 cur_progress = 2;</code>
+       * <code>uint32 cur_progress = 6;</code>
        * @param value The curProgress to set.
        * @return This builder for chaining.
        */
@@ -849,7 +816,7 @@ public final class BattlePassMissionOuterClass {
         return this;
       }
       /**
-       * <code>uint32 cur_progress = 2;</code>
+       * <code>uint32 cur_progress = 6;</code>
        * @return This builder for chaining.
        */
       public Builder clearCurProgress() {
@@ -859,16 +826,109 @@ public final class BattlePassMissionOuterClass {
         return this;
       }
 
+      private int missionType_ ;
+      /**
+       * <code>uint32 mission_type = 7;</code>
+       * @return The missionType.
+       */
+      @java.lang.Override
+      public int getMissionType() {
+        return missionType_;
+      }
+      /**
+       * <code>uint32 mission_type = 7;</code>
+       * @param value The missionType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMissionType(int value) {
+        
+        missionType_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 mission_type = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMissionType() {
+        
+        missionType_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int totalProgress_ ;
+      /**
+       * <code>uint32 total_progress = 10;</code>
+       * @return The totalProgress.
+       */
+      @java.lang.Override
+      public int getTotalProgress() {
+        return totalProgress_;
+      }
+      /**
+       * <code>uint32 total_progress = 10;</code>
+       * @param value The totalProgress to set.
+       * @return This builder for chaining.
+       */
+      public Builder setTotalProgress(int value) {
+        
+        totalProgress_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 total_progress = 10;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearTotalProgress() {
+        
+        totalProgress_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private int missionId_ ;
+      /**
+       * <code>uint32 mission_id = 12;</code>
+       * @return The missionId.
+       */
+      @java.lang.Override
+      public int getMissionId() {
+        return missionId_;
+      }
+      /**
+       * <code>uint32 mission_id = 12;</code>
+       * @param value The missionId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMissionId(int value) {
+        
+        missionId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 mission_id = 12;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMissionId() {
+        
+        missionId_ = 0;
+        onChanged();
+        return this;
+      }
+
       private int missionStatus_ = 0;
       /**
-       * <code>.BattlePassMission.MissionStatus mission_status = 15;</code>
+       * <code>.BattlePassMission.MissionStatus mission_status = 14;</code>
        * @return The enum numeric value on the wire for missionStatus.
        */
       @java.lang.Override public int getMissionStatusValue() {
         return missionStatus_;
       }
       /**
-       * <code>.BattlePassMission.MissionStatus mission_status = 15;</code>
+       * <code>.BattlePassMission.MissionStatus mission_status = 14;</code>
        * @param value The enum numeric value on the wire for missionStatus to set.
        * @return This builder for chaining.
        */
@@ -879,7 +939,7 @@ public final class BattlePassMissionOuterClass {
         return this;
       }
       /**
-       * <code>.BattlePassMission.MissionStatus mission_status = 15;</code>
+       * <code>.BattlePassMission.MissionStatus mission_status = 14;</code>
        * @return The missionStatus.
        */
       @java.lang.Override
@@ -889,7 +949,7 @@ public final class BattlePassMissionOuterClass {
         return result == null ? emu.grasscutter.net.proto.BattlePassMissionOuterClass.BattlePassMission.MissionStatus.UNRECOGNIZED : result;
       }
       /**
-       * <code>.BattlePassMission.MissionStatus mission_status = 15;</code>
+       * <code>.BattlePassMission.MissionStatus mission_status = 14;</code>
        * @param value The missionStatus to set.
        * @return This builder for chaining.
        */
@@ -903,74 +963,12 @@ public final class BattlePassMissionOuterClass {
         return this;
       }
       /**
-       * <code>.BattlePassMission.MissionStatus mission_status = 15;</code>
+       * <code>.BattlePassMission.MissionStatus mission_status = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearMissionStatus() {
         
         missionStatus_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int missionId_ ;
-      /**
-       * <code>uint32 mission_id = 8;</code>
-       * @return The missionId.
-       */
-      @java.lang.Override
-      public int getMissionId() {
-        return missionId_;
-      }
-      /**
-       * <code>uint32 mission_id = 8;</code>
-       * @param value The missionId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setMissionId(int value) {
-        
-        missionId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 mission_id = 8;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearMissionId() {
-        
-        missionId_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private int rewardBattlePassPoint_ ;
-      /**
-       * <code>uint32 reward_battle_pass_point = 9;</code>
-       * @return The rewardBattlePassPoint.
-       */
-      @java.lang.Override
-      public int getRewardBattlePassPoint() {
-        return rewardBattlePassPoint_;
-      }
-      /**
-       * <code>uint32 reward_battle_pass_point = 9;</code>
-       * @param value The rewardBattlePassPoint to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRewardBattlePassPoint(int value) {
-        
-        rewardBattlePassPoint_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 reward_battle_pass_point = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRewardBattlePassPoint() {
-        
-        rewardBattlePassPoint_ = 0;
         onChanged();
         return this;
       }
@@ -1042,11 +1040,11 @@ public final class BattlePassMissionOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\027BattlePassMission.proto\"\321\002\n\021BattlePass" +
-      "Mission\022\026\n\016total_progress\030\007 \001(\r\022\024\n\014missi" +
-      "on_type\030\003 \001(\r\022\024\n\014cur_progress\030\002 \001(\r\0228\n\016m" +
-      "ission_status\030\017 \001(\0162 .BattlePassMission." +
-      "MissionStatus\022\022\n\nmission_id\030\010 \001(\r\022 \n\030rew" +
-      "ard_battle_pass_point\030\t \001(\r\"\207\001\n\rMissionS" +
+      "Mission\022 \n\030reward_battle_pass_point\030\005 \001(" +
+      "\r\022\024\n\014cur_progress\030\006 \001(\r\022\024\n\014mission_type\030" +
+      "\007 \001(\r\022\026\n\016total_progress\030\n \001(\r\022\022\n\nmission" +
+      "_id\030\014 \001(\r\0228\n\016mission_status\030\016 \001(\0162 .Batt" +
+      "lePassMission.MissionStatus\"\207\001\n\rMissionS" +
       "tatus\022\032\n\026MISSION_STATUS_INVALID\020\000\022\035\n\031MIS" +
       "SION_STATUS_UNFINISHED\020\001\022\033\n\027MISSION_STAT" +
       "US_FINISHED\020\002\022\036\n\032MISSION_STATUS_POINT_TA" +
@@ -1062,7 +1060,7 @@ public final class BattlePassMissionOuterClass {
     internal_static_BattlePassMission_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_BattlePassMission_descriptor,
-        new java.lang.String[] { "TotalProgress", "MissionType", "CurProgress", "MissionStatus", "MissionId", "RewardBattlePassPoint", });
+        new java.lang.String[] { "RewardBattlePassPoint", "CurProgress", "MissionType", "TotalProgress", "MissionId", "MissionStatus", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

@@ -19,15 +19,15 @@ public final class WeaponPromoteReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint64 target_weapon_guid = 12;</code>
+     * <code>uint64 target_weapon_guid = 14;</code>
      * @return The targetWeaponGuid.
      */
     long getTargetWeaponGuid();
   }
   /**
    * <pre>
-   * CmdId: 23298
-   * Obf: LDCKBPMEBGB
+   * 4.6.0
+   * CmdId: 27774
    * </pre>
    *
    * Protobuf type {@code WeaponPromoteReq}
@@ -74,7 +74,7 @@ public final class WeaponPromoteReqOuterClass {
             case 0:
               done = true;
               break;
-            case 96: {
+            case 112: {
 
               targetWeaponGuid_ = input.readUInt64();
               break;
@@ -111,10 +111,10 @@ public final class WeaponPromoteReqOuterClass {
               emu.grasscutter.net.proto.WeaponPromoteReqOuterClass.WeaponPromoteReq.class, emu.grasscutter.net.proto.WeaponPromoteReqOuterClass.WeaponPromoteReq.Builder.class);
     }
 
-    public static final int TARGET_WEAPON_GUID_FIELD_NUMBER = 12;
+    public static final int TARGET_WEAPON_GUID_FIELD_NUMBER = 14;
     private long targetWeaponGuid_;
     /**
-     * <code>uint64 target_weapon_guid = 12;</code>
+     * <code>uint64 target_weapon_guid = 14;</code>
      * @return The targetWeaponGuid.
      */
     @java.lang.Override
@@ -137,7 +137,7 @@ public final class WeaponPromoteReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (targetWeaponGuid_ != 0L) {
-        output.writeUInt64(12, targetWeaponGuid_);
+        output.writeUInt64(14, targetWeaponGuid_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +150,7 @@ public final class WeaponPromoteReqOuterClass {
       size = 0;
       if (targetWeaponGuid_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(12, targetWeaponGuid_);
+          .computeUInt64Size(14, targetWeaponGuid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -280,8 +280,8 @@ public final class WeaponPromoteReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 23298
-     * Obf: LDCKBPMEBGB
+     * 4.6.0
+     * CmdId: 27774
      * </pre>
      *
      * Protobuf type {@code WeaponPromoteReq}
@@ -432,7 +432,7 @@ public final class WeaponPromoteReqOuterClass {
 
       private long targetWeaponGuid_ ;
       /**
-       * <code>uint64 target_weapon_guid = 12;</code>
+       * <code>uint64 target_weapon_guid = 14;</code>
        * @return The targetWeaponGuid.
        */
       @java.lang.Override
@@ -440,7 +440,7 @@ public final class WeaponPromoteReqOuterClass {
         return targetWeaponGuid_;
       }
       /**
-       * <code>uint64 target_weapon_guid = 12;</code>
+       * <code>uint64 target_weapon_guid = 14;</code>
        * @param value The targetWeaponGuid to set.
        * @return This builder for chaining.
        */
@@ -451,7 +451,7 @@ public final class WeaponPromoteReqOuterClass {
         return this;
       }
       /**
-       * <code>uint64 target_weapon_guid = 12;</code>
+       * <code>uint64 target_weapon_guid = 14;</code>
        * @return This builder for chaining.
        */
       public Builder clearTargetWeaponGuid() {
@@ -528,7 +528,7 @@ public final class WeaponPromoteReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\026WeaponPromoteReq.proto\".\n\020WeaponPromot" +
-      "eReq\022\032\n\022target_weapon_guid\030\014 \001(\004B\033\n\031emu." +
+      "eReq\022\032\n\022target_weapon_guid\030\016 \001(\004B\033\n\031emu." +
       "grasscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

@@ -639,6 +639,8 @@ public class InventorySystem extends BaseGameSystem {
         avatar.save();
     }
 
+    // Old upgrade UI
+    @Deprecated(forRemoval = true)
     public void upgradeAvatar(Player player, long guid, int itemId, int count) {
         Avatar avatar = player.getAvatars().getAvatarByGuid(guid);
 
@@ -678,6 +680,57 @@ public class InventorySystem extends BaseGameSystem {
         int moraCost = expGain / 5;
         ItemParamData[] costItems =
                 new ItemParamData[] {new ItemParamData(itemId, count), new ItemParamData(202, moraCost)};
+        if (!player.getInventory().payItems(costItems)) {
+            return;
+        }
+
+        // Level up
+        upgradeAvatar(player, avatar, promoteData, expGain);
+    }
+
+    // New Upgrade UI in 4.5
+    public void upgradeAvatar(Player player, long guid, List<ItemParam> itemParamList) {
+        Avatar avatar = player.getAvatars().getAvatarByGuid(guid);
+
+        // Sanity checks
+        if (avatar == null) {
+            return;
+        }
+
+        AvatarPromoteData promoteData =
+                GameData.getAvatarPromoteData(
+                        avatar.getAvatarData().getAvatarPromoteId(), avatar.getPromoteLevel());
+        if (promoteData == null) {
+            return;
+        }
+
+        // Calc exp
+        List<ItemParamData> costItems = new ArrayList<>();
+        int expGain = 0;
+
+        for (ItemParam itemParam : itemParamList) {
+            var data = GameData.getItemDataMap().get(itemParam.getItemId());
+            if (data != null) {
+                var actions = data.getItemUseActions();
+                if (actions != null) {
+                    for (var action : actions) {
+                        if (action.getItemUseOp() == ItemUseOp.ITEM_USE_ADD_EXP) {
+                            expGain += ((ItemUseAddExp) action).getExp() * itemParam.getCount();
+                            costItems.add(new ItemParamData(itemParam.getItemId(), itemParam.getCount()));
+                        }
+                    }
+                }
+            }
+        }
+
+        // Sanity check
+        if (expGain <= 0) {
+            return;
+        }
+
+        // Payment check
+        int moraCost = expGain / 5;
+        costItems.add(new ItemParamData(202, moraCost));
         if (!player.getInventory().payItems(costItems)) {
             return;
         }

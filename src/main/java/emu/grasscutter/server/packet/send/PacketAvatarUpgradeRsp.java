@@ -17,8 +17,8 @@ public class PacketAvatarUpgradeRsp extends BasePacket {
                         .setAvatarGuid(avatar.getGuid())
                         .setOldLevel(oldLevel)
                         .setCurLevel(avatar.getLevel())
-                        .putAllOldFightPropMap(oldFightPropMap)
-                        .putAllCurFightPropMap(avatar.getFightProperties())
+                        //.putAllOldFightPropMap(oldFightPropMap)
+                        //.putAllCurFightPropMap(avatar.getFightProperties())
                         .build();
 
         this.setData(proto);

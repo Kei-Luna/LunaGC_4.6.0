@@ -361,7 +361,7 @@ public final class AbilityManager extends BasePlayerManager {
     }
 
     private void setAbilityOverrideValue(Ability ability, AbilityScalarValueEntry valueChange) {
-        if (valueChange.getValueType() != AbilityScalarType.ABILITY_SCALAR_TYPE_FLOAT) {
+        if (valueChange.getValueType() != AbilityScalarType.ABILITY_SCALAR_TYPE_FLOAT && valueChange.getValueType() != AbilityScalarType.ABILITY_SCALAR_TYPE_UNKNOW) {
             Grasscutter.getLogger().trace("Scalar type not supported: {}", valueChange.getValueType());
 
             return;

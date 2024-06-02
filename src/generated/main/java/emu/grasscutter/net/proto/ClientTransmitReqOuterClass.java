@@ -19,56 +19,57 @@ public final class ClientTransmitReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 scene_id = 1;</code>
-     * @return The sceneId.
-     */
-    int getSceneId();
-
-    /**
-     * <code>.Vector pos = 15;</code>
-     * @return Whether the pos field is set.
-     */
-    boolean hasPos();
-    /**
-     * <code>.Vector pos = 15;</code>
-     * @return The pos.
-     */
-    emu.grasscutter.net.proto.VectorOuterClass.Vector getPos();
-    /**
-     * <code>.Vector pos = 15;</code>
-     */
-    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder();
-
-    /**
-     * <code>.TransmitReason reason = 4;</code>
+     * <code>.TransmitReason reason = 5;</code>
      * @return The enum numeric value on the wire for reason.
      */
     int getReasonValue();
     /**
-     * <code>.TransmitReason reason = 4;</code>
+     * <code>.TransmitReason reason = 5;</code>
      * @return The reason.
      */
     emu.grasscutter.net.proto.TransmitReasonOuterClass.TransmitReason getReason();
 
     /**
-     * <code>.Vector rot = 8;</code>
+     * <code>.Vector pos = 9;</code>
+     * @return Whether the pos field is set.
+     */
+    boolean hasPos();
+    /**
+     * <code>.Vector pos = 9;</code>
+     * @return The pos.
+     */
+    emu.grasscutter.net.proto.VectorOuterClass.Vector getPos();
+    /**
+     * <code>.Vector pos = 9;</code>
+     */
+    emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder();
+
+    /**
+     * <code>.Vector rot = 11;</code>
      * @return Whether the rot field is set.
      */
     boolean hasRot();
     /**
-     * <code>.Vector rot = 8;</code>
+     * <code>.Vector rot = 11;</code>
      * @return The rot.
      */
     emu.grasscutter.net.proto.VectorOuterClass.Vector getRot();
     /**
-     * <code>.Vector rot = 8;</code>
+     * <code>.Vector rot = 11;</code>
      */
     emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getRotOrBuilder();
+
+    /**
+     * <code>uint32 scene_id = 13;</code>
+     * @return The sceneId.
+     */
+    int getSceneId();
   }
   /**
    * <pre>
-   * CmdId: 1993
-   * Obf: JCLHHNAJONP
+   * CmdId: 7279
+   * Version: 4.6.0
+   * Obfs: LOHKIHALHIC
    * </pre>
    *
    * Protobuf type {@code ClientTransmitReq}
@@ -116,18 +117,26 @@ public final class ClientTransmitReqOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
-
-              sceneId_ = input.readUInt32();
-              break;
-            }
-            case 32: {
+            case 40: {
               int rawValue = input.readEnum();
 
               reason_ = rawValue;
               break;
             }
-            case 66: {
+            case 74: {
+              emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
+              if (pos_ != null) {
+                subBuilder = pos_.toBuilder();
+              }
+              pos_ = input.readMessage(emu.grasscutter.net.proto.VectorOuterClass.Vector.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(pos_);
+                pos_ = subBuilder.buildPartial();
+              }
+
+              break;
+            }
+            case 90: {
               emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
               if (rot_ != null) {
                 subBuilder = rot_.toBuilder();
@@ -140,17 +149,9 @@ public final class ClientTransmitReqOuterClass {
 
               break;
             }
-            case 122: {
-              emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder subBuilder = null;
-              if (pos_ != null) {
-                subBuilder = pos_.toBuilder();
-              }
-              pos_ = input.readMessage(emu.grasscutter.net.proto.VectorOuterClass.Vector.parser(), extensionRegistry);
-              if (subBuilder != null) {
-                subBuilder.mergeFrom(pos_);
-                pos_ = subBuilder.buildPartial();
-              }
+            case 104: {
 
+              sceneId_ = input.readUInt32();
               break;
             }
             default: {
@@ -185,54 +186,17 @@ public final class ClientTransmitReqOuterClass {
               emu.grasscutter.net.proto.ClientTransmitReqOuterClass.ClientTransmitReq.class, emu.grasscutter.net.proto.ClientTransmitReqOuterClass.ClientTransmitReq.Builder.class);
     }
 
-    public static final int SCENE_ID_FIELD_NUMBER = 1;
-    private int sceneId_;
-    /**
-     * <code>uint32 scene_id = 1;</code>
-     * @return The sceneId.
-     */
-    @java.lang.Override
-    public int getSceneId() {
-      return sceneId_;
-    }
-
-    public static final int POS_FIELD_NUMBER = 15;
-    private emu.grasscutter.net.proto.VectorOuterClass.Vector pos_;
-    /**
-     * <code>.Vector pos = 15;</code>
-     * @return Whether the pos field is set.
-     */
-    @java.lang.Override
-    public boolean hasPos() {
-      return pos_ != null;
-    }
-    /**
-     * <code>.Vector pos = 15;</code>
-     * @return The pos.
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.VectorOuterClass.Vector getPos() {
-      return pos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : pos_;
-    }
-    /**
-     * <code>.Vector pos = 15;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder() {
-      return getPos();
-    }
-
-    public static final int REASON_FIELD_NUMBER = 4;
+    public static final int REASON_FIELD_NUMBER = 5;
     private int reason_;
     /**
-     * <code>.TransmitReason reason = 4;</code>
+     * <code>.TransmitReason reason = 5;</code>
      * @return The enum numeric value on the wire for reason.
      */
     @java.lang.Override public int getReasonValue() {
       return reason_;
     }
     /**
-     * <code>.TransmitReason reason = 4;</code>
+     * <code>.TransmitReason reason = 5;</code>
      * @return The reason.
      */
     @java.lang.Override public emu.grasscutter.net.proto.TransmitReasonOuterClass.TransmitReason getReason() {
@@ -241,10 +205,36 @@ public final class ClientTransmitReqOuterClass {
       return result == null ? emu.grasscutter.net.proto.TransmitReasonOuterClass.TransmitReason.UNRECOGNIZED : result;
     }
 
-    public static final int ROT_FIELD_NUMBER = 8;
+    public static final int POS_FIELD_NUMBER = 9;
+    private emu.grasscutter.net.proto.VectorOuterClass.Vector pos_;
+    /**
+     * <code>.Vector pos = 9;</code>
+     * @return Whether the pos field is set.
+     */
+    @java.lang.Override
+    public boolean hasPos() {
+      return pos_ != null;
+    }
+    /**
+     * <code>.Vector pos = 9;</code>
+     * @return The pos.
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.VectorOuterClass.Vector getPos() {
+      return pos_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : pos_;
+    }
+    /**
+     * <code>.Vector pos = 9;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder() {
+      return getPos();
+    }
+
+    public static final int ROT_FIELD_NUMBER = 11;
     private emu.grasscutter.net.proto.VectorOuterClass.Vector rot_;
     /**
-     * <code>.Vector rot = 8;</code>
+     * <code>.Vector rot = 11;</code>
      * @return Whether the rot field is set.
      */
     @java.lang.Override
@@ -252,7 +242,7 @@ public final class ClientTransmitReqOuterClass {
       return rot_ != null;
     }
     /**
-     * <code>.Vector rot = 8;</code>
+     * <code>.Vector rot = 11;</code>
      * @return The rot.
      */
     @java.lang.Override
@@ -260,11 +250,22 @@ public final class ClientTransmitReqOuterClass {
       return rot_ == null ? emu.grasscutter.net.proto.VectorOuterClass.Vector.getDefaultInstance() : rot_;
     }
     /**
-     * <code>.Vector rot = 8;</code>
+     * <code>.Vector rot = 11;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getRotOrBuilder() {
       return getRot();
+    }
+
+    public static final int SCENE_ID_FIELD_NUMBER = 13;
+    private int sceneId_;
+    /**
+     * <code>uint32 scene_id = 13;</code>
+     * @return The sceneId.
+     */
+    @java.lang.Override
+    public int getSceneId() {
+      return sceneId_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -281,17 +282,17 @@ public final class ClientTransmitReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (sceneId_ != 0) {
-        output.writeUInt32(1, sceneId_);
-      }
       if (reason_ != emu.grasscutter.net.proto.TransmitReasonOuterClass.TransmitReason.TRANSMIT_NONE.getNumber()) {
-        output.writeEnum(4, reason_);
-      }
-      if (rot_ != null) {
-        output.writeMessage(8, getRot());
+        output.writeEnum(5, reason_);
       }
       if (pos_ != null) {
-        output.writeMessage(15, getPos());
+        output.writeMessage(9, getPos());
+      }
+      if (rot_ != null) {
+        output.writeMessage(11, getRot());
+      }
+      if (sceneId_ != 0) {
+        output.writeUInt32(13, sceneId_);
       }
       unknownFields.writeTo(output);
     }
@@ -302,21 +303,21 @@ public final class ClientTransmitReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (sceneId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, sceneId_);
-      }
       if (reason_ != emu.grasscutter.net.proto.TransmitReasonOuterClass.TransmitReason.TRANSMIT_NONE.getNumber()) {
         size += com.google.protobuf.CodedOutputStream
-          .computeEnumSize(4, reason_);
-      }
-      if (rot_ != null) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(8, getRot());
+          .computeEnumSize(5, reason_);
       }
       if (pos_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(15, getPos());
+          .computeMessageSize(9, getPos());
+      }
+      if (rot_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(11, getRot());
+      }
+      if (sceneId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(13, sceneId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -333,19 +334,19 @@ public final class ClientTransmitReqOuterClass {
       }
       emu.grasscutter.net.proto.ClientTransmitReqOuterClass.ClientTransmitReq other = (emu.grasscutter.net.proto.ClientTransmitReqOuterClass.ClientTransmitReq) obj;
 
-      if (getSceneId()
-          != other.getSceneId()) return false;
+      if (reason_ != other.reason_) return false;
       if (hasPos() != other.hasPos()) return false;
       if (hasPos()) {
         if (!getPos()
             .equals(other.getPos())) return false;
       }
-      if (reason_ != other.reason_) return false;
       if (hasRot() != other.hasRot()) return false;
       if (hasRot()) {
         if (!getRot()
             .equals(other.getRot())) return false;
       }
+      if (getSceneId()
+          != other.getSceneId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -357,18 +358,18 @@ public final class ClientTransmitReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + SCENE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getSceneId();
+      hash = (37 * hash) + REASON_FIELD_NUMBER;
+      hash = (53 * hash) + reason_;
       if (hasPos()) {
         hash = (37 * hash) + POS_FIELD_NUMBER;
         hash = (53 * hash) + getPos().hashCode();
       }
-      hash = (37 * hash) + REASON_FIELD_NUMBER;
-      hash = (53 * hash) + reason_;
       if (hasRot()) {
         hash = (37 * hash) + ROT_FIELD_NUMBER;
         hash = (53 * hash) + getRot().hashCode();
       }
+      hash = (37 * hash) + SCENE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getSceneId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -466,8 +467,9 @@ public final class ClientTransmitReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 1993
-     * Obf: JCLHHNAJONP
+     * CmdId: 7279
+     * Version: 4.6.0
+     * Obfs: LOHKIHALHIC
      * </pre>
      *
      * Protobuf type {@code ClientTransmitReq}
@@ -507,7 +509,7 @@ public final class ClientTransmitReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        sceneId_ = 0;
+        reason_ = 0;
 
         if (posBuilder_ == null) {
           pos_ = null;
@@ -515,14 +517,14 @@ public final class ClientTransmitReqOuterClass {
           pos_ = null;
           posBuilder_ = null;
         }
-        reason_ = 0;
-
         if (rotBuilder_ == null) {
           rot_ = null;
         } else {
           rot_ = null;
           rotBuilder_ = null;
         }
+        sceneId_ = 0;
+
         return this;
       }
 
@@ -549,18 +551,18 @@ public final class ClientTransmitReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.ClientTransmitReqOuterClass.ClientTransmitReq buildPartial() {
         emu.grasscutter.net.proto.ClientTransmitReqOuterClass.ClientTransmitReq result = new emu.grasscutter.net.proto.ClientTransmitReqOuterClass.ClientTransmitReq(this);
-        result.sceneId_ = sceneId_;
+        result.reason_ = reason_;
         if (posBuilder_ == null) {
           result.pos_ = pos_;
         } else {
           result.pos_ = posBuilder_.build();
         }
-        result.reason_ = reason_;
         if (rotBuilder_ == null) {
           result.rot_ = rot_;
         } else {
           result.rot_ = rotBuilder_.build();
         }
+        result.sceneId_ = sceneId_;
         onBuilt();
         return result;
       }
@@ -609,17 +611,17 @@ public final class ClientTransmitReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ClientTransmitReqOuterClass.ClientTransmitReq other) {
         if (other == emu.grasscutter.net.proto.ClientTransmitReqOuterClass.ClientTransmitReq.getDefaultInstance()) return this;
-        if (other.getSceneId() != 0) {
-          setSceneId(other.getSceneId());
+        if (other.reason_ != 0) {
+          setReasonValue(other.getReasonValue());
         }
         if (other.hasPos()) {
           mergePos(other.getPos());
         }
-        if (other.reason_ != 0) {
-          setReasonValue(other.getReasonValue());
-        }
         if (other.hasRot()) {
           mergeRot(other.getRot());
+        }
+        if (other.getSceneId() != 0) {
+          setSceneId(other.getSceneId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -650,33 +652,56 @@ public final class ClientTransmitReqOuterClass {
         return this;
       }
 
-      private int sceneId_ ;
+      private int reason_ = 0;
       /**
-       * <code>uint32 scene_id = 1;</code>
-       * @return The sceneId.
+       * <code>.TransmitReason reason = 5;</code>
+       * @return The enum numeric value on the wire for reason.
        */
-      @java.lang.Override
-      public int getSceneId() {
-        return sceneId_;
+      @java.lang.Override public int getReasonValue() {
+        return reason_;
       }
       /**
-       * <code>uint32 scene_id = 1;</code>
-       * @param value The sceneId to set.
+       * <code>.TransmitReason reason = 5;</code>
+       * @param value The enum numeric value on the wire for reason to set.
        * @return This builder for chaining.
        */
-      public Builder setSceneId(int value) {
+      public Builder setReasonValue(int value) {
         
-        sceneId_ = value;
+        reason_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 scene_id = 1;</code>
+       * <code>.TransmitReason reason = 5;</code>
+       * @return The reason.
+       */
+      @java.lang.Override
+      public emu.grasscutter.net.proto.TransmitReasonOuterClass.TransmitReason getReason() {
+        @SuppressWarnings("deprecation")
+        emu.grasscutter.net.proto.TransmitReasonOuterClass.TransmitReason result = emu.grasscutter.net.proto.TransmitReasonOuterClass.TransmitReason.valueOf(reason_);
+        return result == null ? emu.grasscutter.net.proto.TransmitReasonOuterClass.TransmitReason.UNRECOGNIZED : result;
+      }
+      /**
+       * <code>.TransmitReason reason = 5;</code>
+       * @param value The reason to set.
        * @return This builder for chaining.
        */
-      public Builder clearSceneId() {
+      public Builder setReason(emu.grasscutter.net.proto.TransmitReasonOuterClass.TransmitReason value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
         
-        sceneId_ = 0;
+        reason_ = value.getNumber();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.TransmitReason reason = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearReason() {
+        
+        reason_ = 0;
         onChanged();
         return this;
       }
@@ -685,14 +710,14 @@ public final class ClientTransmitReqOuterClass {
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> posBuilder_;
       /**
-       * <code>.Vector pos = 15;</code>
+       * <code>.Vector pos = 9;</code>
        * @return Whether the pos field is set.
        */
       public boolean hasPos() {
         return posBuilder_ != null || pos_ != null;
       }
       /**
-       * <code>.Vector pos = 15;</code>
+       * <code>.Vector pos = 9;</code>
        * @return The pos.
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector getPos() {
@@ -703,7 +728,7 @@ public final class ClientTransmitReqOuterClass {
         }
       }
       /**
-       * <code>.Vector pos = 15;</code>
+       * <code>.Vector pos = 9;</code>
        */
       public Builder setPos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (posBuilder_ == null) {
@@ -719,7 +744,7 @@ public final class ClientTransmitReqOuterClass {
         return this;
       }
       /**
-       * <code>.Vector pos = 15;</code>
+       * <code>.Vector pos = 9;</code>
        */
       public Builder setPos(
           emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
@@ -733,7 +758,7 @@ public final class ClientTransmitReqOuterClass {
         return this;
       }
       /**
-       * <code>.Vector pos = 15;</code>
+       * <code>.Vector pos = 9;</code>
        */
       public Builder mergePos(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (posBuilder_ == null) {
@@ -751,7 +776,7 @@ public final class ClientTransmitReqOuterClass {
         return this;
       }
       /**
-       * <code>.Vector pos = 15;</code>
+       * <code>.Vector pos = 9;</code>
        */
       public Builder clearPos() {
         if (posBuilder_ == null) {
@@ -765,7 +790,7 @@ public final class ClientTransmitReqOuterClass {
         return this;
       }
       /**
-       * <code>.Vector pos = 15;</code>
+       * <code>.Vector pos = 9;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getPosBuilder() {
         
@@ -773,7 +798,7 @@ public final class ClientTransmitReqOuterClass {
         return getPosFieldBuilder().getBuilder();
       }
       /**
-       * <code>.Vector pos = 15;</code>
+       * <code>.Vector pos = 9;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getPosOrBuilder() {
         if (posBuilder_ != null) {
@@ -784,7 +809,7 @@ public final class ClientTransmitReqOuterClass {
         }
       }
       /**
-       * <code>.Vector pos = 15;</code>
+       * <code>.Vector pos = 9;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
@@ -800,72 +825,18 @@ public final class ClientTransmitReqOuterClass {
         return posBuilder_;
       }
 
-      private int reason_ = 0;
-      /**
-       * <code>.TransmitReason reason = 4;</code>
-       * @return The enum numeric value on the wire for reason.
-       */
-      @java.lang.Override public int getReasonValue() {
-        return reason_;
-      }
-      /**
-       * <code>.TransmitReason reason = 4;</code>
-       * @param value The enum numeric value on the wire for reason to set.
-       * @return This builder for chaining.
-       */
-      public Builder setReasonValue(int value) {
-        
-        reason_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.TransmitReason reason = 4;</code>
-       * @return The reason.
-       */
-      @java.lang.Override
-      public emu.grasscutter.net.proto.TransmitReasonOuterClass.TransmitReason getReason() {
-        @SuppressWarnings("deprecation")
-        emu.grasscutter.net.proto.TransmitReasonOuterClass.TransmitReason result = emu.grasscutter.net.proto.TransmitReasonOuterClass.TransmitReason.valueOf(reason_);
-        return result == null ? emu.grasscutter.net.proto.TransmitReasonOuterClass.TransmitReason.UNRECOGNIZED : result;
-      }
-      /**
-       * <code>.TransmitReason reason = 4;</code>
-       * @param value The reason to set.
-       * @return This builder for chaining.
-       */
-      public Builder setReason(emu.grasscutter.net.proto.TransmitReasonOuterClass.TransmitReason value) {
-        if (value == null) {
-          throw new NullPointerException();
-        }
-        
-        reason_ = value.getNumber();
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>.TransmitReason reason = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearReason() {
-        
-        reason_ = 0;
-        onChanged();
-        return this;
-      }
-
       private emu.grasscutter.net.proto.VectorOuterClass.Vector rot_;
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> rotBuilder_;
       /**
-       * <code>.Vector rot = 8;</code>
+       * <code>.Vector rot = 11;</code>
        * @return Whether the rot field is set.
        */
       public boolean hasRot() {
         return rotBuilder_ != null || rot_ != null;
       }
       /**
-       * <code>.Vector rot = 8;</code>
+       * <code>.Vector rot = 11;</code>
        * @return The rot.
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector getRot() {
@@ -876,7 +847,7 @@ public final class ClientTransmitReqOuterClass {
         }
       }
       /**
-       * <code>.Vector rot = 8;</code>
+       * <code>.Vector rot = 11;</code>
        */
       public Builder setRot(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (rotBuilder_ == null) {
@@ -892,7 +863,7 @@ public final class ClientTransmitReqOuterClass {
         return this;
       }
       /**
-       * <code>.Vector rot = 8;</code>
+       * <code>.Vector rot = 11;</code>
        */
       public Builder setRot(
           emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder builderForValue) {
@@ -906,7 +877,7 @@ public final class ClientTransmitReqOuterClass {
         return this;
       }
       /**
-       * <code>.Vector rot = 8;</code>
+       * <code>.Vector rot = 11;</code>
        */
       public Builder mergeRot(emu.grasscutter.net.proto.VectorOuterClass.Vector value) {
         if (rotBuilder_ == null) {
@@ -924,7 +895,7 @@ public final class ClientTransmitReqOuterClass {
         return this;
       }
       /**
-       * <code>.Vector rot = 8;</code>
+       * <code>.Vector rot = 11;</code>
        */
       public Builder clearRot() {
         if (rotBuilder_ == null) {
@@ -938,7 +909,7 @@ public final class ClientTransmitReqOuterClass {
         return this;
       }
       /**
-       * <code>.Vector rot = 8;</code>
+       * <code>.Vector rot = 11;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder getRotBuilder() {
         
@@ -946,7 +917,7 @@ public final class ClientTransmitReqOuterClass {
         return getRotFieldBuilder().getBuilder();
       }
       /**
-       * <code>.Vector rot = 8;</code>
+       * <code>.Vector rot = 11;</code>
        */
       public emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder getRotOrBuilder() {
         if (rotBuilder_ != null) {
@@ -957,7 +928,7 @@ public final class ClientTransmitReqOuterClass {
         }
       }
       /**
-       * <code>.Vector rot = 8;</code>
+       * <code>.Vector rot = 11;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
           emu.grasscutter.net.proto.VectorOuterClass.Vector, emu.grasscutter.net.proto.VectorOuterClass.Vector.Builder, emu.grasscutter.net.proto.VectorOuterClass.VectorOrBuilder> 
@@ -971,6 +942,37 @@ public final class ClientTransmitReqOuterClass {
           rot_ = null;
         }
         return rotBuilder_;
+      }
+
+      private int sceneId_ ;
+      /**
+       * <code>uint32 scene_id = 13;</code>
+       * @return The sceneId.
+       */
+      @java.lang.Override
+      public int getSceneId() {
+        return sceneId_;
+      }
+      /**
+       * <code>uint32 scene_id = 13;</code>
+       * @param value The sceneId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setSceneId(int value) {
+        
+        sceneId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 scene_id = 13;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearSceneId() {
+        
+        sceneId_ = 0;
+        onChanged();
+        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -1039,27 +1041,27 @@ public final class ClientTransmitReqOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\027ClientTransmitReq.proto\032\014Vector.proto\032" +
-      "\024TransmitReason.proto\"r\n\021ClientTransmitR" +
-      "eq\022\020\n\010scene_id\030\001 \001(\r\022\024\n\003pos\030\017 \001(\0132\007.Vect" +
-      "or\022\037\n\006reason\030\004 \001(\0162\017.TransmitReason\022\024\n\003r" +
-      "ot\030\010 \001(\0132\007.VectorB\033\n\031emu.grasscutter.net" +
+      "\n\027ClientTransmitReq.proto\032\024TransmitReaso" +
+      "n.proto\032\014Vector.proto\"r\n\021ClientTransmitR" +
+      "eq\022\037\n\006reason\030\005 \001(\0162\017.TransmitReason\022\024\n\003p" +
+      "os\030\t \001(\0132\007.Vector\022\024\n\003rot\030\013 \001(\0132\007.Vector\022" +
+      "\020\n\010scene_id\030\r \001(\rB\033\n\031emu.grasscutter.net" +
       ".protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
-          emu.grasscutter.net.proto.VectorOuterClass.getDescriptor(),
           emu.grasscutter.net.proto.TransmitReasonOuterClass.getDescriptor(),
+          emu.grasscutter.net.proto.VectorOuterClass.getDescriptor(),
         });
     internal_static_ClientTransmitReq_descriptor =
       getDescriptor().getMessageTypes().get(0);
     internal_static_ClientTransmitReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ClientTransmitReq_descriptor,
-        new java.lang.String[] { "SceneId", "Pos", "Reason", "Rot", });
-    emu.grasscutter.net.proto.VectorOuterClass.getDescriptor();
+        new java.lang.String[] { "Reason", "Pos", "Rot", "SceneId", });
     emu.grasscutter.net.proto.TransmitReasonOuterClass.getDescriptor();
+    emu.grasscutter.net.proto.VectorOuterClass.getDescriptor();
   }
 
   // @@protoc_insertion_point(outer_class_scope)

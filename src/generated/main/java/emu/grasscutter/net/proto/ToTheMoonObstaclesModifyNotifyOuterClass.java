@@ -19,62 +19,63 @@ public final class ToTheMoonObstaclesModifyNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 scene_id = 5;</code>
-     * @return The sceneId.
-     */
-    int getSceneId();
-
-    /**
-     * <code>bool use_edge = 11;</code>
+     * <code>bool use_edge = 3;</code>
      * @return The useEdge.
      */
     boolean getUseEdge();
 
     /**
-     * <code>repeated .ToTheMoonObstacleInfo add_obstacles = 14;</code>
+     * <code>repeated int32 remove_obstacle_ids = 9;</code>
+     * @return A list containing the removeObstacleIds.
+     */
+    java.util.List<java.lang.Integer> getRemoveObstacleIdsList();
+    /**
+     * <code>repeated int32 remove_obstacle_ids = 9;</code>
+     * @return The count of removeObstacleIds.
+     */
+    int getRemoveObstacleIdsCount();
+    /**
+     * <code>repeated int32 remove_obstacle_ids = 9;</code>
+     * @param index The index of the element to return.
+     * @return The removeObstacleIds at the given index.
+     */
+    int getRemoveObstacleIds(int index);
+
+    /**
+     * <code>repeated .ToTheMoonObstacleInfo add_obstacles = 11;</code>
      */
     java.util.List<emu.grasscutter.net.proto.ToTheMoonObstacleInfoOuterClass.ToTheMoonObstacleInfo> 
         getAddObstaclesList();
     /**
-     * <code>repeated .ToTheMoonObstacleInfo add_obstacles = 14;</code>
+     * <code>repeated .ToTheMoonObstacleInfo add_obstacles = 11;</code>
      */
     emu.grasscutter.net.proto.ToTheMoonObstacleInfoOuterClass.ToTheMoonObstacleInfo getAddObstacles(int index);
     /**
-     * <code>repeated .ToTheMoonObstacleInfo add_obstacles = 14;</code>
+     * <code>repeated .ToTheMoonObstacleInfo add_obstacles = 11;</code>
      */
     int getAddObstaclesCount();
     /**
-     * <code>repeated .ToTheMoonObstacleInfo add_obstacles = 14;</code>
+     * <code>repeated .ToTheMoonObstacleInfo add_obstacles = 11;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.ToTheMoonObstacleInfoOuterClass.ToTheMoonObstacleInfoOrBuilder> 
         getAddObstaclesOrBuilderList();
     /**
-     * <code>repeated .ToTheMoonObstacleInfo add_obstacles = 14;</code>
+     * <code>repeated .ToTheMoonObstacleInfo add_obstacles = 11;</code>
      */
     emu.grasscutter.net.proto.ToTheMoonObstacleInfoOuterClass.ToTheMoonObstacleInfoOrBuilder getAddObstaclesOrBuilder(
         int index);
 
     /**
-     * <code>repeated int32 remove_obstacle_ids = 4;</code>
-     * @return A list containing the removeObstacleIds.
+     * <code>uint32 scene_id = 14;</code>
+     * @return The sceneId.
      */
-    java.util.List<java.lang.Integer> getRemoveObstacleIdsList();
-    /**
-     * <code>repeated int32 remove_obstacle_ids = 4;</code>
-     * @return The count of removeObstacleIds.
-     */
-    int getRemoveObstacleIdsCount();
-    /**
-     * <code>repeated int32 remove_obstacle_ids = 4;</code>
-     * @param index The index of the element to return.
-     * @return The removeObstacleIds at the given index.
-     */
-    int getRemoveObstacleIds(int index);
+    int getSceneId();
   }
   /**
    * <pre>
-   * CmdId: 6142
-   * Obf: IHIDLPBJJPA
+   * CmdId: 6170
+   * Version: 4.6.0
+   * Obfs: MFLEOEDJKCG
    * </pre>
    *
    * Protobuf type {@code ToTheMoonObstaclesModifyNotify}
@@ -89,8 +90,8 @@ public final class ToTheMoonObstaclesModifyNotifyOuterClass {
       super(builder);
     }
     private ToTheMoonObstaclesModifyNotify() {
-      addObstacles_ = java.util.Collections.emptyList();
       removeObstacleIds_ = emptyIntList();
+      addObstacles_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
@@ -124,20 +125,25 @@ public final class ToTheMoonObstaclesModifyNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 32: {
-              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
+            case 24: {
+
+              useEdge_ = input.readBool();
+              break;
+            }
+            case 72: {
+              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 removeObstacleIds_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
+                mutable_bitField0_ |= 0x00000001;
               }
               removeObstacleIds_.addInt(input.readInt32());
               break;
             }
-            case 34: {
+            case 74: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
-              if (!((mutable_bitField0_ & 0x00000002) != 0) && input.getBytesUntilLimit() > 0) {
+              if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
                 removeObstacleIds_ = newIntList();
-                mutable_bitField0_ |= 0x00000002;
+                mutable_bitField0_ |= 0x00000001;
               }
               while (input.getBytesUntilLimit() > 0) {
                 removeObstacleIds_.addInt(input.readInt32());
@@ -145,23 +151,18 @@ public final class ToTheMoonObstaclesModifyNotifyOuterClass {
               input.popLimit(limit);
               break;
             }
-            case 40: {
-
-              sceneId_ = input.readUInt32();
-              break;
-            }
-            case 88: {
-
-              useEdge_ = input.readBool();
-              break;
-            }
-            case 114: {
-              if (!((mutable_bitField0_ & 0x00000001) != 0)) {
+            case 90: {
+              if (!((mutable_bitField0_ & 0x00000002) != 0)) {
                 addObstacles_ = new java.util.ArrayList<emu.grasscutter.net.proto.ToTheMoonObstacleInfoOuterClass.ToTheMoonObstacleInfo>();
-                mutable_bitField0_ |= 0x00000001;
+                mutable_bitField0_ |= 0x00000002;
               }
               addObstacles_.add(
                   input.readMessage(emu.grasscutter.net.proto.ToTheMoonObstacleInfoOuterClass.ToTheMoonObstacleInfo.parser(), extensionRegistry));
+              break;
+            }
+            case 112: {
+
+              sceneId_ = input.readUInt32();
               break;
             }
             default: {
@@ -179,10 +180,10 @@ public final class ToTheMoonObstaclesModifyNotifyOuterClass {
         throw new com.google.protobuf.InvalidProtocolBufferException(
             e).setUnfinishedMessage(this);
       } finally {
-        if (((mutable_bitField0_ & 0x00000002) != 0)) {
+        if (((mutable_bitField0_ & 0x00000001) != 0)) {
           removeObstacleIds_.makeImmutable(); // C
         }
-        if (((mutable_bitField0_ & 0x00000001) != 0)) {
+        if (((mutable_bitField0_ & 0x00000002) != 0)) {
           addObstacles_ = java.util.Collections.unmodifiableList(addObstacles_);
         }
         this.unknownFields = unknownFields.build();
@@ -202,21 +203,10 @@ public final class ToTheMoonObstaclesModifyNotifyOuterClass {
               emu.grasscutter.net.proto.ToTheMoonObstaclesModifyNotifyOuterClass.ToTheMoonObstaclesModifyNotify.class, emu.grasscutter.net.proto.ToTheMoonObstaclesModifyNotifyOuterClass.ToTheMoonObstaclesModifyNotify.Builder.class);
     }
 
-    public static final int SCENE_ID_FIELD_NUMBER = 5;
-    private int sceneId_;
-    /**
-     * <code>uint32 scene_id = 5;</code>
-     * @return The sceneId.
-     */
-    @java.lang.Override
-    public int getSceneId() {
-      return sceneId_;
-    }
-
-    public static final int USE_EDGE_FIELD_NUMBER = 11;
+    public static final int USE_EDGE_FIELD_NUMBER = 3;
     private boolean useEdge_;
     /**
-     * <code>bool use_edge = 11;</code>
+     * <code>bool use_edge = 3;</code>
      * @return The useEdge.
      */
     @java.lang.Override
@@ -224,50 +214,10 @@ public final class ToTheMoonObstaclesModifyNotifyOuterClass {
       return useEdge_;
     }
 
-    public static final int ADD_OBSTACLES_FIELD_NUMBER = 14;
-    private java.util.List<emu.grasscutter.net.proto.ToTheMoonObstacleInfoOuterClass.ToTheMoonObstacleInfo> addObstacles_;
-    /**
-     * <code>repeated .ToTheMoonObstacleInfo add_obstacles = 14;</code>
-     */
-    @java.lang.Override
-    public java.util.List<emu.grasscutter.net.proto.ToTheMoonObstacleInfoOuterClass.ToTheMoonObstacleInfo> getAddObstaclesList() {
-      return addObstacles_;
-    }
-    /**
-     * <code>repeated .ToTheMoonObstacleInfo add_obstacles = 14;</code>
-     */
-    @java.lang.Override
-    public java.util.List<? extends emu.grasscutter.net.proto.ToTheMoonObstacleInfoOuterClass.ToTheMoonObstacleInfoOrBuilder> 
-        getAddObstaclesOrBuilderList() {
-      return addObstacles_;
-    }
-    /**
-     * <code>repeated .ToTheMoonObstacleInfo add_obstacles = 14;</code>
-     */
-    @java.lang.Override
-    public int getAddObstaclesCount() {
-      return addObstacles_.size();
-    }
-    /**
-     * <code>repeated .ToTheMoonObstacleInfo add_obstacles = 14;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.ToTheMoonObstacleInfoOuterClass.ToTheMoonObstacleInfo getAddObstacles(int index) {
-      return addObstacles_.get(index);
-    }
-    /**
-     * <code>repeated .ToTheMoonObstacleInfo add_obstacles = 14;</code>
-     */
-    @java.lang.Override
-    public emu.grasscutter.net.proto.ToTheMoonObstacleInfoOuterClass.ToTheMoonObstacleInfoOrBuilder getAddObstaclesOrBuilder(
-        int index) {
-      return addObstacles_.get(index);
-    }
-
-    public static final int REMOVE_OBSTACLE_IDS_FIELD_NUMBER = 4;
+    public static final int REMOVE_OBSTACLE_IDS_FIELD_NUMBER = 9;
     private com.google.protobuf.Internal.IntList removeObstacleIds_;
     /**
-     * <code>repeated int32 remove_obstacle_ids = 4;</code>
+     * <code>repeated int32 remove_obstacle_ids = 9;</code>
      * @return A list containing the removeObstacleIds.
      */
     @java.lang.Override
@@ -276,14 +226,14 @@ public final class ToTheMoonObstaclesModifyNotifyOuterClass {
       return removeObstacleIds_;
     }
     /**
-     * <code>repeated int32 remove_obstacle_ids = 4;</code>
+     * <code>repeated int32 remove_obstacle_ids = 9;</code>
      * @return The count of removeObstacleIds.
      */
     public int getRemoveObstacleIdsCount() {
       return removeObstacleIds_.size();
     }
     /**
-     * <code>repeated int32 remove_obstacle_ids = 4;</code>
+     * <code>repeated int32 remove_obstacle_ids = 9;</code>
      * @param index The index of the element to return.
      * @return The removeObstacleIds at the given index.
      */
@@ -291,6 +241,57 @@ public final class ToTheMoonObstaclesModifyNotifyOuterClass {
       return removeObstacleIds_.getInt(index);
     }
     private int removeObstacleIdsMemoizedSerializedSize = -1;
+
+    public static final int ADD_OBSTACLES_FIELD_NUMBER = 11;
+    private java.util.List<emu.grasscutter.net.proto.ToTheMoonObstacleInfoOuterClass.ToTheMoonObstacleInfo> addObstacles_;
+    /**
+     * <code>repeated .ToTheMoonObstacleInfo add_obstacles = 11;</code>
+     */
+    @java.lang.Override
+    public java.util.List<emu.grasscutter.net.proto.ToTheMoonObstacleInfoOuterClass.ToTheMoonObstacleInfo> getAddObstaclesList() {
+      return addObstacles_;
+    }
+    /**
+     * <code>repeated .ToTheMoonObstacleInfo add_obstacles = 11;</code>
+     */
+    @java.lang.Override
+    public java.util.List<? extends emu.grasscutter.net.proto.ToTheMoonObstacleInfoOuterClass.ToTheMoonObstacleInfoOrBuilder> 
+        getAddObstaclesOrBuilderList() {
+      return addObstacles_;
+    }
+    /**
+     * <code>repeated .ToTheMoonObstacleInfo add_obstacles = 11;</code>
+     */
+    @java.lang.Override
+    public int getAddObstaclesCount() {
+      return addObstacles_.size();
+    }
+    /**
+     * <code>repeated .ToTheMoonObstacleInfo add_obstacles = 11;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.ToTheMoonObstacleInfoOuterClass.ToTheMoonObstacleInfo getAddObstacles(int index) {
+      return addObstacles_.get(index);
+    }
+    /**
+     * <code>repeated .ToTheMoonObstacleInfo add_obstacles = 11;</code>
+     */
+    @java.lang.Override
+    public emu.grasscutter.net.proto.ToTheMoonObstacleInfoOuterClass.ToTheMoonObstacleInfoOrBuilder getAddObstaclesOrBuilder(
+        int index) {
+      return addObstacles_.get(index);
+    }
+
+    public static final int SCENE_ID_FIELD_NUMBER = 14;
+    private int sceneId_;
+    /**
+     * <code>uint32 scene_id = 14;</code>
+     * @return The sceneId.
+     */
+    @java.lang.Override
+    public int getSceneId() {
+      return sceneId_;
+    }
 
     private byte memoizedIsInitialized = -1;
     @java.lang.Override
@@ -307,21 +308,21 @@ public final class ToTheMoonObstaclesModifyNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       getSerializedSize();
+      if (useEdge_ != false) {
+        output.writeBool(3, useEdge_);
+      }
       if (getRemoveObstacleIdsList().size() > 0) {
-        output.writeUInt32NoTag(34);
+        output.writeUInt32NoTag(74);
         output.writeUInt32NoTag(removeObstacleIdsMemoizedSerializedSize);
       }
       for (int i = 0; i < removeObstacleIds_.size(); i++) {
         output.writeInt32NoTag(removeObstacleIds_.getInt(i));
       }
-      if (sceneId_ != 0) {
-        output.writeUInt32(5, sceneId_);
-      }
-      if (useEdge_ != false) {
-        output.writeBool(11, useEdge_);
-      }
       for (int i = 0; i < addObstacles_.size(); i++) {
-        output.writeMessage(14, addObstacles_.get(i));
+        output.writeMessage(11, addObstacles_.get(i));
+      }
+      if (sceneId_ != 0) {
+        output.writeUInt32(14, sceneId_);
       }
       unknownFields.writeTo(output);
     }
@@ -332,6 +333,10 @@ public final class ToTheMoonObstaclesModifyNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
+      if (useEdge_ != false) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBoolSize(3, useEdge_);
+      }
       {
         int dataSize = 0;
         for (int i = 0; i < removeObstacleIds_.size(); i++) {
@@ -346,17 +351,13 @@ public final class ToTheMoonObstaclesModifyNotifyOuterClass {
         }
         removeObstacleIdsMemoizedSerializedSize = dataSize;
       }
-      if (sceneId_ != 0) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(5, sceneId_);
-      }
-      if (useEdge_ != false) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(11, useEdge_);
-      }
       for (int i = 0; i < addObstacles_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(14, addObstacles_.get(i));
+          .computeMessageSize(11, addObstacles_.get(i));
+      }
+      if (sceneId_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeUInt32Size(14, sceneId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -373,14 +374,14 @@ public final class ToTheMoonObstaclesModifyNotifyOuterClass {
       }
       emu.grasscutter.net.proto.ToTheMoonObstaclesModifyNotifyOuterClass.ToTheMoonObstaclesModifyNotify other = (emu.grasscutter.net.proto.ToTheMoonObstaclesModifyNotifyOuterClass.ToTheMoonObstaclesModifyNotify) obj;
 
-      if (getSceneId()
-          != other.getSceneId()) return false;
       if (getUseEdge()
           != other.getUseEdge()) return false;
-      if (!getAddObstaclesList()
-          .equals(other.getAddObstaclesList())) return false;
       if (!getRemoveObstacleIdsList()
           .equals(other.getRemoveObstacleIdsList())) return false;
+      if (!getAddObstaclesList()
+          .equals(other.getAddObstaclesList())) return false;
+      if (getSceneId()
+          != other.getSceneId()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -392,19 +393,19 @@ public final class ToTheMoonObstaclesModifyNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + SCENE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getSceneId();
       hash = (37 * hash) + USE_EDGE_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
           getUseEdge());
-      if (getAddObstaclesCount() > 0) {
-        hash = (37 * hash) + ADD_OBSTACLES_FIELD_NUMBER;
-        hash = (53 * hash) + getAddObstaclesList().hashCode();
-      }
       if (getRemoveObstacleIdsCount() > 0) {
         hash = (37 * hash) + REMOVE_OBSTACLE_IDS_FIELD_NUMBER;
         hash = (53 * hash) + getRemoveObstacleIdsList().hashCode();
       }
+      if (getAddObstaclesCount() > 0) {
+        hash = (37 * hash) + ADD_OBSTACLES_FIELD_NUMBER;
+        hash = (53 * hash) + getAddObstaclesList().hashCode();
+      }
+      hash = (37 * hash) + SCENE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getSceneId();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -502,8 +503,9 @@ public final class ToTheMoonObstaclesModifyNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 6142
-     * Obf: IHIDLPBJJPA
+     * CmdId: 6170
+     * Version: 4.6.0
+     * Obfs: MFLEOEDJKCG
      * </pre>
      *
      * Protobuf type {@code ToTheMoonObstaclesModifyNotify}
@@ -544,18 +546,18 @@ public final class ToTheMoonObstaclesModifyNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        sceneId_ = 0;
-
         useEdge_ = false;
 
+        removeObstacleIds_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
         if (addObstaclesBuilder_ == null) {
           addObstacles_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
+          bitField0_ = (bitField0_ & ~0x00000002);
         } else {
           addObstaclesBuilder_.clear();
         }
-        removeObstacleIds_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000002);
+        sceneId_ = 0;
+
         return this;
       }
 
@@ -583,22 +585,22 @@ public final class ToTheMoonObstaclesModifyNotifyOuterClass {
       public emu.grasscutter.net.proto.ToTheMoonObstaclesModifyNotifyOuterClass.ToTheMoonObstaclesModifyNotify buildPartial() {
         emu.grasscutter.net.proto.ToTheMoonObstaclesModifyNotifyOuterClass.ToTheMoonObstaclesModifyNotify result = new emu.grasscutter.net.proto.ToTheMoonObstaclesModifyNotifyOuterClass.ToTheMoonObstaclesModifyNotify(this);
         int from_bitField0_ = bitField0_;
-        result.sceneId_ = sceneId_;
         result.useEdge_ = useEdge_;
+        if (((bitField0_ & 0x00000001) != 0)) {
+          removeObstacleIds_.makeImmutable();
+          bitField0_ = (bitField0_ & ~0x00000001);
+        }
+        result.removeObstacleIds_ = removeObstacleIds_;
         if (addObstaclesBuilder_ == null) {
-          if (((bitField0_ & 0x00000001) != 0)) {
+          if (((bitField0_ & 0x00000002) != 0)) {
             addObstacles_ = java.util.Collections.unmodifiableList(addObstacles_);
-            bitField0_ = (bitField0_ & ~0x00000001);
+            bitField0_ = (bitField0_ & ~0x00000002);
           }
           result.addObstacles_ = addObstacles_;
         } else {
           result.addObstacles_ = addObstaclesBuilder_.build();
         }
-        if (((bitField0_ & 0x00000002) != 0)) {
-          removeObstacleIds_.makeImmutable();
-          bitField0_ = (bitField0_ & ~0x00000002);
-        }
-        result.removeObstacleIds_ = removeObstacleIds_;
+        result.sceneId_ = sceneId_;
         onBuilt();
         return result;
       }
@@ -647,17 +649,24 @@ public final class ToTheMoonObstaclesModifyNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.ToTheMoonObstaclesModifyNotifyOuterClass.ToTheMoonObstaclesModifyNotify other) {
         if (other == emu.grasscutter.net.proto.ToTheMoonObstaclesModifyNotifyOuterClass.ToTheMoonObstaclesModifyNotify.getDefaultInstance()) return this;
-        if (other.getSceneId() != 0) {
-          setSceneId(other.getSceneId());
-        }
         if (other.getUseEdge() != false) {
           setUseEdge(other.getUseEdge());
+        }
+        if (!other.removeObstacleIds_.isEmpty()) {
+          if (removeObstacleIds_.isEmpty()) {
+            removeObstacleIds_ = other.removeObstacleIds_;
+            bitField0_ = (bitField0_ & ~0x00000001);
+          } else {
+            ensureRemoveObstacleIdsIsMutable();
+            removeObstacleIds_.addAll(other.removeObstacleIds_);
+          }
+          onChanged();
         }
         if (addObstaclesBuilder_ == null) {
           if (!other.addObstacles_.isEmpty()) {
             if (addObstacles_.isEmpty()) {
               addObstacles_ = other.addObstacles_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000002);
             } else {
               ensureAddObstaclesIsMutable();
               addObstacles_.addAll(other.addObstacles_);
@@ -670,7 +679,7 @@ public final class ToTheMoonObstaclesModifyNotifyOuterClass {
               addObstaclesBuilder_.dispose();
               addObstaclesBuilder_ = null;
               addObstacles_ = other.addObstacles_;
-              bitField0_ = (bitField0_ & ~0x00000001);
+              bitField0_ = (bitField0_ & ~0x00000002);
               addObstaclesBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
                    getAddObstaclesFieldBuilder() : null;
@@ -679,15 +688,8 @@ public final class ToTheMoonObstaclesModifyNotifyOuterClass {
             }
           }
         }
-        if (!other.removeObstacleIds_.isEmpty()) {
-          if (removeObstacleIds_.isEmpty()) {
-            removeObstacleIds_ = other.removeObstacleIds_;
-            bitField0_ = (bitField0_ & ~0x00000002);
-          } else {
-            ensureRemoveObstacleIdsIsMutable();
-            removeObstacleIds_.addAll(other.removeObstacleIds_);
-          }
-          onChanged();
+        if (other.getSceneId() != 0) {
+          setSceneId(other.getSceneId());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -719,40 +721,9 @@ public final class ToTheMoonObstaclesModifyNotifyOuterClass {
       }
       private int bitField0_;
 
-      private int sceneId_ ;
-      /**
-       * <code>uint32 scene_id = 5;</code>
-       * @return The sceneId.
-       */
-      @java.lang.Override
-      public int getSceneId() {
-        return sceneId_;
-      }
-      /**
-       * <code>uint32 scene_id = 5;</code>
-       * @param value The sceneId to set.
-       * @return This builder for chaining.
-       */
-      public Builder setSceneId(int value) {
-        
-        sceneId_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 scene_id = 5;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearSceneId() {
-        
-        sceneId_ = 0;
-        onChanged();
-        return this;
-      }
-
       private boolean useEdge_ ;
       /**
-       * <code>bool use_edge = 11;</code>
+       * <code>bool use_edge = 3;</code>
        * @return The useEdge.
        */
       @java.lang.Override
@@ -760,7 +731,7 @@ public final class ToTheMoonObstaclesModifyNotifyOuterClass {
         return useEdge_;
       }
       /**
-       * <code>bool use_edge = 11;</code>
+       * <code>bool use_edge = 3;</code>
        * @param value The useEdge to set.
        * @return This builder for chaining.
        */
@@ -771,7 +742,7 @@ public final class ToTheMoonObstaclesModifyNotifyOuterClass {
         return this;
       }
       /**
-       * <code>bool use_edge = 11;</code>
+       * <code>bool use_edge = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearUseEdge() {
@@ -781,12 +752,91 @@ public final class ToTheMoonObstaclesModifyNotifyOuterClass {
         return this;
       }
 
+      private com.google.protobuf.Internal.IntList removeObstacleIds_ = emptyIntList();
+      private void ensureRemoveObstacleIdsIsMutable() {
+        if (!((bitField0_ & 0x00000001) != 0)) {
+          removeObstacleIds_ = mutableCopy(removeObstacleIds_);
+          bitField0_ |= 0x00000001;
+         }
+      }
+      /**
+       * <code>repeated int32 remove_obstacle_ids = 9;</code>
+       * @return A list containing the removeObstacleIds.
+       */
+      public java.util.List<java.lang.Integer>
+          getRemoveObstacleIdsList() {
+        return ((bitField0_ & 0x00000001) != 0) ?
+                 java.util.Collections.unmodifiableList(removeObstacleIds_) : removeObstacleIds_;
+      }
+      /**
+       * <code>repeated int32 remove_obstacle_ids = 9;</code>
+       * @return The count of removeObstacleIds.
+       */
+      public int getRemoveObstacleIdsCount() {
+        return removeObstacleIds_.size();
+      }
+      /**
+       * <code>repeated int32 remove_obstacle_ids = 9;</code>
+       * @param index The index of the element to return.
+       * @return The removeObstacleIds at the given index.
+       */
+      public int getRemoveObstacleIds(int index) {
+        return removeObstacleIds_.getInt(index);
+      }
+      /**
+       * <code>repeated int32 remove_obstacle_ids = 9;</code>
+       * @param index The index to set the value at.
+       * @param value The removeObstacleIds to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRemoveObstacleIds(
+          int index, int value) {
+        ensureRemoveObstacleIdsIsMutable();
+        removeObstacleIds_.setInt(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated int32 remove_obstacle_ids = 9;</code>
+       * @param value The removeObstacleIds to add.
+       * @return This builder for chaining.
+       */
+      public Builder addRemoveObstacleIds(int value) {
+        ensureRemoveObstacleIdsIsMutable();
+        removeObstacleIds_.addInt(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated int32 remove_obstacle_ids = 9;</code>
+       * @param values The removeObstacleIds to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllRemoveObstacleIds(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureRemoveObstacleIdsIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, removeObstacleIds_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated int32 remove_obstacle_ids = 9;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRemoveObstacleIds() {
+        removeObstacleIds_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
+        onChanged();
+        return this;
+      }
+
       private java.util.List<emu.grasscutter.net.proto.ToTheMoonObstacleInfoOuterClass.ToTheMoonObstacleInfo> addObstacles_ =
         java.util.Collections.emptyList();
       private void ensureAddObstaclesIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
+        if (!((bitField0_ & 0x00000002) != 0)) {
           addObstacles_ = new java.util.ArrayList<emu.grasscutter.net.proto.ToTheMoonObstacleInfoOuterClass.ToTheMoonObstacleInfo>(addObstacles_);
-          bitField0_ |= 0x00000001;
+          bitField0_ |= 0x00000002;
          }
       }
 
@@ -794,7 +844,7 @@ public final class ToTheMoonObstaclesModifyNotifyOuterClass {
           emu.grasscutter.net.proto.ToTheMoonObstacleInfoOuterClass.ToTheMoonObstacleInfo, emu.grasscutter.net.proto.ToTheMoonObstacleInfoOuterClass.ToTheMoonObstacleInfo.Builder, emu.grasscutter.net.proto.ToTheMoonObstacleInfoOuterClass.ToTheMoonObstacleInfoOrBuilder> addObstaclesBuilder_;
 
       /**
-       * <code>repeated .ToTheMoonObstacleInfo add_obstacles = 14;</code>
+       * <code>repeated .ToTheMoonObstacleInfo add_obstacles = 11;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ToTheMoonObstacleInfoOuterClass.ToTheMoonObstacleInfo> getAddObstaclesList() {
         if (addObstaclesBuilder_ == null) {
@@ -804,7 +854,7 @@ public final class ToTheMoonObstaclesModifyNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .ToTheMoonObstacleInfo add_obstacles = 14;</code>
+       * <code>repeated .ToTheMoonObstacleInfo add_obstacles = 11;</code>
        */
       public int getAddObstaclesCount() {
         if (addObstaclesBuilder_ == null) {
@@ -814,7 +864,7 @@ public final class ToTheMoonObstaclesModifyNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .ToTheMoonObstacleInfo add_obstacles = 14;</code>
+       * <code>repeated .ToTheMoonObstacleInfo add_obstacles = 11;</code>
        */
       public emu.grasscutter.net.proto.ToTheMoonObstacleInfoOuterClass.ToTheMoonObstacleInfo getAddObstacles(int index) {
         if (addObstaclesBuilder_ == null) {
@@ -824,7 +874,7 @@ public final class ToTheMoonObstaclesModifyNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .ToTheMoonObstacleInfo add_obstacles = 14;</code>
+       * <code>repeated .ToTheMoonObstacleInfo add_obstacles = 11;</code>
        */
       public Builder setAddObstacles(
           int index, emu.grasscutter.net.proto.ToTheMoonObstacleInfoOuterClass.ToTheMoonObstacleInfo value) {
@@ -841,7 +891,7 @@ public final class ToTheMoonObstaclesModifyNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ToTheMoonObstacleInfo add_obstacles = 14;</code>
+       * <code>repeated .ToTheMoonObstacleInfo add_obstacles = 11;</code>
        */
       public Builder setAddObstacles(
           int index, emu.grasscutter.net.proto.ToTheMoonObstacleInfoOuterClass.ToTheMoonObstacleInfo.Builder builderForValue) {
@@ -855,7 +905,7 @@ public final class ToTheMoonObstaclesModifyNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ToTheMoonObstacleInfo add_obstacles = 14;</code>
+       * <code>repeated .ToTheMoonObstacleInfo add_obstacles = 11;</code>
        */
       public Builder addAddObstacles(emu.grasscutter.net.proto.ToTheMoonObstacleInfoOuterClass.ToTheMoonObstacleInfo value) {
         if (addObstaclesBuilder_ == null) {
@@ -871,7 +921,7 @@ public final class ToTheMoonObstaclesModifyNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ToTheMoonObstacleInfo add_obstacles = 14;</code>
+       * <code>repeated .ToTheMoonObstacleInfo add_obstacles = 11;</code>
        */
       public Builder addAddObstacles(
           int index, emu.grasscutter.net.proto.ToTheMoonObstacleInfoOuterClass.ToTheMoonObstacleInfo value) {
@@ -888,7 +938,7 @@ public final class ToTheMoonObstaclesModifyNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ToTheMoonObstacleInfo add_obstacles = 14;</code>
+       * <code>repeated .ToTheMoonObstacleInfo add_obstacles = 11;</code>
        */
       public Builder addAddObstacles(
           emu.grasscutter.net.proto.ToTheMoonObstacleInfoOuterClass.ToTheMoonObstacleInfo.Builder builderForValue) {
@@ -902,7 +952,7 @@ public final class ToTheMoonObstaclesModifyNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ToTheMoonObstacleInfo add_obstacles = 14;</code>
+       * <code>repeated .ToTheMoonObstacleInfo add_obstacles = 11;</code>
        */
       public Builder addAddObstacles(
           int index, emu.grasscutter.net.proto.ToTheMoonObstacleInfoOuterClass.ToTheMoonObstacleInfo.Builder builderForValue) {
@@ -916,7 +966,7 @@ public final class ToTheMoonObstaclesModifyNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ToTheMoonObstacleInfo add_obstacles = 14;</code>
+       * <code>repeated .ToTheMoonObstacleInfo add_obstacles = 11;</code>
        */
       public Builder addAllAddObstacles(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.ToTheMoonObstacleInfoOuterClass.ToTheMoonObstacleInfo> values) {
@@ -931,12 +981,12 @@ public final class ToTheMoonObstaclesModifyNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ToTheMoonObstacleInfo add_obstacles = 14;</code>
+       * <code>repeated .ToTheMoonObstacleInfo add_obstacles = 11;</code>
        */
       public Builder clearAddObstacles() {
         if (addObstaclesBuilder_ == null) {
           addObstacles_ = java.util.Collections.emptyList();
-          bitField0_ = (bitField0_ & ~0x00000001);
+          bitField0_ = (bitField0_ & ~0x00000002);
           onChanged();
         } else {
           addObstaclesBuilder_.clear();
@@ -944,7 +994,7 @@ public final class ToTheMoonObstaclesModifyNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ToTheMoonObstacleInfo add_obstacles = 14;</code>
+       * <code>repeated .ToTheMoonObstacleInfo add_obstacles = 11;</code>
        */
       public Builder removeAddObstacles(int index) {
         if (addObstaclesBuilder_ == null) {
@@ -957,14 +1007,14 @@ public final class ToTheMoonObstaclesModifyNotifyOuterClass {
         return this;
       }
       /**
-       * <code>repeated .ToTheMoonObstacleInfo add_obstacles = 14;</code>
+       * <code>repeated .ToTheMoonObstacleInfo add_obstacles = 11;</code>
        */
       public emu.grasscutter.net.proto.ToTheMoonObstacleInfoOuterClass.ToTheMoonObstacleInfo.Builder getAddObstaclesBuilder(
           int index) {
         return getAddObstaclesFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .ToTheMoonObstacleInfo add_obstacles = 14;</code>
+       * <code>repeated .ToTheMoonObstacleInfo add_obstacles = 11;</code>
        */
       public emu.grasscutter.net.proto.ToTheMoonObstacleInfoOuterClass.ToTheMoonObstacleInfoOrBuilder getAddObstaclesOrBuilder(
           int index) {
@@ -974,7 +1024,7 @@ public final class ToTheMoonObstaclesModifyNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .ToTheMoonObstacleInfo add_obstacles = 14;</code>
+       * <code>repeated .ToTheMoonObstacleInfo add_obstacles = 11;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.ToTheMoonObstacleInfoOuterClass.ToTheMoonObstacleInfoOrBuilder> 
            getAddObstaclesOrBuilderList() {
@@ -985,14 +1035,14 @@ public final class ToTheMoonObstaclesModifyNotifyOuterClass {
         }
       }
       /**
-       * <code>repeated .ToTheMoonObstacleInfo add_obstacles = 14;</code>
+       * <code>repeated .ToTheMoonObstacleInfo add_obstacles = 11;</code>
        */
       public emu.grasscutter.net.proto.ToTheMoonObstacleInfoOuterClass.ToTheMoonObstacleInfo.Builder addAddObstaclesBuilder() {
         return getAddObstaclesFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.ToTheMoonObstacleInfoOuterClass.ToTheMoonObstacleInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .ToTheMoonObstacleInfo add_obstacles = 14;</code>
+       * <code>repeated .ToTheMoonObstacleInfo add_obstacles = 11;</code>
        */
       public emu.grasscutter.net.proto.ToTheMoonObstacleInfoOuterClass.ToTheMoonObstacleInfo.Builder addAddObstaclesBuilder(
           int index) {
@@ -1000,7 +1050,7 @@ public final class ToTheMoonObstaclesModifyNotifyOuterClass {
             index, emu.grasscutter.net.proto.ToTheMoonObstacleInfoOuterClass.ToTheMoonObstacleInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .ToTheMoonObstacleInfo add_obstacles = 14;</code>
+       * <code>repeated .ToTheMoonObstacleInfo add_obstacles = 11;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.ToTheMoonObstacleInfoOuterClass.ToTheMoonObstacleInfo.Builder> 
            getAddObstaclesBuilderList() {
@@ -1013,7 +1063,7 @@ public final class ToTheMoonObstaclesModifyNotifyOuterClass {
           addObstaclesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
               emu.grasscutter.net.proto.ToTheMoonObstacleInfoOuterClass.ToTheMoonObstacleInfo, emu.grasscutter.net.proto.ToTheMoonObstacleInfoOuterClass.ToTheMoonObstacleInfo.Builder, emu.grasscutter.net.proto.ToTheMoonObstacleInfoOuterClass.ToTheMoonObstacleInfoOrBuilder>(
                   addObstacles_,
-                  ((bitField0_ & 0x00000001) != 0),
+                  ((bitField0_ & 0x00000002) != 0),
                   getParentForChildren(),
                   isClean());
           addObstacles_ = null;
@@ -1021,81 +1071,33 @@ public final class ToTheMoonObstaclesModifyNotifyOuterClass {
         return addObstaclesBuilder_;
       }
 
-      private com.google.protobuf.Internal.IntList removeObstacleIds_ = emptyIntList();
-      private void ensureRemoveObstacleIdsIsMutable() {
-        if (!((bitField0_ & 0x00000002) != 0)) {
-          removeObstacleIds_ = mutableCopy(removeObstacleIds_);
-          bitField0_ |= 0x00000002;
-         }
-      }
+      private int sceneId_ ;
       /**
-       * <code>repeated int32 remove_obstacle_ids = 4;</code>
-       * @return A list containing the removeObstacleIds.
+       * <code>uint32 scene_id = 14;</code>
+       * @return The sceneId.
        */
-      public java.util.List<java.lang.Integer>
-          getRemoveObstacleIdsList() {
-        return ((bitField0_ & 0x00000002) != 0) ?
-                 java.util.Collections.unmodifiableList(removeObstacleIds_) : removeObstacleIds_;
+      @java.lang.Override
+      public int getSceneId() {
+        return sceneId_;
       }
       /**
-       * <code>repeated int32 remove_obstacle_ids = 4;</code>
-       * @return The count of removeObstacleIds.
-       */
-      public int getRemoveObstacleIdsCount() {
-        return removeObstacleIds_.size();
-      }
-      /**
-       * <code>repeated int32 remove_obstacle_ids = 4;</code>
-       * @param index The index of the element to return.
-       * @return The removeObstacleIds at the given index.
-       */
-      public int getRemoveObstacleIds(int index) {
-        return removeObstacleIds_.getInt(index);
-      }
-      /**
-       * <code>repeated int32 remove_obstacle_ids = 4;</code>
-       * @param index The index to set the value at.
-       * @param value The removeObstacleIds to set.
+       * <code>uint32 scene_id = 14;</code>
+       * @param value The sceneId to set.
        * @return This builder for chaining.
        */
-      public Builder setRemoveObstacleIds(
-          int index, int value) {
-        ensureRemoveObstacleIdsIsMutable();
-        removeObstacleIds_.setInt(index, value);
+      public Builder setSceneId(int value) {
+        
+        sceneId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>repeated int32 remove_obstacle_ids = 4;</code>
-       * @param value The removeObstacleIds to add.
+       * <code>uint32 scene_id = 14;</code>
        * @return This builder for chaining.
        */
-      public Builder addRemoveObstacleIds(int value) {
-        ensureRemoveObstacleIdsIsMutable();
-        removeObstacleIds_.addInt(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated int32 remove_obstacle_ids = 4;</code>
-       * @param values The removeObstacleIds to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllRemoveObstacleIds(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureRemoveObstacleIdsIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, removeObstacleIds_);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated int32 remove_obstacle_ids = 4;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRemoveObstacleIds() {
-        removeObstacleIds_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000002);
+      public Builder clearSceneId() {
+        
+        sceneId_ = 0;
         onChanged();
         return this;
       }
@@ -1168,10 +1170,10 @@ public final class ToTheMoonObstaclesModifyNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n$ToTheMoonObstaclesModifyNotify.proto\032\033" +
       "ToTheMoonObstacleInfo.proto\"\220\001\n\036ToTheMoo" +
-      "nObstaclesModifyNotify\022\020\n\010scene_id\030\005 \001(\r" +
-      "\022\020\n\010use_edge\030\013 \001(\010\022-\n\radd_obstacles\030\016 \003(" +
-      "\0132\026.ToTheMoonObstacleInfo\022\033\n\023remove_obst" +
-      "acle_ids\030\004 \003(\005B\033\n\031emu.grasscutter.net.pr" +
+      "nObstaclesModifyNotify\022\020\n\010use_edge\030\003 \001(\010" +
+      "\022\033\n\023remove_obstacle_ids\030\t \003(\005\022-\n\radd_obs" +
+      "tacles\030\013 \003(\0132\026.ToTheMoonObstacleInfo\022\020\n\010" +
+      "scene_id\030\016 \001(\rB\033\n\031emu.grasscutter.net.pr" +
       "otob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1184,7 +1186,7 @@ public final class ToTheMoonObstaclesModifyNotifyOuterClass {
     internal_static_ToTheMoonObstaclesModifyNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_ToTheMoonObstaclesModifyNotify_descriptor,
-        new java.lang.String[] { "SceneId", "UseEdge", "AddObstacles", "RemoveObstacleIds", });
+        new java.lang.String[] { "UseEdge", "RemoveObstacleIds", "AddObstacles", "SceneId", });
     emu.grasscutter.net.proto.ToTheMoonObstacleInfoOuterClass.getDescriptor();
   }
 

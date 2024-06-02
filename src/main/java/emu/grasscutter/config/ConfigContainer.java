@@ -271,7 +271,7 @@ public class ConfigContainer {
         public int sceneEntityLimit = 1000; // Unenforced. TODO: Implement.
 
         public boolean watchGachaConfig = false;
-        public boolean enableShopItems = true;
+        public boolean enableShopItems = false;
         public boolean staminaUsage = true;
         public boolean energyUsage = true;
         public boolean fishhookTeleport = true;
