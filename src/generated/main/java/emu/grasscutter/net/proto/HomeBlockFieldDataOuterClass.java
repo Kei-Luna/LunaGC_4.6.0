@@ -19,10 +19,10 @@ public final class HomeBlockFieldDataOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 furniture_id = 4;</code>
-     * @return The furnitureId.
+     * <code>uint32 guid = 4;</code>
+     * @return The guid.
      */
-    int getFurnitureId();
+    int getGuid();
 
     /**
      * <code>repeated .HomeBlockSubFieldData sub_field_list = 7;</code>
@@ -49,10 +49,10 @@ public final class HomeBlockFieldDataOuterClass {
         int index);
 
     /**
-     * <code>uint32 guid = 9;</code>
-     * @return The guid.
+     * <code>uint32 furniture_id = 9;</code>
+     * @return The furnitureId.
      */
-    int getGuid();
+    int getFurnitureId();
 
     /**
      * <code>.Vector rot = 11;</code>
@@ -137,7 +137,7 @@ public final class HomeBlockFieldDataOuterClass {
               break;
             case 32: {
 
-              furnitureId_ = input.readUInt32();
+              guid_ = input.readUInt32();
               break;
             }
             case 58: {
@@ -151,7 +151,7 @@ public final class HomeBlockFieldDataOuterClass {
             }
             case 72: {
 
-              guid_ = input.readUInt32();
+              furnitureId_ = input.readUInt32();
               break;
             }
             case 90: {
@@ -215,15 +215,15 @@ public final class HomeBlockFieldDataOuterClass {
               emu.grasscutter.net.proto.HomeBlockFieldDataOuterClass.HomeBlockFieldData.class, emu.grasscutter.net.proto.HomeBlockFieldDataOuterClass.HomeBlockFieldData.Builder.class);
     }
 
-    public static final int FURNITURE_ID_FIELD_NUMBER = 4;
-    private int furnitureId_;
+    public static final int GUID_FIELD_NUMBER = 4;
+    private int guid_;
     /**
-     * <code>uint32 furniture_id = 4;</code>
-     * @return The furnitureId.
+     * <code>uint32 guid = 4;</code>
+     * @return The guid.
      */
     @java.lang.Override
-    public int getFurnitureId() {
-      return furnitureId_;
+    public int getGuid() {
+      return guid_;
     }
 
     public static final int SUB_FIELD_LIST_FIELD_NUMBER = 7;
@@ -266,15 +266,15 @@ public final class HomeBlockFieldDataOuterClass {
       return subFieldList_.get(index);
     }
 
-    public static final int GUID_FIELD_NUMBER = 9;
-    private int guid_;
+    public static final int FURNITURE_ID_FIELD_NUMBER = 9;
+    private int furnitureId_;
     /**
-     * <code>uint32 guid = 9;</code>
-     * @return The guid.
+     * <code>uint32 furniture_id = 9;</code>
+     * @return The furnitureId.
      */
     @java.lang.Override
-    public int getGuid() {
-      return guid_;
+    public int getFurnitureId() {
+      return furnitureId_;
     }
 
     public static final int ROT_FIELD_NUMBER = 11;
@@ -343,14 +343,14 @@ public final class HomeBlockFieldDataOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (furnitureId_ != 0) {
-        output.writeUInt32(4, furnitureId_);
+      if (guid_ != 0) {
+        output.writeUInt32(4, guid_);
       }
       for (int i = 0; i < subFieldList_.size(); i++) {
         output.writeMessage(7, subFieldList_.get(i));
       }
-      if (guid_ != 0) {
-        output.writeUInt32(9, guid_);
+      if (furnitureId_ != 0) {
+        output.writeUInt32(9, furnitureId_);
       }
       if (rot_ != null) {
         output.writeMessage(11, getRot());
@@ -367,17 +367,17 @@ public final class HomeBlockFieldDataOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (furnitureId_ != 0) {
+      if (guid_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(4, furnitureId_);
+          .computeUInt32Size(4, guid_);
       }
       for (int i = 0; i < subFieldList_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
           .computeMessageSize(7, subFieldList_.get(i));
       }
-      if (guid_ != 0) {
+      if (furnitureId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, guid_);
+          .computeUInt32Size(9, furnitureId_);
       }
       if (rot_ != null) {
         size += com.google.protobuf.CodedOutputStream
@@ -402,12 +402,12 @@ public final class HomeBlockFieldDataOuterClass {
       }
       emu.grasscutter.net.proto.HomeBlockFieldDataOuterClass.HomeBlockFieldData other = (emu.grasscutter.net.proto.HomeBlockFieldDataOuterClass.HomeBlockFieldData) obj;
 
-      if (getFurnitureId()
-          != other.getFurnitureId()) return false;
-      if (!getSubFieldListList()
-          .equals(other.getSubFieldListList())) return false;
       if (getGuid()
           != other.getGuid()) return false;
+      if (!getSubFieldListList()
+          .equals(other.getSubFieldListList())) return false;
+      if (getFurnitureId()
+          != other.getFurnitureId()) return false;
       if (hasRot() != other.hasRot()) return false;
       if (hasRot()) {
         if (!getRot()
@@ -429,14 +429,14 @@ public final class HomeBlockFieldDataOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + FURNITURE_ID_FIELD_NUMBER;
-      hash = (53 * hash) + getFurnitureId();
+      hash = (37 * hash) + GUID_FIELD_NUMBER;
+      hash = (53 * hash) + getGuid();
       if (getSubFieldListCount() > 0) {
         hash = (37 * hash) + SUB_FIELD_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getSubFieldListList().hashCode();
       }
-      hash = (37 * hash) + GUID_FIELD_NUMBER;
-      hash = (53 * hash) + getGuid();
+      hash = (37 * hash) + FURNITURE_ID_FIELD_NUMBER;
+      hash = (53 * hash) + getFurnitureId();
       if (hasRot()) {
         hash = (37 * hash) + ROT_FIELD_NUMBER;
         hash = (53 * hash) + getRot().hashCode();
@@ -583,7 +583,7 @@ public final class HomeBlockFieldDataOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        furnitureId_ = 0;
+        guid_ = 0;
 
         if (subFieldListBuilder_ == null) {
           subFieldList_ = java.util.Collections.emptyList();
@@ -591,7 +591,7 @@ public final class HomeBlockFieldDataOuterClass {
         } else {
           subFieldListBuilder_.clear();
         }
-        guid_ = 0;
+        furnitureId_ = 0;
 
         if (rotBuilder_ == null) {
           rot_ = null;
@@ -632,7 +632,7 @@ public final class HomeBlockFieldDataOuterClass {
       public emu.grasscutter.net.proto.HomeBlockFieldDataOuterClass.HomeBlockFieldData buildPartial() {
         emu.grasscutter.net.proto.HomeBlockFieldDataOuterClass.HomeBlockFieldData result = new emu.grasscutter.net.proto.HomeBlockFieldDataOuterClass.HomeBlockFieldData(this);
         int from_bitField0_ = bitField0_;
-        result.furnitureId_ = furnitureId_;
+        result.guid_ = guid_;
         if (subFieldListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             subFieldList_ = java.util.Collections.unmodifiableList(subFieldList_);
@@ -642,7 +642,7 @@ public final class HomeBlockFieldDataOuterClass {
         } else {
           result.subFieldList_ = subFieldListBuilder_.build();
         }
-        result.guid_ = guid_;
+        result.furnitureId_ = furnitureId_;
         if (rotBuilder_ == null) {
           result.rot_ = rot_;
         } else {
@@ -701,8 +701,8 @@ public final class HomeBlockFieldDataOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.HomeBlockFieldDataOuterClass.HomeBlockFieldData other) {
         if (other == emu.grasscutter.net.proto.HomeBlockFieldDataOuterClass.HomeBlockFieldData.getDefaultInstance()) return this;
-        if (other.getFurnitureId() != 0) {
-          setFurnitureId(other.getFurnitureId());
+        if (other.getGuid() != 0) {
+          setGuid(other.getGuid());
         }
         if (subFieldListBuilder_ == null) {
           if (!other.subFieldList_.isEmpty()) {
@@ -730,8 +730,8 @@ public final class HomeBlockFieldDataOuterClass {
             }
           }
         }
-        if (other.getGuid() != 0) {
-          setGuid(other.getGuid());
+        if (other.getFurnitureId() != 0) {
+          setFurnitureId(other.getFurnitureId());
         }
         if (other.hasRot()) {
           mergeRot(other.getRot());
@@ -769,33 +769,33 @@ public final class HomeBlockFieldDataOuterClass {
       }
       private int bitField0_;
 
-      private int furnitureId_ ;
+      private int guid_ ;
       /**
-       * <code>uint32 furniture_id = 4;</code>
-       * @return The furnitureId.
+       * <code>uint32 guid = 4;</code>
+       * @return The guid.
        */
       @java.lang.Override
-      public int getFurnitureId() {
-        return furnitureId_;
+      public int getGuid() {
+        return guid_;
       }
       /**
-       * <code>uint32 furniture_id = 4;</code>
-       * @param value The furnitureId to set.
+       * <code>uint32 guid = 4;</code>
+       * @param value The guid to set.
        * @return This builder for chaining.
        */
-      public Builder setFurnitureId(int value) {
+      public Builder setGuid(int value) {
         
-        furnitureId_ = value;
+        guid_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 furniture_id = 4;</code>
+       * <code>uint32 guid = 4;</code>
        * @return This builder for chaining.
        */
-      public Builder clearFurnitureId() {
+      public Builder clearGuid() {
         
-        furnitureId_ = 0;
+        guid_ = 0;
         onChanged();
         return this;
       }
@@ -1040,33 +1040,33 @@ public final class HomeBlockFieldDataOuterClass {
         return subFieldListBuilder_;
       }
 
-      private int guid_ ;
+      private int furnitureId_ ;
       /**
-       * <code>uint32 guid = 9;</code>
-       * @return The guid.
+       * <code>uint32 furniture_id = 9;</code>
+       * @return The furnitureId.
        */
       @java.lang.Override
-      public int getGuid() {
-        return guid_;
+      public int getFurnitureId() {
+        return furnitureId_;
       }
       /**
-       * <code>uint32 guid = 9;</code>
-       * @param value The guid to set.
+       * <code>uint32 furniture_id = 9;</code>
+       * @param value The furnitureId to set.
        * @return This builder for chaining.
        */
-      public Builder setGuid(int value) {
+      public Builder setFurnitureId(int value) {
         
-        guid_ = value;
+        furnitureId_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 guid = 9;</code>
+       * <code>uint32 furniture_id = 9;</code>
        * @return This builder for chaining.
        */
-      public Builder clearGuid() {
+      public Builder clearFurnitureId() {
         
-        guid_ = 0;
+        furnitureId_ = 0;
         onChanged();
         return this;
       }
@@ -1377,9 +1377,9 @@ public final class HomeBlockFieldDataOuterClass {
     java.lang.String[] descriptorData = {
       "\n\030HomeBlockFieldData.proto\032\014Vector.proto" +
       "\032\033HomeBlockSubFieldData.proto\"\224\001\n\022HomeBl" +
-      "ockFieldData\022\024\n\014furniture_id\030\004 \001(\r\022.\n\016su" +
-      "b_field_list\030\007 \003(\0132\026.HomeBlockSubFieldDa" +
-      "ta\022\014\n\004guid\030\t \001(\r\022\024\n\003rot\030\013 \001(\0132\007.Vector\022\024" +
+      "ockFieldData\022\014\n\004guid\030\004 \001(\r\022.\n\016sub_field_" +
+      "list\030\007 \003(\0132\026.HomeBlockSubFieldData\022\024\n\014fu" +
+      "rniture_id\030\t \001(\r\022\024\n\003rot\030\013 \001(\0132\007.Vector\022\024" +
       "\n\003pos\030\016 \001(\0132\007.VectorB\033\n\031emu.grasscutter." +
       "net.protob\006proto3"
     };
@@ -1394,7 +1394,7 @@ public final class HomeBlockFieldDataOuterClass {
     internal_static_HomeBlockFieldData_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_HomeBlockFieldData_descriptor,
-        new java.lang.String[] { "FurnitureId", "SubFieldList", "Guid", "Rot", "Pos", });
+        new java.lang.String[] { "Guid", "SubFieldList", "FurnitureId", "Rot", "Pos", });
     emu.grasscutter.net.proto.VectorOuterClass.getDescriptor();
     emu.grasscutter.net.proto.HomeBlockSubFieldDataOuterClass.getDescriptor();
   }
