@@ -19,15 +19,16 @@ public final class HomeChangeBgmReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 bgm_id = 1;</code>
+     * <code>uint32 bgm_id = 15;</code>
      * @return The bgmId.
      */
     int getBgmId();
   }
   /**
    * <pre>
-   * CmdId: 28739
-   * Obf: EONIDLEEINE
+   * 4.6.0
+   * Obf: JLPKIHPFKEI
+   * CmdId: 26137
    * </pre>
    *
    * Protobuf type {@code HomeChangeBgmReq}
@@ -74,7 +75,7 @@ public final class HomeChangeBgmReqOuterClass {
             case 0:
               done = true;
               break;
-            case 8: {
+            case 120: {
 
               bgmId_ = input.readUInt32();
               break;
@@ -111,10 +112,10 @@ public final class HomeChangeBgmReqOuterClass {
               emu.grasscutter.net.proto.HomeChangeBgmReqOuterClass.HomeChangeBgmReq.class, emu.grasscutter.net.proto.HomeChangeBgmReqOuterClass.HomeChangeBgmReq.Builder.class);
     }
 
-    public static final int BGM_ID_FIELD_NUMBER = 1;
+    public static final int BGM_ID_FIELD_NUMBER = 15;
     private int bgmId_;
     /**
-     * <code>uint32 bgm_id = 1;</code>
+     * <code>uint32 bgm_id = 15;</code>
      * @return The bgmId.
      */
     @java.lang.Override
@@ -137,7 +138,7 @@ public final class HomeChangeBgmReqOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (bgmId_ != 0) {
-        output.writeUInt32(1, bgmId_);
+        output.writeUInt32(15, bgmId_);
       }
       unknownFields.writeTo(output);
     }
@@ -150,7 +151,7 @@ public final class HomeChangeBgmReqOuterClass {
       size = 0;
       if (bgmId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(1, bgmId_);
+          .computeUInt32Size(15, bgmId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -279,8 +280,9 @@ public final class HomeChangeBgmReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 28739
-     * Obf: EONIDLEEINE
+     * 4.6.0
+     * Obf: JLPKIHPFKEI
+     * CmdId: 26137
      * </pre>
      *
      * Protobuf type {@code HomeChangeBgmReq}
@@ -431,7 +433,7 @@ public final class HomeChangeBgmReqOuterClass {
 
       private int bgmId_ ;
       /**
-       * <code>uint32 bgm_id = 1;</code>
+       * <code>uint32 bgm_id = 15;</code>
        * @return The bgmId.
        */
       @java.lang.Override
@@ -439,7 +441,7 @@ public final class HomeChangeBgmReqOuterClass {
         return bgmId_;
       }
       /**
-       * <code>uint32 bgm_id = 1;</code>
+       * <code>uint32 bgm_id = 15;</code>
        * @param value The bgmId to set.
        * @return This builder for chaining.
        */
@@ -450,7 +452,7 @@ public final class HomeChangeBgmReqOuterClass {
         return this;
       }
       /**
-       * <code>uint32 bgm_id = 1;</code>
+       * <code>uint32 bgm_id = 15;</code>
        * @return This builder for chaining.
        */
       public Builder clearBgmId() {
@@ -527,7 +529,7 @@ public final class HomeChangeBgmReqOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\026HomeChangeBgmReq.proto\"\"\n\020HomeChangeBg" +
-      "mReq\022\016\n\006bgm_id\030\001 \001(\rB\033\n\031emu.grasscutter." +
+      "mReq\022\016\n\006bgm_id\030\017 \001(\rB\033\n\031emu.grasscutter." +
       "net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
