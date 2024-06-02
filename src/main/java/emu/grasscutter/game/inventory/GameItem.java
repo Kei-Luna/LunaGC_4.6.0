@@ -353,11 +353,13 @@ public class GameItem {
     }
 
     public ItemHint toItemHintProto() {
-        return ItemHint.newBuilder()
-                .setItemId(getItemId())
-                .setCount(getCount())
-                .setIsNew(this.isNewItem())
-                .build();
+        var proto = ItemHint.newBuilder()
+            .setItemId(getItemId())
+            .setGuid(this.getGuid())
+            .setCount(getCount())
+            .setIsNew(this.isNewItem())
+            .build();
+        return proto;
     }
 
     public ItemParam toItemParam() {

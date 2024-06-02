@@ -181,10 +181,10 @@ public class Inventory extends BasePlayerManager implements Iterable<GameItem> {
         if (changedItems.size() == 0) {
             return;
         }
+        getPlayer().sendPacket(new PacketStoreItemChangeNotify(changedItems));
         if (reason != null) {
             getPlayer().sendPacket(new PacketItemAddHintNotify(items, reason));
         }
-        getPlayer().sendPacket(new PacketStoreItemChangeNotify(changedItems));
     }
 
     /**
