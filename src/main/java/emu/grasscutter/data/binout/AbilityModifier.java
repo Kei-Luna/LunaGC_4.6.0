@@ -274,7 +274,7 @@ public class AbilityModifier implements Serializable {
 
         @SerializedName(
                 value = "amount",
-                alternate = {"LNFMOCKIAGK", "PDLLIFICICJ", "cdRatio", "LKDJMGOJHAH"})
+                alternate = {"LNFMOCKIAGK", "PDLLIFICICJ", "LKDJMGOJHAH"})
         public DynamicFloat amount = DynamicFloat.ZERO;
 
         @SerializedName(
