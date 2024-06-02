@@ -286,16 +286,37 @@ public final class PacketOpcodes {
     public static final int AvatarPromoteReq = 2232;//4.6.0
     public static final int AvatarPromoteRsp = 24702;//sus 3564 or 28138 or 24702
     public static final int AvatarPropChangeReasonNotify = 5955;//4.6.0
-
-
-
-
-
     public static final int HomePreChangeEditModeNotify = 24506;//4.6.0
     public static final int HomeChangeEditModeReq = 26622;//4.6.0
     public static final int HomeChangeEditModeRsp = 27049;//4.6.0
     public static final int HomeGetArrangementInfoReq = 25934;//4.6.0
     public static final int HomeGetArrangementInfoRsp = 614;//4.6.0
+    public static final int HomeEnterEditModeFinishReq = 29297;//4.6.0
+    public static final int EntityAiKillSelfNotify = 29500;//4.6.0
+    public static final int HomeModuleSeenReq = 4142;//4.6.0
+    public static final int HomeModuleSeenRsp = 24843;//4.6.0
+    public static final int HomeResourceTakeHomeCoinReq = 26197;//4.6.0
+    public static final int HomeResourceTakeHomeCoinRsp = 841;//4.6.0
+    public static final int GetHomeLevelUpRewardReq = 2113;//4.6.0
+    public static final int GetHomeLevelUpRewardRsp = 21591;//4.6.0
+    public static final int HomeAvatarTalkRsp = 23974;//4.6.0
+    public static final int HomeAvatarTalkFinishInfoNotify = 20101;//4.6.0
+    public static final int EntityAiSyncNotify = 6518;//4.6.0
+    public static final int EvtAiSyncCombatThreatInfoNotify = 28434;//4.6.0
+    public static final int FurnitureCurModuleArrangeCountNotify = 9434;//4.6.0
+    public static final int HomeSceneInitFinishReq = 20490;//4.6.0
+    public static final int HomeSceneInitFinishRsp = 28744;//4.6.0
+    public static final int HomeResourceTakeFetterExpReq = 25649;//4.6.0
+    public static final int HomeResourceTakeFetterExpRsp = 7202;//4.6.0
+    public static final int HomeGetBasicInfoReq = 6205;//4.6.0
+    public static final int GetPlayerHomeCompInfoReq = 24864;//4.6.0
+    public static final int HomeAllUnlockedBgmIdListNotify = 4053;//4.6.0
+    public static final int HomeNewUnlockedBgmIdListNotify = 9140;//4.6.0
+    public static final int HomeChangeBgmNotify = 4213;//4.6.0
+    public static final int HomeChangeBgmReq = 26137;//4.6.0
+    public static final int HomeSceneJumpReq = 24159;//4.6.0
+    public static final int HomeSceneJumpRsp = 8266;//4.6.0
+
 
 
 
@@ -880,8 +901,6 @@ public final class PacketOpcodes {
     public static final int EnterSceneWeatherAreaNotify = 3997317;     //4.0.0
     public static final int EnterTrialAvatarActivityDungeonReq = 3997738;     //4.0.0
     public static final int EnterTrialAvatarActivityDungeonRsp = 3998751;     //4.0.0
-    public static final int EntityAiKillSelfNotify = 3992606;     //4.0.0
-    public static final int EntityAiSyncNotify = 3995447;     //4.0.0
     public static final int EntityAuthorityChangeNotify = 3993913;     //4.0.0
     public static final int EntityConfigHashNotify = 39920100;     //4.0.0
     public static final int EntityFightPropNotify = 3999760;     //4.0.0
@@ -891,7 +910,6 @@ public final class PacketOpcodes {
     public static final int EntityMoveRoomNotify = 39926583;     //4.0.0
     public static final int EquipRoguelikeRuneReq = 3995188;     //4.0.0
     public static final int EquipRoguelikeRuneRsp = 3993632;     //4.0.0
-    public static final int EvtAiSyncCombatThreatInfoNotify = 3997714;     //4.0.0
     public static final int EvtAiSyncSkillCdNotify = 3996471;     //4.0.0
     public static final int EvtAnimatorParameterNotify = 3998912;     //4.0.0
     public static final int EvtAnimatorStateChangedNotify = 3991539;     //4.0.0
@@ -1039,7 +1057,6 @@ public final class PacketOpcodes {
     public static final int FungusRenameReq = 39929655;     //4.0.0
     public static final int FungusRenameRsp = 3995576;     //4.0.0
     public static final int FunitureMakeMakeInfoChangeNotify = 39925867;     //4.0.0
-    public static final int FurnitureCurModuleArrangeCountNotify = 3992948;     //4.0.0
     public static final int FurnitureMakeBeHelpedNotify = 39922219;     //4.0.0
     public static final int FurnitureMakeCancelReq = 39929262;     //4.0.0
     public static final int FurnitureMakeCancelRsp = 39927277;     //4.0.0
@@ -1254,8 +1271,6 @@ public final class PacketOpcodes {
     public static final int GetGameplayRecommendationRsp = 39923992;     //4.0.0
     public static final int GetHomeExchangeWoodInfoReq = 39920885;     //4.0.0
     public static final int GetHomeExchangeWoodInfoRsp = 39927659;     //4.0.0
-    public static final int GetHomeLevelUpRewardReq = 3995653;     //4.0.0
-    public static final int GetHomeLevelUpRewardRsp = 3997279;     //4.0.0
     public static final int GetHuntingOfferRewardReq = 3994392;     //4.0.0
     public static final int GetHuntingOfferRewardRsp = 39926705;     //4.0.0
     public static final int GetMapAreaReq = 3998758;     //4.0.0
@@ -1278,7 +1293,6 @@ public final class PacketOpcodes {
     public static final int GetPlayerAskFriendListRsp = 39920085;     //4.0.0
     public static final int GetPlayerBlacklistReq = 39925338;     //4.0.0
     public static final int GetPlayerBlacklistRsp = 39920310;     //4.0.0
-    public static final int GetPlayerHomeCompInfoReq = 3993709;     //4.0.0
     public static final int GetPlayerMpModeAvailabilityReq = 39926251;     //4.0.0
     public static final int GetPlayerMpModeAvailabilityRsp = 39928762;     //4.0.0
     public static final int GetPushTipsRewardReq = 3999818;     //4.0.0
@@ -1381,7 +1395,6 @@ public final class PacketOpcodes {
     public static final int HideAndSeekSetReadyRsp = 39927329;     //4.0.0
     public static final int HideAndSeekSettleNotify = 39921206;     //4.0.0
     public static final int HitTreeNotify = 3998766;     //4.0.0
-    public static final int HomeAllUnlockedBgmIdListNotify = 39923471;     //4.0.0
     public static final int HomeAvatarAllFinishRewardNotify = 3999497;     //4.0.0
     public static final int HomeAvatarCostumeChangeNotify = 39928208;     //4.0.0
     public static final int HomeAvatarRewardEventGetReq = 39926566;     //4.0.0
@@ -1392,16 +1405,12 @@ public final class PacketOpcodes {
     public static final int HomeAvatarSummonEventRsp = 39927614;     //4.0.0
     public static final int HomeAvatarSummonFinishReq = 39924791;     //4.0.0
     public static final int HomeAvatarSummonFinishRsp = 3998835;     //4.0.0
-    public static final int HomeAvatarTalkFinishInfoNotify = 3991817;     //4.0.0
     public static final int HomeAvatarTalkReq = 39922316;     //4.0.0
-    public static final int HomeAvatarTalkRsp = 3991147;     //4.0.0
     public static final int HomeAvtarAllFinishRewardNotify = 3999713;     //4.0.0
     public static final int HomeBalloonGalleryScoreNotify = 39920418;     //4.0.0
     public static final int HomeBalloonGallerySettleNotify = 3995349;     //4.0.0
     public static final int HomeBlockNotify = 39920667;     //4.0.0
     public static final int HomeBlueprintInfoNotify = 39920806;     //4.0.0
-    public static final int HomeChangeBgmNotify = 3992031;     //4.0.0
-    public static final int HomeChangeBgmReq = 39928739;     //4.0.0
     public static final int HomeChangeBgmRsp = 3996476;     //4.0.0
     public static final int HomeClearGroupRecordReq = 39928348;     //4.0.0
     public static final int HomeClearGroupRecordRsp = 39921872;     //4.0.0
@@ -1412,13 +1421,11 @@ public final class PacketOpcodes {
     public static final int HomeDeleteBlueprintRsp = 3992973;     //4.0.0
     public static final int HomeEditCustomFurnitureReq = 39927340;     //4.0.0
     public static final int HomeEditCustomFurnitureRsp = 39923160;     //4.0.0
-    public static final int HomeEnterEditModeFinishReq = 3994149;     //4.0.0
     public static final int HomeEnterEditModeFinishRsp = 39921433;     //4.0.0
     public static final int HomeExchangeWoodReq = 39920572;     //4.0.0
     public static final int HomeExchangeWoodRsp = 3991815;     //4.0.0
     public static final int HomeFishFarmingInfoNotify = 399136;     //4.0.0
     public static final int HomeGalleryInPlayingNotify = 39920552;     //4.0.0
-    public static final int HomeGetBasicInfoReq = 39927734;     //4.0.0
     public static final int HomeGetBlueprintSlotInfoReq = 3992811;     //4.0.0
     public static final int HomeGetBlueprintSlotInfoRsp = 3996723;     //4.0.0
     public static final int HomeGetFishFarmingInfoReq = 39921521;     //4.0.0
@@ -1437,9 +1444,6 @@ public final class PacketOpcodes {
     public static final int HomeLimitedShopInfoNotify = 39925226;     //4.0.0
     public static final int HomeLimitedShopInfoReq = 39923396;     //4.0.0
     public static final int HomeLimitedShopInfoRsp = 3998746;     //4.0.0
-    public static final int HomeModuleSeenReq = 39927692;     //4.0.0
-    public static final int HomeModuleSeenRsp = 3993944;     //4.0.0
-    public static final int HomeNewUnlockedBgmIdListNotify = 3991089;     //4.0.0
     public static final int HomePictureFrameInfoNotify = 39924256;     //4.0.0
     public static final int HomePlantFieldNotify = 3995595;     //4.0.0
     public static final int HomePlantInfoNotify = 39927599;     //4.0.0
@@ -1453,16 +1457,8 @@ public final class PacketOpcodes {
     public static final int HomePreviewBlueprintRsp = 39923117;     //4.0.0
     public static final int HomePriorCheckNotify = 3991456;     //4.0.0
     public static final int HomeRacingGallerySettleNotify = 39920371;     //4.0.0
-    public static final int HomeResourceTakeFetterExpReq = 3994383;     //4.0.0
-    public static final int HomeResourceTakeFetterExpRsp = 3999922;     //4.0.0
-    public static final int HomeResourceTakeHomeCoinReq = 3994728;     //4.0.0
-    public static final int HomeResourceTakeHomeCoinRsp = 3996329;     //4.0.0
     public static final int HomeSaveArrangementNoChangeReq = 3992521;     //4.0.0
     public static final int HomeSaveArrangementNoChangeRsp = 39920696;     //4.0.0
-    public static final int HomeSceneInitFinishReq = 39927778;     //4.0.0
-    public static final int HomeSceneInitFinishRsp = 3999038;     //4.0.0
-    public static final int HomeSceneJumpReq = 3992482;     //4.0.0
-    public static final int HomeSceneJumpRsp = 39922825;     //4.0.0
     public static final int HomeScenePointFishFarmingInfoNotify = 3991346;     //4.0.0
     public static final int HomeSearchBlueprintReq = 3991240;     //4.0.0
     public static final int HomeSearchBlueprintRsp = 3999491;     //4.0.0
