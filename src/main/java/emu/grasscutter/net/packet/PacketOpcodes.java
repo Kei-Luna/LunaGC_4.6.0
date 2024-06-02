@@ -282,7 +282,10 @@ public final class PacketOpcodes {
     public static final int CalcWeaponUpgradeReturnItemsReq = 20664;//4.6.0
     public static final int CalcWeaponUpgradeReturnItemsRsp = 20136;//4.6.0
     public static final int GetAllUnlockNameCardReq = 245;//4.6.0
-    public static final int GetAllUnlockNameCardRsp = 1123123;//????
+    public static final int GetAllUnlockNameCardRsp = 7078;//4.6.0
+    public static final int AvatarPromoteReq = 2232;//4.6.0
+    public static final int AvatarPromoteRsp = 24702;//sus 3564 or 28138 or 24702
+    public static final int AvatarPropChangeReasonNotify = 5955;//4.6.0
 
 
 
@@ -412,9 +415,6 @@ public final class PacketOpcodes {
     public static final int AvatarExpeditionStartReq = 399751;     //4.0.0
     public static final int AvatarExpeditionStartRsp = 39928415;     //4.0.0
     public static final int AvatarFollowRouteNotify = 3996834;     //4.0.0
-    public static final int AvatarPromoteReq = 39923288;     //4.0.0
-    public static final int AvatarPromoteRsp = 3998592;     //4.0.0
-    public static final int AvatarPropChangeReasonNotify = 3993637;     //4.0.0
     public static final int AvatarSatiationDataNotify = 399704;     //4.0.0
     public static final int AvatarSkillDepotChangeNotify = 3993748;     //4.0.0
     public static final int AvatarSkillMaxChargeCountNotify = 39922843;     //4.0.0
