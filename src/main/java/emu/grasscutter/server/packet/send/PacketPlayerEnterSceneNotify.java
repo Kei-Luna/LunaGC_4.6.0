@@ -134,7 +134,7 @@ public class PacketPlayerEnterSceneNotify extends BasePacket {
                                         + "-"
                                         + (int) (System.currentTimeMillis() / 1000)
                                         + "-"
-                                        + 27573);
+                                        + 105092);
 
         this.setData(proto);
     }
