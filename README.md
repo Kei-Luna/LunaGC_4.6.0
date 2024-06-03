@@ -156,6 +156,6 @@ Method 2:
 - Forging
 - Some inventory stuff
 - Weapon refinement
-- Registration in-game (use console)
+- Registration in-game using the box when logging in for first time (use console to make account instead)
 - Activating constellations (not to be confused with `setConst` command)
 ### Even more
