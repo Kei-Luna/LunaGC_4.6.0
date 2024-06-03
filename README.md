@@ -82,6 +82,14 @@ chmod +x gradlew
 - If you get an error related to MongoDB connection timeout, check if the mongodb service is running. On windows: Press windows key and r then type `services.msc`, look for mongodb server and if it's not started then start it by right clicking on it and start. On linux, you can do `systemctl status mongod` to see if it's running, if it isn't then type `systemctl start mongod`. However, if you get error 14 on linux change the owner of the mongodb folder and the .sock file (`sudo chown -R mongodb:mongodb /var/lib/mongodb` and `sudo chown mongodb:mongodb /tmp/mongodb-27017.sock` then try to start the service again.)
 
 
+## How to make or get custom banners?
+- Well, you can get pre-made ones from this [github repo](https://github.com/Zhaokugua/Grasscutter_Banners)
+- Rename the file you chose to download to Banners.json and replace it with the already-existing one in the data folder.
+- The repo also offers a file which contains all of the banners, to use it follow the same procedure mentioned above.
+### Making custom banners
+- If you want to make a custom banner for a character or weapon, you'll need to know the prefabPath, the titlePath and the character/item IDs.
+- Fun fact: You can set any item to be on the rateUp, even if it's a 4* instead of a 5*.
+
 ## Handmade Handbook (tested)
 - Create accounts: /account <username>
 - Get all achievements: /am grantall
@@ -90,7 +98,6 @@ chmod +x gradlew
 - Unlimited stamina: /prop ns 0
 - Unlimited energy: /prop UnlimitedEnergy 1
 - Recharge energy: /er
-- Get rid of that damn fog: /NoFog on|off
 - Set constellation for selected character: /setConst <number 1 to 6>
 - Get rid of the skill cooldown: /stat cdr 99
 - Change weather: /weather <sunny/rain/cloudy/thunderstorm/snow/mist>
@@ -134,6 +141,21 @@ Method 2:
 - You can combine the bold, italic and colored text
 - Restore to server-default UID: `/uid default`
 
-## Tips
-- Don't do quests
-- Serenitea pot is bugged
+## What doesn't work
+- All of the quests
+- Serenitea pot
+- Abyss
+- Mail
+- Battlepass
+- Events
+- Claiming AR/Commission rewards
+- Claiming bosses drops
+- City reputation
+- Character ascension
+- Gadgets
+- Forging
+- Some inventory stuff
+- Weapon refinement
+- Registration in-game using the box when logging in for first time (use console to make account instead)
+- Activating constellations (not to be confused with `setConst` command)
+### Even more
