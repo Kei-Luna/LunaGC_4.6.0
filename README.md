@@ -157,5 +157,5 @@ Method 2:
 - Some inventory stuff
 - Weapon refinement
 - Registration in-game (use console)
-- Activating constellations
+- Activating constellations (not to be confused with `setConst` command)
 ### Even more
