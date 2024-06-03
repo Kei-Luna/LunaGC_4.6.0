@@ -32,6 +32,7 @@ unsafe fn thread_func() {
     Console::AllocConsole().unwrap();
 
     println!("Genshin Impact encryption patch\nMade by xeondev");
+    println!("For LunaGC, by Kei-Luna");
     println!("UserAssembly: {:X}", base);
 
     let mut module_manager = MODULE_MANAGER.write().unwrap();
