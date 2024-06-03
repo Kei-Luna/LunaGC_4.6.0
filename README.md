@@ -141,6 +141,21 @@ Method 2:
 - You can combine the bold, italic and colored text
 - Restore to server-default UID: `/uid default`
 
-## Tips
-- Don't do quests
-- Serenitea pot is bugged
+## What doesn't work
+- All of the quests
+- Serenitea pot
+- Abyss
+- Mail
+- Battlepass
+- Events
+- Claiming AR/Commission rewards
+- Claiming bosses drops
+- City reputation
+- Character ascension
+- Gadgets
+- Forging
+- Some inventory stuff
+- Weapon refinement
+- Registration in-game (use console)
+- Activating constellations
+### Even more
