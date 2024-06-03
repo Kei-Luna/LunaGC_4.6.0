@@ -19,15 +19,15 @@ public final class AvatarPromoteReqOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint64 guid = 5;</code>
-     * @return The guid.
+     * <code>uint64 avatar_guid = 14;</code>
+     * @return The avatarGuid.
      */
-    long getGuid();
+    long getAvatarGuid();
   }
   /**
    * <pre>
-   * CmdId: 23288
-   * Obf: MLDPIPBFIKB
+   * 4.6.0
+   * CmdId: 2232
    * </pre>
    *
    * Protobuf type {@code AvatarPromoteReq}
@@ -74,9 +74,9 @@ public final class AvatarPromoteReqOuterClass {
             case 0:
               done = true;
               break;
-            case 40: {
+            case 112: {
 
-              guid_ = input.readUInt64();
+              avatarGuid_ = input.readUInt64();
               break;
             }
             default: {
@@ -111,15 +111,15 @@ public final class AvatarPromoteReqOuterClass {
               emu.grasscutter.net.proto.AvatarPromoteReqOuterClass.AvatarPromoteReq.class, emu.grasscutter.net.proto.AvatarPromoteReqOuterClass.AvatarPromoteReq.Builder.class);
     }
 
-    public static final int GUID_FIELD_NUMBER = 5;
-    private long guid_;
+    public static final int AVATAR_GUID_FIELD_NUMBER = 14;
+    private long avatarGuid_;
     /**
-     * <code>uint64 guid = 5;</code>
-     * @return The guid.
+     * <code>uint64 avatar_guid = 14;</code>
+     * @return The avatarGuid.
      */
     @java.lang.Override
-    public long getGuid() {
-      return guid_;
+    public long getAvatarGuid() {
+      return avatarGuid_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -136,8 +136,8 @@ public final class AvatarPromoteReqOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (guid_ != 0L) {
-        output.writeUInt64(5, guid_);
+      if (avatarGuid_ != 0L) {
+        output.writeUInt64(14, avatarGuid_);
       }
       unknownFields.writeTo(output);
     }
@@ -148,9 +148,9 @@ public final class AvatarPromoteReqOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (guid_ != 0L) {
+      if (avatarGuid_ != 0L) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt64Size(5, guid_);
+          .computeUInt64Size(14, avatarGuid_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -167,8 +167,8 @@ public final class AvatarPromoteReqOuterClass {
       }
       emu.grasscutter.net.proto.AvatarPromoteReqOuterClass.AvatarPromoteReq other = (emu.grasscutter.net.proto.AvatarPromoteReqOuterClass.AvatarPromoteReq) obj;
 
-      if (getGuid()
-          != other.getGuid()) return false;
+      if (getAvatarGuid()
+          != other.getAvatarGuid()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -180,9 +180,9 @@ public final class AvatarPromoteReqOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + GUID_FIELD_NUMBER;
+      hash = (37 * hash) + AVATAR_GUID_FIELD_NUMBER;
       hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
-          getGuid());
+          getAvatarGuid());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -280,8 +280,8 @@ public final class AvatarPromoteReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 23288
-     * Obf: MLDPIPBFIKB
+     * 4.6.0
+     * CmdId: 2232
      * </pre>
      *
      * Protobuf type {@code AvatarPromoteReq}
@@ -321,7 +321,7 @@ public final class AvatarPromoteReqOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        guid_ = 0L;
+        avatarGuid_ = 0L;
 
         return this;
       }
@@ -349,7 +349,7 @@ public final class AvatarPromoteReqOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.AvatarPromoteReqOuterClass.AvatarPromoteReq buildPartial() {
         emu.grasscutter.net.proto.AvatarPromoteReqOuterClass.AvatarPromoteReq result = new emu.grasscutter.net.proto.AvatarPromoteReqOuterClass.AvatarPromoteReq(this);
-        result.guid_ = guid_;
+        result.avatarGuid_ = avatarGuid_;
         onBuilt();
         return result;
       }
@@ -398,8 +398,8 @@ public final class AvatarPromoteReqOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.AvatarPromoteReqOuterClass.AvatarPromoteReq other) {
         if (other == emu.grasscutter.net.proto.AvatarPromoteReqOuterClass.AvatarPromoteReq.getDefaultInstance()) return this;
-        if (other.getGuid() != 0L) {
-          setGuid(other.getGuid());
+        if (other.getAvatarGuid() != 0L) {
+          setAvatarGuid(other.getAvatarGuid());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -430,33 +430,33 @@ public final class AvatarPromoteReqOuterClass {
         return this;
       }
 
-      private long guid_ ;
+      private long avatarGuid_ ;
       /**
-       * <code>uint64 guid = 5;</code>
-       * @return The guid.
+       * <code>uint64 avatar_guid = 14;</code>
+       * @return The avatarGuid.
        */
       @java.lang.Override
-      public long getGuid() {
-        return guid_;
+      public long getAvatarGuid() {
+        return avatarGuid_;
       }
       /**
-       * <code>uint64 guid = 5;</code>
-       * @param value The guid to set.
+       * <code>uint64 avatar_guid = 14;</code>
+       * @param value The avatarGuid to set.
        * @return This builder for chaining.
        */
-      public Builder setGuid(long value) {
+      public Builder setAvatarGuid(long value) {
         
-        guid_ = value;
+        avatarGuid_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint64 guid = 5;</code>
+       * <code>uint64 avatar_guid = 14;</code>
        * @return This builder for chaining.
        */
-      public Builder clearGuid() {
+      public Builder clearAvatarGuid() {
         
-        guid_ = 0L;
+        avatarGuid_ = 0L;
         onChanged();
         return this;
       }
@@ -527,9 +527,9 @@ public final class AvatarPromoteReqOuterClass {
       descriptor;
   static {
     java.lang.String[] descriptorData = {
-      "\n\026AvatarPromoteReq.proto\" \n\020AvatarPromot" +
-      "eReq\022\014\n\004guid\030\005 \001(\004B\033\n\031emu.grasscutter.ne" +
-      "t.protob\006proto3"
+      "\n\026AvatarPromoteReq.proto\"\'\n\020AvatarPromot" +
+      "eReq\022\023\n\013avatar_guid\030\016 \001(\004B\033\n\031emu.grasscu" +
+      "tter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
@@ -540,7 +540,7 @@ public final class AvatarPromoteReqOuterClass {
     internal_static_AvatarPromoteReq_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_AvatarPromoteReq_descriptor,
-        new java.lang.String[] { "Guid", });
+        new java.lang.String[] { "AvatarGuid", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)
