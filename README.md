@@ -82,6 +82,14 @@ chmod +x gradlew
 - If you get an error related to MongoDB connection timeout, check if the mongodb service is running. On windows: Press windows key and r then type `services.msc`, look for mongodb server and if it's not started then start it by right clicking on it and start. On linux, you can do `systemctl status mongod` to see if it's running, if it isn't then type `systemctl start mongod`. However, if you get error 14 on linux change the owner of the mongodb folder and the .sock file (`sudo chown -R mongodb:mongodb /var/lib/mongodb` and `sudo chown mongodb:mongodb /tmp/mongodb-27017.sock` then try to start the service again.)
 
 
+## How to make or get custom banners?
+- Well, you can get pre-made ones from this [github repo](https://github.com/Zhaokugua/Grasscutter_Banners)
+- Rename the file you chose to download to Banners.json and replace it with the already-existing one in the data folder.
+- The repo also offers a file which contains all of the banners, to use it follow the same procedure mentioned above.
+### Making custom banners
+- If you want to make a custom banner for a character, you'll need to know the prefabPath, the titlePath and the character/item IDs.
+- Fun fact: You can set any item to be on the rateUp, even if it's a 4* instead of a 5*.
+
 ## Handmade Handbook (tested)
 - Create accounts: /account <username>
 - Get all achievements: /am grantall
