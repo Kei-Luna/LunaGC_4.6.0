@@ -87,7 +87,7 @@ chmod +x gradlew
 - Rename the file you chose to download to Banners.json and replace it with the already-existing one in the data folder.
 - The repo also offers a file which contains all of the banners, to use it follow the same procedure mentioned above.
 ### Making custom banners
-- If you want to make a custom banner for a character, you'll need to know the prefabPath, the titlePath and the character/item IDs.
+- If you want to make a custom banner for a character or weapon, you'll need to know the prefabPath, the titlePath and the character/item IDs.
 - Fun fact: You can set any item to be on the rateUp, even if it's a 4* instead of a 5*.
 
 ## Handmade Handbook (tested)
