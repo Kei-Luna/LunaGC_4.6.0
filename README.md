@@ -98,7 +98,6 @@ chmod +x gradlew
 - Unlimited stamina: /prop ns 0
 - Unlimited energy: /prop UnlimitedEnergy 1
 - Recharge energy: /er
-- Get rid of that damn fog: /NoFog on|off
 - Set constellation for selected character: /setConst <number 1 to 6>
 - Get rid of the skill cooldown: /stat cdr 99
 - Change weather: /weather <sunny/rain/cloudy/thunderstorm/snow/mist>
