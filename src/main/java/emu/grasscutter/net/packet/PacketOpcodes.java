@@ -284,9 +284,38 @@ public final class PacketOpcodes {
     public static final int GetAllUnlockNameCardReq = 245;//4.6.0
     public static final int GetAllUnlockNameCardRsp = 7078;//4.6.0
     public static final int AvatarPromoteReq = 2232;//4.6.0
-    public static final int AvatarPromoteRsp = 3564;//sus 3959 or 24702 or 5228 or 28138 or 3564
+    public static final int AvatarPromoteRsp = 3564;//4.6.0
     public static final int AvatarPropChangeReasonNotify = 5955;//4.6.0
-
+    public static final int HomePreChangeEditModeNotify = 24506;//4.6.0
+    public static final int HomeChangeEditModeReq = 26622;//4.6.0
+    public static final int HomeChangeEditModeRsp = 27049;//4.6.0
+    public static final int HomeGetArrangementInfoReq = 25934;//4.6.0
+    public static final int HomeGetArrangementInfoRsp = 614;//4.6.0
+    public static final int HomeEnterEditModeFinishReq = 29297;//4.6.0
+    public static final int EntityAiKillSelfNotify = 29500;//4.6.0
+    public static final int HomeModuleSeenReq = 4142;//4.6.0
+    public static final int HomeModuleSeenRsp = 24843;//4.6.0
+    public static final int HomeResourceTakeHomeCoinReq = 26197;//4.6.0
+    public static final int HomeResourceTakeHomeCoinRsp = 841;//4.6.0
+    public static final int GetHomeLevelUpRewardReq = 2113;//4.6.0
+    public static final int GetHomeLevelUpRewardRsp = 21591;//4.6.0
+    public static final int HomeAvatarTalkRsp = 23974;//4.6.0
+    public static final int HomeAvatarTalkFinishInfoNotify = 20101;//4.6.0
+    public static final int EntityAiSyncNotify = 6518;//4.6.0
+    public static final int EvtAiSyncCombatThreatInfoNotify = 28434;//4.6.0
+    public static final int FurnitureCurModuleArrangeCountNotify = 9434;//4.6.0
+    public static final int HomeSceneInitFinishReq = 20490;//4.6.0
+    public static final int HomeSceneInitFinishRsp = 28744;//4.6.0
+    public static final int HomeResourceTakeFetterExpReq = 25649;//4.6.0
+    public static final int HomeResourceTakeFetterExpRsp = 7202;//4.6.0
+    public static final int HomeGetBasicInfoReq = 6205;//4.6.0
+    public static final int GetPlayerHomeCompInfoReq = 24864;//4.6.0
+    public static final int HomeAllUnlockedBgmIdListNotify = 4053;//4.6.0
+    public static final int HomeNewUnlockedBgmIdListNotify = 9140;//4.6.0
+    public static final int HomeChangeBgmNotify = 4213;//4.6.0
+    public static final int HomeChangeBgmReq = 26137;//4.6.0
+    public static final int HomeSceneJumpReq = 24159;//4.6.0
+    public static final int HomeSceneJumpRsp = 8266;//4.6.0
 
 
 
