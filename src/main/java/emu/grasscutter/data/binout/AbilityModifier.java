@@ -56,6 +56,7 @@ public class AbilityModifier implements Serializable {
             AddChargeBarValue,
             AddClimateMeter,
             AddElementDurability,
+            AddHPDebts,
             AddGlobalValue,
             AddGlobalValueToTarget,
             AddRegionalPlayVarValue,

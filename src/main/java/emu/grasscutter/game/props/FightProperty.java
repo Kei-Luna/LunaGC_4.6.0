@@ -80,6 +80,7 @@ public enum FightProperty {
     FIGHT_PROP_CUR_ATTACK(2001),
     FIGHT_PROP_CUR_DEFENSE(2002),
     FIGHT_PROP_CUR_SPEED(2003),
+    FIGHT_PROP_CUR_HP_DEBTS(2004),
     FIGHT_PROP_NONEXTRA_ATTACK(3000),
     FIGHT_PROP_NONEXTRA_DEFENSE(3001),
     FIGHT_PROP_NONEXTRA_CRITICAL(3002),
@@ -142,6 +143,7 @@ public enum FightProperty {
                     entry("pyro%", FIGHT_PROP_FIRE_ADD_HURT),
                     // Other stats
                     entry("maxhp", FIGHT_PROP_MAX_HP),
+                    entry("debt", FIGHT_PROP_CUR_HP_DEBTS),
                     entry("dmg", FIGHT_PROP_ADD_HURT), // This seems to get reset after attacks
                     entry("cdr", FIGHT_PROP_SKILL_CD_MINUS_RATIO),
                     entry("heali", FIGHT_PROP_HEALED_ADD),
@@ -175,6 +177,7 @@ public enum FightProperty {
                     FIGHT_PROP_CUR_HP,
                     FIGHT_PROP_MAX_HP,
                     FIGHT_PROP_CUR_ATTACK,
+                    FIGHT_PROP_CUR_HP_DEBTS,
                     FIGHT_PROP_CUR_DEFENSE);
     private static final Map<FightProperty, CompoundProperty> compoundProperties =
             Map.ofEntries(
