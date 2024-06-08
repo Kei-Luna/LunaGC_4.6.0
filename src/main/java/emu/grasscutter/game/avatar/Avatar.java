@@ -530,6 +530,8 @@ public class Avatar {
                         ? this.getFightProperty(this.getSkillDepot().getElementType().getCurEnergyProp())
                         : 0f;
 
+        float hpDebt = this.getFightProperty(FightProperty.FIGHT_PROP_CUR_HP_DEBTS);
+
         // Clear properties
         this.getFightProperties().clear();
 
@@ -720,6 +722,11 @@ public class Avatar {
         this.setFightProperty(
                 FightProperty.FIGHT_PROP_CUR_HP,
                 this.getFightProperty(FightProperty.FIGHT_PROP_MAX_HP) * hpPercent);
+
+        // Set HP Debts
+        this.setFightProperty(
+                FightProperty.FIGHT_PROP_CUR_HP_DEBTS,
+                hpDebt);
 
         // Packet
         if (getPlayer() != null && getPlayer().hasSentLoginPackets()) {

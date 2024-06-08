@@ -4,6 +4,7 @@ import emu.grasscutter.game.entity.GameEntity;
 import emu.grasscutter.game.props.FightProperty;
 import emu.grasscutter.net.packet.*;
 import emu.grasscutter.net.proto.ChangeEnergyReasonOuterClass.ChangeEnergyReason;
+import emu.grasscutter.net.proto.ChangeHpDebtsOuterClass;
 import emu.grasscutter.net.proto.ChangeHpReasonOuterClass.ChangeHpReason;
 import emu.grasscutter.net.proto.EntityFightPropChangeReasonNotifyOuterClass.EntityFightPropChangeReasonNotify;
 import emu.grasscutter.net.proto.PropChangeReasonOuterClass.PropChangeReason;
@@ -81,6 +82,25 @@ public class PacketEntityFightPropChangeReasonNotify extends BasePacket {
                         .setPropDelta(value)
                         .setChangeEnergyReason(reason)
                         .build();
+
+        this.setData(proto);
+    }
+
+    public PacketEntityFightPropChangeReasonNotify(
+        GameEntity entity,
+        FightProperty prop,
+        Float value,
+        PropChangeReason reason,
+        ChangeHpDebtsOuterClass.ChangeHpDebts changeHpDebts) {
+        super(PacketOpcodes.EntityFightPropChangeReasonNotify);
+        EntityFightPropChangeReasonNotify proto =
+            EntityFightPropChangeReasonNotify.newBuilder()
+                .setEntityId(entity.getId())
+                .setPropType(prop.getId())
+                .setPropDelta(value)
+                .setReason(reason)
+                .setChangeHpDebts(changeHpDebts)
+                .build();
 
         this.setData(proto);
     }
