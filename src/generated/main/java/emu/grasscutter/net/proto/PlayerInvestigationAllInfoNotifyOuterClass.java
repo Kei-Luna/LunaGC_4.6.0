@@ -68,8 +68,7 @@ public final class PlayerInvestigationAllInfoNotifyOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 23777
-   * Obf: AOFKNKKENHJ
+   * CmdId: 23844
    * </pre>
    *
    * Protobuf type {@code PlayerInvestigationAllInfoNotify}
@@ -427,8 +426,7 @@ public final class PlayerInvestigationAllInfoNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 23777
-     * Obf: AOFKNKKENHJ
+     * CmdId: 23844
      * </pre>
      *
      * Protobuf type {@code PlayerInvestigationAllInfoNotify}

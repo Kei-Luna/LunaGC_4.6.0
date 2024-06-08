@@ -19,39 +19,39 @@ public final class TowerRecordHandbookRspOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .TowerMonthlyDetail monthly_detail_list = 3;</code>
+     * <code>int32 retcode = 4;</code>
+     * @return The retcode.
+     */
+    int getRetcode();
+
+    /**
+     * <code>repeated .TowerMonthlyDetail monthly_detail_list = 14;</code>
      */
     java.util.List<emu.grasscutter.net.proto.TowerMonthlyDetailOuterClass.TowerMonthlyDetail> 
         getMonthlyDetailListList();
     /**
-     * <code>repeated .TowerMonthlyDetail monthly_detail_list = 3;</code>
+     * <code>repeated .TowerMonthlyDetail monthly_detail_list = 14;</code>
      */
     emu.grasscutter.net.proto.TowerMonthlyDetailOuterClass.TowerMonthlyDetail getMonthlyDetailList(int index);
     /**
-     * <code>repeated .TowerMonthlyDetail monthly_detail_list = 3;</code>
+     * <code>repeated .TowerMonthlyDetail monthly_detail_list = 14;</code>
      */
     int getMonthlyDetailListCount();
     /**
-     * <code>repeated .TowerMonthlyDetail monthly_detail_list = 3;</code>
+     * <code>repeated .TowerMonthlyDetail monthly_detail_list = 14;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.TowerMonthlyDetailOuterClass.TowerMonthlyDetailOrBuilder> 
         getMonthlyDetailListOrBuilderList();
     /**
-     * <code>repeated .TowerMonthlyDetail monthly_detail_list = 3;</code>
+     * <code>repeated .TowerMonthlyDetail monthly_detail_list = 14;</code>
      */
     emu.grasscutter.net.proto.TowerMonthlyDetailOuterClass.TowerMonthlyDetailOrBuilder getMonthlyDetailListOrBuilder(
         int index);
-
-    /**
-     * <code>int32 retcode = 10;</code>
-     * @return The retcode.
-     */
-    int getRetcode();
   }
   /**
    * <pre>
-   * CmdId: 27785
-   * Obf: FBOMFHOAGBM
+   * 4.6.0
+   * CmdId: 1883
    * </pre>
    *
    * Protobuf type {@code TowerRecordHandbookRsp}
@@ -100,18 +100,18 @@ public final class TowerRecordHandbookRspOuterClass {
             case 0:
               done = true;
               break;
-            case 26: {
+            case 32: {
+
+              retcode_ = input.readInt32();
+              break;
+            }
+            case 114: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 monthlyDetailList_ = new java.util.ArrayList<emu.grasscutter.net.proto.TowerMonthlyDetailOuterClass.TowerMonthlyDetail>();
                 mutable_bitField0_ |= 0x00000001;
               }
               monthlyDetailList_.add(
                   input.readMessage(emu.grasscutter.net.proto.TowerMonthlyDetailOuterClass.TowerMonthlyDetail.parser(), extensionRegistry));
-              break;
-            }
-            case 80: {
-
-              retcode_ = input.readInt32();
               break;
             }
             default: {
@@ -149,17 +149,28 @@ public final class TowerRecordHandbookRspOuterClass {
               emu.grasscutter.net.proto.TowerRecordHandbookRspOuterClass.TowerRecordHandbookRsp.class, emu.grasscutter.net.proto.TowerRecordHandbookRspOuterClass.TowerRecordHandbookRsp.Builder.class);
     }
 
-    public static final int MONTHLY_DETAIL_LIST_FIELD_NUMBER = 3;
+    public static final int RETCODE_FIELD_NUMBER = 4;
+    private int retcode_;
+    /**
+     * <code>int32 retcode = 4;</code>
+     * @return The retcode.
+     */
+    @java.lang.Override
+    public int getRetcode() {
+      return retcode_;
+    }
+
+    public static final int MONTHLY_DETAIL_LIST_FIELD_NUMBER = 14;
     private java.util.List<emu.grasscutter.net.proto.TowerMonthlyDetailOuterClass.TowerMonthlyDetail> monthlyDetailList_;
     /**
-     * <code>repeated .TowerMonthlyDetail monthly_detail_list = 3;</code>
+     * <code>repeated .TowerMonthlyDetail monthly_detail_list = 14;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.TowerMonthlyDetailOuterClass.TowerMonthlyDetail> getMonthlyDetailListList() {
       return monthlyDetailList_;
     }
     /**
-     * <code>repeated .TowerMonthlyDetail monthly_detail_list = 3;</code>
+     * <code>repeated .TowerMonthlyDetail monthly_detail_list = 14;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.TowerMonthlyDetailOuterClass.TowerMonthlyDetailOrBuilder> 
@@ -167,37 +178,26 @@ public final class TowerRecordHandbookRspOuterClass {
       return monthlyDetailList_;
     }
     /**
-     * <code>repeated .TowerMonthlyDetail monthly_detail_list = 3;</code>
+     * <code>repeated .TowerMonthlyDetail monthly_detail_list = 14;</code>
      */
     @java.lang.Override
     public int getMonthlyDetailListCount() {
       return monthlyDetailList_.size();
     }
     /**
-     * <code>repeated .TowerMonthlyDetail monthly_detail_list = 3;</code>
+     * <code>repeated .TowerMonthlyDetail monthly_detail_list = 14;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.TowerMonthlyDetailOuterClass.TowerMonthlyDetail getMonthlyDetailList(int index) {
       return monthlyDetailList_.get(index);
     }
     /**
-     * <code>repeated .TowerMonthlyDetail monthly_detail_list = 3;</code>
+     * <code>repeated .TowerMonthlyDetail monthly_detail_list = 14;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.TowerMonthlyDetailOuterClass.TowerMonthlyDetailOrBuilder getMonthlyDetailListOrBuilder(
         int index) {
       return monthlyDetailList_.get(index);
-    }
-
-    public static final int RETCODE_FIELD_NUMBER = 10;
-    private int retcode_;
-    /**
-     * <code>int32 retcode = 10;</code>
-     * @return The retcode.
-     */
-    @java.lang.Override
-    public int getRetcode() {
-      return retcode_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -214,11 +214,11 @@ public final class TowerRecordHandbookRspOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      for (int i = 0; i < monthlyDetailList_.size(); i++) {
-        output.writeMessage(3, monthlyDetailList_.get(i));
-      }
       if (retcode_ != 0) {
-        output.writeInt32(10, retcode_);
+        output.writeInt32(4, retcode_);
+      }
+      for (int i = 0; i < monthlyDetailList_.size(); i++) {
+        output.writeMessage(14, monthlyDetailList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -229,13 +229,13 @@ public final class TowerRecordHandbookRspOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      for (int i = 0; i < monthlyDetailList_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(3, monthlyDetailList_.get(i));
-      }
       if (retcode_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(10, retcode_);
+          .computeInt32Size(4, retcode_);
+      }
+      for (int i = 0; i < monthlyDetailList_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(14, monthlyDetailList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -252,10 +252,10 @@ public final class TowerRecordHandbookRspOuterClass {
       }
       emu.grasscutter.net.proto.TowerRecordHandbookRspOuterClass.TowerRecordHandbookRsp other = (emu.grasscutter.net.proto.TowerRecordHandbookRspOuterClass.TowerRecordHandbookRsp) obj;
 
-      if (!getMonthlyDetailListList()
-          .equals(other.getMonthlyDetailListList())) return false;
       if (getRetcode()
           != other.getRetcode()) return false;
+      if (!getMonthlyDetailListList()
+          .equals(other.getMonthlyDetailListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -267,12 +267,12 @@ public final class TowerRecordHandbookRspOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
+      hash = (53 * hash) + getRetcode();
       if (getMonthlyDetailListCount() > 0) {
         hash = (37 * hash) + MONTHLY_DETAIL_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getMonthlyDetailListList().hashCode();
       }
-      hash = (37 * hash) + RETCODE_FIELD_NUMBER;
-      hash = (53 * hash) + getRetcode();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -370,8 +370,8 @@ public final class TowerRecordHandbookRspOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 27785
-     * Obf: FBOMFHOAGBM
+     * 4.6.0
+     * CmdId: 1883
      * </pre>
      *
      * Protobuf type {@code TowerRecordHandbookRsp}
@@ -412,14 +412,14 @@ public final class TowerRecordHandbookRspOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        retcode_ = 0;
+
         if (monthlyDetailListBuilder_ == null) {
           monthlyDetailList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
           monthlyDetailListBuilder_.clear();
         }
-        retcode_ = 0;
-
         return this;
       }
 
@@ -447,6 +447,7 @@ public final class TowerRecordHandbookRspOuterClass {
       public emu.grasscutter.net.proto.TowerRecordHandbookRspOuterClass.TowerRecordHandbookRsp buildPartial() {
         emu.grasscutter.net.proto.TowerRecordHandbookRspOuterClass.TowerRecordHandbookRsp result = new emu.grasscutter.net.proto.TowerRecordHandbookRspOuterClass.TowerRecordHandbookRsp(this);
         int from_bitField0_ = bitField0_;
+        result.retcode_ = retcode_;
         if (monthlyDetailListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             monthlyDetailList_ = java.util.Collections.unmodifiableList(monthlyDetailList_);
@@ -456,7 +457,6 @@ public final class TowerRecordHandbookRspOuterClass {
         } else {
           result.monthlyDetailList_ = monthlyDetailListBuilder_.build();
         }
-        result.retcode_ = retcode_;
         onBuilt();
         return result;
       }
@@ -505,6 +505,9 @@ public final class TowerRecordHandbookRspOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.TowerRecordHandbookRspOuterClass.TowerRecordHandbookRsp other) {
         if (other == emu.grasscutter.net.proto.TowerRecordHandbookRspOuterClass.TowerRecordHandbookRsp.getDefaultInstance()) return this;
+        if (other.getRetcode() != 0) {
+          setRetcode(other.getRetcode());
+        }
         if (monthlyDetailListBuilder_ == null) {
           if (!other.monthlyDetailList_.isEmpty()) {
             if (monthlyDetailList_.isEmpty()) {
@@ -530,9 +533,6 @@ public final class TowerRecordHandbookRspOuterClass {
               monthlyDetailListBuilder_.addAllMessages(other.monthlyDetailList_);
             }
           }
-        }
-        if (other.getRetcode() != 0) {
-          setRetcode(other.getRetcode());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -564,6 +564,37 @@ public final class TowerRecordHandbookRspOuterClass {
       }
       private int bitField0_;
 
+      private int retcode_ ;
+      /**
+       * <code>int32 retcode = 4;</code>
+       * @return The retcode.
+       */
+      @java.lang.Override
+      public int getRetcode() {
+        return retcode_;
+      }
+      /**
+       * <code>int32 retcode = 4;</code>
+       * @param value The retcode to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRetcode(int value) {
+        
+        retcode_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 retcode = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearRetcode() {
+        
+        retcode_ = 0;
+        onChanged();
+        return this;
+      }
+
       private java.util.List<emu.grasscutter.net.proto.TowerMonthlyDetailOuterClass.TowerMonthlyDetail> monthlyDetailList_ =
         java.util.Collections.emptyList();
       private void ensureMonthlyDetailListIsMutable() {
@@ -577,7 +608,7 @@ public final class TowerRecordHandbookRspOuterClass {
           emu.grasscutter.net.proto.TowerMonthlyDetailOuterClass.TowerMonthlyDetail, emu.grasscutter.net.proto.TowerMonthlyDetailOuterClass.TowerMonthlyDetail.Builder, emu.grasscutter.net.proto.TowerMonthlyDetailOuterClass.TowerMonthlyDetailOrBuilder> monthlyDetailListBuilder_;
 
       /**
-       * <code>repeated .TowerMonthlyDetail monthly_detail_list = 3;</code>
+       * <code>repeated .TowerMonthlyDetail monthly_detail_list = 14;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.TowerMonthlyDetailOuterClass.TowerMonthlyDetail> getMonthlyDetailListList() {
         if (monthlyDetailListBuilder_ == null) {
@@ -587,7 +618,7 @@ public final class TowerRecordHandbookRspOuterClass {
         }
       }
       /**
-       * <code>repeated .TowerMonthlyDetail monthly_detail_list = 3;</code>
+       * <code>repeated .TowerMonthlyDetail monthly_detail_list = 14;</code>
        */
       public int getMonthlyDetailListCount() {
         if (monthlyDetailListBuilder_ == null) {
@@ -597,7 +628,7 @@ public final class TowerRecordHandbookRspOuterClass {
         }
       }
       /**
-       * <code>repeated .TowerMonthlyDetail monthly_detail_list = 3;</code>
+       * <code>repeated .TowerMonthlyDetail monthly_detail_list = 14;</code>
        */
       public emu.grasscutter.net.proto.TowerMonthlyDetailOuterClass.TowerMonthlyDetail getMonthlyDetailList(int index) {
         if (monthlyDetailListBuilder_ == null) {
@@ -607,7 +638,7 @@ public final class TowerRecordHandbookRspOuterClass {
         }
       }
       /**
-       * <code>repeated .TowerMonthlyDetail monthly_detail_list = 3;</code>
+       * <code>repeated .TowerMonthlyDetail monthly_detail_list = 14;</code>
        */
       public Builder setMonthlyDetailList(
           int index, emu.grasscutter.net.proto.TowerMonthlyDetailOuterClass.TowerMonthlyDetail value) {
@@ -624,7 +655,7 @@ public final class TowerRecordHandbookRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TowerMonthlyDetail monthly_detail_list = 3;</code>
+       * <code>repeated .TowerMonthlyDetail monthly_detail_list = 14;</code>
        */
       public Builder setMonthlyDetailList(
           int index, emu.grasscutter.net.proto.TowerMonthlyDetailOuterClass.TowerMonthlyDetail.Builder builderForValue) {
@@ -638,7 +669,7 @@ public final class TowerRecordHandbookRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TowerMonthlyDetail monthly_detail_list = 3;</code>
+       * <code>repeated .TowerMonthlyDetail monthly_detail_list = 14;</code>
        */
       public Builder addMonthlyDetailList(emu.grasscutter.net.proto.TowerMonthlyDetailOuterClass.TowerMonthlyDetail value) {
         if (monthlyDetailListBuilder_ == null) {
@@ -654,7 +685,7 @@ public final class TowerRecordHandbookRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TowerMonthlyDetail monthly_detail_list = 3;</code>
+       * <code>repeated .TowerMonthlyDetail monthly_detail_list = 14;</code>
        */
       public Builder addMonthlyDetailList(
           int index, emu.grasscutter.net.proto.TowerMonthlyDetailOuterClass.TowerMonthlyDetail value) {
@@ -671,7 +702,7 @@ public final class TowerRecordHandbookRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TowerMonthlyDetail monthly_detail_list = 3;</code>
+       * <code>repeated .TowerMonthlyDetail monthly_detail_list = 14;</code>
        */
       public Builder addMonthlyDetailList(
           emu.grasscutter.net.proto.TowerMonthlyDetailOuterClass.TowerMonthlyDetail.Builder builderForValue) {
@@ -685,7 +716,7 @@ public final class TowerRecordHandbookRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TowerMonthlyDetail monthly_detail_list = 3;</code>
+       * <code>repeated .TowerMonthlyDetail monthly_detail_list = 14;</code>
        */
       public Builder addMonthlyDetailList(
           int index, emu.grasscutter.net.proto.TowerMonthlyDetailOuterClass.TowerMonthlyDetail.Builder builderForValue) {
@@ -699,7 +730,7 @@ public final class TowerRecordHandbookRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TowerMonthlyDetail monthly_detail_list = 3;</code>
+       * <code>repeated .TowerMonthlyDetail monthly_detail_list = 14;</code>
        */
       public Builder addAllMonthlyDetailList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.TowerMonthlyDetailOuterClass.TowerMonthlyDetail> values) {
@@ -714,7 +745,7 @@ public final class TowerRecordHandbookRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TowerMonthlyDetail monthly_detail_list = 3;</code>
+       * <code>repeated .TowerMonthlyDetail monthly_detail_list = 14;</code>
        */
       public Builder clearMonthlyDetailList() {
         if (monthlyDetailListBuilder_ == null) {
@@ -727,7 +758,7 @@ public final class TowerRecordHandbookRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TowerMonthlyDetail monthly_detail_list = 3;</code>
+       * <code>repeated .TowerMonthlyDetail monthly_detail_list = 14;</code>
        */
       public Builder removeMonthlyDetailList(int index) {
         if (monthlyDetailListBuilder_ == null) {
@@ -740,14 +771,14 @@ public final class TowerRecordHandbookRspOuterClass {
         return this;
       }
       /**
-       * <code>repeated .TowerMonthlyDetail monthly_detail_list = 3;</code>
+       * <code>repeated .TowerMonthlyDetail monthly_detail_list = 14;</code>
        */
       public emu.grasscutter.net.proto.TowerMonthlyDetailOuterClass.TowerMonthlyDetail.Builder getMonthlyDetailListBuilder(
           int index) {
         return getMonthlyDetailListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .TowerMonthlyDetail monthly_detail_list = 3;</code>
+       * <code>repeated .TowerMonthlyDetail monthly_detail_list = 14;</code>
        */
       public emu.grasscutter.net.proto.TowerMonthlyDetailOuterClass.TowerMonthlyDetailOrBuilder getMonthlyDetailListOrBuilder(
           int index) {
@@ -757,7 +788,7 @@ public final class TowerRecordHandbookRspOuterClass {
         }
       }
       /**
-       * <code>repeated .TowerMonthlyDetail monthly_detail_list = 3;</code>
+       * <code>repeated .TowerMonthlyDetail monthly_detail_list = 14;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.TowerMonthlyDetailOuterClass.TowerMonthlyDetailOrBuilder> 
            getMonthlyDetailListOrBuilderList() {
@@ -768,14 +799,14 @@ public final class TowerRecordHandbookRspOuterClass {
         }
       }
       /**
-       * <code>repeated .TowerMonthlyDetail monthly_detail_list = 3;</code>
+       * <code>repeated .TowerMonthlyDetail monthly_detail_list = 14;</code>
        */
       public emu.grasscutter.net.proto.TowerMonthlyDetailOuterClass.TowerMonthlyDetail.Builder addMonthlyDetailListBuilder() {
         return getMonthlyDetailListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.TowerMonthlyDetailOuterClass.TowerMonthlyDetail.getDefaultInstance());
       }
       /**
-       * <code>repeated .TowerMonthlyDetail monthly_detail_list = 3;</code>
+       * <code>repeated .TowerMonthlyDetail monthly_detail_list = 14;</code>
        */
       public emu.grasscutter.net.proto.TowerMonthlyDetailOuterClass.TowerMonthlyDetail.Builder addMonthlyDetailListBuilder(
           int index) {
@@ -783,7 +814,7 @@ public final class TowerRecordHandbookRspOuterClass {
             index, emu.grasscutter.net.proto.TowerMonthlyDetailOuterClass.TowerMonthlyDetail.getDefaultInstance());
       }
       /**
-       * <code>repeated .TowerMonthlyDetail monthly_detail_list = 3;</code>
+       * <code>repeated .TowerMonthlyDetail monthly_detail_list = 14;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.TowerMonthlyDetailOuterClass.TowerMonthlyDetail.Builder> 
            getMonthlyDetailListBuilderList() {
@@ -802,37 +833,6 @@ public final class TowerRecordHandbookRspOuterClass {
           monthlyDetailList_ = null;
         }
         return monthlyDetailListBuilder_;
-      }
-
-      private int retcode_ ;
-      /**
-       * <code>int32 retcode = 10;</code>
-       * @return The retcode.
-       */
-      @java.lang.Override
-      public int getRetcode() {
-        return retcode_;
-      }
-      /**
-       * <code>int32 retcode = 10;</code>
-       * @param value The retcode to set.
-       * @return This builder for chaining.
-       */
-      public Builder setRetcode(int value) {
-        
-        retcode_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>int32 retcode = 10;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearRetcode() {
-        
-        retcode_ = 0;
-        onChanged();
-        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -903,8 +903,8 @@ public final class TowerRecordHandbookRspOuterClass {
     java.lang.String[] descriptorData = {
       "\n\034TowerRecordHandbookRsp.proto\032\030TowerMon" +
       "thlyDetail.proto\"[\n\026TowerRecordHandbookR" +
-      "sp\0220\n\023monthly_detail_list\030\003 \003(\0132\023.TowerM" +
-      "onthlyDetail\022\017\n\007retcode\030\n \001(\005B\033\n\031emu.gra" +
+      "sp\022\017\n\007retcode\030\004 \001(\005\0220\n\023monthly_detail_li" +
+      "st\030\016 \003(\0132\023.TowerMonthlyDetailB\033\n\031emu.gra" +
       "sscutter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -917,7 +917,7 @@ public final class TowerRecordHandbookRspOuterClass {
     internal_static_TowerRecordHandbookRsp_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TowerRecordHandbookRsp_descriptor,
-        new java.lang.String[] { "MonthlyDetailList", "Retcode", });
+        new java.lang.String[] { "Retcode", "MonthlyDetailList", });
     emu.grasscutter.net.proto.TowerMonthlyDetailOuterClass.getDescriptor();
   }
 

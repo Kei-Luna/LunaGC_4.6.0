@@ -19,21 +19,21 @@ public final class TowerDailyRewardProgressChangeNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 JJJCPHMBMLG = 9;</code>
-     * @return The jJJCPHMBMLG.
+     * <code>uint32 MICBOPDAEFN = 3;</code>
+     * @return The mICBOPDAEFN.
      */
-    int getJJJCPHMBMLG();
+    int getMICBOPDAEFN();
 
     /**
-     * <code>uint32 NFLJLHDCPFJ = 8;</code>
-     * @return The nFLJLHDCPFJ.
+     * <code>uint32 NNIGLOKAEAI = 10;</code>
+     * @return The nNIGLOKAEAI.
      */
-    int getNFLJLHDCPFJ();
+    int getNNIGLOKAEAI();
   }
   /**
    * <pre>
-   * CmdId: 8485
-   * Obf: DPACOEFBBJP
+   * 4.6.0
+   * CmdId: 26940
    * </pre>
    *
    * Protobuf type {@code TowerDailyRewardProgressChangeNotify}
@@ -80,14 +80,14 @@ public final class TowerDailyRewardProgressChangeNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 64: {
+            case 24: {
 
-              nFLJLHDCPFJ_ = input.readUInt32();
+              mICBOPDAEFN_ = input.readUInt32();
               break;
             }
-            case 72: {
+            case 80: {
 
-              jJJCPHMBMLG_ = input.readUInt32();
+              nNIGLOKAEAI_ = input.readUInt32();
               break;
             }
             default: {
@@ -122,26 +122,26 @@ public final class TowerDailyRewardProgressChangeNotifyOuterClass {
               emu.grasscutter.net.proto.TowerDailyRewardProgressChangeNotifyOuterClass.TowerDailyRewardProgressChangeNotify.class, emu.grasscutter.net.proto.TowerDailyRewardProgressChangeNotifyOuterClass.TowerDailyRewardProgressChangeNotify.Builder.class);
     }
 
-    public static final int JJJCPHMBMLG_FIELD_NUMBER = 9;
-    private int jJJCPHMBMLG_;
+    public static final int MICBOPDAEFN_FIELD_NUMBER = 3;
+    private int mICBOPDAEFN_;
     /**
-     * <code>uint32 JJJCPHMBMLG = 9;</code>
-     * @return The jJJCPHMBMLG.
+     * <code>uint32 MICBOPDAEFN = 3;</code>
+     * @return The mICBOPDAEFN.
      */
     @java.lang.Override
-    public int getJJJCPHMBMLG() {
-      return jJJCPHMBMLG_;
+    public int getMICBOPDAEFN() {
+      return mICBOPDAEFN_;
     }
 
-    public static final int NFLJLHDCPFJ_FIELD_NUMBER = 8;
-    private int nFLJLHDCPFJ_;
+    public static final int NNIGLOKAEAI_FIELD_NUMBER = 10;
+    private int nNIGLOKAEAI_;
     /**
-     * <code>uint32 NFLJLHDCPFJ = 8;</code>
-     * @return The nFLJLHDCPFJ.
+     * <code>uint32 NNIGLOKAEAI = 10;</code>
+     * @return The nNIGLOKAEAI.
      */
     @java.lang.Override
-    public int getNFLJLHDCPFJ() {
-      return nFLJLHDCPFJ_;
+    public int getNNIGLOKAEAI() {
+      return nNIGLOKAEAI_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -158,11 +158,11 @@ public final class TowerDailyRewardProgressChangeNotifyOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (nFLJLHDCPFJ_ != 0) {
-        output.writeUInt32(8, nFLJLHDCPFJ_);
+      if (mICBOPDAEFN_ != 0) {
+        output.writeUInt32(3, mICBOPDAEFN_);
       }
-      if (jJJCPHMBMLG_ != 0) {
-        output.writeUInt32(9, jJJCPHMBMLG_);
+      if (nNIGLOKAEAI_ != 0) {
+        output.writeUInt32(10, nNIGLOKAEAI_);
       }
       unknownFields.writeTo(output);
     }
@@ -173,13 +173,13 @@ public final class TowerDailyRewardProgressChangeNotifyOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      if (nFLJLHDCPFJ_ != 0) {
+      if (mICBOPDAEFN_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(8, nFLJLHDCPFJ_);
+          .computeUInt32Size(3, mICBOPDAEFN_);
       }
-      if (jJJCPHMBMLG_ != 0) {
+      if (nNIGLOKAEAI_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, jJJCPHMBMLG_);
+          .computeUInt32Size(10, nNIGLOKAEAI_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -196,10 +196,10 @@ public final class TowerDailyRewardProgressChangeNotifyOuterClass {
       }
       emu.grasscutter.net.proto.TowerDailyRewardProgressChangeNotifyOuterClass.TowerDailyRewardProgressChangeNotify other = (emu.grasscutter.net.proto.TowerDailyRewardProgressChangeNotifyOuterClass.TowerDailyRewardProgressChangeNotify) obj;
 
-      if (getJJJCPHMBMLG()
-          != other.getJJJCPHMBMLG()) return false;
-      if (getNFLJLHDCPFJ()
-          != other.getNFLJLHDCPFJ()) return false;
+      if (getMICBOPDAEFN()
+          != other.getMICBOPDAEFN()) return false;
+      if (getNNIGLOKAEAI()
+          != other.getNNIGLOKAEAI()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -211,10 +211,10 @@ public final class TowerDailyRewardProgressChangeNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + JJJCPHMBMLG_FIELD_NUMBER;
-      hash = (53 * hash) + getJJJCPHMBMLG();
-      hash = (37 * hash) + NFLJLHDCPFJ_FIELD_NUMBER;
-      hash = (53 * hash) + getNFLJLHDCPFJ();
+      hash = (37 * hash) + MICBOPDAEFN_FIELD_NUMBER;
+      hash = (53 * hash) + getMICBOPDAEFN();
+      hash = (37 * hash) + NNIGLOKAEAI_FIELD_NUMBER;
+      hash = (53 * hash) + getNNIGLOKAEAI();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -312,8 +312,8 @@ public final class TowerDailyRewardProgressChangeNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 8485
-     * Obf: DPACOEFBBJP
+     * 4.6.0
+     * CmdId: 26940
      * </pre>
      *
      * Protobuf type {@code TowerDailyRewardProgressChangeNotify}
@@ -353,9 +353,9 @@ public final class TowerDailyRewardProgressChangeNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        jJJCPHMBMLG_ = 0;
+        mICBOPDAEFN_ = 0;
 
-        nFLJLHDCPFJ_ = 0;
+        nNIGLOKAEAI_ = 0;
 
         return this;
       }
@@ -383,8 +383,8 @@ public final class TowerDailyRewardProgressChangeNotifyOuterClass {
       @java.lang.Override
       public emu.grasscutter.net.proto.TowerDailyRewardProgressChangeNotifyOuterClass.TowerDailyRewardProgressChangeNotify buildPartial() {
         emu.grasscutter.net.proto.TowerDailyRewardProgressChangeNotifyOuterClass.TowerDailyRewardProgressChangeNotify result = new emu.grasscutter.net.proto.TowerDailyRewardProgressChangeNotifyOuterClass.TowerDailyRewardProgressChangeNotify(this);
-        result.jJJCPHMBMLG_ = jJJCPHMBMLG_;
-        result.nFLJLHDCPFJ_ = nFLJLHDCPFJ_;
+        result.mICBOPDAEFN_ = mICBOPDAEFN_;
+        result.nNIGLOKAEAI_ = nNIGLOKAEAI_;
         onBuilt();
         return result;
       }
@@ -433,11 +433,11 @@ public final class TowerDailyRewardProgressChangeNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.TowerDailyRewardProgressChangeNotifyOuterClass.TowerDailyRewardProgressChangeNotify other) {
         if (other == emu.grasscutter.net.proto.TowerDailyRewardProgressChangeNotifyOuterClass.TowerDailyRewardProgressChangeNotify.getDefaultInstance()) return this;
-        if (other.getJJJCPHMBMLG() != 0) {
-          setJJJCPHMBMLG(other.getJJJCPHMBMLG());
+        if (other.getMICBOPDAEFN() != 0) {
+          setMICBOPDAEFN(other.getMICBOPDAEFN());
         }
-        if (other.getNFLJLHDCPFJ() != 0) {
-          setNFLJLHDCPFJ(other.getNFLJLHDCPFJ());
+        if (other.getNNIGLOKAEAI() != 0) {
+          setNNIGLOKAEAI(other.getNNIGLOKAEAI());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -468,64 +468,64 @@ public final class TowerDailyRewardProgressChangeNotifyOuterClass {
         return this;
       }
 
-      private int jJJCPHMBMLG_ ;
+      private int mICBOPDAEFN_ ;
       /**
-       * <code>uint32 JJJCPHMBMLG = 9;</code>
-       * @return The jJJCPHMBMLG.
+       * <code>uint32 MICBOPDAEFN = 3;</code>
+       * @return The mICBOPDAEFN.
        */
       @java.lang.Override
-      public int getJJJCPHMBMLG() {
-        return jJJCPHMBMLG_;
+      public int getMICBOPDAEFN() {
+        return mICBOPDAEFN_;
       }
       /**
-       * <code>uint32 JJJCPHMBMLG = 9;</code>
-       * @param value The jJJCPHMBMLG to set.
+       * <code>uint32 MICBOPDAEFN = 3;</code>
+       * @param value The mICBOPDAEFN to set.
        * @return This builder for chaining.
        */
-      public Builder setJJJCPHMBMLG(int value) {
+      public Builder setMICBOPDAEFN(int value) {
         
-        jJJCPHMBMLG_ = value;
+        mICBOPDAEFN_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 JJJCPHMBMLG = 9;</code>
+       * <code>uint32 MICBOPDAEFN = 3;</code>
        * @return This builder for chaining.
        */
-      public Builder clearJJJCPHMBMLG() {
+      public Builder clearMICBOPDAEFN() {
         
-        jJJCPHMBMLG_ = 0;
+        mICBOPDAEFN_ = 0;
         onChanged();
         return this;
       }
 
-      private int nFLJLHDCPFJ_ ;
+      private int nNIGLOKAEAI_ ;
       /**
-       * <code>uint32 NFLJLHDCPFJ = 8;</code>
-       * @return The nFLJLHDCPFJ.
+       * <code>uint32 NNIGLOKAEAI = 10;</code>
+       * @return The nNIGLOKAEAI.
        */
       @java.lang.Override
-      public int getNFLJLHDCPFJ() {
-        return nFLJLHDCPFJ_;
+      public int getNNIGLOKAEAI() {
+        return nNIGLOKAEAI_;
       }
       /**
-       * <code>uint32 NFLJLHDCPFJ = 8;</code>
-       * @param value The nFLJLHDCPFJ to set.
+       * <code>uint32 NNIGLOKAEAI = 10;</code>
+       * @param value The nNIGLOKAEAI to set.
        * @return This builder for chaining.
        */
-      public Builder setNFLJLHDCPFJ(int value) {
+      public Builder setNNIGLOKAEAI(int value) {
         
-        nFLJLHDCPFJ_ = value;
+        nNIGLOKAEAI_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>uint32 NFLJLHDCPFJ = 8;</code>
+       * <code>uint32 NNIGLOKAEAI = 10;</code>
        * @return This builder for chaining.
        */
-      public Builder clearNFLJLHDCPFJ() {
+      public Builder clearNNIGLOKAEAI() {
         
-        nFLJLHDCPFJ_ = 0;
+        nNIGLOKAEAI_ = 0;
         onChanged();
         return this;
       }
@@ -598,8 +598,8 @@ public final class TowerDailyRewardProgressChangeNotifyOuterClass {
     java.lang.String[] descriptorData = {
       "\n*TowerDailyRewardProgressChangeNotify.p" +
       "roto\"P\n$TowerDailyRewardProgressChangeNo" +
-      "tify\022\023\n\013JJJCPHMBMLG\030\t \001(\r\022\023\n\013NFLJLHDCPFJ" +
-      "\030\010 \001(\rB\033\n\031emu.grasscutter.net.protob\006pro" +
+      "tify\022\023\n\013MICBOPDAEFN\030\003 \001(\r\022\023\n\013NNIGLOKAEAI" +
+      "\030\n \001(\rB\033\n\031emu.grasscutter.net.protob\006pro" +
       "to3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -611,7 +611,7 @@ public final class TowerDailyRewardProgressChangeNotifyOuterClass {
     internal_static_TowerDailyRewardProgressChangeNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_TowerDailyRewardProgressChangeNotify_descriptor,
-        new java.lang.String[] { "JJJCPHMBMLG", "NFLJLHDCPFJ", });
+        new java.lang.String[] { "MICBOPDAEFN", "NNIGLOKAEAI", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

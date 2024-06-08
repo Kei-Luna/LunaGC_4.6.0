@@ -19,21 +19,20 @@ public final class WatcherEventNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 add_progress = 9;</code>
+     * <code>uint32 add_progress = 3;</code>
      * @return The addProgress.
      */
     int getAddProgress();
 
     /**
-     * <code>uint32 watcher_id = 15;</code>
+     * <code>uint32 watcher_id = 13;</code>
      * @return The watcherId.
      */
     int getWatcherId();
   }
   /**
    * <pre>
-   * CmdId: 20631
-   * Obf: OOOAKJLBBIN
+   * CmdId: 2066
    * </pre>
    *
    * Protobuf type {@code WatcherEventNotify}
@@ -80,12 +79,12 @@ public final class WatcherEventNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 72: {
+            case 24: {
 
               addProgress_ = input.readUInt32();
               break;
             }
-            case 120: {
+            case 104: {
 
               watcherId_ = input.readUInt32();
               break;
@@ -122,10 +121,10 @@ public final class WatcherEventNotifyOuterClass {
               emu.grasscutter.net.proto.WatcherEventNotifyOuterClass.WatcherEventNotify.class, emu.grasscutter.net.proto.WatcherEventNotifyOuterClass.WatcherEventNotify.Builder.class);
     }
 
-    public static final int ADD_PROGRESS_FIELD_NUMBER = 9;
+    public static final int ADD_PROGRESS_FIELD_NUMBER = 3;
     private int addProgress_;
     /**
-     * <code>uint32 add_progress = 9;</code>
+     * <code>uint32 add_progress = 3;</code>
      * @return The addProgress.
      */
     @java.lang.Override
@@ -133,10 +132,10 @@ public final class WatcherEventNotifyOuterClass {
       return addProgress_;
     }
 
-    public static final int WATCHER_ID_FIELD_NUMBER = 15;
+    public static final int WATCHER_ID_FIELD_NUMBER = 13;
     private int watcherId_;
     /**
-     * <code>uint32 watcher_id = 15;</code>
+     * <code>uint32 watcher_id = 13;</code>
      * @return The watcherId.
      */
     @java.lang.Override
@@ -159,10 +158,10 @@ public final class WatcherEventNotifyOuterClass {
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
       if (addProgress_ != 0) {
-        output.writeUInt32(9, addProgress_);
+        output.writeUInt32(3, addProgress_);
       }
       if (watcherId_ != 0) {
-        output.writeUInt32(15, watcherId_);
+        output.writeUInt32(13, watcherId_);
       }
       unknownFields.writeTo(output);
     }
@@ -175,11 +174,11 @@ public final class WatcherEventNotifyOuterClass {
       size = 0;
       if (addProgress_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(9, addProgress_);
+          .computeUInt32Size(3, addProgress_);
       }
       if (watcherId_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(15, watcherId_);
+          .computeUInt32Size(13, watcherId_);
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -312,8 +311,7 @@ public final class WatcherEventNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 20631
-     * Obf: OOOAKJLBBIN
+     * CmdId: 2066
      * </pre>
      *
      * Protobuf type {@code WatcherEventNotify}
@@ -470,7 +468,7 @@ public final class WatcherEventNotifyOuterClass {
 
       private int addProgress_ ;
       /**
-       * <code>uint32 add_progress = 9;</code>
+       * <code>uint32 add_progress = 3;</code>
        * @return The addProgress.
        */
       @java.lang.Override
@@ -478,7 +476,7 @@ public final class WatcherEventNotifyOuterClass {
         return addProgress_;
       }
       /**
-       * <code>uint32 add_progress = 9;</code>
+       * <code>uint32 add_progress = 3;</code>
        * @param value The addProgress to set.
        * @return This builder for chaining.
        */
@@ -489,7 +487,7 @@ public final class WatcherEventNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 add_progress = 9;</code>
+       * <code>uint32 add_progress = 3;</code>
        * @return This builder for chaining.
        */
       public Builder clearAddProgress() {
@@ -501,7 +499,7 @@ public final class WatcherEventNotifyOuterClass {
 
       private int watcherId_ ;
       /**
-       * <code>uint32 watcher_id = 15;</code>
+       * <code>uint32 watcher_id = 13;</code>
        * @return The watcherId.
        */
       @java.lang.Override
@@ -509,7 +507,7 @@ public final class WatcherEventNotifyOuterClass {
         return watcherId_;
       }
       /**
-       * <code>uint32 watcher_id = 15;</code>
+       * <code>uint32 watcher_id = 13;</code>
        * @param value The watcherId to set.
        * @return This builder for chaining.
        */
@@ -520,7 +518,7 @@ public final class WatcherEventNotifyOuterClass {
         return this;
       }
       /**
-       * <code>uint32 watcher_id = 15;</code>
+       * <code>uint32 watcher_id = 13;</code>
        * @return This builder for chaining.
        */
       public Builder clearWatcherId() {
@@ -597,8 +595,8 @@ public final class WatcherEventNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\030WatcherEventNotify.proto\">\n\022WatcherEve" +
-      "ntNotify\022\024\n\014add_progress\030\t \001(\r\022\022\n\nwatche" +
-      "r_id\030\017 \001(\rB\033\n\031emu.grasscutter.net.protob" +
+      "ntNotify\022\024\n\014add_progress\030\003 \001(\r\022\022\n\nwatche" +
+      "r_id\030\r \001(\rB\033\n\031emu.grasscutter.net.protob" +
       "\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor

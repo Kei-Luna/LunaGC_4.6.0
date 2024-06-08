@@ -38,7 +38,7 @@ public final class ExhibitionDisplayInfoOuterClass {
   }
   /**
    * <pre>
-   * Obf: MCIHMDBLAPP
+   * 4.6.0
    * </pre>
    *
    * Protobuf type {@code ExhibitionDisplayInfo}
@@ -344,7 +344,7 @@ public final class ExhibitionDisplayInfoOuterClass {
     }
     /**
      * <pre>
-     * Obf: MCIHMDBLAPP
+     * 4.6.0
      * </pre>
      *
      * Protobuf type {@code ExhibitionDisplayInfo}

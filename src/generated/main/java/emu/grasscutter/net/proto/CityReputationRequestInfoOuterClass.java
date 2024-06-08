@@ -19,38 +19,39 @@ public final class CityReputationRequestInfoOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .CityReputationRequestInfo.RequestInfo request_info_list = 7;</code>
+     * <code>bool is_open = 6;</code>
+     * @return The isOpen.
+     */
+    boolean getIsOpen();
+
+    /**
+     * <code>repeated .CityReputationRequestInfo.RequestInfo request_info_list = 15;</code>
      */
     java.util.List<emu.grasscutter.net.proto.CityReputationRequestInfoOuterClass.CityReputationRequestInfo.RequestInfo> 
         getRequestInfoListList();
     /**
-     * <code>repeated .CityReputationRequestInfo.RequestInfo request_info_list = 7;</code>
+     * <code>repeated .CityReputationRequestInfo.RequestInfo request_info_list = 15;</code>
      */
     emu.grasscutter.net.proto.CityReputationRequestInfoOuterClass.CityReputationRequestInfo.RequestInfo getRequestInfoList(int index);
     /**
-     * <code>repeated .CityReputationRequestInfo.RequestInfo request_info_list = 7;</code>
+     * <code>repeated .CityReputationRequestInfo.RequestInfo request_info_list = 15;</code>
      */
     int getRequestInfoListCount();
     /**
-     * <code>repeated .CityReputationRequestInfo.RequestInfo request_info_list = 7;</code>
+     * <code>repeated .CityReputationRequestInfo.RequestInfo request_info_list = 15;</code>
      */
     java.util.List<? extends emu.grasscutter.net.proto.CityReputationRequestInfoOuterClass.CityReputationRequestInfo.RequestInfoOrBuilder> 
         getRequestInfoListOrBuilderList();
     /**
-     * <code>repeated .CityReputationRequestInfo.RequestInfo request_info_list = 7;</code>
+     * <code>repeated .CityReputationRequestInfo.RequestInfo request_info_list = 15;</code>
      */
     emu.grasscutter.net.proto.CityReputationRequestInfoOuterClass.CityReputationRequestInfo.RequestInfoOrBuilder getRequestInfoListOrBuilder(
         int index);
-
-    /**
-     * <code>bool is_open = 15;</code>
-     * @return The isOpen.
-     */
-    boolean getIsOpen();
   }
   /**
    * <pre>
-   * Obf: ODBNGGKHDMP
+   * Version: 4.6.0
+   * Obfs: JNIMFEJFNOO
    * </pre>
    *
    * Protobuf type {@code CityReputationRequestInfo}
@@ -99,18 +100,18 @@ public final class CityReputationRequestInfoOuterClass {
             case 0:
               done = true;
               break;
-            case 58: {
+            case 48: {
+
+              isOpen_ = input.readBool();
+              break;
+            }
+            case 122: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 requestInfoList_ = new java.util.ArrayList<emu.grasscutter.net.proto.CityReputationRequestInfoOuterClass.CityReputationRequestInfo.RequestInfo>();
                 mutable_bitField0_ |= 0x00000001;
               }
               requestInfoList_.add(
                   input.readMessage(emu.grasscutter.net.proto.CityReputationRequestInfoOuterClass.CityReputationRequestInfo.RequestInfo.parser(), extensionRegistry));
-              break;
-            }
-            case 120: {
-
-              isOpen_ = input.readBool();
               break;
             }
             default: {
@@ -153,28 +154,24 @@ public final class CityReputationRequestInfoOuterClass {
         com.google.protobuf.MessageOrBuilder {
 
       /**
-       * <code>uint32 request_id = 10;</code>
+       * <code>uint32 request_id = 1;</code>
        * @return The requestId.
        */
       int getRequestId();
-
-      /**
-       * <code>uint32 quest_id = 6;</code>
-       * @return The questId.
-       */
-      int getQuestId();
 
       /**
        * <code>bool is_taken_reward = 11;</code>
        * @return The isTakenReward.
        */
       boolean getIsTakenReward();
+
+      /**
+       * <code>uint32 quest_id = 14;</code>
+       * @return The questId.
+       */
+      int getQuestId();
     }
     /**
-     * <pre>
-     * Obf: ICFLLDEGEJN
-     * </pre>
-     *
      * Protobuf type {@code CityReputationRequestInfo.RequestInfo}
      */
     public static final class RequestInfo extends
@@ -219,12 +216,7 @@ public final class CityReputationRequestInfoOuterClass {
               case 0:
                 done = true;
                 break;
-              case 48: {
-
-                questId_ = input.readUInt32();
-                break;
-              }
-              case 80: {
+              case 8: {
 
                 requestId_ = input.readUInt32();
                 break;
@@ -232,6 +224,11 @@ public final class CityReputationRequestInfoOuterClass {
               case 88: {
 
                 isTakenReward_ = input.readBool();
+                break;
+              }
+              case 112: {
+
+                questId_ = input.readUInt32();
                 break;
               }
               default: {
@@ -266,26 +263,15 @@ public final class CityReputationRequestInfoOuterClass {
                 emu.grasscutter.net.proto.CityReputationRequestInfoOuterClass.CityReputationRequestInfo.RequestInfo.class, emu.grasscutter.net.proto.CityReputationRequestInfoOuterClass.CityReputationRequestInfo.RequestInfo.Builder.class);
       }
 
-      public static final int REQUEST_ID_FIELD_NUMBER = 10;
+      public static final int REQUEST_ID_FIELD_NUMBER = 1;
       private int requestId_;
       /**
-       * <code>uint32 request_id = 10;</code>
+       * <code>uint32 request_id = 1;</code>
        * @return The requestId.
        */
       @java.lang.Override
       public int getRequestId() {
         return requestId_;
-      }
-
-      public static final int QUEST_ID_FIELD_NUMBER = 6;
-      private int questId_;
-      /**
-       * <code>uint32 quest_id = 6;</code>
-       * @return The questId.
-       */
-      @java.lang.Override
-      public int getQuestId() {
-        return questId_;
       }
 
       public static final int IS_TAKEN_REWARD_FIELD_NUMBER = 11;
@@ -297,6 +283,17 @@ public final class CityReputationRequestInfoOuterClass {
       @java.lang.Override
       public boolean getIsTakenReward() {
         return isTakenReward_;
+      }
+
+      public static final int QUEST_ID_FIELD_NUMBER = 14;
+      private int questId_;
+      /**
+       * <code>uint32 quest_id = 14;</code>
+       * @return The questId.
+       */
+      @java.lang.Override
+      public int getQuestId() {
+        return questId_;
       }
 
       private byte memoizedIsInitialized = -1;
@@ -313,14 +310,14 @@ public final class CityReputationRequestInfoOuterClass {
       @java.lang.Override
       public void writeTo(com.google.protobuf.CodedOutputStream output)
                           throws java.io.IOException {
-        if (questId_ != 0) {
-          output.writeUInt32(6, questId_);
-        }
         if (requestId_ != 0) {
-          output.writeUInt32(10, requestId_);
+          output.writeUInt32(1, requestId_);
         }
         if (isTakenReward_ != false) {
           output.writeBool(11, isTakenReward_);
+        }
+        if (questId_ != 0) {
+          output.writeUInt32(14, questId_);
         }
         unknownFields.writeTo(output);
       }
@@ -331,17 +328,17 @@ public final class CityReputationRequestInfoOuterClass {
         if (size != -1) return size;
 
         size = 0;
-        if (questId_ != 0) {
-          size += com.google.protobuf.CodedOutputStream
-            .computeUInt32Size(6, questId_);
-        }
         if (requestId_ != 0) {
           size += com.google.protobuf.CodedOutputStream
-            .computeUInt32Size(10, requestId_);
+            .computeUInt32Size(1, requestId_);
         }
         if (isTakenReward_ != false) {
           size += com.google.protobuf.CodedOutputStream
             .computeBoolSize(11, isTakenReward_);
+        }
+        if (questId_ != 0) {
+          size += com.google.protobuf.CodedOutputStream
+            .computeUInt32Size(14, questId_);
         }
         size += unknownFields.getSerializedSize();
         memoizedSize = size;
@@ -360,10 +357,10 @@ public final class CityReputationRequestInfoOuterClass {
 
         if (getRequestId()
             != other.getRequestId()) return false;
-        if (getQuestId()
-            != other.getQuestId()) return false;
         if (getIsTakenReward()
             != other.getIsTakenReward()) return false;
+        if (getQuestId()
+            != other.getQuestId()) return false;
         if (!unknownFields.equals(other.unknownFields)) return false;
         return true;
       }
@@ -377,11 +374,11 @@ public final class CityReputationRequestInfoOuterClass {
         hash = (19 * hash) + getDescriptor().hashCode();
         hash = (37 * hash) + REQUEST_ID_FIELD_NUMBER;
         hash = (53 * hash) + getRequestId();
-        hash = (37 * hash) + QUEST_ID_FIELD_NUMBER;
-        hash = (53 * hash) + getQuestId();
         hash = (37 * hash) + IS_TAKEN_REWARD_FIELD_NUMBER;
         hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
             getIsTakenReward());
+        hash = (37 * hash) + QUEST_ID_FIELD_NUMBER;
+        hash = (53 * hash) + getQuestId();
         hash = (29 * hash) + unknownFields.hashCode();
         memoizedHashCode = hash;
         return hash;
@@ -478,10 +475,6 @@ public final class CityReputationRequestInfoOuterClass {
         return builder;
       }
       /**
-       * <pre>
-       * Obf: ICFLLDEGEJN
-       * </pre>
-       *
        * Protobuf type {@code CityReputationRequestInfo.RequestInfo}
        */
       public static final class Builder extends
@@ -521,9 +514,9 @@ public final class CityReputationRequestInfoOuterClass {
           super.clear();
           requestId_ = 0;
 
-          questId_ = 0;
-
           isTakenReward_ = false;
+
+          questId_ = 0;
 
           return this;
         }
@@ -552,8 +545,8 @@ public final class CityReputationRequestInfoOuterClass {
         public emu.grasscutter.net.proto.CityReputationRequestInfoOuterClass.CityReputationRequestInfo.RequestInfo buildPartial() {
           emu.grasscutter.net.proto.CityReputationRequestInfoOuterClass.CityReputationRequestInfo.RequestInfo result = new emu.grasscutter.net.proto.CityReputationRequestInfoOuterClass.CityReputationRequestInfo.RequestInfo(this);
           result.requestId_ = requestId_;
-          result.questId_ = questId_;
           result.isTakenReward_ = isTakenReward_;
+          result.questId_ = questId_;
           onBuilt();
           return result;
         }
@@ -605,11 +598,11 @@ public final class CityReputationRequestInfoOuterClass {
           if (other.getRequestId() != 0) {
             setRequestId(other.getRequestId());
           }
-          if (other.getQuestId() != 0) {
-            setQuestId(other.getQuestId());
-          }
           if (other.getIsTakenReward() != false) {
             setIsTakenReward(other.getIsTakenReward());
+          }
+          if (other.getQuestId() != 0) {
+            setQuestId(other.getQuestId());
           }
           this.mergeUnknownFields(other.unknownFields);
           onChanged();
@@ -642,7 +635,7 @@ public final class CityReputationRequestInfoOuterClass {
 
         private int requestId_ ;
         /**
-         * <code>uint32 request_id = 10;</code>
+         * <code>uint32 request_id = 1;</code>
          * @return The requestId.
          */
         @java.lang.Override
@@ -650,7 +643,7 @@ public final class CityReputationRequestInfoOuterClass {
           return requestId_;
         }
         /**
-         * <code>uint32 request_id = 10;</code>
+         * <code>uint32 request_id = 1;</code>
          * @param value The requestId to set.
          * @return This builder for chaining.
          */
@@ -661,43 +654,12 @@ public final class CityReputationRequestInfoOuterClass {
           return this;
         }
         /**
-         * <code>uint32 request_id = 10;</code>
+         * <code>uint32 request_id = 1;</code>
          * @return This builder for chaining.
          */
         public Builder clearRequestId() {
           
           requestId_ = 0;
-          onChanged();
-          return this;
-        }
-
-        private int questId_ ;
-        /**
-         * <code>uint32 quest_id = 6;</code>
-         * @return The questId.
-         */
-        @java.lang.Override
-        public int getQuestId() {
-          return questId_;
-        }
-        /**
-         * <code>uint32 quest_id = 6;</code>
-         * @param value The questId to set.
-         * @return This builder for chaining.
-         */
-        public Builder setQuestId(int value) {
-          
-          questId_ = value;
-          onChanged();
-          return this;
-        }
-        /**
-         * <code>uint32 quest_id = 6;</code>
-         * @return This builder for chaining.
-         */
-        public Builder clearQuestId() {
-          
-          questId_ = 0;
           onChanged();
           return this;
         }
@@ -729,6 +691,37 @@ public final class CityReputationRequestInfoOuterClass {
         public Builder clearIsTakenReward() {
           
           isTakenReward_ = false;
+          onChanged();
+          return this;
+        }
+
+        private int questId_ ;
+        /**
+         * <code>uint32 quest_id = 14;</code>
+         * @return The questId.
+         */
+        @java.lang.Override
+        public int getQuestId() {
+          return questId_;
+        }
+        /**
+         * <code>uint32 quest_id = 14;</code>
+         * @param value The questId to set.
+         * @return This builder for chaining.
+         */
+        public Builder setQuestId(int value) {
+          
+          questId_ = value;
+          onChanged();
+          return this;
+        }
+        /**
+         * <code>uint32 quest_id = 14;</code>
+         * @return This builder for chaining.
+         */
+        public Builder clearQuestId() {
+          
+          questId_ = 0;
           onChanged();
           return this;
         }
@@ -785,17 +778,28 @@ public final class CityReputationRequestInfoOuterClass {
 
     }
 
-    public static final int REQUEST_INFO_LIST_FIELD_NUMBER = 7;
+    public static final int IS_OPEN_FIELD_NUMBER = 6;
+    private boolean isOpen_;
+    /**
+     * <code>bool is_open = 6;</code>
+     * @return The isOpen.
+     */
+    @java.lang.Override
+    public boolean getIsOpen() {
+      return isOpen_;
+    }
+
+    public static final int REQUEST_INFO_LIST_FIELD_NUMBER = 15;
     private java.util.List<emu.grasscutter.net.proto.CityReputationRequestInfoOuterClass.CityReputationRequestInfo.RequestInfo> requestInfoList_;
     /**
-     * <code>repeated .CityReputationRequestInfo.RequestInfo request_info_list = 7;</code>
+     * <code>repeated .CityReputationRequestInfo.RequestInfo request_info_list = 15;</code>
      */
     @java.lang.Override
     public java.util.List<emu.grasscutter.net.proto.CityReputationRequestInfoOuterClass.CityReputationRequestInfo.RequestInfo> getRequestInfoListList() {
       return requestInfoList_;
     }
     /**
-     * <code>repeated .CityReputationRequestInfo.RequestInfo request_info_list = 7;</code>
+     * <code>repeated .CityReputationRequestInfo.RequestInfo request_info_list = 15;</code>
      */
     @java.lang.Override
     public java.util.List<? extends emu.grasscutter.net.proto.CityReputationRequestInfoOuterClass.CityReputationRequestInfo.RequestInfoOrBuilder> 
@@ -803,37 +807,26 @@ public final class CityReputationRequestInfoOuterClass {
       return requestInfoList_;
     }
     /**
-     * <code>repeated .CityReputationRequestInfo.RequestInfo request_info_list = 7;</code>
+     * <code>repeated .CityReputationRequestInfo.RequestInfo request_info_list = 15;</code>
      */
     @java.lang.Override
     public int getRequestInfoListCount() {
       return requestInfoList_.size();
     }
     /**
-     * <code>repeated .CityReputationRequestInfo.RequestInfo request_info_list = 7;</code>
+     * <code>repeated .CityReputationRequestInfo.RequestInfo request_info_list = 15;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.CityReputationRequestInfoOuterClass.CityReputationRequestInfo.RequestInfo getRequestInfoList(int index) {
       return requestInfoList_.get(index);
     }
     /**
-     * <code>repeated .CityReputationRequestInfo.RequestInfo request_info_list = 7;</code>
+     * <code>repeated .CityReputationRequestInfo.RequestInfo request_info_list = 15;</code>
      */
     @java.lang.Override
     public emu.grasscutter.net.proto.CityReputationRequestInfoOuterClass.CityReputationRequestInfo.RequestInfoOrBuilder getRequestInfoListOrBuilder(
         int index) {
       return requestInfoList_.get(index);
-    }
-
-    public static final int IS_OPEN_FIELD_NUMBER = 15;
-    private boolean isOpen_;
-    /**
-     * <code>bool is_open = 15;</code>
-     * @return The isOpen.
-     */
-    @java.lang.Override
-    public boolean getIsOpen() {
-      return isOpen_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -850,11 +843,11 @@ public final class CityReputationRequestInfoOuterClass {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      for (int i = 0; i < requestInfoList_.size(); i++) {
-        output.writeMessage(7, requestInfoList_.get(i));
-      }
       if (isOpen_ != false) {
-        output.writeBool(15, isOpen_);
+        output.writeBool(6, isOpen_);
+      }
+      for (int i = 0; i < requestInfoList_.size(); i++) {
+        output.writeMessage(15, requestInfoList_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -865,13 +858,13 @@ public final class CityReputationRequestInfoOuterClass {
       if (size != -1) return size;
 
       size = 0;
-      for (int i = 0; i < requestInfoList_.size(); i++) {
-        size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(7, requestInfoList_.get(i));
-      }
       if (isOpen_ != false) {
         size += com.google.protobuf.CodedOutputStream
-          .computeBoolSize(15, isOpen_);
+          .computeBoolSize(6, isOpen_);
+      }
+      for (int i = 0; i < requestInfoList_.size(); i++) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(15, requestInfoList_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -888,10 +881,10 @@ public final class CityReputationRequestInfoOuterClass {
       }
       emu.grasscutter.net.proto.CityReputationRequestInfoOuterClass.CityReputationRequestInfo other = (emu.grasscutter.net.proto.CityReputationRequestInfoOuterClass.CityReputationRequestInfo) obj;
 
-      if (!getRequestInfoListList()
-          .equals(other.getRequestInfoListList())) return false;
       if (getIsOpen()
           != other.getIsOpen()) return false;
+      if (!getRequestInfoListList()
+          .equals(other.getRequestInfoListList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -903,13 +896,13 @@ public final class CityReputationRequestInfoOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + IS_OPEN_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
+          getIsOpen());
       if (getRequestInfoListCount() > 0) {
         hash = (37 * hash) + REQUEST_INFO_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getRequestInfoListList().hashCode();
       }
-      hash = (37 * hash) + IS_OPEN_FIELD_NUMBER;
-      hash = (53 * hash) + com.google.protobuf.Internal.hashBoolean(
-          getIsOpen());
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -1007,7 +1000,8 @@ public final class CityReputationRequestInfoOuterClass {
     }
     /**
      * <pre>
-     * Obf: ODBNGGKHDMP
+     * Version: 4.6.0
+     * Obfs: JNIMFEJFNOO
      * </pre>
      *
      * Protobuf type {@code CityReputationRequestInfo}
@@ -1048,14 +1042,14 @@ public final class CityReputationRequestInfoOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
+        isOpen_ = false;
+
         if (requestInfoListBuilder_ == null) {
           requestInfoList_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
           requestInfoListBuilder_.clear();
         }
-        isOpen_ = false;
-
         return this;
       }
 
@@ -1083,6 +1077,7 @@ public final class CityReputationRequestInfoOuterClass {
       public emu.grasscutter.net.proto.CityReputationRequestInfoOuterClass.CityReputationRequestInfo buildPartial() {
         emu.grasscutter.net.proto.CityReputationRequestInfoOuterClass.CityReputationRequestInfo result = new emu.grasscutter.net.proto.CityReputationRequestInfoOuterClass.CityReputationRequestInfo(this);
         int from_bitField0_ = bitField0_;
+        result.isOpen_ = isOpen_;
         if (requestInfoListBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
             requestInfoList_ = java.util.Collections.unmodifiableList(requestInfoList_);
@@ -1092,7 +1087,6 @@ public final class CityReputationRequestInfoOuterClass {
         } else {
           result.requestInfoList_ = requestInfoListBuilder_.build();
         }
-        result.isOpen_ = isOpen_;
         onBuilt();
         return result;
       }
@@ -1141,6 +1135,9 @@ public final class CityReputationRequestInfoOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.CityReputationRequestInfoOuterClass.CityReputationRequestInfo other) {
         if (other == emu.grasscutter.net.proto.CityReputationRequestInfoOuterClass.CityReputationRequestInfo.getDefaultInstance()) return this;
+        if (other.getIsOpen() != false) {
+          setIsOpen(other.getIsOpen());
+        }
         if (requestInfoListBuilder_ == null) {
           if (!other.requestInfoList_.isEmpty()) {
             if (requestInfoList_.isEmpty()) {
@@ -1166,9 +1163,6 @@ public final class CityReputationRequestInfoOuterClass {
               requestInfoListBuilder_.addAllMessages(other.requestInfoList_);
             }
           }
-        }
-        if (other.getIsOpen() != false) {
-          setIsOpen(other.getIsOpen());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -1200,6 +1194,37 @@ public final class CityReputationRequestInfoOuterClass {
       }
       private int bitField0_;
 
+      private boolean isOpen_ ;
+      /**
+       * <code>bool is_open = 6;</code>
+       * @return The isOpen.
+       */
+      @java.lang.Override
+      public boolean getIsOpen() {
+        return isOpen_;
+      }
+      /**
+       * <code>bool is_open = 6;</code>
+       * @param value The isOpen to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIsOpen(boolean value) {
+        
+        isOpen_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>bool is_open = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearIsOpen() {
+        
+        isOpen_ = false;
+        onChanged();
+        return this;
+      }
+
       private java.util.List<emu.grasscutter.net.proto.CityReputationRequestInfoOuterClass.CityReputationRequestInfo.RequestInfo> requestInfoList_ =
         java.util.Collections.emptyList();
       private void ensureRequestInfoListIsMutable() {
@@ -1213,7 +1238,7 @@ public final class CityReputationRequestInfoOuterClass {
           emu.grasscutter.net.proto.CityReputationRequestInfoOuterClass.CityReputationRequestInfo.RequestInfo, emu.grasscutter.net.proto.CityReputationRequestInfoOuterClass.CityReputationRequestInfo.RequestInfo.Builder, emu.grasscutter.net.proto.CityReputationRequestInfoOuterClass.CityReputationRequestInfo.RequestInfoOrBuilder> requestInfoListBuilder_;
 
       /**
-       * <code>repeated .CityReputationRequestInfo.RequestInfo request_info_list = 7;</code>
+       * <code>repeated .CityReputationRequestInfo.RequestInfo request_info_list = 15;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.CityReputationRequestInfoOuterClass.CityReputationRequestInfo.RequestInfo> getRequestInfoListList() {
         if (requestInfoListBuilder_ == null) {
@@ -1223,7 +1248,7 @@ public final class CityReputationRequestInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .CityReputationRequestInfo.RequestInfo request_info_list = 7;</code>
+       * <code>repeated .CityReputationRequestInfo.RequestInfo request_info_list = 15;</code>
        */
       public int getRequestInfoListCount() {
         if (requestInfoListBuilder_ == null) {
@@ -1233,7 +1258,7 @@ public final class CityReputationRequestInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .CityReputationRequestInfo.RequestInfo request_info_list = 7;</code>
+       * <code>repeated .CityReputationRequestInfo.RequestInfo request_info_list = 15;</code>
        */
       public emu.grasscutter.net.proto.CityReputationRequestInfoOuterClass.CityReputationRequestInfo.RequestInfo getRequestInfoList(int index) {
         if (requestInfoListBuilder_ == null) {
@@ -1243,7 +1268,7 @@ public final class CityReputationRequestInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .CityReputationRequestInfo.RequestInfo request_info_list = 7;</code>
+       * <code>repeated .CityReputationRequestInfo.RequestInfo request_info_list = 15;</code>
        */
       public Builder setRequestInfoList(
           int index, emu.grasscutter.net.proto.CityReputationRequestInfoOuterClass.CityReputationRequestInfo.RequestInfo value) {
@@ -1260,7 +1285,7 @@ public final class CityReputationRequestInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CityReputationRequestInfo.RequestInfo request_info_list = 7;</code>
+       * <code>repeated .CityReputationRequestInfo.RequestInfo request_info_list = 15;</code>
        */
       public Builder setRequestInfoList(
           int index, emu.grasscutter.net.proto.CityReputationRequestInfoOuterClass.CityReputationRequestInfo.RequestInfo.Builder builderForValue) {
@@ -1274,7 +1299,7 @@ public final class CityReputationRequestInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CityReputationRequestInfo.RequestInfo request_info_list = 7;</code>
+       * <code>repeated .CityReputationRequestInfo.RequestInfo request_info_list = 15;</code>
        */
       public Builder addRequestInfoList(emu.grasscutter.net.proto.CityReputationRequestInfoOuterClass.CityReputationRequestInfo.RequestInfo value) {
         if (requestInfoListBuilder_ == null) {
@@ -1290,7 +1315,7 @@ public final class CityReputationRequestInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CityReputationRequestInfo.RequestInfo request_info_list = 7;</code>
+       * <code>repeated .CityReputationRequestInfo.RequestInfo request_info_list = 15;</code>
        */
       public Builder addRequestInfoList(
           int index, emu.grasscutter.net.proto.CityReputationRequestInfoOuterClass.CityReputationRequestInfo.RequestInfo value) {
@@ -1307,7 +1332,7 @@ public final class CityReputationRequestInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CityReputationRequestInfo.RequestInfo request_info_list = 7;</code>
+       * <code>repeated .CityReputationRequestInfo.RequestInfo request_info_list = 15;</code>
        */
       public Builder addRequestInfoList(
           emu.grasscutter.net.proto.CityReputationRequestInfoOuterClass.CityReputationRequestInfo.RequestInfo.Builder builderForValue) {
@@ -1321,7 +1346,7 @@ public final class CityReputationRequestInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CityReputationRequestInfo.RequestInfo request_info_list = 7;</code>
+       * <code>repeated .CityReputationRequestInfo.RequestInfo request_info_list = 15;</code>
        */
       public Builder addRequestInfoList(
           int index, emu.grasscutter.net.proto.CityReputationRequestInfoOuterClass.CityReputationRequestInfo.RequestInfo.Builder builderForValue) {
@@ -1335,7 +1360,7 @@ public final class CityReputationRequestInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CityReputationRequestInfo.RequestInfo request_info_list = 7;</code>
+       * <code>repeated .CityReputationRequestInfo.RequestInfo request_info_list = 15;</code>
        */
       public Builder addAllRequestInfoList(
           java.lang.Iterable<? extends emu.grasscutter.net.proto.CityReputationRequestInfoOuterClass.CityReputationRequestInfo.RequestInfo> values) {
@@ -1350,7 +1375,7 @@ public final class CityReputationRequestInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CityReputationRequestInfo.RequestInfo request_info_list = 7;</code>
+       * <code>repeated .CityReputationRequestInfo.RequestInfo request_info_list = 15;</code>
        */
       public Builder clearRequestInfoList() {
         if (requestInfoListBuilder_ == null) {
@@ -1363,7 +1388,7 @@ public final class CityReputationRequestInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CityReputationRequestInfo.RequestInfo request_info_list = 7;</code>
+       * <code>repeated .CityReputationRequestInfo.RequestInfo request_info_list = 15;</code>
        */
       public Builder removeRequestInfoList(int index) {
         if (requestInfoListBuilder_ == null) {
@@ -1376,14 +1401,14 @@ public final class CityReputationRequestInfoOuterClass {
         return this;
       }
       /**
-       * <code>repeated .CityReputationRequestInfo.RequestInfo request_info_list = 7;</code>
+       * <code>repeated .CityReputationRequestInfo.RequestInfo request_info_list = 15;</code>
        */
       public emu.grasscutter.net.proto.CityReputationRequestInfoOuterClass.CityReputationRequestInfo.RequestInfo.Builder getRequestInfoListBuilder(
           int index) {
         return getRequestInfoListFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .CityReputationRequestInfo.RequestInfo request_info_list = 7;</code>
+       * <code>repeated .CityReputationRequestInfo.RequestInfo request_info_list = 15;</code>
        */
       public emu.grasscutter.net.proto.CityReputationRequestInfoOuterClass.CityReputationRequestInfo.RequestInfoOrBuilder getRequestInfoListOrBuilder(
           int index) {
@@ -1393,7 +1418,7 @@ public final class CityReputationRequestInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .CityReputationRequestInfo.RequestInfo request_info_list = 7;</code>
+       * <code>repeated .CityReputationRequestInfo.RequestInfo request_info_list = 15;</code>
        */
       public java.util.List<? extends emu.grasscutter.net.proto.CityReputationRequestInfoOuterClass.CityReputationRequestInfo.RequestInfoOrBuilder> 
            getRequestInfoListOrBuilderList() {
@@ -1404,14 +1429,14 @@ public final class CityReputationRequestInfoOuterClass {
         }
       }
       /**
-       * <code>repeated .CityReputationRequestInfo.RequestInfo request_info_list = 7;</code>
+       * <code>repeated .CityReputationRequestInfo.RequestInfo request_info_list = 15;</code>
        */
       public emu.grasscutter.net.proto.CityReputationRequestInfoOuterClass.CityReputationRequestInfo.RequestInfo.Builder addRequestInfoListBuilder() {
         return getRequestInfoListFieldBuilder().addBuilder(
             emu.grasscutter.net.proto.CityReputationRequestInfoOuterClass.CityReputationRequestInfo.RequestInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .CityReputationRequestInfo.RequestInfo request_info_list = 7;</code>
+       * <code>repeated .CityReputationRequestInfo.RequestInfo request_info_list = 15;</code>
        */
       public emu.grasscutter.net.proto.CityReputationRequestInfoOuterClass.CityReputationRequestInfo.RequestInfo.Builder addRequestInfoListBuilder(
           int index) {
@@ -1419,7 +1444,7 @@ public final class CityReputationRequestInfoOuterClass {
             index, emu.grasscutter.net.proto.CityReputationRequestInfoOuterClass.CityReputationRequestInfo.RequestInfo.getDefaultInstance());
       }
       /**
-       * <code>repeated .CityReputationRequestInfo.RequestInfo request_info_list = 7;</code>
+       * <code>repeated .CityReputationRequestInfo.RequestInfo request_info_list = 15;</code>
        */
       public java.util.List<emu.grasscutter.net.proto.CityReputationRequestInfoOuterClass.CityReputationRequestInfo.RequestInfo.Builder> 
            getRequestInfoListBuilderList() {
@@ -1438,37 +1463,6 @@ public final class CityReputationRequestInfoOuterClass {
           requestInfoList_ = null;
         }
         return requestInfoListBuilder_;
-      }
-
-      private boolean isOpen_ ;
-      /**
-       * <code>bool is_open = 15;</code>
-       * @return The isOpen.
-       */
-      @java.lang.Override
-      public boolean getIsOpen() {
-        return isOpen_;
-      }
-      /**
-       * <code>bool is_open = 15;</code>
-       * @param value The isOpen to set.
-       * @return This builder for chaining.
-       */
-      public Builder setIsOpen(boolean value) {
-        
-        isOpen_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>bool is_open = 15;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearIsOpen() {
-        
-        isOpen_ = false;
-        onChanged();
-        return this;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -1543,11 +1537,11 @@ public final class CityReputationRequestInfoOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\037CityReputationRequestInfo.proto\"\275\001\n\031Ci" +
-      "tyReputationRequestInfo\022A\n\021request_info_" +
-      "list\030\007 \003(\0132&.CityReputationRequestInfo.R" +
-      "equestInfo\022\017\n\007is_open\030\017 \001(\010\032L\n\013RequestIn" +
-      "fo\022\022\n\nrequest_id\030\n \001(\r\022\020\n\010quest_id\030\006 \001(\r" +
-      "\022\027\n\017is_taken_reward\030\013 \001(\010B\033\n\031emu.grasscu" +
+      "tyReputationRequestInfo\022\017\n\007is_open\030\006 \001(\010" +
+      "\022A\n\021request_info_list\030\017 \003(\0132&.CityReputa" +
+      "tionRequestInfo.RequestInfo\032L\n\013RequestIn" +
+      "fo\022\022\n\nrequest_id\030\001 \001(\r\022\027\n\017is_taken_rewar" +
+      "d\030\013 \001(\010\022\020\n\010quest_id\030\016 \001(\rB\033\n\031emu.grasscu" +
       "tter.net.protob\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -1559,13 +1553,13 @@ public final class CityReputationRequestInfoOuterClass {
     internal_static_CityReputationRequestInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_CityReputationRequestInfo_descriptor,
-        new java.lang.String[] { "RequestInfoList", "IsOpen", });
+        new java.lang.String[] { "IsOpen", "RequestInfoList", });
     internal_static_CityReputationRequestInfo_RequestInfo_descriptor =
       internal_static_CityReputationRequestInfo_descriptor.getNestedTypes().get(0);
     internal_static_CityReputationRequestInfo_RequestInfo_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_CityReputationRequestInfo_RequestInfo_descriptor,
-        new java.lang.String[] { "RequestId", "QuestId", "IsTakenReward", });
+        new java.lang.String[] { "RequestId", "IsTakenReward", "QuestId", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

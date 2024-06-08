@@ -16,7 +16,7 @@ public final class ReportReasonTypeOuterClass {
   }
   /**
    * <pre>
-   * Obf: MLEODELMDAD
+   * Version: 4.6.0
    * </pre>
    *
    * Protobuf enum {@code ReportReasonType}

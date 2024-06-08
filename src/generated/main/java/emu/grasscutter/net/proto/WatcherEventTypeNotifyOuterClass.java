@@ -19,38 +19,37 @@ public final class WatcherEventTypeNotifyOuterClass {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>uint32 add_progress = 12;</code>
-     * @return The addProgress.
+     * <code>uint32 watcher_trigger_type = 3;</code>
+     * @return The watcherTriggerType.
      */
-    int getAddProgress();
+    int getWatcherTriggerType();
 
     /**
-     * <code>repeated uint32 param_list = 9;</code>
+     * <code>repeated uint32 param_list = 6;</code>
      * @return A list containing the paramList.
      */
     java.util.List<java.lang.Integer> getParamListList();
     /**
-     * <code>repeated uint32 param_list = 9;</code>
+     * <code>repeated uint32 param_list = 6;</code>
      * @return The count of paramList.
      */
     int getParamListCount();
     /**
-     * <code>repeated uint32 param_list = 9;</code>
+     * <code>repeated uint32 param_list = 6;</code>
      * @param index The index of the element to return.
      * @return The paramList at the given index.
      */
     int getParamList(int index);
 
     /**
-     * <code>uint32 watcher_trigger_type = 6;</code>
-     * @return The watcherTriggerType.
+     * <code>uint32 add_progress = 12;</code>
+     * @return The addProgress.
      */
-    int getWatcherTriggerType();
+    int getAddProgress();
   }
   /**
    * <pre>
-   * CmdId: 7059
-   * Obf: JNNHEKBHIIN
+   * CmdId: 1367
    * </pre>
    *
    * Protobuf type {@code WatcherEventTypeNotify}
@@ -99,12 +98,12 @@ public final class WatcherEventTypeNotifyOuterClass {
             case 0:
               done = true;
               break;
-            case 48: {
+            case 24: {
 
               watcherTriggerType_ = input.readUInt32();
               break;
             }
-            case 72: {
+            case 48: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
                 paramList_ = newIntList();
                 mutable_bitField0_ |= 0x00000001;
@@ -112,7 +111,7 @@ public final class WatcherEventTypeNotifyOuterClass {
               paramList_.addInt(input.readUInt32());
               break;
             }
-            case 74: {
+            case 50: {
               int length = input.readRawVarint32();
               int limit = input.pushLimit(length);
               if (!((mutable_bitField0_ & 0x00000001) != 0) && input.getBytesUntilLimit() > 0) {
@@ -165,6 +164,45 @@ public final class WatcherEventTypeNotifyOuterClass {
               emu.grasscutter.net.proto.WatcherEventTypeNotifyOuterClass.WatcherEventTypeNotify.class, emu.grasscutter.net.proto.WatcherEventTypeNotifyOuterClass.WatcherEventTypeNotify.Builder.class);
     }
 
+    public static final int WATCHER_TRIGGER_TYPE_FIELD_NUMBER = 3;
+    private int watcherTriggerType_;
+    /**
+     * <code>uint32 watcher_trigger_type = 3;</code>
+     * @return The watcherTriggerType.
+     */
+    @java.lang.Override
+    public int getWatcherTriggerType() {
+      return watcherTriggerType_;
+    }
+
+    public static final int PARAM_LIST_FIELD_NUMBER = 6;
+    private com.google.protobuf.Internal.IntList paramList_;
+    /**
+     * <code>repeated uint32 param_list = 6;</code>
+     * @return A list containing the paramList.
+     */
+    @java.lang.Override
+    public java.util.List<java.lang.Integer>
+        getParamListList() {
+      return paramList_;
+    }
+    /**
+     * <code>repeated uint32 param_list = 6;</code>
+     * @return The count of paramList.
+     */
+    public int getParamListCount() {
+      return paramList_.size();
+    }
+    /**
+     * <code>repeated uint32 param_list = 6;</code>
+     * @param index The index of the element to return.
+     * @return The paramList at the given index.
+     */
+    public int getParamList(int index) {
+      return paramList_.getInt(index);
+    }
+    private int paramListMemoizedSerializedSize = -1;
+
     public static final int ADD_PROGRESS_FIELD_NUMBER = 12;
     private int addProgress_;
     /**
@@ -174,45 +212,6 @@ public final class WatcherEventTypeNotifyOuterClass {
     @java.lang.Override
     public int getAddProgress() {
       return addProgress_;
-    }
-
-    public static final int PARAM_LIST_FIELD_NUMBER = 9;
-    private com.google.protobuf.Internal.IntList paramList_;
-    /**
-     * <code>repeated uint32 param_list = 9;</code>
-     * @return A list containing the paramList.
-     */
-    @java.lang.Override
-    public java.util.List<java.lang.Integer>
-        getParamListList() {
-      return paramList_;
-    }
-    /**
-     * <code>repeated uint32 param_list = 9;</code>
-     * @return The count of paramList.
-     */
-    public int getParamListCount() {
-      return paramList_.size();
-    }
-    /**
-     * <code>repeated uint32 param_list = 9;</code>
-     * @param index The index of the element to return.
-     * @return The paramList at the given index.
-     */
-    public int getParamList(int index) {
-      return paramList_.getInt(index);
-    }
-    private int paramListMemoizedSerializedSize = -1;
-
-    public static final int WATCHER_TRIGGER_TYPE_FIELD_NUMBER = 6;
-    private int watcherTriggerType_;
-    /**
-     * <code>uint32 watcher_trigger_type = 6;</code>
-     * @return The watcherTriggerType.
-     */
-    @java.lang.Override
-    public int getWatcherTriggerType() {
-      return watcherTriggerType_;
     }
 
     private byte memoizedIsInitialized = -1;
@@ -231,10 +230,10 @@ public final class WatcherEventTypeNotifyOuterClass {
                         throws java.io.IOException {
       getSerializedSize();
       if (watcherTriggerType_ != 0) {
-        output.writeUInt32(6, watcherTriggerType_);
+        output.writeUInt32(3, watcherTriggerType_);
       }
       if (getParamListList().size() > 0) {
-        output.writeUInt32NoTag(74);
+        output.writeUInt32NoTag(50);
         output.writeUInt32NoTag(paramListMemoizedSerializedSize);
       }
       for (int i = 0; i < paramList_.size(); i++) {
@@ -254,7 +253,7 @@ public final class WatcherEventTypeNotifyOuterClass {
       size = 0;
       if (watcherTriggerType_ != 0) {
         size += com.google.protobuf.CodedOutputStream
-          .computeUInt32Size(6, watcherTriggerType_);
+          .computeUInt32Size(3, watcherTriggerType_);
       }
       {
         int dataSize = 0;
@@ -289,12 +288,12 @@ public final class WatcherEventTypeNotifyOuterClass {
       }
       emu.grasscutter.net.proto.WatcherEventTypeNotifyOuterClass.WatcherEventTypeNotify other = (emu.grasscutter.net.proto.WatcherEventTypeNotifyOuterClass.WatcherEventTypeNotify) obj;
 
-      if (getAddProgress()
-          != other.getAddProgress()) return false;
-      if (!getParamListList()
-          .equals(other.getParamListList())) return false;
       if (getWatcherTriggerType()
           != other.getWatcherTriggerType()) return false;
+      if (!getParamListList()
+          .equals(other.getParamListList())) return false;
+      if (getAddProgress()
+          != other.getAddProgress()) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -306,14 +305,14 @@ public final class WatcherEventTypeNotifyOuterClass {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      hash = (37 * hash) + ADD_PROGRESS_FIELD_NUMBER;
-      hash = (53 * hash) + getAddProgress();
+      hash = (37 * hash) + WATCHER_TRIGGER_TYPE_FIELD_NUMBER;
+      hash = (53 * hash) + getWatcherTriggerType();
       if (getParamListCount() > 0) {
         hash = (37 * hash) + PARAM_LIST_FIELD_NUMBER;
         hash = (53 * hash) + getParamListList().hashCode();
       }
-      hash = (37 * hash) + WATCHER_TRIGGER_TYPE_FIELD_NUMBER;
-      hash = (53 * hash) + getWatcherTriggerType();
+      hash = (37 * hash) + ADD_PROGRESS_FIELD_NUMBER;
+      hash = (53 * hash) + getAddProgress();
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
@@ -411,8 +410,7 @@ public final class WatcherEventTypeNotifyOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 7059
-     * Obf: JNNHEKBHIIN
+     * CmdId: 1367
      * </pre>
      *
      * Protobuf type {@code WatcherEventTypeNotify}
@@ -452,11 +450,11 @@ public final class WatcherEventTypeNotifyOuterClass {
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        addProgress_ = 0;
+        watcherTriggerType_ = 0;
 
         paramList_ = emptyIntList();
         bitField0_ = (bitField0_ & ~0x00000001);
-        watcherTriggerType_ = 0;
+        addProgress_ = 0;
 
         return this;
       }
@@ -485,13 +483,13 @@ public final class WatcherEventTypeNotifyOuterClass {
       public emu.grasscutter.net.proto.WatcherEventTypeNotifyOuterClass.WatcherEventTypeNotify buildPartial() {
         emu.grasscutter.net.proto.WatcherEventTypeNotifyOuterClass.WatcherEventTypeNotify result = new emu.grasscutter.net.proto.WatcherEventTypeNotifyOuterClass.WatcherEventTypeNotify(this);
         int from_bitField0_ = bitField0_;
-        result.addProgress_ = addProgress_;
+        result.watcherTriggerType_ = watcherTriggerType_;
         if (((bitField0_ & 0x00000001) != 0)) {
           paramList_.makeImmutable();
           bitField0_ = (bitField0_ & ~0x00000001);
         }
         result.paramList_ = paramList_;
-        result.watcherTriggerType_ = watcherTriggerType_;
+        result.addProgress_ = addProgress_;
         onBuilt();
         return result;
       }
@@ -540,8 +538,8 @@ public final class WatcherEventTypeNotifyOuterClass {
 
       public Builder mergeFrom(emu.grasscutter.net.proto.WatcherEventTypeNotifyOuterClass.WatcherEventTypeNotify other) {
         if (other == emu.grasscutter.net.proto.WatcherEventTypeNotifyOuterClass.WatcherEventTypeNotify.getDefaultInstance()) return this;
-        if (other.getAddProgress() != 0) {
-          setAddProgress(other.getAddProgress());
+        if (other.getWatcherTriggerType() != 0) {
+          setWatcherTriggerType(other.getWatcherTriggerType());
         }
         if (!other.paramList_.isEmpty()) {
           if (paramList_.isEmpty()) {
@@ -553,8 +551,8 @@ public final class WatcherEventTypeNotifyOuterClass {
           }
           onChanged();
         }
-        if (other.getWatcherTriggerType() != 0) {
-          setWatcherTriggerType(other.getWatcherTriggerType());
+        if (other.getAddProgress() != 0) {
+          setAddProgress(other.getAddProgress());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -586,6 +584,116 @@ public final class WatcherEventTypeNotifyOuterClass {
       }
       private int bitField0_;
 
+      private int watcherTriggerType_ ;
+      /**
+       * <code>uint32 watcher_trigger_type = 3;</code>
+       * @return The watcherTriggerType.
+       */
+      @java.lang.Override
+      public int getWatcherTriggerType() {
+        return watcherTriggerType_;
+      }
+      /**
+       * <code>uint32 watcher_trigger_type = 3;</code>
+       * @param value The watcherTriggerType to set.
+       * @return This builder for chaining.
+       */
+      public Builder setWatcherTriggerType(int value) {
+        
+        watcherTriggerType_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>uint32 watcher_trigger_type = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearWatcherTriggerType() {
+        
+        watcherTriggerType_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private com.google.protobuf.Internal.IntList paramList_ = emptyIntList();
+      private void ensureParamListIsMutable() {
+        if (!((bitField0_ & 0x00000001) != 0)) {
+          paramList_ = mutableCopy(paramList_);
+          bitField0_ |= 0x00000001;
+         }
+      }
+      /**
+       * <code>repeated uint32 param_list = 6;</code>
+       * @return A list containing the paramList.
+       */
+      public java.util.List<java.lang.Integer>
+          getParamListList() {
+        return ((bitField0_ & 0x00000001) != 0) ?
+                 java.util.Collections.unmodifiableList(paramList_) : paramList_;
+      }
+      /**
+       * <code>repeated uint32 param_list = 6;</code>
+       * @return The count of paramList.
+       */
+      public int getParamListCount() {
+        return paramList_.size();
+      }
+      /**
+       * <code>repeated uint32 param_list = 6;</code>
+       * @param index The index of the element to return.
+       * @return The paramList at the given index.
+       */
+      public int getParamList(int index) {
+        return paramList_.getInt(index);
+      }
+      /**
+       * <code>repeated uint32 param_list = 6;</code>
+       * @param index The index to set the value at.
+       * @param value The paramList to set.
+       * @return This builder for chaining.
+       */
+      public Builder setParamList(
+          int index, int value) {
+        ensureParamListIsMutable();
+        paramList_.setInt(index, value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 param_list = 6;</code>
+       * @param value The paramList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addParamList(int value) {
+        ensureParamListIsMutable();
+        paramList_.addInt(value);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 param_list = 6;</code>
+       * @param values The paramList to add.
+       * @return This builder for chaining.
+       */
+      public Builder addAllParamList(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureParamListIsMutable();
+        com.google.protobuf.AbstractMessageLite.Builder.addAll(
+            values, paramList_);
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>repeated uint32 param_list = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearParamList() {
+        paramList_ = emptyIntList();
+        bitField0_ = (bitField0_ & ~0x00000001);
+        onChanged();
+        return this;
+      }
+
       private int addProgress_ ;
       /**
        * <code>uint32 add_progress = 12;</code>
@@ -613,116 +721,6 @@ public final class WatcherEventTypeNotifyOuterClass {
       public Builder clearAddProgress() {
         
         addProgress_ = 0;
-        onChanged();
-        return this;
-      }
-
-      private com.google.protobuf.Internal.IntList paramList_ = emptyIntList();
-      private void ensureParamListIsMutable() {
-        if (!((bitField0_ & 0x00000001) != 0)) {
-          paramList_ = mutableCopy(paramList_);
-          bitField0_ |= 0x00000001;
-         }
-      }
-      /**
-       * <code>repeated uint32 param_list = 9;</code>
-       * @return A list containing the paramList.
-       */
-      public java.util.List<java.lang.Integer>
-          getParamListList() {
-        return ((bitField0_ & 0x00000001) != 0) ?
-                 java.util.Collections.unmodifiableList(paramList_) : paramList_;
-      }
-      /**
-       * <code>repeated uint32 param_list = 9;</code>
-       * @return The count of paramList.
-       */
-      public int getParamListCount() {
-        return paramList_.size();
-      }
-      /**
-       * <code>repeated uint32 param_list = 9;</code>
-       * @param index The index of the element to return.
-       * @return The paramList at the given index.
-       */
-      public int getParamList(int index) {
-        return paramList_.getInt(index);
-      }
-      /**
-       * <code>repeated uint32 param_list = 9;</code>
-       * @param index The index to set the value at.
-       * @param value The paramList to set.
-       * @return This builder for chaining.
-       */
-      public Builder setParamList(
-          int index, int value) {
-        ensureParamListIsMutable();
-        paramList_.setInt(index, value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 param_list = 9;</code>
-       * @param value The paramList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addParamList(int value) {
-        ensureParamListIsMutable();
-        paramList_.addInt(value);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 param_list = 9;</code>
-       * @param values The paramList to add.
-       * @return This builder for chaining.
-       */
-      public Builder addAllParamList(
-          java.lang.Iterable<? extends java.lang.Integer> values) {
-        ensureParamListIsMutable();
-        com.google.protobuf.AbstractMessageLite.Builder.addAll(
-            values, paramList_);
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>repeated uint32 param_list = 9;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearParamList() {
-        paramList_ = emptyIntList();
-        bitField0_ = (bitField0_ & ~0x00000001);
-        onChanged();
-        return this;
-      }
-
-      private int watcherTriggerType_ ;
-      /**
-       * <code>uint32 watcher_trigger_type = 6;</code>
-       * @return The watcherTriggerType.
-       */
-      @java.lang.Override
-      public int getWatcherTriggerType() {
-        return watcherTriggerType_;
-      }
-      /**
-       * <code>uint32 watcher_trigger_type = 6;</code>
-       * @param value The watcherTriggerType to set.
-       * @return This builder for chaining.
-       */
-      public Builder setWatcherTriggerType(int value) {
-        
-        watcherTriggerType_ = value;
-        onChanged();
-        return this;
-      }
-      /**
-       * <code>uint32 watcher_trigger_type = 6;</code>
-       * @return This builder for chaining.
-       */
-      public Builder clearWatcherTriggerType() {
-        
-        watcherTriggerType_ = 0;
         onChanged();
         return this;
       }
@@ -794,9 +792,9 @@ public final class WatcherEventTypeNotifyOuterClass {
   static {
     java.lang.String[] descriptorData = {
       "\n\034WatcherEventTypeNotify.proto\"`\n\026Watche" +
-      "rEventTypeNotify\022\024\n\014add_progress\030\014 \001(\r\022\022" +
-      "\n\nparam_list\030\t \003(\r\022\034\n\024watcher_trigger_ty" +
-      "pe\030\006 \001(\rB\033\n\031emu.grasscutter.net.protob\006p" +
+      "rEventTypeNotify\022\034\n\024watcher_trigger_type" +
+      "\030\003 \001(\r\022\022\n\nparam_list\030\006 \003(\r\022\024\n\014add_progre" +
+      "ss\030\014 \001(\rB\033\n\031emu.grasscutter.net.protob\006p" +
       "roto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
@@ -808,7 +806,7 @@ public final class WatcherEventTypeNotifyOuterClass {
     internal_static_WatcherEventTypeNotify_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_WatcherEventTypeNotify_descriptor,
-        new java.lang.String[] { "AddProgress", "ParamList", "WatcherTriggerType", });
+        new java.lang.String[] { "WatcherTriggerType", "ParamList", "AddProgress", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

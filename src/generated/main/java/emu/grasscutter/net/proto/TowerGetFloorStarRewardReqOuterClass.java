@@ -26,8 +26,8 @@ public final class TowerGetFloorStarRewardReqOuterClass {
   }
   /**
    * <pre>
-   * CmdId: 5764
-   * Obf: ELMPNCMADBL
+   * 4.6.0
+   * CmdId: 21493
    * </pre>
    *
    * Protobuf type {@code TowerGetFloorStarRewardReq}
@@ -279,8 +279,8 @@ public final class TowerGetFloorStarRewardReqOuterClass {
     }
     /**
      * <pre>
-     * CmdId: 5764
-     * Obf: ELMPNCMADBL
+     * 4.6.0
+     * CmdId: 21493
      * </pre>
      *
      * Protobuf type {@code TowerGetFloorStarRewardReq}
